@@ -163,15 +163,6 @@ export function skill({
   return row;
 }
 
-/** An equipment row copied from a library, with a quantity applied. */
-export function equipmentFrom(payload, quantity = 1, equipped = true) {
-  const row = adopt(payload);
-  row.id = newTID(row.id?.[0] === "E" ? "E" : KIND_EQUIPMENT);
-  row.quantity = quantity;
-  row.equipped = equipped;
-  return row;
-}
-
 /** A markdown note row. */
 export function note(markdown) {
   return { id: newTID(KIND_NOTE), markdown };
@@ -247,9 +238,11 @@ const rfc3339 = (date) => date.toISOString().replace(/\.\d{3}Z$/, "Z");
  * @param {number} sheet.totalPoints  campaign point total
  * @param {object} sheet.attributes   {dx: 12, iq: 13, ...} final values
  * @param {object[]} sheet.attributeDefs  rows from EP_ATT.attr
+ * @param {object} sheet.settings     sheet settings overriding the defaults
  * @param {object[]} sheet.traits
  * @param {object[]} sheet.skills
- * @param {object[]} sheet.equipment
+ * @param {object[]} sheet.equipment       carried
+ * @param {object[]} sheet.otherEquipment  stowed
  * @param {string[]} sheet.notes      markdown blocks
  */
 export function buildEntity(sheet) {
@@ -281,14 +274,7 @@ export function buildEntity(sheet) {
       // self-contained: it computes correctly on a machine that has never
       // loaded EP_ATT.attr.
       attributes: sheet.attributeDefs,
-      damage_progression: "basic_set",
-      default_length_units: "ft_in",
-      default_weight_units: "lb",
-      user_description_display: "tooltip",
-      modifiers_display: "inline",
-      notes_display: "inline",
-      skill_level_adj_display: "tooltip",
-      show_spell_adj: true,
+      ...(sheet.settings || {}),
     },
     attributes,
     created_date: stamp,
@@ -298,6 +284,7 @@ export function buildEntity(sheet) {
   if (sheet.traits?.length) entity.traits = sheet.traits;
   if (sheet.skills?.length) entity.skills = sheet.skills;
   if (sheet.equipment?.length) entity.equipment = sheet.equipment;
+  if (sheet.otherEquipment?.length) entity.other_equipment = sheet.otherEquipment;
   if (sheet.notes?.length) entity.notes = sheet.notes.map(note);
 
   return entity;

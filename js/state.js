@@ -5,6 +5,7 @@
 // only the keys needed to look them up again.
 
 import { traitPoints, skillRelativeLevel } from "./cost.js";
+import { poundsOf } from "./features.js";
 
 export const BUILD_FORMAT = 1;
 export const STORAGE_KEY = "ep-gurps-build";
@@ -18,6 +19,37 @@ export const REP_COST_PER_LEVEL = 3;
 export const ASYNC_TALENT_MAX = 4;
 export const ASYNC_TALENT_COST = 5;
 export const MUSE_ALLY_COST = 5;
+
+/**
+ * The sheet settings GCS writes, at the values this conversion assumes.
+ * Everything here is exposed in the Sheet settings step; GCS's own Sheet
+ * Settings dialog shows the same list.
+ */
+export const DEFAULT_SETTINGS = {
+  damage_progression: "basic_set",
+  default_length_units: "ft_in",
+  default_weight_units: "lb",
+  user_description_display: "tooltip",
+  modifiers_display: "inline",
+  notes_display: "inline",
+  skill_level_adj_display: "tooltip",
+  show_spell_adj: true,
+  show_trait_modifier_adj: false,
+  show_equipment_modifier_adj: false,
+  show_all_weapons: false,
+  hide_unused_weapon_columns: false,
+  use_multiplicative_modifiers: false,
+  use_modifying_dice_plus_adds: false,
+  use_half_stat_defaults: false,
+  use_title_in_footer: false,
+  hide_tl_column: false,
+  hide_lc_column: false,
+  hide_page_ref_column: false,
+  exclude_unspent_points_from_total: false,
+  show_lifting_st_damage: false,
+  show_iq_based_damage: false,
+  hide_zero_value_conditional_modifiers: false,
+};
 
 /** Attributes the Ego buys. ST/HT/HP/FP belong to the morph. */
 export const EGO_ATTRIBUTES = ["dx", "iq", "will", "per"];
@@ -37,6 +69,14 @@ export function defaultBuild() {
       title: "",
       organization: "",
       religion: "",
+      height: "",
+      weight: "",
+      eyes: "",
+      hair: "",
+      skin: "",
+      birthday: "",
+      SM: 0,
+      portrait: "",
     },
     attributes: { dx: 11, iq: 11, will: 10, per: 10 },
     background: null,
@@ -50,6 +90,10 @@ export function defaultBuild() {
     muse: "none",
     psi: { enabled: false, talent: 0, sleights: [], disorders: "" },
     customTraits: [],
+    // Toggled trait and equipment modifiers, keyed by "<scope>:<key>" and then
+    // by the row's address inside its library payload. See js/modifiers.js.
+    modifierChoices: {},
+    settings: { ...DEFAULT_SETTINGS },
     notes: "",
     options: { normalizeMorphPrice: true, includeBuildNote: true },
   };
@@ -92,6 +136,10 @@ export function migrate(build) {
   merged.attributes = { ...base.attributes, ...(build.attributes || {}) };
   merged.psi = { ...base.psi, ...(build.psi || {}) };
   merged.options = { ...base.options, ...(build.options || {}) };
+  merged.settings = { ...base.settings, ...(build.settings || {}) };
+  if (!merged.modifierChoices || typeof merged.modifierChoices !== "object") {
+    merged.modifierChoices = {};
+  }
   for (const list of ["skills", "augTraits", "augEquipment", "gear", "customTraits"]) {
     if (!Array.isArray(merged[list])) merged[list] = [];
   }
@@ -175,8 +223,27 @@ export function psiPoints(build, cat) {
   return total;
 }
 
+/**
+ * What a hand-entered trait costs. Priced through the same engine as everything
+ * else so a levelled trait with a self-control roll comes out at the number GCS
+ * will show.
+ */
+export function customTraitCost(trait) {
+  const row = { id: "t" };
+  if (trait.levelled) {
+    row.can_level = true;
+    row.base_points = trait.basePoints || 0;
+    row.points_per_level = trait.pointsPerLevel || 0;
+    row.levels = trait.levels || 0;
+  } else {
+    row.base_points = trait.points || 0;
+  }
+  if (trait.cr) row.cr = trait.cr;
+  return traitPoints(row);
+}
+
 export function customTraitPoints(build) {
-  return build.customTraits.reduce((sum, t) => sum + (t.points || 0), 0);
+  return build.customTraits.reduce((sum, t) => sum + customTraitCost(t), 0);
 }
 
 export function musePoints(build) {
@@ -240,9 +307,10 @@ export function disadvantageTally(build, cat) {
   const fac = cat.packages?.factions.find((f) => f.key === build.faction);
   if (fac) consider(fac.payload, "Faction");
   for (const t of build.customTraits) {
-    if ((t.points || 0) < 0 && t.kind !== "physical") {
-      total += t.points;
-      counted.push({ name: t.name, points: t.points, origin: "Other traits" });
+    const points = customTraitCost(t);
+    if (points < 0 && t.kind !== "physical") {
+      total += points;
+      counted.push({ name: t.name, points, origin: "Other traits" });
     }
   }
   if (build.psi.enabled && cat.sleights) {
@@ -277,6 +345,19 @@ export function cashSpent(build, cat) {
       const entry = index.get(item.key);
       if (entry) total += entry.price * (item.qty || 1);
     }
+  }
+  return Math.round(total * 100) / 100;
+}
+
+/** Weight carried, in pounds, for the encumbrance calculation. */
+export function weightCarried(build, cat) {
+  if (!cat.gear) return 0;
+  const index = new Map(cat.gear.categories.flatMap((c) => c.items.map((i) => [i.key, i])));
+  let total = 0;
+  for (const item of build.gear) {
+    if (item.stowed) continue; // stowed gear is not on the character
+    const entry = index.get(item.key);
+    if (entry) total += poundsOf(entry.weight) * (item.qty || 1);
   }
   return Math.round(total * 100) / 100;
 }

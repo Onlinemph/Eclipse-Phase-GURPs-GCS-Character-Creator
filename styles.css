@@ -373,3 +373,64 @@ code { font-family: var(--mono); font-size: .85em; }
 
 /* Wide content must scroll inside itself rather than the page. */
 .card { overflow-x: auto; }
+
+/* --- live sheet panel --------------------------------------------------- */
+
+.sheet-card {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: .8rem;
+}
+.sheet-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .35rem;
+}
+.stat {
+  display: grid;
+  gap: .05rem;
+  padding: .3rem .2rem;
+  border-radius: 6px;
+  background: var(--bg-sunken);
+  text-align: center;
+}
+.stat.dim { opacity: .4; }
+.stat-label { font-size: .65rem; letter-spacing: .05em; text-transform: uppercase; color: var(--text-muted); }
+.stat-value { font: 650 1rem/1.1 var(--mono); }
+.sheet-mini-damage { margin: .55rem 0 0; font: .78rem var(--mono); color: var(--accent); text-align: center; }
+.sheet-mini-damage.dim { color: var(--text-muted); }
+.sheet-mini-points { margin: .2rem 0 0; font-size: .75rem; color: var(--text-muted); text-align: center; }
+
+.sheet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+.sheet-col { min-width: 0; }
+.table.compact th, .table.compact td { padding: .25rem .4rem; font-size: .85rem; }
+.table.compact tbody th { font-weight: 500; color: var(--text-muted); }
+.current-enc th, .current-enc td { background: var(--accent-dim); color: var(--text); }
+
+/* --- modifier editor ---------------------------------------------------- */
+
+.mod-row + .mod-row { margin-top: .5rem; }
+.mod-row .pick-group { margin: .3rem 0 .25rem; }
+.chip .chip-name { font-weight: 500; }
+
+/* --- traits & settings -------------------------------------------------- */
+
+.tiny-input { width: 4rem; }
+.stack-tight { display: grid; gap: .15rem; }
+.stack-tight .check { font-size: .78rem; }
+
+.portrait {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--bg-sunken);
+}
+.portrait.empty {
+  display: grid;
+  place-items: center;
+  font-size: .72rem;
+  color: var(--text-muted);
+}

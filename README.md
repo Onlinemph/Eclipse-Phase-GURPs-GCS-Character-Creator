@@ -17,20 +17,48 @@ conversion actually offers:
 
 | Step | What you choose |
 |---|---|
-| 0–1 | Campaign point total and starting wealth; the Ego/morph split explained |
+| 0–1 | The character's name, and the Ego/morph split explained |
 | 2 | DX, IQ, Will and Per, priced by `EP_ATT.attr` |
 | 3 | One of 15 backgrounds, whole package included |
 | 4 | One of 19 factions, plus levels in any of 8 reputation networks |
+| 4b | Any advantage, disadvantage or quirk, with levels and self-control rolls |
 | 5 | 59 setting skills and techniques, ~110 Basic Set skills, or anything typed by hand |
 | 6 | One of 103 morphs, filtered by category and cost, with its customization slots |
 | 7 | 91 augmentations with cash prices, and 126 as traits if you want the mechanics |
-| 8 | 1,007 items of gear against $50,000 |
+| 8 | 1,007 items of gear against $50,000, each carried, stowed or unequipped |
 | 9 | The muse, as a 5-point Ally or a 0-point setting conceit |
 | 10 | Watts-MacLeod, Async Talent and 68 sleights with Alternative Ability pricing |
+| 10b | The full description block and every GCS sheet setting |
 | 11 | A point audit, the −50 disadvantage check, and the `.gcs` download |
 
-Running totals for points and cash sit beside every step. Progress is kept in the browser and
-can be exported as a build file to move between machines. Nothing is uploaded anywhere.
+On top of the procedure, every trait carries the modifier switches GCS shows — about 11,000 of
+them across the libraries. Damage Resistance can be Hardened or a Force Field, Extra Limbs can
+be Long or Weak, a sleight can be an Alternative Ability. Toggling one changes what the trait
+does and what it costs, and the choice is stored against its position in the library payload so
+it survives a reload.
+
+Running totals for points and cash sit beside every step, along with a live sheet.
+
+## The live sheet
+
+The panel beside every step is not a summary of your choices — it is the character, computed
+from the rows that will be written to the file.
+
+The libraries carry roughly 7,000 features: attribute bonuses, DR by hit location, skill
+bonuses, reaction and conditional modifiers. GCS applies them when it opens a sheet. The
+builder applies the same ones up front, so ST reads 0 until a morph is attached and then jumps
+to whatever the body supplies. Attaching a Fury to an Ego with DX 12 gives ST 20, HP 30, DX 14,
+Basic Speed 8.25, thrust 2d−1, swing 3d+2, Basic Lift 80 lb and DR 8 — the same numbers GCS
+will show.
+
+The review step expands this into a full sheet: the attribute block with the source of every
+bonus, thrust and swing, the lifting table, encumbrance with Move and Dodge at each level, DR
+by hit location, resolved skill levels including trait bonuses, and every reaction and
+conditional modifier with what granted it.
+
+`tests/sheet.test.mjs` holds this to the library: it parses the stat line out of all 103
+morphs' notes and checks that the features resolve to those numbers — 334 values, one known
+exception.
 
 ## What comes out
 
@@ -103,9 +131,10 @@ npm run test:all   # the above plus a real Chromium run through the whole wizard
 | Suite | What it holds the code to |
 |---|---|
 | `tests/library.test.mjs` | All 16,793 library rows validate against the GCS 5 schema. Since GCS loads these files, a failure here means the validator is wrong — this is what keeps the export test honest. |
-| `tests/cost.test.mjs` | The cost engine reproduces GCS's `AdjustedPoints` across 4,061 trait rows, with the 97 known library divergences pinned to a fixture. |
-| `tests/export.test.mjs` | Four fixture characters build end to end and validate: TID format and uniqueness, container consistency, no unknown fields, correct attribute round-trips, one aptitude enabled per slot, morphs at their documented price, Alternative Abilities marked correctly. |
-| `tests/browser.test.mjs` | Chromium clicks through all eleven steps, downloads the `.gcs`, validates it, and checks that progress survives a reload. |
+| `tests/cost.test.mjs` | The cost engine reproduces GCS's `AdjustedPoints` across 4,061 trait rows, with the 90 known library divergences pinned to a fixture. |
+| `tests/sheet.test.mjs` | The GURPS damage, lift, Move, Dodge and encumbrance tables, plus 334 stat-line values across all 103 morphs resolved from their features. |
+| `tests/export.test.mjs` | Five fixture characters build end to end and validate: TID format and uniqueness, container consistency, no unknown fields, correct attribute round-trips, one aptitude enabled per slot, morphs at their documented price, Alternative Abilities marked correctly, sheet settings and profile fields round-tripped, carried/stowed/unequipped states, hand-entered traits priced identically on both sides, and a toggled modifier arriving enabled on the right row. |
+| `tests/browser.test.mjs` | Chromium clicks through all thirteen steps, toggles a modifier, reads the sheet panel, downloads the `.gcs`, validates it, and checks that progress survives a reload. |
 
 The schema in `tests/gcs-schema.mjs` is derived from the Go structs in
 [`richardwilkes/gcs`](https://github.com/richardwilkes/gcs) — `EntityData`, `TraitData`,
@@ -120,11 +149,14 @@ js/
   app.js              wizard shell: catalogues, state, navigation
   state.js            the build, the point maths, the rules checks
   cost.js             GURPS point costs, matching GCS's AdjustedPoints
+  features.js         resolves attribute, DR and skill bonuses; the GURPS tables
+  sheet.js            the live character sheet, computed from the assembled rows
+  modifiers.js        addressing and applying the libraries' modifier switches
   gcs.js              the .gcs writer: TIDs, sheet envelope, morph pricing
-  build.js            turns a build into a GCS entity
+  build.js            assembles the rows, then turns them into a GCS entity
   data.js             on-demand catalogue loading
   gurps-skills.js     the Basic Set skills the conversion's tables name
-  steps/              one module per step
+  steps/              one module per step, plus the sheet panel
 data/
   library/            the eight GCS libraries, byte-identical to their source
   gen/                catalogues generated from them, committed so Pages needs no build

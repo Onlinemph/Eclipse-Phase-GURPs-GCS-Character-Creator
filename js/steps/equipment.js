@@ -1,8 +1,8 @@
 // Step 8: general equipment, against $50,000 of starting wealth at TL10.
 
 import { el, button, filterBox, matches, notice, money, clear, checkbox } from "../ui.js";
-import { quantity } from "./shared.js";
-import { cashSpent } from "../state.js";
+import { quantity, equipmentModifierEditor } from "./shared.js";
+import { cashSpent, weightCarried } from "../state.js";
 
 export default {
   title: "Equipment",
@@ -53,6 +53,7 @@ function budgetBar(build, cat) {
       el("p" + (over ? ".over" : ""),
         `${money(spent)} spent of ${money(build.startingWealth)} — ${money(build.startingWealth - spent)} left`,
       ),
+      el("p.muted.small", `Carrying ${weightCarried(build, cat)} lb; see the sheet panel for the encumbrance that buys.`),
     ),
   );
 }
@@ -62,16 +63,22 @@ function carried(build, cat, update) {
   const rows = build.gear
     .map((item) => ({ item, entry: index.get(item.key) }))
     .filter((r) => r.entry);
+  const onPerson = rows.filter((r) => !r.item.stowed).length;
 
   return el("section.card",
-    el("h3", `Carried (${rows.length})`),
+    el("h3", `Equipment (${rows.length}, ${onPerson} carried)`),
+    el("p.muted.small",
+      "Carried items count towards encumbrance and are written to the sheet's equipment list; " +
+      "stowed items go to GCS's other-equipment list, where they cost money but no movement. " +
+      "Unequipping leaves an item carried but switches off whatever it grants.",
+    ),
     rows.length === 0
       ? el("p.muted", "Nothing yet.")
       : el("table.table",
           el("thead",
             el("tr",
               el("th", "Item"), el("th", "Qty"), el("th", "Each"),
-              el("th", "Total"), el("th", "Weight"), el("th", ""),
+              el("th", "Total"), el("th", "Weight"), el("th", "State"), el("th", ""),
             ),
           ),
           el("tbody",
@@ -82,6 +89,7 @@ function carried(build, cat, update) {
                   entry.armed ? el("span.tag", "weapon") : null,
                   entry.lc ? el("span.tag", `LC${entry.lc}`) : null,
                   entry.notes ? el("p.muted.small", entry.notes) : null,
+                  equipmentModifierEditor(entry.payload, `gear:${entry.key}`, build, update),
                 ),
                 el("td", quantity(item.qty || 1, (v) => update((b) => {
                   const found = b.gear.find((g) => g.key === item.key);
@@ -90,6 +98,18 @@ function carried(build, cat, update) {
                 el("td.num", money(entry.price)),
                 el("td.num", money(entry.price * (item.qty || 1))),
                 el("td.muted", entry.weight),
+                el("td",
+                  el("div.stack-tight",
+                    checkbox("equipped", item.equipped !== false, (v) => update((b) => {
+                      const found = b.gear.find((g) => g.key === item.key);
+                      if (found) found.equipped = v;
+                    })),
+                    checkbox("stowed", Boolean(item.stowed), (v) => update((b) => {
+                      const found = b.gear.find((g) => g.key === item.key);
+                      if (found) found.stowed = v;
+                    })),
+                  ),
+                ),
                 el("td", button("Remove", () => update((b) => {
                   b.gear = b.gear.filter((g) => g.key !== item.key);
                 }), "ghost")),
@@ -142,7 +162,7 @@ function catalogue(build, cat, update) {
                 owned.has(entry.key)
                   ? el("span.muted", "carried")
                   : button("Add", () => update((b) => {
-                      b.gear.push({ key: entry.key, qty: 1 });
+                      b.gear.push({ key: entry.key, qty: 1, equipped: true, stowed: false });
                     })),
               ),
             ),

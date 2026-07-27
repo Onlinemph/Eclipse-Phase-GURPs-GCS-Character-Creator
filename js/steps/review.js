@@ -6,6 +6,7 @@ import {
 import { buildSheet } from "../build.js";
 import { serialize, filenameFor } from "../gcs.js";
 import { totals, cashSpent, disadvantageTally, validate, DISADVANTAGE_LIMIT } from "../state.js";
+import { fullSheet } from "./sheet-panel.js";
 
 const CHECKLIST = [
   "ST, HT, HP and FP are supplied by the morph and were not purchased.",
@@ -39,6 +40,7 @@ export default {
 
     return el("div.stack",
       summary(build, cat, t, dis),
+      fullSheet(build, cat),
       checks(findings),
       exportCard(build, cat, blocking, update),
       buildFileCard(ctx),

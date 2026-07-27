@@ -12,6 +12,7 @@ import {
   cashSpent,
 } from "./state.js";
 import { STEPS } from "./steps/index.js";
+import { sidebarSheet } from "./steps/sheet-panel.js";
 
 const cat = {
   attrDefs: null,
@@ -90,6 +91,10 @@ function renderNav() {
   });
 }
 
+function renderSheet() {
+  ui.clear(dom.sheet).append(sidebarSheet(build, cat));
+}
+
 function renderTally() {
   const t = totals(build, cat);
   const cash = cashSpent(build, cat);
@@ -124,6 +129,7 @@ function renderTally() {
 function render() {
   renderNav();
   renderTally();
+  renderSheet();
 
   const step = STEPS[current];
   ui.clear(dom.main).append(
@@ -148,6 +154,7 @@ async function start() {
   dom.nav = document.getElementById("step-nav");
   dom.main = document.getElementById("step-main");
   dom.tally = document.getElementById("tally");
+  dom.sheet = document.getElementById("sheet-mini");
 
   try {
     const [attrDefs, packages, epSkills, morphIndex] = await Promise.all([

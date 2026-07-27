@@ -11,6 +11,7 @@ import { buildSheet } from "../js/build.js";
 import { serialize, isTID } from "../js/gcs.js";
 import { defaultBuild, totals, validate, cashSpent } from "../js/state.js";
 import { validateEntity } from "./gcs-schema.mjs";
+import { addressed } from "../js/modifiers.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const GEN = join(ROOT, "data/gen");
@@ -111,6 +112,52 @@ function asyncCharacter() {
   return b;
 }
 
+/** Exercises the customization added on top of the procedure. */
+function customized() {
+  const b = defaultBuild();
+  b.profile.name = "Test Customized";
+  b.profile.height = "5' 11\"";
+  b.profile.weight = "180 lb";
+  b.profile.eyes = "grey";
+  b.profile.hair = "shaved";
+  b.profile.skin = "pale";
+  b.profile.handedness = "left";
+  b.profile.birthday = "12 March";
+  b.profile.religion = "none";
+  b.profile.SM = 1;
+  b.settings.damage_progression = "knowing_your_own_strength";
+  b.settings.default_weight_units = "kg";
+  b.settings.notes_display = "inline_and_tooltip";
+  b.settings.show_trait_modifier_adj = true;
+
+  // Hand-entered traits: a flat advantage, a levelled one and a disadvantage
+  // with a self-control roll.
+  b.customTraits = [
+    { name: "Combat Reflexes", points: 15, kind: "mental", levelled: false, cr: 0 },
+    { name: "Status", kind: "social", levelled: true, basePoints: 0, pointsPerLevel: 5, levels: 3, cr: 0 },
+    { name: "Bad Temper", points: -10, kind: "mental", levelled: false, cr: 12 },
+    { name: "Bad Back", points: -15, kind: "physical", levelled: false, cr: 0 },
+  ];
+
+  // A morph with a modifier switched on that the library ships disabled.
+  const steel = find(cat.morphIndex, "Steel Morph");
+  b.morph = { key: steel.key, aptitudes: new Array(steel.slots).fill(0) };
+  const payload = cat.morphs.get(steel.key);
+  const target = [...addressed(payload)].find(
+    ({ node }) => node.modifiers?.length && !String(node.name || "").startsWith("Choose One Aptitude"),
+  );
+  b.modifierChoices[`morph:${steel.key}`] = { [target.address]: { 0: true } };
+  b.__modifierProbe = { address: target.address, name: target.node.modifiers[0].name };
+
+  // Carried, stowed and unequipped gear, to exercise all three states.
+  b.gear = [
+    { key: gearKey("Backup Insurance (1 year)"), qty: 1, equipped: true, stowed: false },
+    { key: gearKey("Ecto (flexible tablet)"), qty: 2, equipped: true, stowed: false },
+    { key: gearKey("Utilitool"), qty: 1, equipped: false, stowed: true },
+  ];
+  return b;
+}
+
 /** The empty case: nothing chosen at all. */
 function blank() {
   const b = defaultBuild();
@@ -142,6 +189,7 @@ const FIXTURES = [
   ["async", asyncCharacter],
   ["blank", blank],
   ["synth", synth],
+  ["customized", customized],
 ];
 
 mkdirSync(OUT, { recursive: true });
@@ -254,6 +302,61 @@ for (const [label, make] of FIXTURES) {
         Object.values(row.replacements || {}).some((r) => /@\w+@/.test(r))) {
       fail(label, `${row.name}: nameable placeholder was never filled in`);
     }
+  }
+
+  // Sheet settings and the description block reach the file.
+  for (const [key, value] of Object.entries(build.settings)) {
+    if (value === false) continue; // omitzero: GCS drops false flags
+    if (entity.settings[key] !== value) {
+      fail(label, `settings.${key} is ${entity.settings[key]}, expected ${value}`);
+    }
+  }
+  for (const [key, value] of Object.entries(build.profile)) {
+    if (String(value ?? "").trim() === "" || value === 0) continue;
+    if (entity.profile[key] !== value) {
+      fail(label, `profile.${key} is ${entity.profile[key]}, expected ${value}`);
+    }
+  }
+
+  // Stowed gear goes to the other-equipment list, carried gear to equipment.
+  const stowed = build.gear.filter((g) => g.stowed).length;
+  if ((entity.other_equipment?.length ?? 0) !== stowed) {
+    fail(label, `${entity.other_equipment?.length ?? 0} stowed items, expected ${stowed}`);
+  }
+  for (const item of build.gear.filter((g) => g.equipped === false)) {
+    const entry = cat.gear.categories.flatMap((c) => c.items).find((i) => i.key === item.key);
+    const row = [...(entity.equipment || []), ...(entity.other_equipment || [])]
+      .find((r) => r.description === entry.name);
+    if (row?.equipped) fail(label, `${entry.name} is marked equipped but the build unequips it`);
+  }
+
+  // Hand-entered traits are on the sheet at the cost the wizard showed.
+  for (const trait of build.customTraits) {
+    const row = entity.traits?.find((r) => r.name === trait.name);
+    if (!row) { fail(label, `custom trait "${trait.name}" is missing`); continue; }
+    const { traitPoints: cost } = await import("../js/cost.js");
+    const { customTraitCost } = await import("../js/state.js");
+    if (cost(row) !== customTraitCost(trait)) {
+      fail(label, `${trait.name} costs ${cost(row)} on the sheet, ${customTraitCost(trait)} in the wizard`);
+    }
+    if (trait.cr && row.cr !== trait.cr) {
+      fail(label, `${trait.name} lost its self-control roll`);
+    }
+  }
+
+  // A modifier switched on in the wizard is switched on in the file.
+  if (build.__modifierProbe) {
+    const { address, name } = build.__modifierProbe;
+    let found = null;
+    (function walk(rows) {
+      for (const row of rows || []) {
+        const mod = (row.modifiers || []).find((m) => m.name === name);
+        if (mod) found ??= mod;
+        walk(row.children);
+      }
+    })(entity.traits);
+    if (!found) fail(label, `modifier "${name}" (at ${address}) never reached the sheet`);
+    else if (found.disabled) fail(label, `modifier "${name}" was switched on but exported disabled`);
   }
 
   const findings = validate(build, cat);

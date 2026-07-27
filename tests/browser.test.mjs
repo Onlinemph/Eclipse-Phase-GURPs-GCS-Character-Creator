@@ -66,7 +66,13 @@ try {
 
   if (await page.locator("#loading").count()) fail("the loading placeholder never went away");
   const stepCount = await page.locator(".step-link").count();
-  if (stepCount !== 11) fail(`${stepCount} steps in the nav, expected 11`);
+  if (stepCount !== 13) fail(`${stepCount} steps in the nav, expected 13`);
+
+  // The sheet panel is present from the start, with no body attached yet.
+  const st = () => page.locator(".sheet-mini-grid .stat", { hasText: "ST" }).first();
+  if ((await st().innerText()).replace(/\s+/g, " ") !== "ST 0") {
+    fail(`the sheet panel shows "${await st().innerText()}" for ST before a morph is chosen`);
+  }
 
   // Step 0 — name the character.
   await page.locator("input[type=text]").first().fill("Browser Test Sentinel");
@@ -106,6 +112,18 @@ try {
   const skillRows = await page.locator(".skill-table tbody tr").count();
   if (skillRows !== 2) fail(`${skillRows} skills on the sheet, expected 2`);
 
+  // Step 4b — a hand-entered trait.
+  await gotoStep("Traits");
+  await page.locator(".chip", { hasText: "Combat Reflexes" }).first().click();
+  await page.waitForTimeout(250);
+  // The name renders as an editable field, so read its value rather than text.
+  const traitNames = await page.locator("table tbody input[type=text]").evaluateAll(
+    (nodes) => nodes.map((n) => n.value),
+  );
+  if (!traitNames.includes("Combat Reflexes")) {
+    fail(`adding a trait did not put it on the sheet; found ${JSON.stringify(traitNames)}`);
+  }
+
   // Step 6 — morph, and the aptitude slot.
   await gotoStep("Morph");
   await page.locator("input[type=search]").first().fill("Fury");
@@ -118,12 +136,39 @@ try {
   await page.waitForTimeout(150);
   if (!await page.locator(".chip.aptitude.on").count()) fail("the aptitude did not stay selected");
 
+  // The sheet panel picks up the morph's stat line.
+  const readStat = async (label) => {
+    const text = await page.locator(".sheet-mini-grid .stat", { hasText: label }).first().innerText();
+    return text.replace(/\s+/g, " ");
+  };
+  if (await readStat("ST") !== "ST 20") fail(`sheet panel ST reads "${await readStat("ST")}", expected 20 for a Fury`);
+  if (await readStat("HP") !== "HP 30") fail(`sheet panel HP reads "${await readStat("HP")}", expected 30 for a Fury`);
+
+  // A modifier the library ships disabled can be switched on.
+  const modSection = page.locator(".card", { hasText: "Fine-tune the morph" });
+  await modSection.locator("summary").first().click();
+  await page.waitForTimeout(200);
+  const modChip = modSection.locator(".chip:not(.on)").first();
+  if (await modChip.count()) {
+    await modChip.click();
+    await page.waitForTimeout(250);
+    if (!await modSection.locator(".chip.on").count()) fail("toggling a trait modifier did not stick");
+  } else {
+    fail("the morph modifier editor offered nothing to toggle");
+  }
+
   // Step 8 — equipment.
   await gotoStep("Equipment");
   await page.waitForTimeout(600);
   await page.locator("input[type=search]").first().fill("Backup Insurance");
   await page.waitForTimeout(300);
   await page.getByRole("button", { name: "Add", exact: true }).first().click();
+  await page.waitForTimeout(200);
+
+  // Step 10b — sheet settings reach the file.
+  await gotoStep("Sheet & profile");
+  await page.waitForTimeout(200);
+  await page.locator("select").first().selectOption("knowing_your_own_strength");
   await page.waitForTimeout(200);
 
   // Step 11 — review and export.
@@ -153,6 +198,13 @@ try {
   if (!entity.traits?.some((t) => t.name === "Fury")) fail("the Fury is not on the sheet");
   if (!entity.skills?.some((s) => s.name === "Computer Hacking")) fail("Computer Hacking is missing");
   if (!entity.equipment?.length) fail("no equipment reached the sheet");
+  if (!entity.traits?.some((t) => t.name === "Combat Reflexes")) {
+    fail("the hand-entered trait is not on the sheet");
+  }
+  if (entity.settings.damage_progression !== "knowing_your_own_strength") {
+    fail(`damage_progression is "${entity.settings.damage_progression}", expected the one selected`);
+  }
+  if (!entity.notes?.length) fail("the build-notes page is missing");
 
   // Progress must survive a reload.
   await page.reload({ waitUntil: "networkidle" });

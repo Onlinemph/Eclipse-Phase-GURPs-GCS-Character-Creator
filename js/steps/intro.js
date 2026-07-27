@@ -1,8 +1,7 @@
 // Step 0: what the libraries are and how the Ego/morph split works, plus the
 // character's name and the campaign's point total.
 
-import { el, field, textInput, numberInput, button, details, notice } from "../ui.js";
-import { DEFAULT_POINTS, DEFAULT_WEALTH } from "../state.js";
+import { el, field, textInput, button, notice } from "../ui.js";
 
 const LIBRARY_FILES = [
   ["EP_ATT.attr", "Attribute definitions. Load first; the others compute incorrectly without it."],
@@ -76,19 +75,9 @@ export default {
           field("Title", textInput(build.profile.title, (v) => update((b) => { b.profile.title = v; }))),
           field("Organization", textInput(build.profile.organization, (v) => update((b) => { b.profile.organization = v; }))),
         ),
-        details("Campaign settings",
-          el("div.grid-2",
-            field(
-              "Point total",
-              numberInput(build.totalPoints, (v) => update((b) => { b.totalPoints = v ?? DEFAULT_POINTS; }), { min: 0, step: 5 }),
-              "The conversion builds on 250, covering the Ego and a starting morph.",
-            ),
-            field(
-              "Starting wealth",
-              numberInput(build.startingWealth, (v) => update((b) => { b.startingWealth = v ?? DEFAULT_WEALTH; }), { min: 0, step: 1000 }),
-              "$50,000 at TL10.",
-            ),
-          ),
+        el("p.muted.small",
+          "The rest of the description block, the campaign's point total and GCS's own sheet " +
+          "settings are on the Sheet & profile step, near the end.",
         ),
       ),
 

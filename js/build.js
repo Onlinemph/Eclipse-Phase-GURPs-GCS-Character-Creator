@@ -1,26 +1,45 @@
 // Turns a wizard build into a GCS entity.
 //
-// Anything that came out of a library is copied through `adopt` so the sheet
-// carries the same features, prerequisites, weapons and modifiers GCS would
-// have attached had the player dragged the row in by hand.
+// Assembly happens once, in `assemble`, and produces the rows the sheet will
+// carry. The live sheet panel reads those rows to work out what the character's
+// numbers actually are, and `buildSheet` runs the same rows through `adopt` to
+// write the file. Preview and export therefore cannot drift apart.
+//
+// Anything that came out of a library keeps its features, prerequisites,
+// weapons and modifiers, so the sheet behaves as if the row had been dragged in
+// by hand.
 
 import {
   adopt,
   aptitudeSlots,
   applyAptitudes,
   buildEntity,
-  equipmentFrom,
   normalizeMorphPrice,
   skill as authorSkill,
   trait as authorTrait,
   traitGroup,
 } from "./gcs.js";
+import { applyChoices, applyEquipmentChoices } from "./modifiers.js";
 import { traitPoints } from "./cost.js";
-import { totals, cashSpent, disadvantageTally } from "./state.js";
+import { totals, cashSpent, disadvantageTally, DEFAULT_SETTINGS } from "./state.js";
+
+/** A payload the caller may mutate freely. */
+const clone = (value) => structuredClone(value);
 
 /** Collected side effects worth telling the player about after an export. */
-function report() {
-  return { priceAdjustments: [], notes: [] };
+const report = () => ({ priceAdjustments: [], notes: [] });
+
+const choicesFor = (build, scope) => build.modifierChoices?.[scope];
+
+// --- traits ----------------------------------------------------------------
+
+function packageTraits(build, cat) {
+  const out = [];
+  const bg = cat.packages.backgrounds.find((b) => b.key === build.background);
+  if (bg) out.push(applyChoices(clone(bg.payload), choicesFor(build, `bg:${bg.key}`)));
+  const fac = cat.packages.factions.find((f) => f.key === build.faction);
+  if (fac) out.push(applyChoices(clone(fac.payload), choicesFor(build, `fac:${fac.key}`)));
+  return out;
 }
 
 function repTraits(build, cat) {
@@ -29,7 +48,7 @@ function repTraits(build, cat) {
     if (!level) continue;
     const entry = cat.packages.repnets.find((r) => r.key === key);
     if (!entry) continue;
-    const row = adopt(entry.payload);
+    const row = clone(entry.payload);
     row.levels = level;
     row.can_level = true;
     out.push(row);
@@ -43,20 +62,13 @@ function morphTraits(build, cat, log) {
   const payload = cat.morphs.get(build.morph.key);
   if (!entry || !payload) return [];
 
-  const morph = adopt(payload);
+  const morph = applyChoices(clone(payload), choicesFor(build, `morph:${entry.key}`));
   const slots = aptitudeSlots(morph);
   applyAptitudes(morph, build.morph.aptitudes || []);
 
   if (build.options.normalizeMorphPrice) {
     const change = normalizeMorphPrice(morph, entry.points);
-    if (change) {
-      log.priceAdjustments.push({
-        morph: entry.name,
-        target: entry.points,
-        was: entry.points - change.delta,
-        ...change,
-      });
-    }
+    if (change) log.priceAdjustments.push({ morph: entry.name, target: entry.points, ...change });
   }
   if (slots.length && !(build.morph.aptitudes || []).some((a) => a >= 0)) {
     log.notes.push(
@@ -68,10 +80,11 @@ function morphTraits(build, cat, log) {
 
 function augTraitRows(build, cat) {
   const out = [];
+  if (!cat.augs) return out; // catalogue not fetched yet; the panel fills in later
   for (const chosen of build.augTraits) {
     const entry = cat.augs.traits.find((t) => t.key === chosen.key);
     if (!entry) continue;
-    const row = adopt(entry.payload);
+    const row = applyChoices(clone(entry.payload), choicesFor(build, `aug:${entry.key}`));
     if (!chosen.offset) {
       out.push(row);
       continue;
@@ -80,7 +93,7 @@ function augTraitRows(build, cat) {
     // Pairing the trait with a matching negative keeps the mechanics while
     // leaving the point total alone, the same bookkeeping the libraries use
     // for morphs themselves.
-    const cost = traitPoints(entry.payload);
+    const cost = traitPoints(row);
     out.push(
       traitGroup(
         entry.name,
@@ -91,7 +104,7 @@ function augTraitRows(build, cat) {
             points: -cost,
             tags: ["Disadvantage", "Morph"],
             notes:
-              `Installed augmentation, paid for with money rather than character points ` +
+              "Installed augmentation, paid for with money rather than character points " +
               `(Character Creation, Step 7). This adjustment cancels the ${cost}-point trait cost.`,
           }),
         ],
@@ -120,17 +133,17 @@ function museTraits(build) {
 }
 
 function psiTraits(build, cat) {
-  if (!build.psi.enabled) return [];
+  if (!build.psi.enabled || !cat.sleights) return [];
   const rows = [];
   const core = new Map(cat.sleights.core.map((c) => [c.name, c]));
 
   const infection = core.get("Watts-MacLeod Infection");
-  if (infection) rows.push(adopt(infection.payload));
+  if (infection) rows.push(clone(infection.payload));
 
   if (build.psi.talent > 0) {
     const talent = core.get("Async Talent");
     if (talent) {
-      const row = adopt(talent.payload);
+      const row = clone(talent.payload);
       row.levels = build.psi.talent;
       row.can_level = true;
       rows.push(row);
@@ -140,10 +153,9 @@ function psiTraits(build, cat) {
     rows.push(
       authorTrait({
         name: "Watts-MacLeod Disorders",
-        notes: build.psi.disorders.trim() +
-          "\n\nMandatory disorders carried by the Infection, chosen with the GM. These fall " +
-          "outside the campaign disadvantage limit; price them with the GM and record the " +
-          "individual traits here.",
+        notes: `${build.psi.disorders.trim()}\n\nMandatory disorders carried by the Infection, ` +
+          "chosen with the GM. These fall outside the campaign disadvantage limit; price them " +
+          "with the GM and record the individual traits here.",
         tags: ["Disadvantage", "Mental"],
       }),
     );
@@ -153,7 +165,7 @@ function psiTraits(build, cat) {
   for (const chosen of build.psi.sleights) {
     const entry = all.get(chosen.key);
     if (!entry) continue;
-    const row = adopt(entry.payload);
+    const row = applyChoices(clone(entry.payload), choicesFor(build, `psi:${entry.key}`));
     const alt = (row.modifiers || []).find((m) => m.name === "Alternative Ability");
     if (alt) alt.disabled = !(chosen.alternate && entry.can_alternate);
     rows.push(row);
@@ -161,11 +173,35 @@ function psiTraits(build, cat) {
   return rows;
 }
 
+/** Advantages, disadvantages and quirks the player entered by hand. */
+function customTraitRows(build) {
+  return build.customTraits.map((t) => {
+    const row = authorTrait({
+      name: t.name,
+      notes: t.notes || "",
+      reference: t.reference || "",
+      tags: t.tags?.length
+        ? [...t.tags]
+        : [(t.points || 0) < 0 ? "Disadvantage" : "Advantage", t.kind === "physical" ? "Physical" : "Mental"],
+    });
+    if (t.levelled) {
+      row.can_level = true;
+      row.points_per_level = t.pointsPerLevel || 0;
+      row.levels = t.levels || 0;
+      if (t.basePoints) row.base_points = t.basePoints;
+    } else if (t.points) {
+      row.base_points = t.points;
+    }
+    if (t.cr) row.cr = t.cr;
+    return row;
+  });
+}
+
+// --- skills ----------------------------------------------------------------
+
 function skillRows(build, cat) {
   const rows = [];
-  const epIndex = new Map(
-    cat.epSkills.groups.flatMap((g) => g.items.map((i) => [i.key, i])),
-  );
+  const epIndex = new Map(cat.epSkills.groups.flatMap((g) => g.items.map((i) => [i.key, i])));
   const sleightSkills = new Map(
     cat.sleights
       ? cat.sleights.groups
@@ -179,7 +215,7 @@ function skillRows(build, cat) {
     if (entry.source === "ep") {
       const lib = epIndex.get(entry.key);
       if (lib) {
-        const row = adopt(lib.payload);
+        const row = clone(lib.payload);
         row.points = entry.points;
         if (entry.specialization) row.specialization = entry.specialization;
         if (entry.replacement) {
@@ -195,7 +231,7 @@ function skillRows(build, cat) {
     if (entry.source === "psi") {
       const payload = sleightSkills.get(entry.name);
       if (payload) {
-        const row = adopt(payload);
+        const row = clone(payload);
         row.points = entry.points;
         rows.push(row);
         continue;
@@ -215,27 +251,69 @@ function skillRows(build, cat) {
   return rows;
 }
 
+// --- equipment -------------------------------------------------------------
+
+function equipmentRow(payload, item, choices, extraNote = "") {
+  const row = applyEquipmentChoices(clone(payload), choices);
+  row.quantity = item.qty || 1;
+  row.equipped = item.equipped !== false;
+  if (extraNote) {
+    row.local_notes = [row.local_notes, extraNote].filter(Boolean).join(" ");
+  }
+  return row;
+}
+
+/** Carried equipment and stowed equipment, as GCS's two separate lists. */
 function equipmentRows(build, cat) {
-  const rows = [];
-  const augIndex = new Map(cat.augs.equipment.map((e) => [e.key, e]));
+  const carried = [];
+  const other = [];
+
+  const augIndex = new Map((cat.augs?.equipment || []).map((e) => [e.key, e]));
   for (const item of build.augEquipment) {
     const entry = augIndex.get(item.key);
     if (!entry) continue;
-    const row = equipmentFrom(entry.payload, item.qty || 1);
-    row.local_notes = [row.local_notes, "Installed augmentation."]
-      .filter(Boolean)
-      .join(" ");
-    rows.push(row);
+    // An installed augmentation is part of the body, so it is always carried
+    // and never weighs anything against encumbrance.
+    carried.push(
+      equipmentRow(entry.payload, { ...item, equipped: true },
+        choicesFor(build, `augeq:${entry.key}`), "Installed augmentation."),
+    );
   }
+
   const gearIndex = new Map(
-    cat.gear.categories.flatMap((c) => c.items.map((i) => [i.key, i])),
+    (cat.gear?.categories || []).flatMap((c) => c.items.map((i) => [i.key, i])),
   );
   for (const item of build.gear) {
     const entry = gearIndex.get(item.key);
-    if (entry) rows.push(equipmentFrom(entry.payload, item.qty || 1));
+    if (!entry) continue;
+    const row = equipmentRow(entry.payload, item, choicesFor(build, `gear:${entry.key}`));
+    (item.stowed ? other : carried).push(row);
   }
-  return rows;
+  return { carried, other };
 }
+
+// --- assembly --------------------------------------------------------------
+
+/**
+ * Build the rows a sheet will carry, without touching ids.
+ * @returns {{traits, skills, carried, other, log}}
+ */
+export function assemble(build, cat) {
+  const log = report();
+  const traits = [
+    ...packageTraits(build, cat),
+    ...repTraits(build, cat),
+    ...morphTraits(build, cat, log),
+    ...augTraitRows(build, cat),
+    ...museTraits(build),
+    ...psiTraits(build, cat),
+    ...customTraitRows(build),
+  ];
+  const { carried, other } = equipmentRows(build, cat);
+  return { traits, skills: skillRows(build, cat), carried, other, log };
+}
+
+// --- notes -----------------------------------------------------------------
 
 function summaryNote(build, cat, log) {
   const t = totals(build, cat);
@@ -291,47 +369,27 @@ function summaryNote(build, cat, log) {
   return lines.join("\n");
 }
 
+// --- the sheet -------------------------------------------------------------
+
 /**
- * Assemble the whole sheet.
+ * Assemble the whole sheet and give every row a fresh id.
  * @returns {{entity: object, log: object}}
  */
 export function buildSheet(build, cat) {
-  const log = report();
-
-  const traits = [
-    ...(() => {
-      const bg = cat.packages.backgrounds.find((b) => b.key === build.background);
-      return bg ? [adopt(bg.payload)] : [];
-    })(),
-    ...(() => {
-      const fac = cat.packages.factions.find((f) => f.key === build.faction);
-      return fac ? [adopt(fac.payload)] : [];
-    })(),
-    ...repTraits(build, cat),
-    ...morphTraits(build, cat, log),
-    ...augTraitRows(build, cat),
-    ...museTraits(build),
-    ...psiTraits(build, cat),
-    ...build.customTraits.map((t) =>
-      authorTrait({
-        name: t.name,
-        points: t.points || 0,
-        notes: t.notes || "",
-        tags: [t.points < 0 ? "Disadvantage" : "Advantage", t.kind === "physical" ? "Physical" : "Mental"],
-      }),
-    ),
-  ];
+  const { traits, skills, carried, other, log } = assemble(build, cat);
 
   const entity = buildEntity({
     profile: Object.fromEntries(
-      Object.entries(build.profile).filter(([, v]) => String(v).trim() !== ""),
+      Object.entries(build.profile).filter(([, v]) => String(v ?? "").trim() !== ""),
     ),
     totalPoints: build.totalPoints,
     attributes: build.attributes,
     attributeDefs: cat.attrDefs,
-    traits,
-    skills: skillRows(build, cat),
-    equipment: equipmentRows(build, cat),
+    settings: { ...DEFAULT_SETTINGS, ...build.settings },
+    traits: traits.map(adopt),
+    skills: skills.map(adopt),
+    equipment: carried.map(adopt),
+    otherEquipment: other.map(adopt),
     notes: build.options.includeBuildNote ? [summaryNote(build, cat, log)] : [],
   });
 

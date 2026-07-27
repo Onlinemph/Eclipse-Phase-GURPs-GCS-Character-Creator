@@ -1,7 +1,95 @@
 // Pieces used by more than one step.
 
-import { el, filterBox, matches, points } from "../ui.js";
+import { el, filterBox, matches, points, details, checkbox, button } from "../ui.js";
 import { traitPoints } from "../cost.js";
+import { toggleableRows, isEnabled, summarize } from "../modifiers.js";
+
+/**
+ * The modifier editor: the switches GCS puts on every trait.
+ *
+ * Damage Resistance can be Hardened or a Force Field, Extra Limbs can be Long
+ * or Weak, a sleight can be an Alternative Ability. The libraries ship these
+ * disabled; toggling them is most of what customizing a GCS character consists
+ * of, and the choice changes both the point cost and what the trait does.
+ *
+ * @param {object} payload the library payload, untouched
+ * @param {string} scope where the choice is stored, e.g. "morph:fury"
+ * @param {object} build
+ * @param {(mutate: Function) => void} update
+ */
+export function modifierEditor(payload, scope, build, update) {
+  const choices = build.modifierChoices?.[scope];
+  const rows = toggleableRows(payload);
+  if (!rows.length) return null;
+  const { available, enabled } = summarize(payload, choices);
+
+  const toggle = (address, index, on) => update((b) => {
+    b.modifierChoices[scope] ??= {};
+    b.modifierChoices[scope][address] ??= {};
+    b.modifierChoices[scope][address][index] = on;
+  });
+
+  const reset = () => update((b) => { delete b.modifierChoices[scope]; });
+
+  return details(
+    `Modifiers — ${enabled} of ${available} enabled`,
+    el("p.muted.small",
+      "Each switch changes what the trait does and what it costs, exactly as it would in GCS. " +
+      "The library's own defaults apply until you change one.",
+    ),
+    el("div.pick-list",
+      rows.map((row) =>
+        el("div.mod-row",
+          el("h4.pick-group", row.name),
+          el("div.chip-row",
+            row.modifiers.map(({ index, mod }) => {
+              const on = isEnabled(choices, row.address, index, mod);
+              return el(`button.chip${on ? ".on" : ""}`, {
+                type: "button",
+                title: mod.local_notes || "",
+                onclick: () => toggle(row.address, index, !on),
+              },
+                el("span.chip-name", mod.name),
+                mod.cost_adj ? el("span.chip-diff", mod.cost_adj) : null,
+              );
+            }),
+          ),
+        ),
+      ),
+    ),
+    choices ? el("div.row", button("Reset to library defaults", reset, "ghost")) : null,
+  );
+}
+
+/** The same editor for an equipment row, whose modifiers are a flat list. */
+export function equipmentModifierEditor(payload, scope, build, update) {
+  const modifiers = payload.modifiers || [];
+  if (!modifiers.length) return null;
+  const choices = build.modifierChoices?.[scope]?.[""] || {};
+
+  return details(
+    `Modifiers (${modifiers.length})`,
+    el("div.chip-row",
+      modifiers.map((mod, index) => {
+        const on = choices[index] === undefined ? !mod.disabled : choices[index];
+        return el(`button.chip${on ? ".on" : ""}`, {
+          type: "button",
+          title: mod.local_notes || "",
+          onclick: () => update((b) => {
+            b.modifierChoices[scope] ??= {};
+            b.modifierChoices[scope][""] ??= {};
+            b.modifierChoices[scope][""][index] = !on;
+          }),
+        },
+          el("span.chip-name", mod.name),
+          mod.cost ? el("span.chip-diff", String(mod.cost)) : null,
+        );
+      }),
+    ),
+  );
+}
+
+export { checkbox };
 
 /**
  * A grid of selectable package cards (backgrounds, factions).

@@ -2,7 +2,8 @@
 
 import { el, button, filterBox, matches, notice, checkbox, clear, points } from "../ui.js";
 import { traitPoints } from "../cost.js";
-import * as data from "../data.js";
+import { modifierEditor } from "./shared.js";
+import { applyChoices } from "../modifiers.js";
 
 const CATEGORY_ORDER = ["Biomorphs", "Pod Morphs", "Uplift Biomorphs", "Synthmorphs", "Infomorphs"];
 
@@ -34,6 +35,17 @@ export default {
       ),
       selected ? morphDetail(selected, payload, build, update) : null,
       selected ? slotPicker(selected, build, update) : null,
+      selected && payload
+        ? el("section.card",
+            el("h3", "Fine-tune the morph"),
+            el("p.muted.small",
+              "Every trait in the package carries the same modifier switches GCS shows. Enabling " +
+              "one changes both what the trait does and what it costs — and with price correction " +
+              "on, the adjustment re-balances so the morph still lands on its chargen price.",
+            ),
+            modifierEditor(payload, `morph:${selected.key}`, build, update),
+          )
+        : null,
       el("section.card",
         el("h3", "After the morph is attached"),
         el("p",
@@ -114,7 +126,12 @@ function morphBrowser(index, selectedKey, choose) {
 }
 
 function morphDetail(entry, payload, build, update) {
-  const computed = payload ? traitPoints(payload) : null;
+  // Price the morph as it currently stands, modifier choices included, so the
+  // note below reflects what the player has actually switched on.
+  const configured = payload
+    ? applyChoices(structuredClone(payload), build.modifierChoices?.[`morph:${entry.key}`])
+    : null;
+  const computed = configured ? traitPoints(configured) : null;
   const diverges = computed !== null && computed !== entry.points;
 
   return el("section.card",
@@ -148,10 +165,11 @@ function morphDetail(entry, payload, build, update) {
     diverges
       ? el("div.stack",
           notice("warn",
-            `This morph's price adjustment was written without applying the modifiers enabled on ` +
-            `its own traits, so GCS computes ${computed} points for it rather than the documented ` +
-            `chargen price of ${entry.points}. The builder can re-point the adjustment on export ` +
-            `so the morph lands where the library says it should.`,
+            `As configured, GCS computes ${computed} points for this morph rather than its ` +
+            `documented chargen price of ${entry.points}. That is either the library's price ` +
+            `adjustment having been written without the modifiers its own traits enable, or ` +
+            `modifiers you have switched on below. The builder can re-point the adjustment on ` +
+            `export so the morph lands where the library says it should.`,
           ),
           checkbox(
             `Correct the price adjustment so the ${entry.name} costs ${entry.points} points in GCS`,

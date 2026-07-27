@@ -4,7 +4,7 @@ import {
   el, button, filterBox, matches, notice, money, checkbox, clear, details,
 } from "../ui.js";
 import { traitPoints } from "../cost.js";
-import { quantity } from "./shared.js";
+import { quantity, modifierEditor, equipmentModifierEditor } from "./shared.js";
 import { cashSpent } from "../state.js";
 
 const INSTALL_RATE = 0.1;
@@ -97,6 +97,7 @@ function installedList(build, cat, update) {
                 el("td",
                   el("strong", entry.name),
                   el("p.muted.small", entry.notes),
+                  equipmentModifierEditor(entry.payload, `augeq:${entry.key}`, build, update),
                 ),
                 el("td", quantity(item.qty || 1, (v) => update((b) => {
                   const found = b.augEquipment.find((a) => a.key === item.key);
@@ -205,7 +206,11 @@ function traitCatalogue(build, cat, update) {
               const chosen = owned.get(entry.key);
               const cost = traitPoints(entry.payload);
               return el("tr",
-                el("td", el("strong", entry.name), entry.notes ? el("p.muted.small", entry.notes) : null),
+                el("td",
+                  el("strong", entry.name),
+                  entry.notes ? el("p.muted.small", entry.notes) : null,
+                  chosen ? modifierEditor(entry.payload, `aug:${entry.key}`, build, update) : null,
+                ),
                 el("td.num", `${cost} pts`),
                 el("td",
                   chosen

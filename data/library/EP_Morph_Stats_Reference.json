@@ -1,0 +1,2165 @@
+{
+ "source": "Eclipse Phase: Morph Recognition Guide (Posthuman Studios, 2014)",
+ "conversion_conventions": "+5 SOM -> ST 14 | +10 SOM -> ST 20   (baseline SOM 15 = ST 10)\n+5 COO -> DX +2                        (+10 COO -> DX +4)\n+5 REF -> Basic Speed +2.00            (8 quarter-levels)\n+5 COG -> IQ +2                        (+10 COG -> IQ +4, +15 -> IQ +6)\n+5 INT -> Per +3                       (+10 INT -> Per +6)\n+5 WIL -> Will +3                      (+10 WIL -> Will +6)\n+5 SAV -> Smooth Operator 2\n+5 to N aptitudes of choice -> N customization slots (NOT point-matched: the seven options run 15-45 pts of value and the slot itself costs 0, per Part III. COG->IQ+2 is 40, WIL->Will+3 is 45, SOM->ST+4 is 32.)\nDUR x 0.6 -> HP   |   Armor x 0.75 -> DR   |   CP / 4 (round up) -> chargen points",
+ "morphs": [
+  {
+   "name": "Aquanaut",
+   "page": 6,
+   "cp": 50,
+   "credit": "Expensive",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "4/20, Swimming 2/10",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+10 Swimming skill"
+   ],
+   "disadvantages": null,
+   "notes": "Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Enhanced Respiration, Gills, Sonar, Swim Bladder, Temperature Tolerance (Improved Cold), Toxin Filters"
+  },
+  {
+   "name": "Arachnoid",
+   "page": 7,
+   "cp": 55,
+   "credit": "Expensive (minimum 55,000+)",
+   "durability": 60,
+   "wound_threshold": 12,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Armor 12/12"
+   ],
+   "disadvantages": null,
+   "notes": "Large Size trait [aptitude_bonuses repaired by hand: the source extraction lost or stranded them]",
+   "implants": null
+  },
+  {
+   "name": "Ariel",
+   "page": 8,
+   "cp": 50,
+   "credit": "Expensive (minimum 50,000+)",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30",
+   "movement": "4/20, Winged 8/40",
+   "aptitude_bonuses": {
+    "COG": 5,
+    "REF": 5
+   },
+   "free_aptitude_picks": 2,
+   "other_advantages": [],
+   "disadvantages": "Temperature Intolerance (Warm) trait",
+   "notes": "Non-Mammalian Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Bioweave Armor (Light), Claws, Cortical Stack, Direction Sense, Enhanced Vision, Long-Term Life Support, Low Pressure Tolerance, Oxygen Reserve, Prehensile Feet, Radiation Sense, T-Ray Emitter, Temperature Tolerance (Cryonic), Wings"
+  },
+  {
+   "name": "Ayah",
+   "page": 9,
+   "cp": 25,
+   "credit": "Expensive if you want to come across as safe and innocuous. No one suspects an ayah- at least until you've had one try to feed your head into the kitchen disassembler.",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SAV": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Social Stigma (Pod) trait",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Cyberbrain, Enhanced Smell, Mnemonic Augmentation, Oxygen Reserve, Puppet Sock, Temperature Tolerance, Wrist-Mounted Tools"
+  },
+  {
+   "name": "Basic Pod",
+   "page": 10,
+   "cp": 5,
+   "credit": "Moderate",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "25",
+   "movement": "4/20",
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Social Stigma (Pod) trait",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Cyberbrain, Mnemonic Augmentation, Puppet Sock"
+  },
+  {
+   "name": "Biocore",
+   "page": 11,
+   "cp": 50,
+   "credit": "Expensive (minimum 60,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "SOM": 5
+   },
+   "free_aptitude_picks": 2,
+   "other_advantages": [
+    "Armor 6/6"
+   ],
+   "disadvantages": "Social Stigma (Clanking Masses) trait",
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Blackbird",
+   "page": 12,
+   "cp": 45,
+   "credit": "Expensive (Minimum 45,000)",
+   "durability": 25,
+   "wound_threshold": 5,
+   "aptitude_max": "30 (20 SOM)",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5,
+    "REF": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+10 Flight skill",
+    "+10 Infiltration skill",
+    "Armor 2/2",
+    "Beak/Claw Attack (1d10 + 1 DV",
+    "AP −1)"
+   ],
+   "disadvantages": null,
+   "notes": "Small Size trait",
+   "implants": null
+  },
+  {
+   "name": "Bouncer",
+   "page": 13,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Limber (Level 1) trait"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Grip Pads, Oxygen Reserve, Prehensile Feet"
+  },
+  {
+   "name": "Bruiser",
+   "page": 14,
+   "cp": 60,
+   "credit": "Expensive (minimum 60,000+)",
+   "durability": 60,
+   "wound_threshold": 12,
+   "aptitude_max": "30 (SOM 40)",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 15,
+    "REF": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+10 Intimidation skill",
+    "(includes Hardened Skeleton bonus)",
+    "(+15 with Adrenal Booost)"
+   ],
+   "disadvantages": "Unattractive (Level 1) trait",
+   "notes": "Large Size trait",
+   "implants": "Adrenal Boost, Basic Biomods, Basic Mesh Inserts, Claws, Cortical Stack, Hardened Skeleton"
+  },
+  {
+   "name": "Case",
+   "page": 15,
+   "cp": 5,
+   "credit": "Moderate",
+   "durability": 20,
+   "wound_threshold": 4,
+   "aptitude_max": "20",
+   "movement": null,
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Armor (4/4)"
+   ],
+   "disadvantages": "-5 to one chosen aptitude, Lemon trait, Social Stigma (Clanking Masses) trait",
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Cetus",
+   "page": 16,
+   "cp": 45,
+   "credit": "Expensive (minimum 40,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "8 Limbs",
+    "Armor 8/8"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Chickcharnie",
+   "page": 17,
+   "cp": 35,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "25",
+   "movement": "4/20, Winged 4/20 (low/microgravity only)",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "REF": 10
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Beak/Claw Attack (1d10 DV",
+    "AP −1",
+    "use Unarmed Combat skill)"
+   ],
+   "disadvantages": null,
+   "notes": "Non-Mammalian Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Cyberbrain, Mnemonic Augmentation, Prehensile Feet, Puppet Sock, Wings"
+  },
+  {
+   "name": "Cloud Skate",
+   "page": 18,
+   "cp": 55,
+   "credit": "Expensive (minimum 60,000+)",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "Winged 8/40",
+   "aptitude_bonuses": {
+    "COG": 5,
+    "REF": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Temperature Intolerance (Warm) trait",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Bioweave Armor (Light), Cortical Stack, Direction Sense, Enhanced Vision, High-G Adaptation, Hydrostatic Pressure Adaptation, Long-Term Life Support, Oxygen Reserve, Radiation Sense, Radar, Swim Bladder, T-Ray Emitter, Temperature Tolerance (Cryonic), Wings"
+  },
+  {
+   "name": "Cloud Skimmer",
+   "page": 19,
+   "cp": 65,
+   "credit": "Expensive (minimum 70,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "SOM": 10,
+    "REF": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "4 arms",
+    "Armor 10/10"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Courier",
+   "page": 20,
+   "cp": 70,
+   "credit": "Expensive (minimum 40,000+)",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "REF": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "4 Limbs",
+    "Armor 6/6"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Crasher",
+   "page": 21,
+   "cp": 70,
+   "credit": "Expensive (Minimum 40,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COG": 5,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 3,
+   "other_advantages": [
+    "Bioweave Armor (Light) (2/3)"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Bioweave Armor (Light), Circadian Regulation, Clean Metabolism, Cortical Stack, Direction Sense, Eidetic Memory, Enhanced Respiration, Enhanced Vision, Grip Pads, Hibernation, Medichines, Oxygen Reserve, Toxin Filters, Vacuum Sealing"
+  },
+  {
+   "name": "Critter",
+   "page": 22,
+   "cp": 15,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "REF": 5,
+    "COO": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [],
+   "disadvantages": "Lacks Manipulators trait, quadru- peds have a difficult time in microgravity (-30 to Free Fall Tests)",
+   "notes": "Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Claws, Cortical Stack, Cyberbrain, Enhanced Hearing, Enhanced Smell, Mnemonic Augmentation, Puppet Sock"
+  },
+  {
+   "name": "Daitya",
+   "page": 23,
+   "cp": 80,
+   "credit": "Expensive (minimum 80,000+)",
+   "durability": 100,
+   "wound_threshold": 20,
+   "aptitude_max": "30 (40 SOM)",
+   "movement": null,
+   "aptitude_bonuses": {
+    "SOM": 15
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "(includes Hardened Skeleton bonus)",
+    "Armor 10/10 (20/20 with Industrial Armor)"
+   ],
+   "disadvantages": null,
+   "notes": "Large Size trait, melee attacks with the large-size frame or disassembly tools inflict 3d10 + (SOM ÷ 10) DV at AP −5",
+   "implants": null
+  },
+  {
+   "name": "Digger",
+   "page": 24,
+   "cp": 30,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Social Stigma (Pod)",
+   "notes": null,
+   "implants": "Access Jacks, Basic Biomods, Basic Mesh Inserts, Cortical Stack, Cyberbrain, Digging Claws, Enhanced Vision, Mnemonic Augmentation, Puppet Sock, Wrist-Mounted Tools"
+  },
+  {
+   "name": "Dragonfly",
+   "page": 25,
+   "cp": 20,
+   "credit": "High",
+   "durability": 25,
+   "wound_threshold": 5,
+   "aptitude_max": "30 (20 SOM)",
+   "movement": null,
+   "aptitude_bonuses": {
+    "REF": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Armor (2/2)"
+   ],
+   "disadvantages": null,
+   "notes": "Small Size trait",
+   "implants": null
+  },
+  {
+   "name": "Dvergr",
+   "page": 26,
+   "cp": 50,
+   "credit": "Expensive",
+   "durability": 45,
+   "wound_threshold": 9,
+   "aptitude_max": "35 (40 SOM)",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 15
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "(includes implant bonuses)"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, High-G Adaptation"
+  },
+  {
+   "name": "Exalt",
+   "page": 27,
+   "cp": 30,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COG": 5
+   },
+   "free_aptitude_picks": 3,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack"
+  },
+  {
+   "name": "Faust",
+   "page": 28,
+   "cp": 85,
+   "credit": "Expensive (minimum 100,000+)",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COG": 10,
+    "WIL": 10,
+    "INT": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Psi Chameleon trait",
+    "Psi Defense (Level 1) trait"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Circadian Regulation, Cortical Stack, Eidetic Memory, Endocrine Control, Hyper-Linguist, Math Boost"
+  },
+  {
+   "name": "Fenrir",
+   "page": 29,
+   "cp": null,
+   "credit": "Expensive (rare and restricted; minimum 100,000+)",
+   "durability": 70,
+   "wound_threshold": 14,
+   "aptitude_max": "35 router. I'm pretty sure she's",
+   "movement": null,
+   "aptitude_bonuses": {
+    "REF": 5,
+    "COO": 5,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "4 Limbs",
+    "Armor 16/16 (32/32 with Heavy Combat Armor)"
+   ],
+   "disadvantages": null,
+   "notes": "Large Size trait",
+   "implants": null
+  },
+  {
+   "name": "Fighting Kite",
+   "page": 30,
+   "cp": 55,
+   "credit": "Expensive (minimum 55,000+)",
+   "durability": 50,
+   "wound_threshold": 10,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Armor 8/8"
+   ],
+   "disadvantages": null,
+   "notes": "Does not have the Small size trait",
+   "implants": null
+  },
+  {
+   "name": "Flat",
+   "page": 31,
+   "cp": 0,
+   "credit": "High",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "20",
+   "movement": "4/20",
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 0,
+   "other_advantages": [],
+   "disadvantages": "None (Genetic Defects trait common)",
+   "notes": null,
+   "implants": "None"
+  },
+  {
+   "name": "Flexbot",
+   "page": 32,
+   "cp": 20,
+   "credit": "Expensive",
+   "durability": 25,
+   "wound_threshold": 5,
+   "aptitude_max": "30 (SOM 25)",
+   "movement": null,
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Armor 4/4"
+   ],
+   "disadvantages": null,
+   "notes": "Small Size trait",
+   "implants": null
+  },
+  {
+   "name": "Flexbot Modules",
+   "page": 34,
+   "cp": 20,
+   "credit": "Expensive (minimum 35,000)",
+   "durability": 20,
+   "wound_threshold": 4,
+   "aptitude_max": "30 (25 SOM) Mobility System: Walker 4/16, Hover 8/40",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COG": 5,
+    "INT": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Armor 4/4",
+    "INT +5 Wound Threshold: 5"
+   ],
+   "disadvantages": null,
+   "notes": "Small Size trait Advantages: Armor 4/4, +5 COG, +5 INT [aptitude_bonuses repaired by hand: the source extraction lost or stranded them]",
+   "implants": null
+  },
+  {
+   "name": "Flying Squid",
+   "page": 35,
+   "cp": 55,
+   "credit": "Expensive (minimum 60,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "Submarine 4/36, Thrust Vector 4/28",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "8 Arms",
+    "2 Tentacles",
+    "+30 Swimming skill",
+    "Beak Attack (1d10 + 1 DV",
+    "AP -1)",
+    "Limber (Level 2) trait"
+   ],
+   "disadvantages": "Social Stigma (Pod) trait",
+   "notes": null,
+   "implants": "360-Degree Vision, Access Jacks, Basic Mesh Inserts, Chameleon Skin, Cortical Stack, Cyberbrain, Extra Limbs (8 arms, 2 tentacles), Grip Pads, Hydrostatic Pressure Adaptation, Mnemonic Augmentation, Polarization Vision, Puppet Sock"
+  },
+  {
+   "name": "Freeman",
+   "page": 36,
+   "cp": 10,
+   "credit": "High",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "25",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SAV": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "−5 WIL",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Monitor Module, Optogenetics Module, Puppet Sock"
+  },
+  {
+   "name": "Fury",
+   "page": 37,
+   "cp": 75,
+   "credit": "Expensive (minimum 40,000)",
+   "durability": 50,
+   "wound_threshold": 10,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "REF": 5,
+    "SOM": 10,
+    "WIL": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Bioweave Armor (Light), Cortical Stack, Enhanced Vision, Neurachem (Level 1), Toxin Filters"
+  },
+  {
+   "name": "Futura",
+   "page": 38,
+   "cp": 40,
+   "credit": "Expensive (exceptionally rare; 50,000+)",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COG": 5,
+    "SAV": 5,
+    "WIL": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Eidetic Memory, Emotional Dampers"
+  },
+  {
+   "name": "Galatea",
+   "page": 39,
+   "cp": 65,
+   "credit": "Expensive (minimum 70,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "SAV": 10,
+    "COO": 5,
+    "INT": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Armor 6/6"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Gargoyle",
+   "page": 40,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "INT": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Armor 6/6"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Ghost",
+   "page": 41,
+   "cp": 70,
+   "credit": "Expensive (minimum 40,000)",
+   "durability": 45,
+   "wound_threshold": 9,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COO": 10,
+    "REF": 5,
+    "SOM": 5,
+    "WIL": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Chameleon Skin, Cortical Stack, Adrenal Boost, Enhanced Vision, Grip Pads"
+  },
+  {
+   "name": "Grey",
+   "page": 42,
+   "cp": 25,
+   "credit": "Expensive (minimum 30,000+)",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30 (20 SOM)",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COG": 5,
+    "WIL": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Uncanny Valley trait",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Circadian Regulation, Clean Metabolism, Cortical Stack, Eidetic Memory, Emotional Dampers, Enhanced Vision, Math Boost"
+  },
+  {
+   "name": "Griefer",
+   "page": 43,
+   "cp": 5,
+   "credit": "Moderate",
+   "durability": 20,
+   "wound_threshold": 4,
+   "aptitude_max": "20",
+   "movement": null,
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Armor (4/4)"
+   ],
+   "disadvantages": "-5 to two aptitudes of the player's choice, Lemon trait, No Cortical Stack trait, Social Stigma (Griefer) trait",
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Guard",
+   "page": 44,
+   "cp": 75,
+   "credit": "Expensive (minimum 80,000+)",
+   "durability": 50,
+   "wound_threshold": 10,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "REF": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Add"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Hazer",
+   "page": 45,
+   "cp": 35,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "WIL": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "+5 to two other apti- tudes of the player's choice"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Enhanced Vision, Radiation Sense, Respirocytes, Temperature Tolerance (Improved Cold)"
+  },
+  {
+   "name": "Hibernoid",
+   "page": 46,
+   "cp": 25,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "25",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "INT": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Circadian Regulation, Cortical Stack, Hibernation"
+  },
+  {
+   "name": "Hulder",
+   "page": 47,
+   "cp": 50,
+   "credit": "Expensive (Minimum 40,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 5,
+    "WIL": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Temperature Intolerance (Warm)",
+   "notes": "Non-Mammalian Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Bioweave Armor (Light), Cortical Stack, Digging Claws, Direction Sense, Enhanced Vision, Long-Term Life Support, Oxygen Reserve, Radiation Sense, Swim Bladder, T-Ray Emitter, Temperature Tolerance (Cryonic)"
+  },
+  {
+   "name": "Hyperbright",
+   "page": 48,
+   "cp": 70,
+   "credit": "Expensive (Minimum 40,000+)",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "40 (COG and INT), 30 (all others)",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COG": 15,
+    "INT": 10,
+    "WIL": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Circadian Regulation, Cortical Stack, Eidetic Memory, Endocrine Control, Grip Pads, Hyper-Linguist, Math Boost, Mental Speed, Prehensile Feet"
+  },
+  {
+   "name": "Hypergibbon",
+   "page": 49,
+   "cp": 30,
+   "credit": "Expensive",
+   "durability": 25,
+   "wound_threshold": 5,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "INT": 5,
+    "REF": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "+10 Climbing skill",
+    "+20 Freerunning skill",
+    "Limber (Level 2) trait"
+   ],
+   "disadvantages": "Social Stigma (Pod)",
+   "notes": "Non-Human Biochemistry trait, Small Size trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Cyberbrain, Mnemonic Augmentation, Prehensile Feet, Puppet Sock"
+  },
+  {
+   "name": "Infomorph",
+   "page": 50,
+   "cp": 0,
+   "credit": "0",
+   "durability": null,
+   "wound_threshold": null,
+   "aptitude_max": "40",
+   "movement": null,
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 0,
+   "other_advantages": [],
+   "disadvantages": "No physical form",
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Infomorph Eidolons",
+   "page": 51,
+   "cp": 35,
+   "credit": "Expensive (minimum 35,000) Credit Cost: Expensive (minimum 60,000) 51",
+   "durability": null,
+   "wound_threshold": null,
+   "aptitude_max": "40 Aptitude Maximum: 40",
+   "movement": null,
+   "aptitude_bonuses": {
+    "REF": 15
+   },
+   "free_aptitude_picks": 2,
+   "other_advantages": [
+    "Advantages:"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Jenkin",
+   "page": 52,
+   "cp": 20,
+   "credit": null,
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "25",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "INT": 5,
+    "REF": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Bite Attack (1d10 + 1 DV",
+    "AP -1)"
+   ],
+   "disadvantages": "Social Stigma (Pod) trait, Unattractive (Level 2) trait",
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Kite",
+   "page": 53,
+   "cp": 30,
+   "credit": "Expensive (minimum 55,000+)",
+   "durability": 20,
+   "wound_threshold": 4,
+   "aptitude_max": "25 ULTRA KITE VARIANT",
+   "movement": null,
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Armor (2/2) Wound Threshold: 10"
+   ],
+   "disadvantages": null,
+   "notes": "Small Size trait Advantages: Armor 6/6",
+   "implants": null
+  },
+  {
+   "name": "Lunar Flyer",
+   "page": 54,
+   "cp": 35,
+   "credit": "Expensive",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30",
+   "movement": "4/20, Winged 8/40",
+   "aptitude_bonuses": {
+    "COG": 5,
+    "COO": 5
+   },
+   "free_aptitude_picks": 2,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Clean Metabolism, Cortical Stack, Enhanced Vision, Wings"
+  },
+  {
+   "name": "Martian Alpiner",
+   "page": 55,
+   "cp": 30,
+   "credit": "Expensive",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "25",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "+10 Climbing skill"
+   ],
+   "disadvantages": "Fast Metabolism trait, Planned Obsolescence trait",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Direction Sense, Grip Pads, Low Pressure Tolerance, Oxygen Reserve, Respirocytes, Temperature Tolerance (Improved Cold)"
+  },
+  {
+   "name": "Menton",
+   "page": 56,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COG": 10,
+    "INT": 5,
+    "WIL": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Eidetic Memory, Hyper Linguist, Math Boost"
+  },
+  {
+   "name": "Mimic",
+   "page": 57,
+   "cp": 25,
+   "credit": "Expensive (minimum 30,000)",
+   "durability": 25,
+   "wound_threshold": 5,
+   "aptitude_max": "30 (20 SOM)",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Armor 4/4"
+   ],
+   "disadvantages": "Social Stigma (Clanking Masses) trait",
+   "notes": "Small Size trait",
+   "implants": null
+  },
+  {
+   "name": "Nautiloid",
+   "page": 58,
+   "cp": 155,
+   "credit": "Expensive (150,000)",
+   "durability": 200,
+   "wound_threshold": 40,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "SOM": 5
+   },
+   "free_aptitude_picks": 2,
+   "other_advantages": [
+    "Armor 10/10 (20/20 with Industrial Armor)"
+   ],
+   "disadvantages": null,
+   "notes": "Very Large Size trait",
+   "implants": null
+  },
+  {
+   "name": "Neo-Avian",
+   "page": 59,
+   "cp": 25,
+   "credit": "Expensive",
+   "durability": 20,
+   "wound_threshold": 4,
+   "aptitude_max": "25 (20 SOM)",
+   "movement": "4/20, Winged 8/40",
+   "aptitude_bonuses": {
+    "INT": 5,
+    "REF": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Beak/Claw Attack (1d10 DV",
+    "AP -1",
+    "use Unarmed Combat skill)"
+   ],
+   "disadvantages": null,
+   "notes": "Non-Mammalian Biochemistry trait, Small Size trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Ultraviolet Vision, Wings"
+  },
+  {
+   "name": "Neo-Beluga",
+   "page": 60,
+   "cp": 45,
+   "credit": "Expensive (minimum 40,000)",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "25",
+   "movement": "Swim 16/40",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+40 Swimming skill",
+    "Ramming Attack (1d10 DV)"
+   ],
+   "disadvantages": "Neo-belugas lack a sense of smell",
+   "notes": "Large Size trait, Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Echolocation, Enhanced Hearing, Oxygen Reserve"
+  },
+  {
+   "name": "Neo-Dolphin",
+   "page": 61,
+   "cp": 40,
+   "credit": "Expensive (minimum 35,000)",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "25",
+   "movement": "Swim 16/48",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+40 Swimming skill",
+    "Ramming Attack (1d10 DV",
+    "use Unarmed Combat skill)"
+   ],
+   "disadvantages": "Neo-dolphins lack a sense of smell",
+   "notes": "Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Echolocation, Enhanced Hearing, Oxygen Reserve"
+  },
+  {
+   "name": "Neo-Gorilla",
+   "page": 62,
+   "cp": 35,
+   "credit": "Expensive (minimum 30,000)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "INT": 5,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": "Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Prehensile Feet"
+  },
+  {
+   "name": "Neo-Hominid",
+   "page": 63,
+   "cp": 25,
+   "credit": "Expensive",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "25",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+10 Climbing skill"
+   ],
+   "disadvantages": null,
+   "notes": "Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Prehensile Feet"
+  },
+  {
+   "name": "Neo-Neanderthal",
+   "page": 64,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COG": 5,
+    "INT": 5,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": "Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack"
+  },
+  {
+   "name": "Neo-Orca",
+   "page": 65,
+   "cp": 60,
+   "credit": "Expensive (minimum 50,000)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "Swim 16/60",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+40 Swimming skill",
+    "+20 Unarmed Combat skill",
+    "Bite Attack (2d10 DV",
+    "use Unarmed Combat skill)"
+   ],
+   "disadvantages": "Neo-orcas lack a sense of smell",
+   "notes": "Large Size trait, Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Echolocation, Enhanced Hearing, Oxygen Reserve"
+  },
+  {
+   "name": "Neo-Pig",
+   "page": 66,
+   "cp": 20,
+   "credit": "High",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "25",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": "Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack"
+  },
+  {
+   "name": "Neo-Porpoise",
+   "page": 67,
+   "cp": 35,
+   "credit": "Expensive (minimum 30,000)",
+   "durability": 25,
+   "wound_threshold": 5,
+   "aptitude_max": "25",
+   "movement": "Swim 16/56",
+   "aptitude_bonuses": {
+    "INT": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+50 Swimming skill",
+    "Ramming Attack (1d10 DV)"
+   ],
+   "disadvantages": "Neo-porpoises lack a sense of smell",
+   "notes": "Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Echolocation, Enhanced Hearing, Oxygen Reserve"
+  },
+  {
+   "name": "Neo-Whale",
+   "page": 69,
+   "cp": 75,
+   "credit": "Expensive (exceptionally rare; minimum 75,000)",
+   "durability": 100,
+   "wound_threshold": 20,
+   "aptitude_max": "30",
+   "movement": "Swim 16/40",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+40 Swimming skill",
+    "Ramming Attack (2d10 DV",
+    "use Unarmed Combat skill)",
+    "Bite Attack (4d10 DV",
+    "sperm whales only",
+    "use Unarmed Combat skill)"
+   ],
+   "disadvantages": "Neo-whales lack a sense of smell",
+   "notes": "Non-Human Biochemistry trait, Very Large Size trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Echolocation, Enhanced Hearing, Oxygen Reserve"
+  },
+  {
+   "name": "Neotenic",
+   "page": 68,
+   "cp": 25,
+   "credit": "Expensive",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30 (20 SOM)",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "REF": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Social Stigma (Neotenic) trait",
+   "notes": "Small Size trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack"
+  },
+  {
+   "name": "Nomad",
+   "page": 70,
+   "cp": 30,
+   "credit": "Expensive",
+   "durability": 45,
+   "wound_threshold": 9,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "REF": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Uncanny Valley trait",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Efficient Digestion, Enhanced Respiration, Fat Storage, Medichines, Respirocytes, Temperature Tolerance (Improved Cold), Toxin Filters"
+  },
+  {
+   "name": "Novacrab",
+   "page": 71,
+   "cp": 60,
+   "credit": "Expensive (minimum 30,000+) everyone wants to know is: how do their legs taste? Sun Bu'er: An exhuman I once spoke to told me they were “delicious, but not as good as splicer.”",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 10
+   },
+   "free_aptitude_picks": 2,
+   "other_advantages": [
+    "10 legs",
+    "Carapace Armor (11/11)",
+    "Claw Attack (DV 2d10)",
+    "really dig their crab morphs"
+   ],
+   "disadvantages": null,
+   "notes": "Non-Mammalian Biochemistry trait me out when they eat.",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Carapace Armor, Cortical Stack, Cyberbrain, Enhanced Respiration, Gills, Mnemonic Augmentation, Oxygen Reserve, Puppet Sock, Temperature Tolerance, Vacuum Sealing"
+  },
+  {
+   "name": "Observer",
+   "page": 72,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "INT": 10,
+    "COG": 5,
+    "REF": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack"
+  },
+  {
+   "name": "Octomorph",
+   "page": 73,
+   "cp": 50,
+   "credit": "Expensive (minimum 30,000+)",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30",
+   "movement": "2/12, Swim 4/24, Thrust Vector 2/12",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "8 Arms",
+    "Beak Attack (1d10 DV",
+    "AP -1",
+    "use Unarmed Combat skill)",
+    "Ink Attack (blinding",
+    "use Exotic Ranged: Ink Attack skill)",
+    "Limber (Level 2) trait",
+    "360-degree Vision",
+    "+30 Swimming skill",
+    "+10 Climbing skill"
+   ],
+   "disadvantages": null,
+   "notes": "Non-Mammalian Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Chameleon Skin, Polarization Vision"
+  },
+  {
+   "name": "Olympian",
+   "page": 74,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "REF": 5,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack"
+  },
+  {
+   "name": "Opteryx",
+   "page": 75,
+   "cp": 40,
+   "credit": "Expensive (Minimum 40,000+)",
+   "durability": 25,
+   "wound_threshold": 5,
+   "aptitude_max": "30 (25 SOM)",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "REF": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "+10 Climbing skill",
+    "+10 Flight skill",
+    "Armor 2/2"
+   ],
+   "disadvantages": null,
+   "notes": "Small Size trait",
+   "implants": null
+  },
+  {
+   "name": "Pleasure Pod",
+   "page": 76,
+   "cp": 20,
+   "credit": "High",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "INT": 5,
+    "SAV": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Social Stigma (Pleasure Pod) trait",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Clean Metabolism, Cortical Stack, Cyberbrain, Enhanced Pheromones, Mnemonic Augmentation, Puppet Sock, Sex Switch"
+  },
+  {
+   "name": "Q-Morph",
+   "page": 77,
+   "cp": 100,
+   "credit": "Expensive (minimum 60,000+)",
+   "durability": 120,
+   "wound_threshold": 24,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "SOM": 10,
+    "COO": -5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "High Temperature Operation trait",
+    "8 limbs",
+    "Claw Attack (DV 2d10)",
+    "-5 COO",
+    "Armor 18/18"
+   ],
+   "disadvantages": "Only works on the Venusian surface or in similar hot and high pressure environments",
+   "notes": "Large Size trait [aptitude_bonuses repaired by hand: the source extraction lost or stranded them]",
+   "implants": null
+  },
+  {
+   "name": "Reaper",
+   "page": 78,
+   "cp": 100,
+   "credit": "Expensive (minimum 50,000+)",
+   "durability": 50,
+   "wound_threshold": 10,
+   "aptitude_max": "40",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5,
+    "REF": 10,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "4 Limbs",
+    "(+20 with Reflex Booster)",
+    "Armor 16/16"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Remade",
+   "page": 79,
+   "cp": 60,
+   "credit": "Expensive (minimum 40,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "40",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COG": 10,
+    "SAV": 5,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 2,
+   "other_advantages": [],
+   "disadvantages": "Uncanny Valley trait",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Circadian Regulation, Clean Metabolism, Cortical Stack, Eidetic Memory, Enhanced Respiration, Temperature Tolerance, Toxin Filters"
+  },
+  {
+   "name": "Ring Flyer",
+   "page": 80,
+   "cp": 70,
+   "credit": "Expensive (Minimum 40,000+)",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30",
+   "movement": "4/20, Thrust Vector 8/40",
+   "aptitude_bonuses": {
+    "COG": 5,
+    "COO": 5,
+    "REF": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Bioweave Armor (Light",
+    "2/3)",
+    "Limber (Level 1) trait"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Bioweave Armor (Light), Cortical Stack, Enhanced Respiration, Enhanced Vision, Gas Jet System, Grip Pads, Hibernation, Long-Term Life Support, Medichines, Oxygen Reserve, Plasma Sail Implant, Prehensile Feet, Radiation Tolerance, Temperature Tolerance (Cryonic), Vacuum Sealing"
+  },
+  {
+   "name": "Ripwing",
+   "page": 81,
+   "cp": 40,
+   "credit": "Expensive (minimum 30,000) probably get one myself.",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20, Winged 4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "REF": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Beak/Claw Attack (1d10 DV",
+    "use Unarmed Combat ripwings. While the old biomorphs certainly skill)",
+    "feel better",
+    "the ripwing has a certain dura-"
+   ],
+   "disadvantages": "Social Stigma (Neogenetic), Social Stigma (Pod) bility to it that lets you get away with more",
+   "notes": "Non-Mammalian Biochemistry trait mistakes and a rougher approach to life. If",
+   "implants": "Access Jacks, Basic Biomods, Basic Mesh Inserts, Chameleon Skin, Cortical Stack, Cyberbrain, Enhanced Vision, Mnemonic Augmentation, Prehensile Feet, Puppet Sock, Wings"
+  },
+  {
+   "name": "Rover",
+   "page": 82,
+   "cp": 60,
+   "credit": "Expensive (minimum 60,000+)",
+   "durability": 25,
+   "wound_threshold": 5,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5,
+    "REF": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+ 5 INT",
+    "Armor 10/10"
+   ],
+   "disadvantages": null,
+   "notes": "Small Size trait",
+   "implants": null
+  },
+  {
+   "name": "Ruster",
+   "page": 83,
+   "cp": 25,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "25",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Enhanced Respiration, Temperature Tolerance"
+  },
+  {
+   "name": "Salamander",
+   "page": 84,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 60,
+   "wound_threshold": 12,
+   "aptitude_max": "30",
+   "movement": "4/20, Thrust Vector 8/40",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Coronal Adaptation (solar metabolism only) trait",
+    "Limber (Level 1) trait"
+   ],
+   "disadvantages": null,
+   "notes": "Non-Mammalian Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Chameleon Skin, Enhanced Vision, Gas-Jet System, Medichines, Oxygen Reserve, Prehensile Feet, Vacuum Sealing"
+  },
+  {
+   "name": "Samsa",
+   "page": 85,
+   "cp": 60,
+   "credit": "Expensive (minimum 60,000+)",
+   "durability": 50,
+   "wound_threshold": 10,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 10,
+    "REF": 5,
+    "COO": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+20 Intimidation skill",
+    "4 arms",
+    "(includes Hardened Skeleton)",
+    "Carapace Armor (11/11)"
+   ],
+   "disadvantages": "Social Stigma (Pod) trait, Unattractive (Level 2) trait",
+   "notes": null,
+   "implants": "360-Degree Vision, Basic Biomods, Basic Mesh Inserts, Carapace Armor, Chameleon Skin, Cortical Stack, Cyberbrain, Cyberclaws, Enhanced Vision, Extra Limbs (4 Arms, 4 Legs), Grip Pads, Hardened Skeleton, Mnemonic Augmentation, Neurachem (Level 1), Puppet Sock, Temperature Tolerance"
+  },
+  {
+   "name": "Savant",
+   "page": 86,
+   "cp": 65,
+   "credit": "Expensive (minimum 40,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "40 (COG and INT), 30 (all others)",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COG": 10,
+    "INT": 5,
+    "SAV": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Armor 8/8"
+   ],
+   "disadvantages": "Social Stigma (Clanking Masses) trait",
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Scurrier",
+   "page": 87,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "25",
+   "movement": "4/20, Gliding",
+   "aptitude_bonuses": {
+    "SAV": 5,
+    "COO": 10
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "6 Limbs",
+    "Limber (Level 1) Trait",
+    "+10 Climbing skill",
+    "+10 Freerunning skill"
+   ],
+   "disadvantages": "Alien Biochemistry, Social Stigma (Alien), Social Stigma (Pod)",
+   "notes": "Small Size trait",
+   "implants": "Access Jacks, Basic Biomods, Basic Mesh Inserts, Cortical Stack, Cyberbrain, Gliding Membrane, Mnemonic Augmentation, Prehensile Tail, Puppet Sock"
+  },
+  {
+   "name": "Security Pod",
+   "page": 88,
+   "cp": 30,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Social Stigma (Pod) trait",
+   "notes": null,
+   "implants": "Add Oxygen Reserve, Prehensile Feet, Vacuum Sealing"
+  },
+  {
+   "name": "Selkie",
+   "page": 89,
+   "cp": 55,
+   "credit": "Expensive",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "1/4, Swim 4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "+10 Swimming skill"
+   ],
+   "disadvantages": null,
+   "notes": "Non-Human Biochemistry trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Echolocation, Enhanced Hearing, Enhanced Vision, Enhanced Respiration, Gills, Hydrostatic Pressure Adaptation, Swim Bladder, Temperature Tolerance (Improved Cold), Toxin Filters"
+  },
+  {
+   "name": "Shaper",
+   "page": 90,
+   "cp": 45,
+   "credit": "Expensive (minimum 40,000)",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "INT": 5,
+    "SAV": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Chameleon Skin, Clean Metabolism, Cortical Stack, Cyberbrain, Emotional Dampers, Gait Masking, Mnemonic Augmentation, Nanotat ID Flux, Puppet Sock, Sex Switch, Skinflex"
+  },
+  {
+   "name": "Slitheroid",
+   "page": 91,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 45,
+   "wound_threshold": 9,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Armor 8/8"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Spare",
+   "page": 92,
+   "cp": 5,
+   "credit": "Moderate",
+   "durability": 15,
+   "wound_threshold": 3,
+   "aptitude_max": "20",
+   "movement": null,
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Armor (2/2)"
+   ],
+   "disadvantages": "Social Stigma (Clanking Masses)",
+   "notes": "Small Size trait",
+   "implants": null
+  },
+  {
+   "name": "Specialist Pod",
+   "page": 93,
+   "cp": 25,
+   "credit": "High",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 2,
+   "other_advantages": [],
+   "disadvantages": "Social Stigma (Pod) trait",
+   "notes": null,
+   "implants": "Access Jacks, Basic Biomods, Basic Mesh Inserts, Cortical Stack, Cyberbrain, Mnemonic Augmentation, Puppet Sock"
+  },
+  {
+   "name": "Sphere",
+   "page": 94,
+   "cp": 65,
+   "credit": "Expensive (minimum 70,000+)",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COG": 10
+   },
+   "free_aptitude_picks": 3,
+   "other_advantages": [
+    "4 arms",
+    "Armor 6/6"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Splicer",
+   "page": 95,
+   "cp": 10,
+   "credit": "High",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "25",
+   "movement": "4/20",
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack"
+  },
+  {
+   "name": "Steel Morph",
+   "page": 97,
+   "cp": 55,
+   "credit": "Expensive (minimum 40,000+)",
+   "durability": null,
+   "wound_threshold": null,
+   "aptitude_max": null,
+   "movement": null,
+   "aptitude_bonuses": {
+    "COG": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": "[aptitude_bonuses repaired by hand: the source extraction lost or stranded them]",
+   "implants": null
+  },
+  {
+   "name": "Sundiver",
+   "page": 98,
+   "cp": 70,
+   "credit": "Expensive (minimum 40,000+)",
+   "durability": 120,
+   "wound_threshold": 24,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5,
+    "REF": 10
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Coronal Adaptation",
+    "(+20 with Reflex Booster)",
+    "Armor 16/16"
+   ],
+   "disadvantages": null,
+   "notes": "Large Size trait",
+   "implants": null
+  },
+  {
+   "name": "Surya",
+   "page": 99,
+   "cp": 50,
+   "credit": "Expensive (minimum 30,000+)",
+   "durability": 100,
+   "wound_threshold": 20,
+   "aptitude_max": "30",
+   "movement": "Thrust Vector 8/40",
+   "aptitude_bonuses": {
+    "COO": 10,
+    "REF": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Coronal Adaptation trait",
+    "+10 Free Fall skill"
+   ],
+   "disadvantages": null,
+   "notes": "Non-Human Biochemistry trait, Very Large Size trait",
+   "implants": "Basic Biomods, Basic Mesh Inserts, Chameleon Skin, Cortical Stack, Enhanced Hearing, Enhanced Vision, Lateral Line, Medichines, Vacuum Sealing"
+  },
+  {
+   "name": "Swarmanoid",
+   "page": 100,
+   "cp": 25,
+   "credit": "Expensive",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 0,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Swarmanoid Variants",
+   "page": 101,
+   "cp": 30,
+   "credit": "Expensive (minimum 30,000)",
+   "durability": null,
+   "wound_threshold": null,
+   "aptitude_max": null,
+   "movement": null,
+   "aptitude_bonuses": {},
+   "free_aptitude_picks": 0,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Sylph",
+   "page": 102,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "SAV": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Striking Looks (Level 1) trait"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Clean Metabolism, Cortical Stack, Enhanced Pheromones"
+  },
+  {
+   "name": "Synth",
+   "page": 103,
+   "cp": 30,
+   "credit": "High",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Armor 6/6"
+   ],
+   "disadvantages": "Social Stigma (Clanking Masses) trait, Uncanny Valley trait",
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Synthtaur",
+   "page": 104,
+   "cp": 70,
+   "credit": "Expensive (minimum 80,000+)",
+   "durability": 60,
+   "wound_threshold": 12,
+   "aptitude_max": "30 (40 SOM)",
+   "movement": null,
+   "aptitude_bonuses": {
+    "SOM": 10
+   },
+   "free_aptitude_picks": 2,
+   "other_advantages": [
+    "6 Arms/Legs",
+    "Armor 8/8"
+   ],
+   "disadvantages": null,
+   "notes": "Large Size trait",
+   "implants": null
+  },
+  {
+   "name": "Takko",
+   "page": 105,
+   "cp": 60,
+   "credit": "Expensive (minimum 45,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5,
+    "INT": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "Beak Attack (1d10 + 2 DV",
+    "use Unarmed Combat skill)",
+    "+10 Free Fall skill",
+    "+10 Climbing skill",
+    "Armor 8/8"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  },
+  {
+   "name": "Theseus",
+   "page": 106,
+   "cp": 30,
+   "credit": "Expensive",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 5,
+    "WIL": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Bioweave Armor (Light), Cortical Stack, Direction Sense, Emergency Farcaster, Enhanced Vision, Low Pressure Tolerance, Medichines, Nanophages, Oxygen Reserve, Radiation Sense, T-Ray Emitter, Temperature Tolerance (Cold), Toxin Filters"
+  },
+  {
+   "name": "Vacuum Pod",
+   "page": 107,
+   "cp": 30,
+   "credit": "Expensive",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [
+    "Limber (Level 1) trait"
+   ],
+   "disadvantages": "Social Stigma (Pod) trait",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Bioweave Armor (Light), Cortical Stack, Cyberbrain, Enhanced Respiration, Grip Pads, Mnemonic Augmentation, Oxygen Reserve, Prehensile Feet, Puppet Sock, Vacuum Sealing"
+  },
+  {
+   "name": "Venusian Glider",
+   "page": 108,
+   "cp": 40,
+   "credit": "Expensive",
+   "durability": 30,
+   "wound_threshold": 6,
+   "aptitude_max": "30",
+   "movement": "4/20, gliding",
+   "aptitude_bonuses": {
+    "REF": 5,
+    "SOM": 5
+   },
+   "free_aptitude_picks": 2,
+   "other_advantages": [
+    "Limber (Level 1) trait"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Enhanced Respiration, Enhanced Vision, Gliding Membranes, Grip Pads, Prehensile Feet, Respirocytes"
+  },
+  {
+   "name": "Whiplash",
+   "page": 109,
+   "cp": 50,
+   "credit": "Expensive (rare; minimum 50,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "COO": 5,
+    "SOM": 10
+   },
+   "free_aptitude_picks": 2,
+   "other_advantages": [
+    "Tendril Attack (use Unarmed Combat skill",
+    "1d10 + (SOM ÷ 10) DV",
+    "+10 to disarming called shot attacks)"
+   ],
+   "disadvantages": "Alien Biochemistry, Social Stigma (Alien), Social Stigma (Pod)",
+   "notes": null,
+   "implants": "Access Jacks, Basic Biomods, Basic Mesh Inserts, Chameleon Skin, Cortical Stack, Cyberbrain, Mnemonic Augmentation, Puppet Sock"
+  },
+  {
+   "name": "Worker Pod",
+   "page": 110,
+   "cp": 20,
+   "credit": "High",
+   "durability": 35,
+   "wound_threshold": 7,
+   "aptitude_max": "30",
+   "movement": "4/20",
+   "aptitude_bonuses": {
+    "SOM": 10
+   },
+   "free_aptitude_picks": 1,
+   "other_advantages": [],
+   "disadvantages": "Social Stigma (Pod) trait",
+   "notes": null,
+   "implants": "Basic Biomods, Basic Mesh Inserts, Cortical Stack, Cyberbrain, Mnemonic Augmentation, Puppet Sock"
+  },
+  {
+   "name": "Xu Fu",
+   "page": 111,
+   "cp": 60,
+   "credit": "Expensive (minimum 50,000+)",
+   "durability": 40,
+   "wound_threshold": 8,
+   "aptitude_max": "30",
+   "movement": null,
+   "aptitude_bonuses": {
+    "COO": 5
+   },
+   "free_aptitude_picks": 0,
+   "other_advantages": [
+    "+ 5 SOM",
+    "Armor (8/8)"
+   ],
+   "disadvantages": null,
+   "notes": null,
+   "implants": null
+  }
+ ],
+ "extraction_caveat": "This file is machine-extracted from the Morph Recognition Guide and is lossy. Known damage: 16 entries have an empty aptitude_bonuses field, and at least four of those were wrong rather than genuinely empty. Four entries have null durability. The implants field is empty for every synthmorph, which is an artifact, not a fact. Treat an empty field as unknown, never as zero."
+}

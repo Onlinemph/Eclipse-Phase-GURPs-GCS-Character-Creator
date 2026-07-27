@@ -1,0 +1,1521 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "Ewu9R1S0g9je5GBoZ",
+			"description": "Bioware",
+			"local_notes": "Biomorphs only",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "EKKVbvmO6TaglyZkC",
+					"description": "Bioware Enhanced Senses",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eQZKwlioVSg9TPyYp",
+							"description": "Direction Sense",
+							"local_notes": "Provides Absolute Direction with 3D Spatial Sense",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eQO6QZil4agcDE4ld",
+							"description": "Echolocation",
+							"local_notes": "Provides Scanning Sense with Sonar",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eBpem3FH3R-uUpGNl",
+							"description": "Enhanced Hearing",
+							"local_notes": "Provides Discriminatory Hearing",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eKkmXDGaoitiHcih1",
+							"description": "Enhanced Smell",
+							"local_notes": "Provides Discriminatory Smell",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "erTV1PtYirZKWMy5b",
+							"description": "Enhanced Vision",
+							"local_notes": "Provides Hyperspectral Vision and Telescopic Vision 2",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 7500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "EXYVIoI3HsNAZSTDA",
+					"description": "Bioware Mental Augmentations",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "epnCk2pY1ZkTl-OEk",
+							"description": "Eidetic Memory",
+							"local_notes": "Provides Eidetic Memory with Photographic",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eqTwDrtogbyGsW6ez",
+							"description": "Hyper Linguist",
+							"local_notes": "Provides Language Talent",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "et60ZowDBZaecxYPb",
+							"description": "Math Boost",
+							"local_notes": "Provides Lightning Calculator with Intuitive Mathematician as well as Talent (Mathematical Ability) 1",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eFJiMlSH9_VcYQ83y",
+							"description": "Multiple Personalities",
+							"local_notes": "Provides Compartmental Mind 1",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 35750,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "E4XO8aoCqVY-Cwujs",
+					"description": "Bioware Physical Augmentations",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eVqvofMOD5pmNGPqV",
+							"description": "Adrenal Boost",
+							"local_notes": "Provides Increased Basic Speed 4, costs 2 Fatigue",
+							"legality_class": "4",
+							"base_value": "6250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 6250,
+								"extended_value": 6250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "em9Z1Mkqm2rKH8KX9",
+							"description": "Bioware Claws",
+							"local_notes": "Provides Sharp Claws",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eupoN6Id5kVz9buAJ",
+							"description": "Bioweave Armor (Light)",
+							"local_notes": "Provides 8 DR",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "emvX24gcv5gqH2Dp4",
+							"description": "Bioweave Armor (Heavy)",
+							"local_notes": "Provides 15 DR",
+							"legality_class": "4",
+							"base_value": "6250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 6250,
+								"extended_value": 6250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eqJJ4mwHVpgkSet-F",
+							"description": "Carapace Armor",
+							"local_notes": "Provides 30 DR",
+							"legality_class": "4",
+							"base_value": "6250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 6250,
+								"extended_value": 6250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eIYqDoefyDodyfIci",
+							"description": "Chameleon Skin",
+							"local_notes": "Provides Chameleon 4, halved vs multispectral vision",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eSyw4ftBnjt2QUOyM",
+							"description": "Circadian Regulation",
+							"local_notes": "User only requires 1-2 hours of sleep per day",
+							"legality_class": "4",
+							"base_value": "6250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 6250,
+								"extended_value": 6250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e6ySn-4wdhYDzaBl7",
+							"description": "Clean Metabolism",
+							"local_notes": "Provides Sanitized Metabolism",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "entD_XVKpSGoP9zZE",
+							"description": "Drug Gland",
+							"local_notes": "Produces one dose of a chosen drug every hour. Cost is equal to the cost of the drug x1000.",
+							"legality_class": "4",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 0,
+								"extended_value": 0,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e3kFa6dvx0CTTkvNv",
+							"description": "Eelware",
+							"local_notes": "Provides an electrical incapacitating attack",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eWLW0mwWCO-UpwkXt",
+							"description": "Emotional Dampeners",
+							"local_notes": "Provides +6 to acting and impersonation, the user has the Killjoy disadvantage while using this biomod",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eSXESYQ_B36nh7m6L",
+							"description": "Endocrine Control",
+							"local_notes": "Provides +2 Will, +2 to acting/impersonation, and can go 48 hours without sleeping before normal fatigue penalties begin",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "esfrfdW7qTY4_QQGg",
+							"description": "Enhanced Pheromones",
+							"local_notes": "Provides +1 to reactions from begins who can smell",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eAoZC7xSsCrcDawSw",
+							"description": "Enhanced Respiration",
+							"local_notes": "Provides 2 extra FP, Breath-Holding 5, and Pressure Support 1",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e3M2g9IRTbcKnYraD",
+							"description": "Gills",
+							"local_notes": "Provides Doesn't Breathe (Gills)",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e1c_ihfMJsnYJ7LVs",
+							"description": "Grip Pads",
+							"local_notes": "Provides Clinging",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eBGCqUHnqIM99sFY-",
+							"description": "Hibernation",
+							"local_notes": "Provides Metabolism Control 9 (Hibernation)",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eYqQoL4HkdN7ct-IF",
+							"description": "Muscle Augmentation",
+							"local_notes": "Provides +3 ST",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eSbS3Ud0Qb7gloQfm",
+							"description": "Neurachem (1)",
+							"local_notes": "Provides Altered Time Rate (1)",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eJ6oQ00uUZZpX_h3H",
+							"description": "Neurachem (2)",
+							"local_notes": "Provides Altered Time Rate (2) but with some limitations",
+							"legality_class": "4",
+							"base_value": "125000",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 125000,
+								"extended_value": 125000,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eGcN73HwZG-cDj_sQ",
+							"description": "Poison Gland",
+							"local_notes": "Produces one dose of a chosen poison every hour. Cost is equal to the cost of the poison x1000.",
+							"legality_class": "4",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 0,
+								"extended_value": 0,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eA398UIjZ9WY3EPnZ",
+							"description": "Prehensile Feet",
+							"local_notes": "Provides grabby feet, this advantage is fucking annoying to build",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e3s8dku4Ef1Vuupyd",
+							"description": "Prehensile Tail",
+							"local_notes": "Provides an Extra arm with Extra-Flexible and Long 1",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eia8jJlkgVAo9T6WC",
+							"description": "Sex Switch",
+							"local_notes": "Provides Hermaphromorph with an onset of 1 week",
+							"legality_class": "4",
+							"base_value": "6250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 6250,
+								"extended_value": 6250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "erbUZWdi-ws224l0Z",
+							"description": "Skin Pocket",
+							"local_notes": "Provides a Skin Pocket that can hold objects equal to BL/10",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eozQBHzFt8DjN3aYv",
+							"description": "Temperature Tolerance",
+							"local_notes": "Provides Temperature Tolerance 5",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eSScpBvGxhMkTkdLk",
+							"description": "Toxin Filters",
+							"local_notes": "Provides Immunity to Poison",
+							"legality_class": "4",
+							"base_value": "6250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 6250,
+								"extended_value": 6250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "ebb8w9Qib1Zw-3KFp",
+							"description": "Vacuum Sealing",
+							"local_notes": "Provides Temperature Tolerance 8 and Vacuum Support",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 310900,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 354150,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "EMK3tdyVN7XhJar-S",
+			"description": "Cyberware",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "E_ZEokyTQShrjFmeE",
+					"description": "Bioware that works with Synthmorphs",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eWAG4e-4zypS6nyUu",
+							"description": "Eelware",
+							"local_notes": "Provides an electrical incapacitating attack",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e7nw-sE_kdRrqZZ8C",
+							"description": "Grip Pads",
+							"local_notes": "Provides Clinging",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e518WWWIFPrDDaFDE",
+							"description": "Muscle Augmentation",
+							"local_notes": "Provides +3 ST",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eubHBrxqFj4-ZF3qH",
+							"description": "Poison Gland",
+							"local_notes": "Produces one dose of a chosen poison every hour. Cost is equal to the cost of the poison x1000.",
+							"legality_class": "4",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 0,
+								"extended_value": 0,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eflzuVE-ZtxEVixTs",
+							"description": "Vacuum Sealing",
+							"local_notes": "Provides Temperature Tolerance 8 and Vacuum Support",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "ei_e4KipZyVBJ2N_f",
+							"description": "Prehensile Feet",
+							"local_notes": "Provides grabby feet, this advantage is fucking annoying to build",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e-BGefW2iR1fGigcy",
+							"description": "Prehensile Tail",
+							"local_notes": "Provides an Extra arm with Extra-Flexible and Long 1",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eWGAG45S9siPSdHp-",
+							"description": "Neurachem (1)",
+							"local_notes": "Provides Altered Time Rate (1)",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e1xrAJGjCKCi7msLt",
+							"description": "Neurachem (2)",
+							"local_notes": "Provides Altered Time Rate (2) but with some limitations",
+							"legality_class": "4",
+							"base_value": "125000",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 125000,
+								"extended_value": 125000,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "epnvXWaXgZEFwFo80",
+							"description": "Chameleon Skin",
+							"local_notes": "Provides Chameleon 4, halved vs multispectral vision",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "EjhsmKDHydnv7k9c4",
+							"description": "Bioware Mental Augmentations",
+							"quantity": 1,
+							"equipped": true,
+							"children": [
+								{
+									"id": "eDaAU6y810Qq5Y2aj",
+									"description": "Eidetic Memory",
+									"local_notes": "Provides Eidetic Memory with Photographic",
+									"legality_class": "4",
+									"base_value": "1500",
+									"quantity": 1,
+									"equipped": true,
+									"calc": {
+										"value": 1500,
+										"extended_value": 1500,
+										"weight": "0 lb",
+										"extended_weight": "0 lb"
+									}
+								},
+								{
+									"id": "e9QAqUgm0ErxsZL9B",
+									"description": "Hyper Linguist",
+									"local_notes": "Provides Language Talent",
+									"legality_class": "4",
+									"base_value": "1500",
+									"quantity": 1,
+									"equipped": true,
+									"calc": {
+										"value": 1500,
+										"extended_value": 1500,
+										"weight": "0 lb",
+										"extended_weight": "0 lb"
+									}
+								},
+								{
+									"id": "eFAtE0hgW07p7W7I8",
+									"description": "Math Boost",
+									"local_notes": "Provides Lightning Calculator with Intuitive Mathematician as well as Talent (Mathematical Ability) 1",
+									"legality_class": "4",
+									"base_value": "1500",
+									"quantity": 1,
+									"equipped": true,
+									"calc": {
+										"value": 1500,
+										"extended_value": 1500,
+										"weight": "0 lb",
+										"extended_weight": "0 lb"
+									}
+								},
+								{
+									"id": "e0LiVEh4NbcNdEWni",
+									"description": "Multiple Personalities",
+									"local_notes": "Provides Compartmental Mind 1",
+									"legality_class": "4",
+									"base_value": "31250",
+									"quantity": 1,
+									"equipped": true,
+									"calc": {
+										"value": 31250,
+										"extended_value": 31250,
+										"weight": "0 lb",
+										"extended_weight": "0 lb"
+									}
+								}
+							],
+							"calc": {
+								"value": 0,
+								"extended_value": 36650,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "EPE5ef1YbRzUvmj6a",
+							"description": "Bioware Enhanced Senses",
+							"quantity": 1,
+							"equipped": true,
+							"children": [
+								{
+									"id": "emBvokW2Qa0oh8jtA",
+									"description": "Direction Sense",
+									"local_notes": "Provides Absolute Direction with 3D Spatial Sense",
+									"legality_class": "4",
+									"base_value": "1500",
+									"quantity": 1,
+									"equipped": true,
+									"calc": {
+										"value": 1500,
+										"extended_value": 1500,
+										"weight": "0 lb",
+										"extended_weight": "0 lb"
+									}
+								},
+								{
+									"id": "e2CrLiJmLKiOSSYpF",
+									"description": "Echolocation",
+									"local_notes": "Provides Scanning Sense with Sonar",
+									"legality_class": "4",
+									"base_value": "1500",
+									"quantity": 1,
+									"equipped": true,
+									"calc": {
+										"value": 1500,
+										"extended_value": 1500,
+										"weight": "0 lb",
+										"extended_weight": "0 lb"
+									}
+								},
+								{
+									"id": "eLM7oNMewg54KogEw",
+									"description": "Enhanced Hearing",
+									"local_notes": "Provides Discriminatory Hearing",
+									"legality_class": "4",
+									"base_value": "1500",
+									"quantity": 1,
+									"equipped": true,
+									"calc": {
+										"value": 1500,
+										"extended_value": 1500,
+										"weight": "0 lb",
+										"extended_weight": "0 lb"
+									}
+								},
+								{
+									"id": "eKhpHqj56drDHjZHp",
+									"description": "Enhanced Smell",
+									"local_notes": "Provides Discriminatory Smell",
+									"legality_class": "4",
+									"base_value": "1500",
+									"quantity": 1,
+									"equipped": true,
+									"calc": {
+										"value": 1500,
+										"extended_value": 1500,
+										"weight": "0 lb",
+										"extended_weight": "0 lb"
+									}
+								},
+								{
+									"id": "eI3QAkqjrgtqpe8J7",
+									"description": "Enhanced Vision",
+									"local_notes": "Provides Hyperspectral Vision and Telescopic Vision 2",
+									"legality_class": "4",
+									"base_value": "1500",
+									"quantity": 1,
+									"equipped": true,
+									"calc": {
+										"value": 1500,
+										"extended_value": 1500,
+										"weight": "0 lb",
+										"extended_weight": "0 lb"
+									}
+								}
+							],
+							"calc": {
+								"value": 0,
+								"extended_value": 7500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 273100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "EDnTO4xKkot8AdN6S",
+					"description": "Cyberware Enhanced Senses",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "ek0JuqR7NdTABCWs_",
+							"description": "Anti-Glare",
+							"local_notes": "Provides Protected Sense (Vision)",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eGAbYU9cYJ8AJCNra",
+							"description": "Electrical Sense",
+							"local_notes": "Allows the user to detect electrical fields within 5 yards",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "ewB_6QMtnRvMaoj-z",
+							"description": "Radiation Sense",
+							"local_notes": "The character can sense the presence and approximate source of all forms of dangerous radiation, including neutrons, charged particles, and cosmic rays.",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eq1sIgJ5MbWhzrJz4",
+							"description": "T-Ray Emitter",
+							"local_notes": "Allows the user to see through thin walls, range 20 yards",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 6000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "EGVY-jleiVKEzJFhh",
+					"description": "Cyberware Mental Augmentations",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eyJf6HNpEryjr40zv",
+							"description": "Access Jack",
+							"local_notes": "Allows the user to directly neurally interface with computers through the jack. This gives up to a +4 bonus on most operations.",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eIywBmr0HwTucuG1S",
+							"description": "Dead Switch",
+							"local_notes": "This allows the user to instantly erase their own cortical stack.",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "elQp3TUMKR0OW1_sT",
+							"description": "Emergency Farcaster",
+							"local_notes": "Better Cortical Stack",
+							"legality_class": "4",
+							"base_value": "125000",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 125000,
+								"extended_value": 125000,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "exduiB8EOGfyi9qZK",
+							"description": "Ghostrider Module",
+							"local_notes": "Complexity 9 computer that allows another Ego to ride along with the body.",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "edFxk9rFjuFyzKKRs",
+							"description": "Mnemonic Augmentation",
+							"local_notes": "Provides Eidetic Memory with Photographic",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e8UCM17Dp-2L3LKLI",
+							"description": "Multi-Tasking",
+							"local_notes": "Provides Compartmental Mind 2",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "el4UuJ0Br48RELjnd",
+							"description": "Puppet Sock",
+							"local_notes": "Allows this morph to be Jammed into",
+							"legality_class": "4",
+							"base_value": "6250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 6250,
+								"extended_value": 6250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 169400,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "E_lK9G-nqBFmawC_N",
+					"description": "Cyberware Physical Augmentations",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eiehQRyO48mwbPddm",
+							"description": "Cyberclaws",
+							"local_notes": "Provides Talons",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eYhVQJaBlPzCa34Du",
+							"description": "Cyberlimb",
+							"local_notes": "Provides +8 DR to the limb",
+							"legality_class": "4",
+							"base_value": "6250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 6250,
+								"extended_value": 6250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eEwsSEZjnqns7TXo4",
+							"description": "Cyberlimb Plus",
+							"local_notes": "Provides +8 DR to the limb, +3 ST to that arm as well",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "e1c8qOM2fP_9lUi5A",
+							"description": "Cybernetic Hand Laser",
+							"local_notes": "pew pew",
+							"legality_class": "4",
+							"base_value": "6250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 6250,
+								"extended_value": 6250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eV-IW9zJhFwo9MUes",
+							"description": "Hardened Skeleton",
+							"local_notes": "Provides +3 HP and +3 ST",
+							"legality_class": "4",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "ewbCutejbZfYSMT16",
+							"description": "Oxygen Reserve",
+							"local_notes": "Can hold breath for 30 minutes",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eVO6GUTFuKKAhKz58",
+							"description": "Reflex Booster",
+							"local_notes": "Provides +3 Basic Speed and Altered Time Rate (1)",
+							"legality_class": "4",
+							"base_value": "125000",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 125000,
+								"extended_value": 125000,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 204800,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 653300,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "EJPsf6mNTkXNLb3_k",
+			"description": "Nanoware",
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "eGANKKAYLNot_lo5A",
+					"description": "Medichines",
+					"local_notes": "Provides Regeneration (Regular), Reistance to Pain, and the ability to survive any injury except brain death",
+					"legality_class": "4",
+					"base_value": "1500",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "efbuF46eEZAa0F9L4",
+					"description": "Mental Speed",
+					"local_notes": "Provides Enhanced Time Sense",
+					"legality_class": "4",
+					"base_value": "31250",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "exVOoL18kNNUayGjx",
+					"description": "Implanted Nanotoxin",
+					"local_notes": "Produces one dose of a chosen nanotoxin every hour. Cost is equal to the cost of the nanotoxin x1000.",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eXVHI5YGoQoTbTf2M",
+					"description": "Respirocytes",
+					"local_notes": "Provides +3 FP and can hold breath for 30 minutes",
+					"legality_class": "4",
+					"base_value": "6250",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e_v2bH179MtSszS_p",
+					"description": "Nanophages",
+					"local_notes": "Provides +8 to all HT rolls to resist nanomachines, immune to nanotoxins",
+					"legality_class": "4",
+					"base_value": "6250",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eiTKvzo7wZSWPF8ql",
+					"description": "Oracles",
+					"local_notes": "Allows the user to ignore all penalties for distractions, provides +1 to all search rolls",
+					"legality_class": "4",
+					"base_value": "6250",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e72739XT4zWW8Rk92",
+					"description": "Skinflex",
+					"local_notes": "Provides Elastic Skin",
+					"legality_class": "4",
+					"base_value": "6250",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eTYUZ1JKAvbEr7hPg",
+					"description": "Skinlink",
+					"local_notes": "Allows the user to interface with any computer they are physically touching",
+					"legality_class": "4",
+					"base_value": "6250",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 64900,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "EVXfURjLu8vDGN9QN",
+			"description": "Pharmaceuticals & Nanodrugs",
+			"children": [
+				{
+					"id": "emOoXQ-F6BJCn3CeM",
+					"description": "Comfurt (dose)",
+					"local_notes": "Anxiolytic nano-pharm. For 6 hours: +2 to resist stress, fear, and Fright Checks; ignore -1 of stress-derived penalties. Daily use for a week risks Addiction (-5, cheap/legal); the Hyperbright morph ships dependent.",
+					"legality_class": "4",
+					"base_value": "50",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": "50"
+					}
+				},
+				{
+					"id": "eGeYXPG4sImhNzgcH",
+					"description": "Klar (dose)",
+					"local_notes": "Alertness enhancer. For 12 hours: +1 Per and no fatigue penalties to mental rolls from missed sleep. Crash afterward: -1 IQ for 6 hours unless you sleep.",
+					"legality_class": "4",
+					"base_value": "100",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": "100"
+					}
+				},
+				{
+					"id": "enQu6jKkRa7Qc0_-G",
+					"description": "Drive (dose)",
+					"local_notes": "Focus stimulant. For 4 hours: +1 to all IQ-based skill rolls on a single extended task; -5 to notice interruptions while it lasts.",
+					"legality_class": "4",
+					"base_value": "100",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": "100"
+					}
+				},
+				{
+					"id": "erBpizRLdhPP5fO8l",
+					"description": "Grin (dose)",
+					"local_notes": "Analgesic. For 4 hours: High Pain Threshold. Overuse dulls everything: -1 Per while active.",
+					"legality_class": "4",
+					"base_value": "50",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": "50"
+					}
+				},
+				{
+					"id": "e0iR3cxzaJeVhgfDX",
+					"description": "Juice (dose)",
+					"local_notes": "Adrenal trigger. For 10 minutes: +1 Basic Speed and +1 ST; afterward, lose 3 FP. Biomorphs only.",
+					"legality_class": "4",
+					"base_value": "150",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": "150"
+					}
+				},
+				{
+					"id": "eBZrYULVq6065wBaE",
+					"description": "Neem (dose)",
+					"local_notes": "Memory suppressant. Taken before an event: only hazy long-term memories form for the next 4 hours (-5 to later recall; defeats interrogation and Deep Scan of that window). Popular with couriers who prefer not to know.",
+					"legality_class": "4",
+					"base_value": "200",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": "200"
+					}
+				},
+				{
+					"id": "ep8X6wnD6A4OTZGut",
+					"description": "Kick (dose)",
+					"local_notes": "Combat stimulant cocktail. For 1 hour: +1 to Fright Checks and ignore shock penalties from the first wound taken. Jitters: -1 to DX-based fine work.",
+					"legality_class": "3",
+					"base_value": "75",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": "75"
+					}
+				},
+				{
+					"id": "eN5SodB3jxMUxLSD0",
+					"description": "Psi Inhibitor (dose)",
+					"local_notes": "Async suppressant, injected or aerosolized: the async must win a Quick Contest of HT vs. potency 14 or lose all sleights for 1d hours; even on a win, -4 to sleight use for the duration. Standard interrogation kit.",
+					"legality_class": "2",
+					"base_value": "500",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": "500"
+					}
+				},
+				{
+					"id": "ehQSHPJO0JIz46m_i",
+					"description": "Medichine Booster (dose)",
+					"local_notes": "Clinical nano-infusion for morphs without medichines: for 24 hours, +2 to HT rolls to recover, automatic stabilization at negative HP, halved bleeding.",
+					"legality_class": "4",
+					"base_value": "250",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": "250"
+					}
+				}
+			],
+			"calc": {
+				"extended_value": "1475"
+			}
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+ "format": 1,
+ "counts": {
+  "attributes": 15,
+  "backgrounds": 15,
+  "factions": 19,
+  "repnets": 8,
+  "ep_skills": 59,
+  "morphs": 103,
+  "aug_equipment": 91,
+  "aug_traits": 126,
+  "gear": 1007,
+  "sleights": 68
+ }
+}

@@ -1,0 +1,150 @@
+// The Basic Set skills an Eclipse Phase character actually reaches for.
+//
+// The conversion's own skill-mapping tables (Conversion-Guide Part II and
+// Character-Creation Step 5) name these; this list gives the wizard something
+// to offer beyond the setting-specific skills in the library, and nothing here
+// is reproduced from a rulebook beyond a skill's name and its controlling
+// attribute and difficulty, which is what GCS needs to compute a level.
+//
+// `spec` lists suggested specialities. A skill with `needsSpec` requires one.
+
+const S = (name, difficulty, opts = {}) => ({ name, difficulty, ...opts });
+
+export const GURPS_SKILLS = [
+  { group: "Combat", skills: [
+    S("Beam Weapons", "dx/e", { needsSpec: true, spec: ["Pistol", "Rifle", "Projector"] }),
+    S("Brawling", "dx/e"),
+    S("Broadsword", "dx/a"),
+    S("Axe/Mace", "dx/a"),
+    S("Fast-Draw", "dx/e", { needsSpec: true, spec: ["Pistol", "Ammo", "Knife"] }),
+    S("Gunner", "dx/e", { needsSpec: true, spec: ["Beams", "Machine Gun", "Cannon", "Rockets"] }),
+    S("Guns", "dx/e", { needsSpec: true, spec: ["Pistol", "Rifle", "SMG", "Shotgun", "Light Machine Gun", "Grenade Launcher", "Light Anti-Armor Weapon", "Gyroc"] }),
+    S("Innate Attack", "dx/e", { needsSpec: true, spec: ["Beam", "Breath", "Projectile", "Gaze"] }),
+    S("Judo", "dx/h"),
+    S("Karate", "dx/h"),
+    S("Knife", "dx/e"),
+    S("Liquid Projector", "dx/e", { needsSpec: true, spec: ["Sprayer", "Flamethrower"] }),
+    S("Shortsword", "dx/a"),
+    S("Thrown Weapon", "dx/e", { needsSpec: true, spec: ["Knife", "Grenade", "Spear"] }),
+    S("Wrestling", "dx/a"),
+    S("Soldier", "iq/a"),
+    S("Tactics", "iq/h"),
+    S("Forced Entry", "dx/a"),
+  ] },
+  { group: "Physical", skills: [
+    S("Acrobatics", "dx/h"),
+    S("Climbing", "dx/a"),
+    S("Escape", "dx/h"),
+    S("Flight", "ht/a", { note: "Winged and thrust-borne morphs only." }),
+    S("Jumping", "dx/e"),
+    S("Running", "ht/a"),
+    S("Scuba", "dx/a"),
+    S("Stealth", "dx/a", { note: "Eclipse Phase's Infiltration." }),
+    S("Swimming", "ht/e"),
+  ] },
+  { group: "Technical", skills: [
+    S("Armoury", "iq/a", { needsSpec: true, spec: ["Small Arms", "Heavy Weapons", "Body Armor", "Battlesuits"] }),
+    S("Electronics Operation", "iq/a", { needsSpec: true, spec: ["Security", "Comms", "Sensors", "Media", "Surveillance", "Electronic Warfare", "Medical"] }),
+    S("Electronics Repair", "iq/a", { needsSpec: true, spec: ["Computers", "Comms", "Sensors", "Medical"] }),
+    S("Engineer", "iq/h", { needsSpec: true, spec: ["Robotics", "Electronics", "Habitat", "Nanotechnology"] }),
+    S("Machinist", "iq/a"),
+    S("Mechanic", "iq/a", { needsSpec: true, spec: ["Synthmorph", "Spacecraft", "Groundcar", "Drone"] }),
+    S("Smuggling", "iq/a"),
+    S("Traps", "iq/a"),
+    S("Explosives", "iq/a", { needsSpec: true, spec: ["Demolition", "Explosive Ordnance Disposal", "Nuclear Ordnance Disposal"] }),
+    S("Hazardous Materials", "iq/a", { needsSpec: true, spec: ["Biological", "Chemical", "Radioactive", "Nanotech"] }),
+  ] },
+  { group: "Vehicles", skills: [
+    S("Boating", "dx/a", { needsSpec: true, spec: ["Motorboat", "Sailboat"] }),
+    S("Driving", "dx/a", { needsSpec: true, spec: ["Automobile", "Heavy Wheeled", "Tracked", "Hovercraft"] }),
+    S("Piloting", "dx/a", { needsSpec: true, spec: ["Low-Performance Spacecraft", "High-Performance Spacecraft", "Aerospace", "Contragravity", "Vertol", "Lighter-Than-Air", "High-Performance Airplane"] }),
+    S("Submarine", "dx/a", { needsSpec: true, spec: ["Free-Flooding Sub", "Mini-Sub", "Large Sub"] }),
+    S("Navigation", "iq/a", { needsSpec: true, spec: ["Space", "Air", "Land", "Sea", "Mesh"] }),
+  ] },
+  { group: "Social", skills: [
+    S("Acting", "iq/a"),
+    S("Administration", "iq/a"),
+    S("Body Language", "per/a", { note: "The passive half of Eclipse Phase's Kinesics." }),
+    S("Carousing", "ht/e"),
+    S("Current Affairs", "iq/e", { needsSpec: true, spec: ["Politics", "Science & Technology", "Business", "Popular Culture", "Headline News"] }),
+    S("Detect Lies", "per/h", { note: "The active half of Kinesics." }),
+    S("Diplomacy", "iq/h"),
+    S("Disguise", "iq/a"),
+    S("Fast-Talk", "iq/a", { note: "Eclipse Phase's Deception." }),
+    S("Interrogation", "iq/a"),
+    S("Intimidation", "will/a"),
+    S("Leadership", "iq/a"),
+    S("Politics", "iq/a"),
+    S("Propaganda", "iq/a"),
+    S("Public Speaking", "iq/a"),
+    S("Savoir-Faire", "iq/e", { needsSpec: true, spec: ["High Society", "Military", "Mafia", "Servant"], note: "Eclipse Phase's Protocol." }),
+    S("Sex Appeal", "ht/a"),
+    S("Streetwise", "iq/a", { note: "Fixers, fences and body banks. Pairs with g-rep." }),
+    S("Teaching", "iq/a"),
+  ] },
+  { group: "Covert", skills: [
+    S("Camouflage", "iq/e"),
+    S("Filch", "dx/a"),
+    S("Forgery", "iq/h"),
+    S("Holdout", "iq/a"),
+    S("Lockpicking", "iq/a"),
+    S("Observation", "per/a"),
+    S("Pickpocket", "dx/h"),
+    S("Search", "per/a"),
+    S("Shadowing", "iq/a"),
+    S("Sleight of Hand", "dx/h", { note: "Eclipse Phase's Palming." }),
+  ] },
+  { group: "Medical", skills: [
+    S("Diagnosis", "iq/h"),
+    S("First Aid", "iq/e"),
+    S("Pharmacy", "iq/h", { needsSpec: true, spec: ["Synthetic", "Herbal"] }),
+    S("Physician", "iq/h"),
+    S("Poisons", "iq/h"),
+    S("Surgery", "iq/vh"),
+    S("Veterinary", "iq/h"),
+  ] },
+  { group: "Science & Academia", skills: [
+    S("Astronomy", "iq/h"),
+    S("Bioengineering", "iq/h", { needsSpec: true, spec: ["Genetic Engineering", "Tissue Engineering", "Cloning"] }),
+    S("Biology", "iq/vh", { needsSpec: true, spec: ["Terrestrial", "Exotic", "Genetics", "Xenobiology"] }),
+    S("Chemistry", "iq/h"),
+    S("Criminology", "iq/a"),
+    S("Economics", "iq/h"),
+    S("Expert Skill", "iq/h", { needsSpec: true, spec: ["Xenology", "Computer Security", "Memetics", "Political Science"] }),
+    S("Forensics", "iq/h"),
+    S("Geology", "iq/h", { needsSpec: true, spec: ["Rock", "Ice", "Gas Giant"] }),
+    S("Hidden Lore", "iq/a", { needsSpec: true, spec: ["Exsurgent Virus", "TITANs", "Pandora Gates", "Firewall"] }),
+    S("History", "iq/h", { needsSpec: true, spec: ["The Fall", "Pre-Fall Earth", "Hypercorp"] }),
+    S("Law", "iq/h", { needsSpec: true, spec: ["Planetary Consortium", "Lunar-Lagrange Alliance", "Morph Rights"] }),
+    S("Mathematics", "iq/h", { needsSpec: true, spec: ["Applied", "Pure", "Cryptology"] }),
+    S("Meteorology", "iq/a", { needsSpec: true, spec: ["Terrestrial", "Venusian", "Gas Giant"] }),
+    S("Naturalist", "iq/h", { needsSpec: true, spec: ["Terrestrial", "Exotic"] }),
+    S("Physics", "iq/vh"),
+    S("Psychology", "iq/h", { needsSpec: true, spec: ["Psychiatry", "Applied"], note: "Psychiatry treats resleeving stress and fork merges; prerequisite for Psychosurgery." }),
+  ] },
+  { group: "Everyday & Other", skills: [
+    S("Area Knowledge", "iq/e", { needsSpec: true, spec: ["Home Habitat", "Mars", "Luna", "The Belt", "Extropia"], note: "Area Knowledge of the home habitat is free." }),
+    S("Artist", "iq/h", { needsSpec: true, spec: ["Drawing", "Sculpting", "Illusion"] }),
+    S("Gambling", "iq/a"),
+    S("Hobby Skill", "iq/e", { needsSpec: true }),
+    S("Housekeeping", "iq/e"),
+    S("Musical Instrument", "iq/h", { needsSpec: true }),
+    S("Occultism", "iq/a"),
+    S("Professional Skill", "iq/a", { needsSpec: true, note: "For anything not covered above. Change the difficulty if the job warrants it." }),
+    S("Scrounging", "per/e"),
+    S("Sewing", "dx/e"),
+    S("Survival", "per/a", { needsSpec: true, spec: ["Vacuum", "Deep Ocean", "Desert", "Arctic", "Jungle"] }),
+    S("Urban Survival", "per/a"),
+    S("Writing", "iq/a"),
+  ] },
+];
+
+export const DIFFICULTIES = [
+  { key: "e", label: "Easy" },
+  { key: "a", label: "Average" },
+  { key: "h", label: "Hard" },
+  { key: "vh", label: "Very Hard" },
+];
+
+export const ATTRIBUTES = ["st", "dx", "iq", "ht", "will", "per"];
+

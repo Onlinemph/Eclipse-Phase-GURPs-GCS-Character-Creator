@@ -1,0 +1,452 @@
+{
+  "Eclipse_Phase_Mods_Traits.adq: Bioware": {
+    "stored": 816,
+    "computed": 826,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Mods_Traits.adq: Bioware / Bioware Physical Augmentations": {
+    "stored": 636,
+    "computed": 646,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Mods_Traits.adq: Bioware / Bioware Physical Augmentations / Endocrine Control": {
+    "stored": 27,
+    "computed": 37,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Biomorphs": {
+    "stored": 441,
+    "computed": 417,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Biomorphs / Samsa": {
+    "stored": 15,
+    "computed": -9,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Biomorphs / Samsa / Mods": {
+    "stored": 189,
+    "computed": 165,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Biomorphs / Samsa / Mods / Carapace Armor": {
+    "stored": 40,
+    "computed": 16,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Biomorphs / Samsa / Mods / Carapace Armor / Damage Resistance": {
+    "stored": 40,
+    "computed": 16,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Pod Morphs": {
+    "stored": 126,
+    "computed": 102,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Pod Morphs / Novacrab": {
+    "stored": 15,
+    "computed": -9,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Pod Morphs / Novacrab / Mods": {
+    "stored": 250,
+    "computed": 226,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Pod Morphs / Novacrab / Mods / Carapace Armor": {
+    "stored": 40,
+    "computed": 16,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Pod Morphs / Novacrab / Mods / Carapace Armor / Damage Resistance": {
+    "stored": 40,
+    "computed": 16,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs": {
+    "stored": 481,
+    "computed": 687,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Arachnoid": {
+    "stored": 12,
+    "computed": -3,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Arachnoid / Mods": {
+    "stored": 191,
+    "computed": 176,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Arachnoid / Mods / Armor Plating": {
+    "stored": 25,
+    "computed": 10,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Arachnoid / Mods / Armor Plating / Damage Resistance": {
+    "stored": 25,
+    "computed": 10,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Cetus": {
+    "stored": 12,
+    "computed": 22,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Cetus / Mods": {
+    "stored": 152,
+    "computed": 162,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Cetus / Mods / Extra Limbs (8)": {
+    "stored": 20,
+    "computed": 30,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Daitya": {
+    "stored": 20,
+    "computed": 8,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Daitya / Mods": {
+    "stored": 279,
+    "computed": 267,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Daitya / Mods / Armor Plating": {
+    "stored": 20,
+    "computed": 8,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Daitya / Mods / Armor Plating / Damage Resistance": {
+    "stored": 20,
+    "computed": 8,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Flying Squid": {
+    "stored": 14,
+    "computed": 54,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Flying Squid / Mods": {
+    "stored": 243,
+    "computed": 283,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Flying Squid / Mods / Extra Limbs (8 arms, 2 tentacles)": {
+    "stored": 80,
+    "computed": 120,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Mimic": {
+    "stored": 7,
+    "computed": 17,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Mimic / Mods": {
+    "stored": 202,
+    "computed": 212,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Mimic / Mods / Extra Limbs (4 Legs, 2 Arms)": {
+    "stored": 20,
+    "computed": 30,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Nautiloid": {
+    "stored": 39,
+    "computed": 79,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Nautiloid / Mods": {
+    "stored": 251,
+    "computed": 291,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Nautiloid / Mods / Extra Limbs (8 Arms, 2 Tentacles)": {
+    "stored": 80,
+    "computed": 120,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Q-Morph": {
+    "stored": 25,
+    "computed": 65,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Q-Morph / Advantages": {
+    "stored": 404,
+    "computed": 444,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Q-Morph / Advantages / Increased Dexterity": {
+    "stored": -40,
+    "computed": 0,
+    "cause": "negative levels clamped to zero by GCS"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Reaper": {
+    "stored": 25,
+    "computed": 1,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Reaper / Mods": {
+    "stored": 379,
+    "computed": 355,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Reaper / Mods / Combat Plating": {
+    "stored": 40,
+    "computed": 16,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Reaper / Mods / Combat Plating / Damage Resistance": {
+    "stored": 40,
+    "computed": 16,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Rover": {
+    "stored": 15,
+    "computed": 30,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Rover / Mods": {
+    "stored": 378,
+    "computed": 393,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Rover / Mods / Extra Limbs (3 Arms)": {
+    "stored": 30,
+    "computed": 45,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Sam's Steel Morph": {
+    "stored": 18,
+    "computed": 12,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Sam's Steel Morph / Mods": {
+    "stored": 132,
+    "computed": 126,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Sam's Steel Morph / Mods / Armor Plating": {
+    "stored": 10,
+    "computed": 4,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Sam's Steel Morph / Mods / Armor Plating / Damage Resistance": {
+    "stored": 10,
+    "computed": 4,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Slitheroid": {
+    "stored": 10,
+    "computed": 4,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Slitheroid / Mods": {
+    "stored": 102,
+    "computed": 96,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Slitheroid / Mods / Armor Plating": {
+    "stored": 10,
+    "computed": 4,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Slitheroid / Mods / Armor Plating / Damage Resistance": {
+    "stored": 10,
+    "computed": 4,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Spare": {
+    "stored": 2,
+    "computed": 17,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Spare / Mods": {
+    "stored": 122,
+    "computed": 137,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Spare / Mods / Extra Limbs (3 Arms/3 Legs)": {
+    "stored": 30,
+    "computed": 45,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Sphere": {
+    "stored": 17,
+    "computed": 37,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Sphere / Mods": {
+    "stored": 224,
+    "computed": 244,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Sphere / Mods / Extra Limbs (4 Arms)": {
+    "stored": 40,
+    "computed": 60,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Steel Morph": {
+    "stored": 13,
+    "computed": 7,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Steel Morph / Mods": {
+    "stored": 67,
+    "computed": 61,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Steel Morph / Mods / Armor Plating": {
+    "stored": 10,
+    "computed": 4,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Steel Morph / Mods / Armor Plating / Damage Resistance": {
+    "stored": 10,
+    "computed": 4,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Synthtaur": {
+    "stored": 18,
+    "computed": 48,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Synthtaur / Mods": {
+    "stored": 153,
+    "computed": 183,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Synthtaur / Mods / Extra Limbs (6 Arms/Legs)": {
+    "stored": 60,
+    "computed": 90,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Takko": {
+    "stored": 15,
+    "computed": 55,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Takko / Mods": {
+    "stored": 258,
+    "computed": 298,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Takko / Mods / Extra Limbs (8 Arms)": {
+    "stored": 80,
+    "computed": 120,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Xu Fu": {
+    "stored": 15,
+    "computed": 30,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Xu Fu / Mods": {
+    "stored": 268,
+    "computed": 283,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Morphs.adq: Synthmorphs / Xu Fu / Mods / Extra Limbs (3 Arms/6 Legs)": {
+    "stored": 30,
+    "computed": 45,
+    "cause": "enabled modifiers not applied"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Chi Sleights": {
+    "stored": 290,
+    "computed": 296,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Chi Sleights / Ambience Sense": {
+    "stored": 11,
+    "computed": 12,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Chi Sleights / Charisma (Sleight)": {
+    "stored": 11,
+    "computed": 12,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Chi Sleights / Instinct": {
+    "stored": 11,
+    "computed": 12,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Chi Sleights / Predictive Boost": {
+    "stored": 11,
+    "computed": 12,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Chi Sleights / Savant Calculation": {
+    "stored": 5,
+    "computed": 6,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Chi Sleights / Superior Kinesics": {
+    "stored": 11,
+    "computed": 12,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights": {
+    "stored": 452,
+    "computed": 463,
+    "cause": "rolls up from children"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Ego Sense": {
+    "stored": 8,
+    "computed": 9,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Illusion": {
+    "stored": 20,
+    "computed": 21,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Implant Skill": {
+    "stored": 12,
+    "computed": 13,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Infectious Mind": {
+    "stored": 11,
+    "computed": 12,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Invigorate": {
+    "stored": 6,
+    "computed": 7,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Neural Hardening": {
+    "stored": 6,
+    "computed": 7,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Nightmare": {
+    "stored": 14,
+    "computed": 15,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Pain": {
+    "stored": 11,
+    "computed": 12,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Restorative Fugue": {
+    "stored": 7,
+    "computed": 8,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Spam": {
+    "stored": 11,
+    "computed": 12,
+    "cause": "rounded to nearest, not up"
+  },
+  "Eclipse_Phase_Psi_Sleights.adq: Psi-Gamma Sleights / Tranquility": {
+    "stored": 6,
+    "computed": 7,
+    "cause": "rounded to nearest, not up"
+  }
+}

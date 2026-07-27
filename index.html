@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eclipse Phase character builder for GURPS &amp; GCS</title>
+<meta name="description" content="Walks through every step of building a GURPS Eclipse Phase character and writes a GCS character sheet.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#127765;</text></svg>">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <h1>Eclipse Phase <span>character builder</span></h1>
+      <p>GURPS 4th edition conversion &rarr; a GCS character sheet</p>
+    </div>
+    <nav class="masthead-links">
+      <a href="docs/Character-Creation.pdf">Procedure (PDF)</a>
+      <a href="docs/Conversion-Guide.md">Conversion guide</a>
+      <a href="docs/Quick-Reference.md">Quick reference</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <nav id="step-nav" class="steps" aria-label="Creation steps"></nav>
+    <div id="tally" class="tally" aria-live="polite"></div>
+  </aside>
+
+  <main id="step-main" class="main">
+    <p id="loading" class="muted">Loading the Eclipse Phase libraries&hellip;</p>
+    <noscript>
+      <p class="notice error">This builder runs entirely in the browser and needs JavaScript enabled.</p>
+    </noscript>
+  </main>
+</div>
+
+<footer class="footer">
+  <p>
+    Character data from the GURPS Eclipse Phase conversion libraries. Requires
+    <a href="https://gurpscharactersheet.com/">GCS</a> 5.x to open the exported sheet.
+    <em>Eclipse Phase</em> is released by Posthuman Studios under a Creative Commons licence;
+    <em>GURPS</em> is a trademark of Steve Jackson Games.
+  </p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

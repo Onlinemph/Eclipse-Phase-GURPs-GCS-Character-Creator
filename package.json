@@ -1,0 +1,20 @@
+{
+  "name": "eclipse-phase-gurps-gcs-character-creator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A browser wizard that walks through GURPS Eclipse Phase character creation and writes a GCS character sheet.",
+  "scripts": {
+    "serve": "python3 -m http.server 8000",
+    "data": "python3 tools/build_data.py",
+    "test": "npm run test:library && npm run test:cost && npm run test:export",
+    "test:library": "node tests/library.test.mjs",
+    "test:cost": "node tests/cost.test.mjs",
+    "test:export": "node tests/export.test.mjs",
+    "test:browser": "node tests/browser.test.mjs",
+    "test:all": "npm test && npm run test:browser"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

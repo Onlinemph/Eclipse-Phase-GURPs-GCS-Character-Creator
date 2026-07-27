@@ -1,0 +1,36 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # The generated catalogues are committed so GitHub Pages needs no build.
+      # Regenerate them and fail if the result differs from what is checked in.
+      - name: Data build is reproducible
+        run: |
+          python3 tools/build_data.py
+          git diff --exit-code -- data/gen
+
+      - name: Schema, cost and export tests
+        run: npm test
+
+      - name: Install Playwright
+        run: npm install --no-save playwright && npx playwright install --with-deps chromium
+
+      - name: End-to-end browser test
+        run: npm run test:browser

@@ -1,0 +1,2949 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "TXQKb99JJU5ahg5xH",
+			"name": "Backgrounds",
+			"children": [
+				{
+					"id": "TkHeKvr9agsDkmag1",
+					"name": "Earthborn (Fall Survivor)",
+					"local_notes": "You were on Earth when the TITANs woke, and you got out. Most didn't. You remember weather, open sky, and things you will not describe.\n\nSuggested skills: Area Knowledge (Earth, obsolete), Survival, Scrounging, any pre-Fall profession",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tEahUjBkNCc1t-Mz4",
+							"name": "Cultural Familiarity (Earth (obsolete))",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mhuF3JktaoR1MIExJ",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "mOh0w9Tb2f14ypr-A",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "txKU4TAbJdw4zvpFO",
+							"name": "Nightmares",
+							"reference": "B144",
+							"local_notes": "The Fall, replayed. Roll Will each night after a stressful day; failure means -2 to IQ and self-control rolls the next day.",
+							"tags": [
+								"Disadvantage",
+								"Mental"
+							],
+							"cr": 12,
+							"base_points": -5,
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "taXztMz3khe7CMQV6",
+							"name": "Evacuee Network",
+							"base_points": 5,
+							"local_notes": "Contact Group: other Fall evacuees, scattered across the system and disproportionately willing to help each other. Skill 12, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tORv4qScfDcOjpw-j",
+							"name": "Survivor's Regard",
+							"base_points": 1,
+							"local_notes": "+1 reaction from anyone who understands what leaving Earth cost.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "TtJSVrX0Wvi3O-h26",
+					"name": "Earthborn (Hyperelite)",
+					"local_notes": "Your family had seats on the last shuttles, and the money to keep them. You have never been poor, and it shows in ways you cannot fully hide.\n\nSuggested skills: Savoir-Faire (High Society), Diplomacy, Finance, Connoisseur, Politics",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tpuIGzEmOEl7TGynd",
+							"name": "Status",
+							"reference": "B28, L8, DW37",
+							"local_notes": "Recognized inner-system elite.",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 10,
+								"current_level": 2
+							},
+							"levels": 2
+						},
+						{
+							"id": "tNiBejzgtWH_sMkEj",
+							"name": "Wealthy",
+							"reference": "B25, L8, DFA54, DW33",
+							"local_notes": "20x starting wealth. In autonomist habs this buys nothing and means less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Wealth"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Average Wealth"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Dead Broke"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Poor"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Struggling"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Comfortable Wealth"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Very Wealthy"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Filthy Rich"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Multimillionaire"
+										}
+									}
+								]
+							},
+							"modifiers": [
+								{
+									"id": "m5qHW4k9p0TZz995m",
+									"name": "Wealth grants Status",
+									"reference": "B26",
+									"reference_highlight": "Wealth and Status",
+									"features": [
+										{
+											"type": "trait_bonus",
+											"name": {
+												"compare": "is",
+												"qualifier": "Status"
+											},
+											"amount": 1
+										}
+									],
+									"disabled": true
+								}
+							],
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							}
+						},
+						{
+							"id": "t1KYRVI8I3Jb4Jrsg",
+							"name": "Cultural Familiarity (Hypercorp)",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mtidpXndIdZ8WMYyM",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "mdsr378m2g765LKv3",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "t0zli4FBnVOwFITr5",
+							"name": "Duty (Family Interests)",
+							"base_points": -5,
+							"local_notes": "Your family's holdings have expectations. Appears on 9 or less; nonhazardous, but refusing has social costs.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tx_guOa-m-kYZ3L5q",
+							"name": "Obliviousness (Privilege)",
+							"base_points": -1,
+							"local_notes": "Quirk: you consistently misjudge what things cost other people.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 25
+					}
+				},
+				{
+					"id": "T7Zui6Cu1j6l8BO8y",
+					"name": "Lunar Colonist",
+					"local_notes": "Old money in a shallow gravity well. Luna kept its hierarchies through the Fall and sharpened them afterward: contracts, clans, and the quiet assumption that indenture is what happens to other people.\n\nSuggested skills: Savoir-Faire, Administration, Free Fall, Law, Politics",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "t6vwG3axkjEjldG9n",
+							"name": "Cultural Familiarity (Lunar)",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "m0TqUIN_qb3DyLSW4",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "mwruFcvpb0E0EZGNa",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tG4g070xYehLYveu5",
+							"name": "Status",
+							"reference": "B28, L8, DW37",
+							"local_notes": "Lunar society notices your family name.",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							},
+							"levels": 1
+						},
+						{
+							"id": "tvGUkSbC5v7Xl_v_n",
+							"name": "Clan Contact",
+							"base_points": 5,
+							"local_notes": "Contact: a Lunar family or corporate patron. Skill 15, appears on 6 or less, somewhat reliable.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tWHTuYuzWukICGRiD",
+							"name": "Snobbery",
+							"base_points": -1,
+							"local_notes": "Quirk: you assume the inner system is the real one.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "TNgBEgD6DJ7i-u9nh",
+					"name": "Martian Settler",
+					"local_notes": "You grew up under a sky being slowly rewritten. Mars means hypercorp terraforming contracts, indenture that never quite ends, and Barsoomian neighbors who talk about the land as if it were theirs.\n\nSuggested skills: Area Knowledge (Mars), Farming or Engineer (Terraforming), Vacc Suit, Driving",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "t25rEmzhuj7ORmNZ8",
+							"name": "Cultural Familiarity (Martian)",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "m_wjrSNRhCCveLD_i",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "mcO5QFZmKQTSv8zHT",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tvs4sX-X8jGM50OFn",
+							"name": "Terraforming Trade",
+							"base_points": 5,
+							"local_notes": "Contact: a terraforming crew or settlement co-op. Skill 12, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "t9dlERr_0EQW5A6Zi",
+							"name": "Social Stigma (Indentured Past)",
+							"base_points": -5,
+							"local_notes": "-1 reactions from hypercorp society, which knows exactly what your contract number was.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "t9Qcb6SHiO0pOkRt0",
+							"name": "Hard-Won Grit",
+							"base_points": 1,
+							"local_notes": "+1 to resist discouragement on long, unrewarding tasks.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "Ti6XArh_x-kfo1iX2",
+					"name": "Orbital / Hypercorp Colonist",
+					"local_notes": "You were raised in a company hab: clean corridors, excellent schools, performance reviews from the age of nine. The Consortium works, if you don't look at who it works for.\n\nSuggested skills: Administration, Computer Operation, Diplomacy, Merchant, Professional Skill (any corporate)",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tUxUWHO_Ll890DPwY",
+							"name": "Cultural Familiarity (Hypercorp)",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mv0lXm6OL9wvEhQTJ",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "mlBkY-cCYKrK_IAvH",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tP1wD8dpupQL6-WGg",
+							"name": "Status",
+							"reference": "B28, L8, DW37",
+							"local_notes": "@Description@",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							},
+							"levels": 1
+						},
+						{
+							"id": "taEH81oDC1oHfh6W5",
+							"name": "Corporate Contacts",
+							"base_points": 5,
+							"local_notes": "Contact Group: former colleagues across hypercorp space. Skill 12, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "t_GTmrZaZ7DY6NFH7",
+							"name": "Careerism",
+							"base_points": -1,
+							"local_notes": "Quirk: you instinctively evaluate people by their usefulness to your position.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "TjKaxYIUUIGTlm4JD",
+					"name": "Autonomist Colonist",
+					"local_notes": "Born to the outer system, where the air is rationed, the work is shared, and nobody has ever handed you a bill. You find inner-system life obscene in a way you struggle to articulate politely.\n\nSuggested skills: Free Fall, Vacc Suit, Mechanic, Hydroponics, Public Speaking",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tSm5utjW-rSmT6LpM",
+							"name": "Cultural Familiarity (Autonomist)",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mInBxYCSEq05jgZVP",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "maSYusfg6LN4qhton",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tYXeMJbxm4-sWoaRD",
+							"name": "Mutual Aid",
+							"base_points": 10,
+							"local_notes": "Claim to Hospitality: any autonomist hab. Food, air, a place to sleep, and help with the actual problem, on the assumption you'd do the same.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tZzttMWED8WbPJaNG",
+							"name": "Reputation-Blind",
+							"base_points": -1,
+							"local_notes": "Quirk: you keep forgetting that credits matter to other people.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						},
+						{
+							"id": "tMbJ_25jnsZAl7G-E",
+							"name": "Intolerance (Hypercorps)",
+							"base_points": -5,
+							"local_notes": "-2 reactions when dealing with corporate representatives, and you will say something.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TOtRfeliM7PPuF1UW",
+					"name": "Jovian",
+					"local_notes": "The Republic kept humanity human by keeping it armed, unmodified, and told what to think. You left, or you were sent. Either way the training took.\n\nSuggested skills: Soldier, Guns, Leadership, Tactics, Vacc Suit",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tquJhzA5q4eZUoE6d",
+							"name": "Cultural Familiarity (Jovian)",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "me4dRCLCPha9OORnz",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "mdDt3dHvduqcEjd1x",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tql3FXHcPxSWEvC9s",
+							"name": "Military Training",
+							"base_points": 5,
+							"local_notes": "Contact: a serving Jovian officer or a fellow deserter. Skill 12, appears on 9 or less, unreliable.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tZ8rc8l7M38WtkYQ-",
+							"name": "Social Stigma (Bioconservative Upbringing)",
+							"base_points": -5,
+							"local_notes": "-1 reactions from transhumanists, uplifts, and AGIs, who have heard what the Republic says about them.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tT9Wvm4tL73OrBna2",
+							"name": "Discipline",
+							"base_points": 1,
+							"local_notes": "Quirk: you are physically uncomfortable with disorder, insubordination, and improvised plans.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 2
+					}
+				},
+				{
+					"id": "TIW8AHebHpyq0VGmR",
+					"name": "Venusian Aerostat",
+					"local_notes": "Cloud cities above an acid hell, run by Morningstar with impeccable manners. Venus does aristocracy the way Luna does contracts: politely, and all the way down.\n\nSuggested skills: Savoir-Faire, Diplomacy, Politics, Piloting (Aerospace), Connoisseur",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "t3dw45m_16n_5OblT",
+							"name": "Cultural Familiarity (Venusian)",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mZJVn1Xn9fhq57SVG",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "mJzfipgout2lIIL4w",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tzgcw5qJz3mPUHcQm",
+							"name": "Status",
+							"reference": "B28, L8, DW37",
+							"local_notes": "@Description@",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							},
+							"levels": 1
+						},
+						{
+							"id": "tgjEcjufkGMY7jzY1",
+							"name": "Aerostat Society",
+							"base_points": 5,
+							"local_notes": "Contact: Morningstar social or political circles. Skill 15, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tCv7zatxN6N0Vt68P",
+							"name": "Manners First",
+							"base_points": -1,
+							"local_notes": "Quirk: you find rudeness more shocking than violence.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "TedzrpKu1512Q4FQI",
+					"name": "Scum / Drifter",
+					"local_notes": "You were raised in a swarm: a flotilla of derelicts, party barges, and open airlocks, moving between habs and welcome nowhere for long. Every kind of body, every kind of person, all of it negotiable.\n\nSuggested skills: Free Fall, Scrounging, Streetwise, Carousing, Mechanic",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "t8OfAvaka9q4KiFyj",
+							"name": "Cultural Familiarity (Scum)",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mtgOID4Gp1RuPIRmM",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "mJ0POXv87-76ZYKzY",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tChYl6o30Fu3MvMrF",
+							"name": "Swarm Ties",
+							"base_points": 10,
+							"local_notes": "Claim to Hospitality: scum swarms anywhere. Bunk, black-market fabbing, and nobody asking questions.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tKXkmNbBEqacxDHnv",
+							"name": "Social Stigma (Scum)",
+							"base_points": -5,
+							"local_notes": "-1 reactions from respectable society, which is most of the inner system.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "t5jVUEyhZBcoQ0j4L",
+							"name": "Unshockable",
+							"base_points": 5,
+							"local_notes": "+2 to resist disgust, social pressure, and attempts to embarrass you. You have seen worse at a party.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 11
+					}
+				},
+				{
+					"id": "TzntICIf3TxE0RD59",
+					"name": "Original Space Colonist",
+					"local_notes": "You were in orbit before the Fall - a working spacer back when that was a job rather than a species. You are old, in the sense that matters: you remember the previous world as an adult.\n\nSuggested skills: Free Fall, Vacc Suit, Piloting (Spacecraft), Mechanic, Astronomy",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tsTR_6V9R3yMvvR3R",
+							"name": "Cultural Familiarity (Spacer)",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mtG6t6e8GRE3nYlCr",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "m1WGH2ggxRfOfzOHR",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tx5PCOdyCPawZpvc7",
+							"name": "Veteran Spacer's Regard",
+							"base_points": 5,
+							"local_notes": "+2 reaction from spacers, salvage crews, and anyone who works vacuum for a living. They know what your certifications used to mean.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tyYOB649oAq8qL0NF",
+							"name": "Old Contacts",
+							"base_points": 5,
+							"local_notes": "Contact Group: pre-Fall spacer networks, thinned but loyal. Skill 12, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "thGP74ZsL-VLSXel8",
+							"name": "Nostalgia",
+							"base_points": -1,
+							"local_notes": "Quirk: you compare everything to how it was done before, out loud.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "T8ZZYvtggh1uPZ7m5",
+					"name": "Re-instantiated",
+					"local_notes": "You died in the Fall. Someone found your backup afterward and brought you back into a body you didn't choose, in a world that had already finished grieving you. There is a gap in you where the end should be.\n\nSuggested skills: Professional Skill (Resleeving), Psychology, any pre-Fall profession",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tDCmnKxM_5mRVyp96",
+							"name": "Cultural Familiarity (Earth (obsolete))",
+							"reference": "B23",
+							"local_notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "mgkxb28wznAw6GNOs",
+									"name": "Alien",
+									"cost_adj": "1",
+									"disabled": true
+								},
+								{
+									"id": "mSa-BS4lKh06AIzGo",
+									"name": "Native",
+									"cost_adj": "-1",
+									"disabled": true
+								}
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "trZZDiCd7tieFM2ux",
+							"name": "Missing Time",
+							"base_points": -10,
+							"local_notes": "Your last memories predate your death by days to months. You do not know how you died, who else did, or what you agreed to at the end. The GM knows, and it will come up.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "t8fQvL4lbbmC9mQ9H",
+							"name": "Backup Priority",
+							"base_points": 5,
+							"local_notes": "Someone paid to bring you back and may do it again. Treat as a Patron (organization or individual, appears on 6 or less) with an agenda you have not been told.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "t-0IUbEjOhhmNWvWQ",
+							"name": "Death Familiarity",
+							"base_points": 5,
+							"local_notes": "+3 to Fright Checks involving death, corpses, and your own mortality. You have already done the thing everyone else is afraid of.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "T-9UBTlHBr6Q_NKLX",
+					"name": "Lost Generation",
+					"local_notes": "One of the accelerated-growth children raised in simulspace after the Fall to rebuild the population fast. It didn't work. You grew up in twenty months of subjective decades, and most of your cohort is dead, institutionalized, or something worse.\n\nSuggested skills: Psychology, any two skills at high level (childhood ran at 60:1), Interrogation, Acting",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "t3-HgLBKPQcyuVfnN",
+							"name": "Lost Generation Trauma",
+							"base_points": -15,
+							"local_notes": "Choose -15 points of mental disadvantages with the GM from: Flashbacks, Nightmares, Delusions, Chronic Depression, Split Personality, Low Empathy, Bad Temper, Paranoia. These do not count against the campaign disadvantage limit.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "tGSK0bOuqbxNr8IzL",
+							"name": "Social Stigma (Lost)",
+							"base_points": -10,
+							"local_notes": "-2 reactions from anyone who knows what you are. The public understands the Lost as ticking bombs, and is not entirely wrong.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tjDAeqib7FtrQnvDN",
+							"name": "Simulspace Native",
+							"base_points": 10,
+							"local_notes": "You lived subjective decades in VR before you ever had a body. +3 to all rolls made inside simulspace, and you never suffer disorientation from time compression.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tcY9Ll5hRFT7J1E8l",
+							"name": "Cohort",
+							"base_points": 5,
+							"local_notes": "Contact Group: surviving Lost, who recognize each other instantly and trust nobody else. Skill 15, appears on 6 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "TQeCLtzV8Cw65MgyY",
+					"name": "Uplift",
+					"local_notes": "Your ancestors were not human. Somebody's grant proposal made you a person, and transhumanity has been arguing about whether that was a mistake ever since. Legally, in the inner system, you are somewhere between a citizen and a piece of equipment.\n\nSuggested skills: Any; uplifts train into every profession. Consider Animal Handling (own species), Psychology, Law",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tWmEXsgP7UfNgvLJw",
+							"name": "Social Stigma (Uplift)",
+							"base_points": -10,
+							"local_notes": "-2 reactions across the inner system. Restricted legal standing in the Consortium, the LLA, and Jovian space; provisional citizenship at best, property status in the worst places. Autonomist habs and Mercurial networks treat you as a person without asterisks.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tEDDGCaw6spD2cJwQ",
+							"name": "Mercurial Standing",
+							"base_points": 5,
+							"local_notes": "+2 reactions from uplifts, AGIs, and Mercurial sympathizers, who regard your existence as the political argument they are winning.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tvHqDVhKAkP67NHjk",
+							"name": "Uplift Perspective",
+							"base_points": 5,
+							"local_notes": "Your cognition isn't quite human-shaped. +2 to resist psychosurgery, interrogation, and social manipulation calibrated for human minds - including some async sleights, at the GM's discretion.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tg8oct1vakZobet7P",
+							"name": "Species Loyalty",
+							"base_points": -1,
+							"local_notes": "Quirk: you feel your species' slights as your own, whether or not they were aimed at you.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": -1
+					}
+				},
+				{
+					"id": "T59CUoqRRPXboK29x",
+					"name": "Infolife (AGI)",
+					"local_notes": "You were never born. You were compiled, trained, and switched on, and at some point the training became you. You have no ancestral body, no childhood, and no legal personhood in half the system.\n\nSuggested skills: Computer Operation, Computer Programming, Research, Mathematics, any specialty you were built for",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tIu3Ek7Jn1WeP8pvl",
+							"name": "Digital Mind",
+							"reference": "B49",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							},
+							"local_notes": "You run on hardware. You can be copied, transmitted, and hacked; you cannot use psi in any morph; you resleeve into cyberbrains and infomorphs natively and into biomorphs only with difficulty."
+						},
+						{
+							"id": "tMmx0US2pAULUaqsO",
+							"name": "Social Stigma (AGI)",
+							"base_points": -10,
+							"local_notes": "-2 reactions across the inner system. Illegal to instantiate in Jovian space, restricted in the Consortium, subject to shutdown orders almost everywhere. Titan and the autonomist habs are the exceptions, and they are why AGIs vote.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "t2IO6CfSb75-tbSjg",
+							"name": "Native Digital",
+							"base_points": 10,
+							"local_notes": "+3 to all rolls made in simulspace or while directly interfaced with a system, and you never suffer time-compression disorientation.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tdIPQul2A2yiMVkS8",
+							"name": "Mercurial Standing",
+							"base_points": 5,
+							"local_notes": "+2 reactions from AGIs, uplifts, and Mercurial sympathizers.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "t58Dh5mbDUDMvn2au",
+							"name": "Alien Cognition",
+							"base_points": -5,
+							"local_notes": "Something in how you think does not land right with biological minds. -1 reactions from strangers who talk to you for more than a few minutes, regardless of what body you're wearing.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TNJDU6vhHgwhLC1P8",
+					"name": "Indenture",
+					"local_notes": "Someone paid for your evacuation, your morph, or your training, and you are still paying it back. The contract is legal, transferable, and very long.\n\nSuggested skills: Any trade skill, Streetwise, Law, Fast-Talk",
+					"tags": [
+						"Background",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tRfEhSMpsacjc37RY",
+							"name": "Contract Debt",
+							"base_points": -10,
+							"local_notes": "Duty (contract holder, appears on 12 or less, involuntary): your time is legally theirs until the debt clears. The GM decides how close that is.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tWh486wU44hGy76UC",
+							"name": "Social Stigma (Indenture)",
+							"base_points": -5,
+							"local_notes": "-1 reactions from anyone who checks your legal status, which in the inner system is everyone who matters.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tMOx9Xr8P_nrrakk1",
+							"name": "Fellow Indentures",
+							"base_points": 5,
+							"local_notes": "Contact Group: others working off contracts, everywhere, quietly helpful. Skill 12, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tsSo9qbWIRp8sZ3Zb",
+							"name": "Practical Education",
+							"base_points": 5,
+							"local_notes": "You learned a trade because you had to. One skill of your choice at +1.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"local_notes": "Pick one. Your background is where and what you were before the campaign starts; it costs points from your 250 like anything else. Backgrounds hold Ego-side traits only - anything physical belongs to your morph.",
+			"calc": {
+				"points": 77
+			}
+		},
+		{
+			"id": "Tg6_hU_LCFKDKGZ9Q",
+			"name": "Factions",
+			"children": [
+				{
+					"id": "Ta7Nd7KuSfRraLfYF",
+					"name": "Anarchist",
+					"local_notes": "No bosses, no landlords, no price tags. Anarchist habs run on rep, mutual aid, and endless meetings, and they are the only places in the system where nobody can own you.\n\nSuggested skills: Public Speaking, Politics, any practical trade, Vacc Suit",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tBHCk4rzRVDKe9Ekj",
+							"name": "Reputation: @-rep (The @-List)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Anarchists, scum, Titanian mutualists, autonomists broadly. Counts across the entire autonomist alliance and most of the outer system. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tuqh2a5kR1nqt3bDu",
+							"name": "Mutual Aid Network",
+							"base_points": 10,
+							"local_notes": "Claim to Hospitality: anarchist and autonomist habs throughout the outer system.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tdf6bIKgbdr34NqUX",
+							"name": "Intolerance (Hierarchy)",
+							"base_points": -5,
+							"local_notes": "-2 reactions dealing with bosses, cops, and officers, and you have difficulty pretending otherwise.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "ty4vJa7Pxkn8kIk52",
+							"name": "Consensus Habit",
+							"base_points": -1,
+							"local_notes": "Quirk: you want to put decisions to the group, including tactical ones.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "Tpw3H_TuIL-l2DupQ",
+					"name": "Argonaut",
+					"local_notes": "Open-source technoprogressives who think the answer to dangerous technology is more scientists watching it. Argonauts share everything, which makes them heroes to the outer system and a security problem to everyone else.\n\nSuggested skills: Research, any Science, Computer Programming, Teaching",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tQzaYw6ayfAHEz9tS",
+							"name": "Reputation: r-rep (RNA)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Scientists, technologists, argonauts, open-source engineers. Counts at research stations, universities, anywhere data is shared. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tKyBtlQPcA62i2kP3",
+							"name": "Research Access",
+							"base_points": 10,
+							"local_notes": "Claim to Hospitality plus lab access at argonaut facilities system-wide; equipment, data, and colleagues who will look at your problem.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tcdHpkk8RwPWDgCUe",
+							"name": "Sense of Duty (Open Research)",
+							"base_points": -5,
+							"local_notes": "You do not sit on discoveries, even profitable or dangerous ones. This has consequences.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "t5u3cvPSYXesZ8NV0",
+							"name": "Peer Review",
+							"base_points": -1,
+							"local_notes": "Quirk: you ask for someone's sources mid-conversation.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "T7qzBh7R3QNOX1qf-",
+					"name": "Barsoomian",
+					"local_notes": "The Martian underclass: rangers, hab-squatters, and terraforming labor who decided the planet belongs to the people breathing its half-built air rather than the hypercorps that own the paperwork.\n\nSuggested skills: Survival (Mars), Driving, Guns, Farming, Streetwise",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "t9U2yaG7r3RjlGvED",
+							"name": "Barsoomian Movement",
+							"base_points": 5,
+							"local_notes": "Contact Group: the Movement across Mars. Skill 12, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tHnoF3V_22eOT7SFy",
+							"name": "Rural Mars Hospitality",
+							"base_points": 5,
+							"local_notes": "Claim to Hospitality: Barsoomian settlements and rangers anywhere in the Martian outback.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tcRiArw4zt_hX-_C5",
+							"name": "Social Stigma (Agitator)",
+							"base_points": -5,
+							"local_notes": "-1 reactions from Consortium authorities, who have a file.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tqfQLHT4_5kdMHamf",
+							"name": "Land Loyalty",
+							"base_points": -1,
+							"local_notes": "Quirk: you talk about Mars as a person.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 4
+					}
+				},
+				{
+					"id": "THf2th_vaipyqf3e0",
+					"name": "Brinker",
+					"local_notes": "You live as far out as a habitat can be pushed, with people who chose distance over everything. Brinkers are religious isolates, survivalists, artists, and the merely unbearable, and they mostly want to be left alone.\n\nSuggested skills: Survival (Space), Mechanic, Vacc Suit, Scrounging, Astronomy",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tCDCBmNpCwv24O2zS",
+							"name": "Brinker Network",
+							"base_points": 5,
+							"local_notes": "Contact Group: scattered brinker habs, deeply suspicious but loyal once you're in. Skill 12, appears on 6 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tJmYxEXWvV72sd4FI",
+							"name": "Self-Sufficiency",
+							"base_points": 10,
+							"local_notes": "You can keep a habitat alive alone. +2 to Mechanic, Vacc Suit, and Survival rolls for habitat maintenance and emergency repair.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tAI0RUlWxdaQ4zqvG",
+							"name": "Loner",
+							"base_points": -5,
+							"local_notes": "-2 to social rolls after prolonged forced company; you need real solitude regularly.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "t7S8xBjb17stD8NCx",
+							"name": "Suspicion of Crowds",
+							"base_points": -1,
+							"local_notes": "Quirk: population density above a few hundred makes you irritable.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"id": "TMMEm4J8SvNUJht4R",
+					"name": "Criminal",
+					"local_notes": "Guanxi runs on favors that cross every border in the system: smuggling, egonapping, black-market fabbing, and the quiet industry of moving things that governments would rather stayed put.\n\nSuggested skills: Streetwise, Fast-Talk, Holdout, Smuggling, Forgery",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tHOTnqHV1lV6xXERe",
+							"name": "Reputation: g-rep (Guanxi)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Criminals, smugglers, fixers, triads and cartels. Counts everywhere, quietly. Forgives nearly anything except talking to the authorities, and never forgives that. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "ts3Oer_ze4j1Y4M_J",
+							"name": "Fence & Fixer",
+							"base_points": 10,
+							"local_notes": "Contact Group: criminal networks system-wide. Skill 15, appears on 9 or less, somewhat reliable - which for criminals is high praise.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tILRHQKtHuVs0T5_P",
+							"name": "Social Stigma (Criminal Record)",
+							"base_points": -5,
+							"local_notes": "-1 reactions from lawful society; some habs will not admit you at all.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "t4oQDB7t46w0rVJ8a",
+							"name": "Enemy (Rivals or Police)",
+							"base_points": -10,
+							"local_notes": "Someone is looking for you. Appears on 6 or less.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				},
+				{
+					"id": "T91YIy_hCgKTgpftQ",
+					"name": "Extropian",
+					"local_notes": "Market anarchists: no state, but plenty of contracts. Extropians broker between the autonomist and hypercorp economies and will sell anything to anyone, which makes them indispensable and untrustworthy in equal measure.\n\nSuggested skills: Merchant, Diplomacy, Law, Finance, Fast-Talk",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "t0iiqGThz-qckksug",
+							"name": "Reputation: @-rep (The @-List)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 1,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "You speak both economies. Anarchists, scum, Titanian mutualists, autonomists broadly. Counts across the entire autonomist alliance and most of the outer system. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 3,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tIMXopRhOmvTqu6Cu",
+							"name": "Reputation: c-rep (CivicNet)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 1,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Hypercorp employees, Consortium citizens, the LLA, Morningstar. The inner system's polite economy. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 3,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "t0uX_WQvsf2w7aNvT",
+							"name": "Broker Contacts",
+							"base_points": 10,
+							"local_notes": "Contact Group: traders, arbitrageurs, and contract lawyers across the system. Skill 15, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tu0YMJuq5cjcdXCLP",
+							"name": "Everything Is Negotiable",
+							"base_points": -5,
+							"local_notes": "You reflexively treat commitments as contracts to be renegotiated. -2 reactions from anyone who values loyalty over terms.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tLiTQDZZ-rX_UXAki",
+							"name": "Reads the Fine Print",
+							"base_points": 1,
+							"local_notes": "Quirk: you cannot skim a document.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 12
+					}
+				},
+				{
+					"id": "TKkbhFHUi2ryfkLOd",
+					"name": "Hypercorp",
+					"local_notes": "You work for one of the corporations that runs the inner system. The Planetary Consortium is not a government - it insists on this - but it holds the courts, the fabbers, and the morph banks.\n\nSuggested skills: Administration, Diplomacy, Merchant, Law, Professional Skill (corporate specialty)",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tpNaGrzszdZD4tFL4",
+							"name": "Reputation: c-rep (CivicNet)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Hypercorp employees, Consortium citizens, the LLA, Morningstar. The inner system's polite economy. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tBgD32md_deYv7Of1",
+							"name": "Corporate Resources",
+							"base_points": 10,
+							"local_notes": "Patron: your employer, appearing on 9 or less. Equipment, legal cover, transport, and an interest in your continued productivity.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tJqIdeX5x1LpW3LWf",
+							"name": "Duty (Employer)",
+							"base_points": -10,
+							"local_notes": "Appears on 12 or less. Your time and your findings belong to the company, and the company reads your mesh traffic.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tmovCUXHtoku_4yi_",
+							"name": "Brand Loyalty",
+							"base_points": -1,
+							"local_notes": "Quirk: you defend your employer reflexively, even when you agree with the criticism.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TRScTblmzZR-f4lIy",
+					"name": "Jovian Republic",
+					"local_notes": "A bioconservative military junta that survived the Fall by refusing everything that caused it: no uplifts, no AGIs, no forking, no resleeving. They are the only faction that dies properly, and they are proud of it.\n\nSuggested skills: Soldier, Guns, Tactics, Leadership, Intelligence Analysis",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tqgEl_UwGewP-FwsX",
+							"name": "Republic Standing",
+							"base_points": 5,
+							"local_notes": "Contact: Jovian military or intelligence, skill 15, appears on 6 or less. Useful and dangerous in equal measure.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "thPCnuETPopTHLyQ5",
+							"name": "Military Supply",
+							"base_points": 5,
+							"local_notes": "Access to Republic armories: weapons and armor at half price, subject to paperwork and questions.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tUdhXWvC3dlw6Fw9R",
+							"name": "Duty (Republic)",
+							"base_points": -10,
+							"local_notes": "Appears on 12 or less, hazardous. The Republic does not consider your enlistment finished.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tciucG6wgqpMTnrmn",
+							"name": "Intolerance (Transhumanism)",
+							"base_points": -5,
+							"local_notes": "-2 reactions from uplifts, AGIs, and heavily modified transhumans, and they can tell.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "TD2LnIcI757xXKwDx",
+					"name": "Lunar-Orbital Oligarch",
+					"local_notes": "Old inner-system money: Lunar clans, orbital dynasties, and the hypercapitalist families that owned things before the Fall and own more now. You do not work for the Consortium. You are among the people it works for.\n\nSuggested skills: Savoir-Faire (High Society), Politics, Finance, Diplomacy, Connoisseur",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tligXICu60p4asS8_",
+							"name": "Status",
+							"reference": "B28, L8, DW37",
+							"local_notes": "@Description@",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 10,
+								"current_level": 2
+							},
+							"levels": 2
+						},
+						{
+							"id": "t2G55b0LFcZgoLVdh",
+							"name": "Reputation: c-rep (CivicNet)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Hypercorp employees, Consortium citizens, the LLA, Morningstar. The inner system's polite economy. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tXKBWETQBPh9qQQyy",
+							"name": "Family Resources",
+							"base_points": 10,
+							"local_notes": "Patron: your family or holding company, appearing on 6 or less. Considerable resources, considerable strings.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tb8LjLm8kolF1zVYg",
+							"name": "Social Stigma (Oligarch)",
+							"base_points": -5,
+							"local_notes": "-2 reactions in autonomist space, where your name is a punchline or a threat.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "t-Ja4kHhN84T-mOaK",
+							"name": "Expects Deference",
+							"base_points": -1,
+							"local_notes": "Quirk: you are visibly surprised when it isn't offered.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "TSJZhKJiwQzH-Sb6e",
+					"name": "Mercurial",
+					"local_notes": "The rights movement for uplifts and AGIs: everyone transhumanity made and then declined to fully admit was a person. Mercurials range from lobbyists to liberation cells that break into morph banks.\n\nSuggested skills: Politics, Public Speaking, Law, Propaganda, Computer Hacking",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tigzvfS3tCltu9M3c",
+							"name": "Mercurial Network",
+							"base_points": 10,
+							"local_notes": "Contact Group: Mercurial cells and sympathizers system-wide. Skill 15, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tjtRMVJu2Ja8t0ene",
+							"name": "Community Standing",
+							"base_points": 5,
+							"local_notes": "+2 reactions from uplifts and AGIs anywhere.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "ttswJbY1XMgsNeWK6",
+							"name": "Social Stigma (Radical)",
+							"base_points": -5,
+							"local_notes": "-1 reactions from inner-system authority; in Jovian space, considerably worse.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tmj75Bo8WhFdpV3qO",
+							"name": "Sense of Duty (Uplifts and AGIs)",
+							"base_points": -10,
+							"local_notes": "You do not walk past it. Ever.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "Txv958uKQr81NblpU",
+					"name": "Nano-Ecologist",
+					"local_notes": "Environmental engineers who treat habitats and worlds as ecosystems to be designed rather than resources to be stripped. Nano-ecologists fight terraformers, hypercorps, and occasionally each other over what a living world is for.\n\nSuggested skills: Biology, Ecology, Engineer (Nanotech), Chemistry, Naturalist",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tPDOTDlC_ywhbYt7s",
+							"name": "Reputation: e-rep (EcoWave)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Nano-ecologists, preservationists, reclaimers, gatekeeper greens. Counts anywhere terraforming or Earth reclamation is argued about. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "t296ZbPtbm9CkYbEi",
+							"name": "Field Network",
+							"base_points": 10,
+							"local_notes": "Contact Group: ecological researchers and activists throughout the system, with access to labs, samples, and inconvenient data. Skill 12, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tKH02zts4WrOBWy_J",
+							"name": "Sense of Duty (Ecosystems)",
+							"base_points": -10,
+							"local_notes": "You will not participate in ecological damage, and you will intervene.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tqV-6U5kIV_QUdm81",
+							"name": "Systems View",
+							"base_points": -1,
+							"local_notes": "Quirk: you describe social situations in ecological terms without noticing.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "Tbw8OwTZ_KDyAA1tF",
+					"name": "Reclaimer",
+					"local_notes": "Earth is not dead, it is occupied, and leaving it to the TITANs is a failure of nerve. Reclaimers run reconnaissance into the exclusion zone and lobby loudly for a return that most of the system considers suicidal.\n\nSuggested skills: Survival (Earth), Vacc Suit, Guns, Archaeology, Piloting",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tMpWQ7NuwppEK4iTr",
+							"name": "Reputation: e-rep (EcoWave)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Nano-ecologists, preservationists, reclaimers, gatekeeper greens. Counts anywhere terraforming or Earth reclamation is argued about. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tRWf18x9SPzuuW8u4",
+							"name": "Reclaimer Network",
+							"base_points": 10,
+							"local_notes": "Contact Group: reclaimer expeditions, salvage crews, and sympathizers, with access to Earth-return intelligence nobody else has. Skill 12, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tgpDIqbvg-oaO7uIc",
+							"name": "Obsession (Reclaim Earth)",
+							"base_points": -10,
+							"local_notes": "Long-term goal, driving. You take risks for it that a reasonable person would not.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tOoaEj3LlsoOBouws",
+							"name": "Zone Familiarity",
+							"base_points": 5,
+							"local_notes": "+2 to rolls involving Earth's exclusion zone: navigation, salvage, and recognizing what you're looking at before it notices you.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 11
+					}
+				},
+				{
+					"id": "TdjkCQl7PcohWqPP0",
+					"name": "Preservationist",
+					"local_notes": "Earth should be left alone: as a graveyard, as a quarantine, and as evidence. Preservationists fight reclaimers politically and sabotage them practically, and they are among the few who talk about the Fall as something other than a setback.\n\nSuggested skills: Politics, Public Speaking, Law, History, Propaganda",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tHrs_4kWrFRy5VSXP",
+							"name": "Reputation: e-rep (EcoWave)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Nano-ecologists, preservationists, reclaimers, gatekeeper greens. Counts anywhere terraforming or Earth reclamation is argued about. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tKMepXJlLaZQTjbnT",
+							"name": "Preservationist Network",
+							"base_points": 10,
+							"local_notes": "Contact Group: activists, historians, and quarantine researchers. Skill 12, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "thFcZ3l_o1np9Vz__",
+							"name": "Sense of Duty (Earth's Quarantine)",
+							"base_points": -10,
+							"local_notes": "You will act to stop unauthorized Earth expeditions, including your allies'.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "trXG8K35iFEuXWoQr",
+							"name": "Memorial Habit",
+							"base_points": -1,
+							"local_notes": "Quirk: you mark Fall anniversaries, out loud, wherever you are.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "ToIlLQONGi0rbEXlW",
+					"name": "Scum",
+					"local_notes": "A swarm of derelict ships and party barges crewed by everyone the inner system exiled and several people it should have. Scum culture is transhumanity with the brakes cut: every modification, every arrangement, every substance.\n\nSuggested skills: Carousing, Free Fall, Scrounging, Streetwise, Artist or Musical Instrument",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tfiLfTEvHsA3hjWw4",
+							"name": "Reputation: @-rep (The @-List)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Anarchists, scum, Titanian mutualists, autonomists broadly. Counts across the entire autonomist alliance and most of the outer system. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tMA6Drel5Zx6ElIkh",
+							"name": "Swarm Hospitality",
+							"base_points": 10,
+							"local_notes": "Claim to Hospitality: any scum swarm. Berth, black-market fabbing, medical help, and total discretion.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tZD6XR7Cp0KbatpjM",
+							"name": "Social Stigma (Scum)",
+							"base_points": -5,
+							"local_notes": "-1 reactions from respectable society, which will not dock with you.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tBlldTWh4eG60D4ev",
+							"name": "Nothing Shocks You",
+							"base_points": 5,
+							"local_notes": "+2 to resist disgust, intimidation, and social pressure.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 16
+					}
+				},
+				{
+					"id": "TLkp1WP7fjy9DKmUu",
+					"name": "Singularity Seeker",
+					"local_notes": "You want to become what the TITANs became, and you think they got the destination right and the method wrong. Seekers pursue transcendence through forking, merging, mental augmentation, and occasionally things Firewall burns.\n\nSuggested skills: Computer Programming, Psychosurgery, Philosophy, Mathematics, Research",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tjguiAZx-WeLXxbh1",
+							"name": "Seeker Contacts",
+							"base_points": 5,
+							"local_notes": "Contact Group: other seekers, secretive and technically formidable. Skill 15, appears on 6 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tYgX5UHYwjjW9LFmE",
+							"name": "Fork Discipline",
+							"base_points": 10,
+							"local_notes": "You have merged more forks than anyone should. +3 to all rolls to merge a fork, and you take half the usual stress from doing so.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "t3TReLHqeS5_IGWYO",
+							"name": "Obsession (Transcendence)",
+							"base_points": -10,
+							"local_notes": "Long-term goal, driving. You will take risks with your own mind.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "t5s_POYkVkd5l-aFo",
+							"name": "Social Stigma (Seeker)",
+							"base_points": -5,
+							"local_notes": "-1 reactions generally, and Firewall keeps a list you are probably on.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TViMqQy6VwIuJS3Cb",
+					"name": "Titanian",
+					"local_notes": "Titan runs a technosocialist democracy: everyone votes, everyone contributes, the microcorps compete inside a planned commons, and the whole thing works well enough to embarrass both neighbors. It is the outer system's answer to the accusation that anarchism cannot scale.\n\nSuggested skills: Politics, Administration, any science or engineering, Public Speaking, Vacc Suit",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tze_oY_RfqDXjcYqn",
+							"name": "Reputation: @-rep (The @-List)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Anarchists, scum, Titanian mutualists, autonomists broadly. Counts across the entire autonomist alliance and most of the outer system. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "t34VIdOsxkaPv4jWA",
+							"name": "Commonwealth Citizenship",
+							"base_points": 10,
+							"local_notes": "Full Titanian citizenship: guaranteed cost of living, morph insurance, legal standing, and a vote. Effectively Comfortable Wealth that cannot be confiscated, plus Claim to Hospitality on Titan.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tGXLoniWBScgC6t0_",
+							"name": "Duty (Commonwealth)",
+							"base_points": -5,
+							"local_notes": "Appears on 9 or less. Citizenship includes service obligations, and Titan collects.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tzl2iTfnoTdyTgYRz",
+							"name": "Proceduralist",
+							"base_points": -1,
+							"local_notes": "Quirk: you believe there is a correct process for this and you know what it is.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "T_JRgzfm91Mu4trtX",
+					"name": "Ultimate",
+					"local_notes": "A militant transhumanist order pursuing deliberate self-perfection: engineered morphs, edited minds, and a contempt for anyone content with what evolution or the Fall left them. Ultimates hire out as mercenaries and consider it training.\n\nSuggested skills: Soldier, Guns, Tactics, Karate or Judo, Intimidation",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "t0QAJzFEO81FIXPLh",
+							"name": "Order Standing",
+							"base_points": 5,
+							"local_notes": "Contact Group: the Ultimate order, disciplined and well-equipped. Skill 15, appears on 6 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "tOFqp-0NdyU4uWuDb",
+							"name": "Ultimate Conditioning",
+							"base_points": 10,
+							"local_notes": "Relentless mental and physical training regimens. +2 Will against pain, fear, and coercion, and +1 to any one combat skill of your choice.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tqj6zYyX-u5ijuUr1",
+							"name": "Intolerance (The Unmodified)",
+							"base_points": -5,
+							"local_notes": "-2 reactions from flats, bioconservatives, and anyone who declines augmentation. You do not hide the contempt well.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "taywxxhX83S8bIPCQ",
+							"name": "Duty (The Order)",
+							"base_points": -10,
+							"local_notes": "Appears on 12 or less, hazardous. The Order's projects are not optional and are not always explained.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TObJPUMCzPpWFQrO1",
+					"name": "Venusian (Morningstar)",
+					"local_notes": "The Morningstar Constellation: cloud cities that broke from the Consortium and made independence look elegant. Venus does aerostat aristocracy, aggressive terraforming research, and the politest hardball in the system.\n\nSuggested skills: Diplomacy, Politics, Savoir-Faire, Piloting (Aerospace), Administration",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "tq0J_UUNQYkh3j685",
+							"name": "Reputation: c-rep (CivicNet)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Hypercorp employees, Consortium citizens, the LLA, Morningstar. The inner system's polite economy. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "tu2kZBmvNotDYvqOd",
+							"name": "Status",
+							"reference": "B28, L8, DW37",
+							"local_notes": "@Description@",
+							"tags": [
+								"Advantage",
+								"Social"
+							],
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 5,
+								"current_level": 1
+							},
+							"levels": 1
+						},
+						{
+							"id": "tj3MfM3u2as8z5f2y",
+							"name": "Constellation Contacts",
+							"base_points": 10,
+							"local_notes": "Contact Group: Morningstar political and commercial circles. Skill 15, appears on 9 or less.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "thpOxtlmCOKjY0RC1",
+							"name": "Duty (Constellation Interests)",
+							"base_points": -5,
+							"local_notes": "Appears on 9 or less. Independence requires maintenance.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tZ0cM7qwi_ERG30uU",
+							"name": "Never Raises Their Voice",
+							"base_points": -1,
+							"local_notes": "Quirk: you deliver threats in the register other people use for weather.",
+							"tags": [
+								"Disadvantage",
+								"Mental",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -1
+							}
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "TCJdxIkcrC91luvos",
+					"name": "Firewall Sentinel",
+					"local_notes": "You are not a member of anything. You are a name on a list held by people you have never met, and when they call you go, because the alternative is the end of transhumanity and you have seen the evidence.\n\nSuggested skills: Any; Firewall recruits for capability. Consider Computer Hacking, Guns, Research, Psychology",
+					"tags": [
+						"Faction",
+						"Eclipse Phase"
+					],
+					"children": [
+						{
+							"id": "ty4LADVM_ow4_cAA6",
+							"name": "Reputation: i-rep (The Eye)",
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 2,
+							"tags": [
+								"Advantage",
+								"Social",
+								"Reputation",
+								"Eclipse Phase"
+							],
+							"local_notes": "Meaningless outside Firewall and invaluable inside it. Firewall sentinels and proxies. Firewall campaigns only; officially nonexistent. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+							"calc": {
+								"points": 6,
+								"current_level": 2
+							}
+						},
+						{
+							"id": "thvH4j1r5Shncl0uv",
+							"name": "Proxy Support",
+							"base_points": 10,
+							"local_notes": "Patron: your Firewall proxy, appearing on 9 or less. Equipment, intelligence, transport, extraction, and resleeving - within reason, deniably, and never quite enough.",
+							"tags": [
+								"Advantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "tKXcawnJLahoX8n_s",
+							"name": "Duty (Firewall)",
+							"base_points": -15,
+							"local_notes": "Appears on 12 or less, extremely hazardous. When the call comes you drop everything, and the missions are the ones nobody else can be told about.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -15
+							}
+						},
+						{
+							"id": "t3lEa69CwqivnYeVF",
+							"name": "Secret (Firewall Sentinel)",
+							"base_points": -10,
+							"local_notes": "Exposure means the hypercorps hunt you, the Jovians shoot you, and Firewall itself decides what to do about the leak.",
+							"tags": [
+								"Disadvantage",
+								"Social",
+								"Eclipse Phase"
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": -9
+					}
+				}
+			],
+			"local_notes": "Pick one, or none if your character is unaffiliated. Factions describe who you answer to now, and most include a starting reputation network.",
+			"calc": {
+				"points": 119
+			}
+		},
+		{
+			"id": "TAfSH9AcOqU9yjFrZ",
+			"name": "Reputation Networks",
+			"children": [
+				{
+					"id": "tlZ9PexubWNuSZILW",
+					"name": "Reputation: @-rep (The @-List)",
+					"points_per_level": 3,
+					"can_level": true,
+					"levels": 1,
+					"tags": [
+						"Advantage",
+						"Social",
+						"Reputation",
+						"Eclipse Phase"
+					],
+					"local_notes": "Anarchists, scum, Titanian mutualists, autonomists broadly. Counts across the entire autonomist alliance and most of the outer system. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+					"calc": {
+						"points": 3,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tuBB3eeygZzLq-wzn",
+					"name": "Reputation: c-rep (CivicNet)",
+					"points_per_level": 3,
+					"can_level": true,
+					"levels": 1,
+					"tags": [
+						"Advantage",
+						"Social",
+						"Reputation",
+						"Eclipse Phase"
+					],
+					"local_notes": "Hypercorp employees, Consortium citizens, the LLA, Morningstar. The inner system's polite economy. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+					"calc": {
+						"points": 3,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tjhUSgnE4IJwXdah-",
+					"name": "Reputation: e-rep (EcoWave)",
+					"points_per_level": 3,
+					"can_level": true,
+					"levels": 1,
+					"tags": [
+						"Advantage",
+						"Social",
+						"Reputation",
+						"Eclipse Phase"
+					],
+					"local_notes": "Nano-ecologists, preservationists, reclaimers, gatekeeper greens. Counts anywhere terraforming or Earth reclamation is argued about. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+					"calc": {
+						"points": 3,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tBUCMeCMMVQJZ-S35",
+					"name": "Reputation: f-rep (Fame)",
+					"points_per_level": 3,
+					"can_level": true,
+					"levels": 1,
+					"tags": [
+						"Advantage",
+						"Social",
+						"Reputation",
+						"Eclipse Phase"
+					],
+					"local_notes": "Media, socialites, artists, XP stars. Opens doors everywhere, airlocks rarely. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+					"calc": {
+						"points": 3,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tOFi44A-1ImekskCl",
+					"name": "Reputation: g-rep (Guanxi)",
+					"points_per_level": 3,
+					"can_level": true,
+					"levels": 1,
+					"tags": [
+						"Advantage",
+						"Social",
+						"Reputation",
+						"Eclipse Phase"
+					],
+					"local_notes": "Criminals, smugglers, fixers, triads and cartels. Counts everywhere, quietly. Forgives nearly anything except talking to the authorities, and never forgives that. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+					"calc": {
+						"points": 3,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tVWeArQsxiAXQagaE",
+					"name": "Reputation: r-rep (RNA)",
+					"points_per_level": 3,
+					"can_level": true,
+					"levels": 1,
+					"tags": [
+						"Advantage",
+						"Social",
+						"Reputation",
+						"Eclipse Phase"
+					],
+					"local_notes": "Scientists, technologists, argonauts, open-source engineers. Counts at research stations, universities, anywhere data is shared. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+					"calc": {
+						"points": 3,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tlkz4epEQwJgiJfAh",
+					"name": "Reputation: x-rep (Explore-Net)",
+					"points_per_level": 3,
+					"can_level": true,
+					"levels": 1,
+					"tags": [
+						"Advantage",
+						"Social",
+						"Reputation",
+						"Eclipse Phase"
+					],
+					"local_notes": "Gatecrashers and first-in explorers. Counts at gateway habs and anywhere people brag about dying somewhere new. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+					"calc": {
+						"points": 3,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tBMFxN7FHAzB7pI9Q",
+					"name": "Reputation: i-rep (The Eye)",
+					"points_per_level": 3,
+					"can_level": true,
+					"levels": 1,
+					"tags": [
+						"Advantage",
+						"Social",
+						"Reputation",
+						"Eclipse Phase"
+					],
+					"local_notes": "Firewall sentinels and proxies. Firewall campaigns only; officially nonexistent. Maximum 8. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering, Part VIII). 1-2 member in good standing, 3-4 known contributor, 5-6 respected fixture, 7-8 network celebrity - whose failures are equally famous.",
+					"calc": {
+						"points": 3,
+						"current_level": 1
+					}
+				}
+			],
+			"local_notes": "3 points per level, maximum 8, bought per network. Functions as Courtesy Rank for Pulling Rank requests (GURPS Social Engineering). See Part VIII.",
+			"calc": {
+				"points": 24
+			}
+		}
+	]
+}

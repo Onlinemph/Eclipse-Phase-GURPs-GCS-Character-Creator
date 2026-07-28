@@ -18,22 +18,41 @@ export default {
     const { build, cat, update } = ctx;
     const defs = new Map(cat.attrDefs.map((d) => [d.id, d]));
 
+    // The cost cells and the total are recomputed straight from the input,
+    // because the step body is deliberately not re-rendered while a field has
+    // the caret — see typingInBody() in app.js.
+    const costCells = new Map();
+    const totalCell = el("td.num", String(attributePoints(build, cat.attrDefs)));
+
+    const refreshCosts = () => {
+      for (const [id, cell] of costCells) {
+        const def = defs.get(id);
+        const cost = (build.attributes[id] - Number(def.base)) * def.cost_per_point;
+        cell.textContent = String(cost);
+        cell.classList.toggle("negative", cost < 0);
+      }
+      totalCell.textContent = String(attributePoints(build, cat.attrDefs));
+    };
+
     const rows = EGO_ATTRIBUTES.map((id) => {
       const def = defs.get(id);
       if (!def) return null;
       const base = Number(def.base);
       const value = build.attributes[id];
       const cost = (value - base) * def.cost_per_point;
+      const costCell = el("td.num" + (cost < 0 ? ".negative" : ""), String(cost));
+      costCells.set(id, costCell);
       return el("tr",
         el("th", def.full_name || def.name),
         el("td",
-          numberInput(value, (v) => update((b) => { b.attributes[id] = v ?? base; }), {
-            min: 1, max: 30, step: 1, class: "attr-input",
-          }),
+          numberInput(value, (v) => {
+            update((b) => { b.attributes[id] = v ?? base; });
+            refreshCosts();
+          }, { min: 1, max: 30, step: 1, class: "attr-input" }),
         ),
         el("td.muted", String(base)),
         el("td.muted", `${def.cost_per_point}/level`),
-        el("td.num" + (cost < 0 ? ".negative" : ""), String(cost)),
+        costCell,
         el("td.muted.why", WHY[id] || ""),
       );
     });
@@ -53,11 +72,7 @@ export default {
           ),
           el("tbody", rows),
           el("tfoot",
-            el("tr",
-              el("th", { colspan: 4 }, "Total"),
-              el("td.num", String(attributePoints(build, cat.attrDefs))),
-              el("td"),
-            ),
+            el("tr", el("th", { colspan: 4 }, "Total"), totalCell, el("td")),
           ),
         ),
         el("p.muted",

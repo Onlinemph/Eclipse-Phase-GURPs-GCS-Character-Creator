@@ -26,8 +26,19 @@ function levelOf(entry, build) {
 /** Technique rows carry a bare difficulty ("a"/"h") and default off another skill. */
 const isTechnique = (entry) => entry.kind === "technique";
 
-function skillKey(entry) {
-  return `${entry.name}|${entry.specialization || ""}`;
+/**
+ * A row's identity, fixed when it is added.
+ *
+ * It cannot be derived from name and specialization: typing a specialization
+ * would change the identity on every keystroke, and the handler holding the old
+ * one would stop finding its row after the first character.
+ */
+let nextUID = 1;
+const newUID = () => `s${nextUID++}-${Math.random().toString(36).slice(2, 8)}`;
+
+/** What makes two skills the same skill, for "already chosen" checks. */
+function sameSkill(a, b) {
+  return a.name === b.name && (a.specialization || "") === (b.specialization || "");
 }
 
 export default {
@@ -36,22 +47,22 @@ export default {
 
   render(ctx) {
     const { build, cat, update } = ctx;
-    const chosen = new Set(build.skills.map(skillKey));
+    const chosen = new Set(build.skills.map((s) => `${s.name}|${s.specialization || ""}`));
 
     const add = (entry) => update((b) => {
-      if (b.skills.some((s) => skillKey(s) === skillKey(entry))) return;
-      b.skills.push(entry);
+      if (b.skills.some((s) => sameSkill(s, entry))) return;
+      b.skills.push({ ...entry, uid: newUID() });
       b.skills.sort((a, c) => a.name.localeCompare(c.name));
     });
-    const remove = (key) => update((b) => {
-      b.skills = b.skills.filter((s) => skillKey(s) !== key);
+    const remove = (uid) => update((b) => {
+      b.skills = b.skills.filter((s) => s.uid !== uid);
     });
-    const setPoints = (key, value) => update((b) => {
-      const found = b.skills.find((s) => skillKey(s) === key);
+    const setPoints = (uid, value) => update((b) => {
+      const found = b.skills.find((s) => s.uid === uid);
       if (found) found.points = value;
     });
-    const setField = (key, name, value) => update((b) => {
-      const found = b.skills.find((s) => skillKey(s) === key);
+    const setField = (uid, name, value) => update((b) => {
+      const found = b.skills.find((s) => s.uid === uid);
       if (found) found[name] = value;
     });
 
@@ -81,7 +92,7 @@ function chosenTable(build, remove, setPoints, setField) {
           ),
           el("tbody",
             build.skills.map((entry) => {
-              const key = skillKey(entry);
+              const key = entry.uid;
               const level = levelOf(entry, build);
               const { attr, diff } = parseDifficulty(entry.difficulty);
               return el("tr",

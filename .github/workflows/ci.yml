@@ -34,3 +34,6 @@ jobs:
 
       - name: End-to-end browser test
         run: npm run test:browser
+
+      - name: Input handling on a phone-sized viewport
+        run: npm run test:typing

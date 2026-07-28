@@ -53,21 +53,29 @@ export default {
           el("tbody",
             cat.packages.repnets.map((net) => {
               const level = build.repnets[net.key] || 0;
+              // Updated straight from the slider: the step body is deliberately
+              // not re-rendered mid-drag, so these would otherwise freeze.
+              const levelLabel = el("span.rep-level", String(level));
+              const pointsCell = el("td.num", String(level * REP_COST_PER_LEVEL));
               return el("tr",
                 el("td", el("strong", net.code), " ", el("span.muted", net.network)),
                 el("td.muted.why", net.notes.split(".")[0]),
                 el("td",
                   el("input", {
                     type: "range", min: 0, max: REP_MAX_LEVEL, value: level, class: "rep-range",
-                    oninput: (e) => update((b) => {
+                    oninput: (e) => {
                       const v = Number(e.target.value);
-                      if (v) b.repnets[net.key] = v;
-                      else delete b.repnets[net.key];
-                    }),
+                      levelLabel.textContent = String(v);
+                      pointsCell.textContent = String(v * REP_COST_PER_LEVEL);
+                      update((b) => {
+                        if (v) b.repnets[net.key] = v;
+                        else delete b.repnets[net.key];
+                      });
+                    },
                   }),
-                  el("span.rep-level", String(level)),
+                  levelLabel,
                 ),
-                el("td.num", String(level * REP_COST_PER_LEVEL)),
+                pointsCell,
               );
             }),
           ),

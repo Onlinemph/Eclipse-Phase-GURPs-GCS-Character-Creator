@@ -47,6 +47,71 @@ async function needMorph(key) {
   cat.morphs.set(key, await data.morph(key));
 }
 
+/**
+ * True while the caret is in a field inside the step body.
+ *
+ * Re-rendering the body replaces that field with a new element, which drops
+ * focus and the caret. On a phone that closes the keyboard, so a name typed a
+ * character at a time arrives reversed, one keystroke per tap. While someone is
+ * typing, the body is left alone and only the sidebar refreshes; the body
+ * catches up on the next interaction that is not a keystroke.
+ */
+const TEXT_ENTRY = new Set(["text", "search", "number", "tel", "email", "url", "password"]);
+
+function typingInBody() {
+  const node = document.activeElement;
+  if (!node || !dom.main?.contains(node)) return false;
+  if (node.tagName === "TEXTAREA") return true;
+  if (node.tagName !== "INPUT") return false;
+  // A slider being dragged is the same problem: replacing the element mid-drag
+  // drops the pointer and the drag stops dead.
+  return TEXT_ENTRY.has(node.type) || node.type === "range";
+}
+
+/**
+ * Where the caret was, so a re-render can put it back.
+ *
+ * The element is found again by its position in the step body, which is stable
+ * because a re-render rebuilds the same shape with different values. The tag
+ * and type are checked before restoring, so a render that genuinely changed the
+ * layout just leaves focus alone rather than landing it somewhere arbitrary.
+ */
+function focusSnapshot() {
+  const node = document.activeElement;
+  if (!node || !dom.main?.contains(node) || node === dom.main) return null;
+  const path = [];
+  for (let cur = node; cur && cur !== dom.main; cur = cur.parentNode) {
+    path.push([].indexOf.call(cur.parentNode.children, cur));
+  }
+  const snapshot = { path: path.reverse(), tag: node.tagName, type: node.type || "" };
+  try {
+    // Throws on input types that have no text selection, such as number.
+    snapshot.start = node.selectionStart;
+    snapshot.end = node.selectionEnd;
+  } catch {
+    /* not a text field; focus alone is enough */
+  }
+  return snapshot;
+}
+
+function restoreFocus(snapshot) {
+  if (!snapshot) return;
+  let node = dom.main;
+  for (const index of snapshot.path) {
+    node = node?.children?.[index];
+    if (!node) return;
+  }
+  if (node.tagName !== snapshot.tag || (node.type || "") !== snapshot.type) return;
+  node.focus({ preventScroll: true });
+  if (snapshot.start !== null && snapshot.start !== undefined) {
+    try {
+      node.setSelectionRange(snapshot.start, snapshot.end);
+    } catch {
+      /* the field no longer supports selection */
+    }
+  }
+}
+
 const ctx = {
   get build() { return build; },
   cat,
@@ -55,7 +120,13 @@ const ctx = {
   update(mutate) {
     if (mutate) mutate(build);
     save(build);
-    render();
+    if (typingInBody()) {
+      // Keep the running totals and the sheet live, leave the field alone.
+      renderTally();
+      renderSheet();
+    } else {
+      render();
+    }
   },
   reset() {
     build = defaultBuild();
@@ -127,6 +198,7 @@ function renderTally() {
 }
 
 function render() {
+  const focus = focusSnapshot();
   renderNav();
   renderTally();
   renderSheet();
@@ -148,6 +220,7 @@ function render() {
         : ui.el("span"),
     ),
   );
+  restoreFocus(focus);
 }
 
 async function start() {

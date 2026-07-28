@@ -125,10 +125,28 @@ function chosen(build, update) {
   }
   const total = build.customTraits.reduce((sum, t) => sum + customTraitCost(t), 0);
 
-  const set = (index, key, value) => update((b) => { b.customTraits[index][key] = value; });
+  // Like the attributes step: the cost beside each field is refreshed straight
+  // from the input, because typing does not re-render the step body.
+  const costCells = new Map();
+  const heading = el("h3", `On the sheet (${build.customTraits.length}, ${total} points)`);
+
+  const refreshCosts = () => {
+    for (const [index, cell] of costCells) {
+      const cost = customTraitCost(build.customTraits[index]);
+      cell.textContent = String(cost);
+      cell.classList.toggle("negative", cost < 0);
+    }
+    const now = build.customTraits.reduce((sum, t) => sum + customTraitCost(t), 0);
+    heading.textContent = `On the sheet (${build.customTraits.length}, ${now} points)`;
+  };
+
+  const set = (index, key, value) => {
+    update((b) => { b.customTraits[index][key] = value; });
+    refreshCosts();
+  };
 
   return el("section.card",
-    el("h3", `On the sheet (${build.customTraits.length}, ${total} points)`),
+    heading,
     el("table.table",
       el("thead",
         el("tr",
@@ -170,9 +188,7 @@ function chosen(build, update) {
               select(SELF_CONTROL.map((c) => ({ value: c.value, label: c.label })),
                 trait.cr || 0, (v) => set(index, "cr", Number(v))),
             ),
-            el("td.num" + (customTraitCost(trait) < 0 ? ".negative" : ""),
-              String(customTraitCost(trait)),
-            ),
+            costCell(index, trait, costCells),
             el("td",
               el("div.row",
                 checkbox("levelled", trait.levelled, (v) => set(index, "levelled", v)),
@@ -188,6 +204,14 @@ function chosen(build, update) {
       "way a morph's own disadvantages do.",
     ),
   );
+}
+
+/** The per-row cost cell, kept so typing can refresh it in place. */
+function costCell(index, trait, cells) {
+  const cost = customTraitCost(trait);
+  const cell = el("td.num" + (cost < 0 ? ".negative" : ""), String(cost));
+  cells.set(index, cell);
+  return cell;
 }
 
 function suggestions(build, add) {

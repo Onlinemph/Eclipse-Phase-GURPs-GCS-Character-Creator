@@ -10,10 +10,11 @@
     "test": "npm run test:library && npm run test:cost && npm run test:sheet && npm run test:export",
     "test:library": "node tests/library.test.mjs",
     "test:cost": "node tests/cost.test.mjs",
+    "test:sheet": "node tests/sheet.test.mjs",
     "test:export": "node tests/export.test.mjs",
     "test:browser": "node tests/browser.test.mjs",
-    "test:all": "npm test && npm run test:browser",
-    "test:sheet": "node tests/sheet.test.mjs"
+    "test:typing": "node tests/typing.test.mjs",
+    "test:all": "npm test && npm run test:browser && npm run test:typing"
   },
   "devDependencies": {
     "playwright": "^1.49.0"

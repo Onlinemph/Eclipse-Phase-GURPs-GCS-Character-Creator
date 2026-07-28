@@ -144,6 +144,11 @@ export function migrate(build) {
     if (!Array.isArray(merged[list])) merged[list] = [];
   }
   if (!merged.repnets || typeof merged.repnets !== "object") merged.repnets = {};
+  // Skill rows are addressed by a stable id. Builds saved before that existed
+  // need one, or every row would answer to the same undefined key.
+  merged.skills = merged.skills.map((skill, index) => (
+    skill.uid ? skill : { ...skill, uid: `migrated-${index}` }
+  ));
   merged.format = BUILD_FORMAT;
   return merged;
 }

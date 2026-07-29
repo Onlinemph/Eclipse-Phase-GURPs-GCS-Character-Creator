@@ -31,7 +31,7 @@ export default {
           "Points spent on a morph are points not spent on skills, which are permanent while the " +
           "morph is not. A Splicer at 3 points leaves 16 more points for skills than a Fury at 19.",
         ),
-        morphBrowser(index, build.morph?.key, choose),
+        morphBrowser(index, build, choose, update),
       ),
       selected ? morphDetail(selected, payload, build, update) : null,
       selected ? slotPicker(selected, build, update) : null,
@@ -57,9 +57,14 @@ export default {
   },
 };
 
-function morphBrowser(index, selectedKey, choose) {
+function morphBrowser(index, build, choose, update) {
+  const selectedKey = build.morph?.key;
   const body = el("div.pick-list");
   const state = { query: "", category: "all", maxCost: null };
+  // Kept in the build, not locally: selecting a morph re-renders the step, and
+  // a local flag would reset and hide the morph the player just chose.
+  const showAll = () => build.options.showAllMorphs;
+  const hidden = index.filter((m) => !m.chargen).length;
 
   const draw = () => {
     clear(body);
@@ -70,6 +75,7 @@ function morphBrowser(index, selectedKey, choose) {
     for (const category of categories) {
       const items = index.filter((m) =>
         m.category === category &&
+        (showAll() || m.chargen) &&
         matches(state.query, m.name, m.notes) &&
         (state.maxCost === null || m.points <= state.maxCost),
       );
@@ -79,13 +85,14 @@ function morphBrowser(index, selectedKey, choose) {
         el("h4.pick-group", `${category} (${items.length})`),
         el("div.card-grid",
           items.map((m) =>
-            el(`button.pick-card${m.key === selectedKey ? ".active" : ""}`, {
+            el(`button.pick-card${m.key === selectedKey ? ".active" : ""}${m.chargen ? "" : ".gm-only"}`, {
               type: "button", onclick: () => choose(m.key),
             },
               el("div.pick-head",
                 el("span.pick-name", m.name),
                 el("span.pick-cost", `${m.points} pts`),
               ),
+              m.chargen ? null : el("p.pick-notes.warn-text", "Not available at character creation."),
               el("p.pick-notes", m.notes),
               el("div.morph-tags",
                 m.cp !== null ? el("span.tag", `${m.cp} CP`) : null,
@@ -119,6 +126,10 @@ function morphBrowser(index, selectedKey, choose) {
       el("option", { value: "" }, "Any cost"),
       [3, 5, 10, 15, 20, 25].map((c) => el("option", { value: c }, `${c} points or less`)),
     ),
+    hidden
+      ? checkbox(`Include the ${hidden} morphs a player cannot start with`, showAll(),
+          (v) => update((b) => { b.options.showAllMorphs = v; }))
+      : null,
   );
 
   draw();
@@ -162,7 +173,17 @@ function morphDetail(entry, payload, build, update) {
         )
       : null,
 
-    diverges
+    entry.chargen
+      ? null
+      : notice("error",
+          `The ${entry.name} is not available at character creation. ` +
+          (entry.priced
+            ? "It carries a chargen price, but the procedure puts it out of reach."
+            : `It has no Customization Point cost and no price adjustment, so GCS charges its ` +
+              `full package value of ${entry.points} points. It is listed for GM reference.`),
+        ),
+
+    diverges && entry.chargen
       ? el("div.stack",
           notice("warn",
             `As configured, GCS computes ${computed} points for this morph rather than its ` +
@@ -177,7 +198,9 @@ function morphDetail(entry, payload, build, update) {
             (v) => update((b) => { b.options.normalizeMorphPrice = v; }),
           ),
         )
-      : notice("ok", `GCS will compute ${entry.points} points for this morph, as documented.`),
+      : entry.chargen
+        ? notice("ok", `GCS will compute ${entry.points} points for this morph, as documented.`)
+        : null,
   );
 }
 

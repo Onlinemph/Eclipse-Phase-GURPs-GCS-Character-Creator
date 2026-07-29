@@ -21,13 +21,13 @@ conversion actually offers:
 | 2 | DX, IQ, Will and Per, priced by `EP_ATT.attr` |
 | 3 | One of 15 backgrounds, whole package included |
 | 4 | One of 19 factions, plus levels in any of 8 reputation networks |
-| 4b | Any advantage, disadvantage or quirk, with levels and self-control rolls |
-| 5 | 59 setting skills and techniques, ~110 Basic Set skills, or anything typed by hand |
-| 6 | One of 103 morphs, filtered by category and cost, with its customization slots |
-| 7 | 91 augmentations with cash prices, and 126 as traits if you want the mechanics |
-| 8 | 1,007 items of gear against $50,000, each carried, stowed or unequipped |
+| 4b | 42 setting traits, 46 derangements and disorders, and any Basic Set trait by hand |
+| 5 | 60 setting skills and techniques, ~110 Basic Set skills, or anything typed by hand |
+| 6 | One of 101 chargen-legal morphs (of 103), filtered by category and cost, with its slots |
+| 7 | 227 augmentations with cash prices, and 213 as traits if you want the mechanics |
+| 8 | 1,221 items of gear against $50,000, each carried, stowed or unequipped |
 | 9 | The muse, as a 5-point Ally or a 0-point setting conceit |
-| 10 | Watts-MacLeod, Async Talent and 68 sleights with Alternative Ability pricing |
+| 10 | Watts-MacLeod, Async Talent and 81 sleights with Alternative Ability pricing |
 | 10b | The full description block and every GCS sheet setting |
 | 11 | A point audit, the −50 disadvantage check, and the `.gcs` download |
 
@@ -47,8 +47,8 @@ from the rows that will be written to the file.
 The libraries carry roughly 7,000 features: attribute bonuses, DR by hit location, skill
 bonuses, reaction and conditional modifiers. GCS applies them when it opens a sheet. The
 builder applies the same ones up front, so ST reads 0 until a morph is attached and then jumps
-to whatever the body supplies. Attaching a Fury to an Ego with DX 12 gives ST 20, HP 30, DX 14,
-Basic Speed 8.25, thrust 2d−1, swing 3d+2, Basic Lift 80 lb and DR 8 — the same numbers GCS
+to whatever the body supplies. Attaching a Fury to an Ego with DX 12 gives ST 20, HP 17, DX 14,
+Basic Speed 8.25, thrust 2d−1, swing 3d+2, Basic Lift 80 lb and DR 20 — the same numbers GCS
 will show.
 
 The review step expands this into a full sheet: the attribute block with the source of every
@@ -87,17 +87,21 @@ handled, and both are visible in the interface rather than done silently.
 
 **Morph prices.** Every morph carries a *Morph Price Adjustment* trait sized so the morph nets
 out to its documented chargen price — its Eclipse Phase Customization Point cost divided by
-four. For 19 of the 103 morphs that adjustment was computed without applying the modifiers
-enabled on the morph's own traits, so GCS arrives somewhere else. Flying Squid, Nautiloid,
-Q-Morph and Takko are each 40 points more expensive in GCS than documented; Samsa and Novacrab
-each come out 24 points cheaper, at a negative price. The builder re-points the adjustment on
-export so the morph lands on its documented price, says so when it has, and lets you turn the
-correction off.
+four. For 14 of the 103 morphs that adjustment was computed without applying the modifiers
+enabled on the morph's own traits, so GCS arrives somewhere else: Flying Squid, Nautiloid,
+Q-Morph and Takko are each 40 points more expensive in GCS than documented. The builder
+re-points the adjustment on export so the morph lands on its documented price, says so when it
+has, and lets you turn the correction off.
+
+The Fenrir is the exception: it has no Customization Point cost and no price adjustment,
+because it is a multi-ego combat vehicle listed for GM reference rather than a body a player
+sleeves into. It cannot be re-priced, so GCS charges its full 722-point package value. It and
+the Reaper are hidden from the morph picker unless you ask for them, and the checks flag them.
 
 **Point rounding.** GURPS rounds a modified advantage cost up (B101) and so does GCS; the
-libraries' stored totals were rounded to nearest. Seventeen sleights land a point higher in
-GCS than the library says — Ambience Sense is 12, not 11. The wizard shows the number GCS will
-show. `tests/fixtures/known-cost-divergences.json` records all 90 divergent rows with the
+libraries' stored totals were rounded to nearest. Twenty-one rows land a point higher in GCS
+than the library says — Ambience Sense is 12, not 11. The wizard shows the number GCS will
+show. `tests/fixtures/known-cost-divergences.json` records all 65 divergent rows with the
 cause of each, the morph sub-rows included.
 
 Neither correction changes the libraries. They are shipped byte-identical in `data/library/`
@@ -124,17 +128,18 @@ repository root on every push to `main`. Serving the root as a branch source wor
 ## Tests
 
 ```sh
-npm test           # schema, cost engine and export fixtures
-npm run test:all   # the above plus a real Chromium run through the whole wizard
+npm test           # schema, cost engine, feature resolution and export fixtures
+npm run test:all   # the above plus two real Chromium runs through the wizard
 ```
 
 | Suite | What it holds the code to |
 |---|---|
-| `tests/library.test.mjs` | All 16,793 library rows validate against the GCS 5 schema. Since GCS loads these files, a failure here means the validator is wrong — this is what keeps the export test honest. |
-| `tests/cost.test.mjs` | The cost engine reproduces GCS's `AdjustedPoints` across 4,061 trait rows, with the 90 known library divergences pinned to a fixture. |
+| `tests/library.test.mjs` | All 17,423 library rows across nine files validate against the GCS 5 schema. Since GCS loads these files, a failure here means the validator is wrong — this is what keeps the export test honest. |
+| `tests/cost.test.mjs` | The cost engine reproduces GCS's `AdjustedPoints` across 4,374 trait rows, with the 65 known library divergences pinned to a fixture. |
 | `tests/sheet.test.mjs` | The GURPS damage, lift, Move, Dodge and encumbrance tables, plus 334 stat-line values across all 103 morphs resolved from their features. |
 | `tests/export.test.mjs` | Five fixture characters build end to end and validate: TID format and uniqueness, container consistency, no unknown fields, correct attribute round-trips, one aptitude enabled per slot, morphs at their documented price, Alternative Abilities marked correctly, sheet settings and profile fields round-tripped, carried/stowed/unequipped states, hand-entered traits priced identically on both sides, and a toggled modifier arriving enabled on the right row. |
 | `tests/browser.test.mjs` | Chromium clicks through all thirteen steps, toggles a modifier, reads the sheet panel, downloads the `.gcs`, validates it, and checks that progress survives a reload. |
+| `tests/typing.test.mjs` | A touch-emulated phone types into text, number and textarea fields and drags a slider, checking focus, the caret and the cells that update beside them. |
 
 The schema in `tests/gcs-schema.mjs` is derived from the Go structs in
 [`richardwilkes/gcs`](https://github.com/richardwilkes/gcs) — `EntityData`, `TraitData`,

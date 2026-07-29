@@ -27,6 +27,7 @@ const cat = {
   augs: read("augs.json"),
   gear: read("gear.json"),
   sleights: read("sleights.json"),
+  egoTraits: read("ego-traits.json"),
 };
 for (const file of readdirSync(join(GEN, "morphs"))) {
   cat.morphs.set(file.replace(/\.json$/, ""), read(join("morphs", file)));
@@ -161,15 +162,19 @@ if (mismatches.length) {
   expect("dx", 14, "DX 12 bought, +2 from the morph");
   expect("will", 18, "Will 12 bought, +3 morph, +3 from the WIL aptitude");
   expect("st", 20, "the morph supplies it whole");
-  expect("hp", 30, "the morph supplies it whole");
+  // HP is canon Durability divided by three in this revision of the conversion;
+  // it was Durability x 0.6 before, which put the Fury at 30.
+  expect("hp", 17, "the morph supplies it whole");
   if (sheet.values.basic_speed !== 8.5) {
     fail(`Fury Basic Speed ${sheet.values.basic_speed}, expected 8.5 ((14+12)/4 + 2.00)`);
   }
   if (sheet.damage.thrust !== "2d-1" || sheet.damage.swing !== "3d+2") {
     fail(`Fury damage ${sheet.damage.thrust}/${sheet.damage.swing}, expected 2d-1/3d+2 at ST 20`);
   }
+  // DR is mapped onto Ultra-Tech's armour scale rather than scaled down from
+  // Eclipse Phase's, so a Fury shrugs off an assault carbine.
   const skull = sheet.dr.find((d) => d.key === "skull");
-  if (!skull || skull.value !== 8) fail(`Fury skull DR ${skull?.value}, expected 8`);
+  if (!skull || skull.value !== 20) fail(`Fury skull DR ${skull?.value}, expected 20`);
 }
 
 if (failures) {

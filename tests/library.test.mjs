@@ -14,6 +14,8 @@ const FILES = [
   ["Eclipse_Phase_Ego_Packages.adq", "trait"],
   ["Eclipse_Phase_Mods_Traits.adq", "trait"],
   ["Eclipse_Phase_Psi_Sleights.adq", "trait"],
+  ["Eclipse_Phase_Ego_Traits.adq", "trait"],
+  ["Eclipse_Phase_Derangements.adq", "trait"],
   ["Eclipse_Phase_Skills.skl", "skill"],
   ["Eclipse_Phase_Gear.eqp", "equipment"],
   ["Eclipse_Phase_Mods_Equipment.eqp", "equipment"],
@@ -64,4 +66,4 @@ if (failures) {
   console.error(`library: ${failures} problems`);
   process.exit(1);
 }
-console.log(`library: 7 files and ${rows} rows validate against the GCS 5 schema`);
+console.log(`library: ${FILES.length} files and ${rows} rows validate against the GCS 5 schema`);

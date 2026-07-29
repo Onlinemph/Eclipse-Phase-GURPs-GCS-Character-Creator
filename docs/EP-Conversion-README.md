@@ -4,6 +4,8 @@ A conversion of *Eclipse Phase* 1st edition to GURPS 4th edition, packaged as GC
 
 Characters are built on 250 points. The conversion's central structure is the split between the Ego, which holds the mind and everything learned, and the morph, which holds the body and is replaceable. That split is what the libraries enforce.
 
+Morph HP is one third of canon Durability, rounded to nearest, with the Flat at HP 10 setting the baseline, and never less than 70% of the morph's ST. Morph DR is mapped onto Ultra-Tech's armor scale rather than scaled down from Eclipse Phase's, so a Fury at DR 20 shrugs off an assault carbine and a Reaper at DR 30 ignores it. Organic armor is Flexible and Tough Skin; synthmorph plate is neither. Chassis DR, armor packages, and worn armor all stack, as Eclipse Phase intended, and three Armor Plating packages are available to any synthmorph. Morphs whose canon entry carries the Large or Very Large Size trait also take a Size Modifier and have their ST raised to a floor set by it, since Eclipse Phase records bulk in Durability rather than SOM.
+
 ---
 
 ## What's here
@@ -18,7 +20,7 @@ Characters are built on 250 points. The conversion's central structure is the sp
 
 **`GCS-Library/`**
 
-Eight files to add to GCS's Library view. Load `EP_ATT.attr` first; the other files compute incorrectly without it.
+Ten files to add to GCS's Library view. Load `EP_ATT.attr` first; the other files compute incorrectly without it.
 
 | File | Contents |
 |---|---|
@@ -30,10 +32,12 @@ Eight files to add to GCS's Library view. Load `EP_ATT.attr` first; the other fi
 | `Eclipse_Phase_Mods_Equipment.eqp` | The same augmentations with cash prices, plus drugs |
 | `Eclipse_Phase_Gear.eqp` | 1,007 items from *Ultra-Tech*, filtered to 10 AF |
 | `Eclipse_Phase_Psi_Sleights.adq` | 68 async sleights, built as Alternative Abilities |
+| `Eclipse_Phase_Derangements.adq` | 24 derangements and 22 disorders, converted to GURPS mental disadvantages |
+| `Eclipse_Phase_Ego_Traits.adq` | 42 setting-specific ego traits for resleeving, forks, stress, and psi |
 
 **`Reference/`**
 
-`EP_Morph_Stats_Reference.json` holds the canon stat lines extracted from the *Morph Recognition Guide*, with the conversion conventions used (Durability × 0.6 for HP, armor × 0.75 for DR, and the aptitude mappings). Useful for checking a conversion or building a morph the library doesn't cover.
+`EP_Morph_Stats_Reference.json` holds the canon stat lines extracted from the *Morph Recognition Guide*, with the conversion conventions used (Durability ÷ 3 for HP, armor mapped onto the Ultra-Tech DR scale, and the aptitude mappings). Useful for checking a conversion or building a morph the library doesn't cover.
 
 **`_project-notes/`**
 
@@ -47,9 +51,11 @@ This is the part most likely to surprise someone reading the library cold.
 
 Every morph carries a **Morph Price Adjustment** trait, a negative value sized so the morph nets out to its cost at character creation: its Eclipse Phase Customization Point cost divided by four. A 100 CP morph is one tenth of a 1,000 CP Eclipse Phase character, so it costs 25 points, one tenth of 250.
 
-Adding a Fury to a sheet therefore costs 19 points, not the 755 its package is worth. The package total describes what the body can do; the chargen price is what a player pays. The adjustment is bookkeeping and does not count against the −50 disadvantage limit, though GCS will include it in the disadvantage tally.
+Adding a Fury to a sheet therefore costs 19 points, not the 729 its package is worth. The package total describes what the body can do; the chargen price is what a player pays. The adjustment is bookkeeping and does not count against the −50 disadvantage limit, though GCS will include it in the disadvantage tally.
 
 The seven customization slot options are priced at 0 for the same reason: the slot is free, so the choice never changes the morph's cost.
+
+One morph is exempt. The Fenrir has no adjustment and no chargen price, since canon gives it no Customization Point cost.
 
 ---
 
@@ -57,7 +63,7 @@ The seven customization slot options are priced at 0 for the same reason: the sl
 
 GURPS Basic Set: Characters and Campaigns. *Ultra-Tech* for gear, which the gear library indexes rather than reproduces. *Bio-Tech* for augmentations, *Psionic Powers* for async sleights, *Social Engineering* for the reputation rules, and *Spaceships* or *Space* for habitats and transit.
 
-GCS 5.x for the library files. All eight are version 5 JSON.
+GCS 5.x for the library files. All ten are version 5 JSON.
 
 Eclipse Phase 1st edition, which Posthuman Studios releases under Creative Commons, along with the *Morph Recognition Guide*, *Transhuman*, and *X-Risks*.
 
@@ -79,6 +85,6 @@ Lost Generation Trauma is a −15 trait inside the Lost Generation background. I
 
 Four augmentations still need work: Radar, Pneumatic Limbs, and Wrist-Mounted Tools exist as traits with no cash price, and Skinlink is priced with no trait. Pneumatic Limbs and Wrist-Mounted Tools are both installed on the Daitya, so a player wanting either will need a GM ruling on price.
 
-Fenrir's Customization Point cost is missing from the Recognition Guide extraction and has been estimated at 80 CP, placing it between the Arachnoid at 45 and the Reaper at 100. Both its morph note and its price adjustment note flag the estimate. Correct it against the book if you have it.
+The Fenrir carries no price adjustment, because it has no Customization Point cost in canon: it is a multi-ego combat vehicle rather than a personal morph, and is not available at character creation. Its entry shows its 555-point package value for GM reference. The Reaper is likewise unavailable at creation, though it does have a CP cost.
 
 The remaining items are in `_project-notes/`.

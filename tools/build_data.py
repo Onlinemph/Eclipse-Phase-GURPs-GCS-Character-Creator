@@ -205,6 +205,12 @@ def build_skills() -> dict:
 
 STAT_RE = re.compile(r"\b(ST|HT|HP|FP|DX|IQ|Will|Per|DR|SM)\s*([+-]?\d+)")
 CP_RE = re.compile(r"(\d+)\s*CP")
+NOT_AT_CHARGEN_RE = re.compile(r"not available at character creation", re.I)
+
+# Character-Creation.md, Step 6: "The Reaper is not available at character
+# creation." The Reaper's own notes do not say so, unlike the Fenrir's, so the
+# rule has to come from the document.
+EXCLUDED_AT_CHARGEN = {"Reaper"}
 
 
 def build_morphs() -> dict:
@@ -236,6 +242,17 @@ def build_morphs() -> dict:
                     )
 
             cp = CP_RE.search(notes)
+            # A morph is priced for chargen by its Morph Price Adjustment. The
+            # Fenrir has none and no CP cost: it is a multi-ego combat vehicle
+            # listed for GM reference, not a body a player sleeves into.
+            priced = any(
+                row.get("name") == "Morph Price Adjustment" for _, row in descend(morph)
+            )
+            chargen = (
+                priced
+                and not NOT_AT_CHARGEN_RE.search(notes)
+                and name not in EXCLUDED_AT_CHARGEN
+            )
             index.append(
                 {
                     "key": key,
@@ -247,6 +264,8 @@ def build_morphs() -> dict:
                     "slots": len(slots),
                     "slot_options": slots[0] if slots else [],
                     "stats": {m.group(1): m.group(2) for m in STAT_RE.finditer(notes)},
+                    "priced": priced,
+                    "chargen": chargen,
                 }
             )
             outdir.joinpath(f"{key}.json").write_text(
@@ -278,6 +297,45 @@ def compatibility(path: tuple[str, ...]) -> str:
     if "Pharmaceuticals" in joined or "Nanodrugs" in joined:
         return "biomorph"
     return "any"
+
+
+def build_ego_traits() -> dict:
+    """Setting-specific ego traits and the derangement/disorder catalogue.
+
+    Both are Ego-side and mental: they survive resleeving, and they are what
+    the setting hands out for stress, forks and psi. The wizard offers them on
+    the traits step and wherever disorders are chosen.
+    """
+    groups = []
+    total = 0
+
+    def collect(filename: str, kind: str):
+        nonlocal total
+        for group in load(filename)["rows"]:
+            items = []
+            for row in group.get("children", []):
+                items.append(
+                    {
+                        "key": slug(label(row), "ego"),
+                        "name": label(row),
+                        "points": points_of(row),
+                        "reference": row.get("reference", ""),
+                        "notes": row.get("local_notes", ""),
+                        "cr": row.get("cr", 0),
+                        "kind": kind,
+                        "payload": clean(row),
+                    }
+                )
+            total += len(items)
+            groups.append({"name": label(group), "kind": kind, "items": items})
+
+    collect("Eclipse_Phase_Ego_Traits.adq", "ego")
+    collect("Eclipse_Phase_Derangements.adq", "derangement")
+
+    GEN.joinpath("ego-traits.json").write_text(
+        json.dumps({"groups": groups}, separators=(",", ":")), encoding="utf-8"
+    )
+    return {"ego_traits": total}
 
 
 def build_augs() -> dict:
@@ -428,6 +486,7 @@ def main() -> int:
         build_attributes,
         build_packages,
         build_skills,
+        build_ego_traits,
         build_morphs,
         build_augs,
         build_gear,

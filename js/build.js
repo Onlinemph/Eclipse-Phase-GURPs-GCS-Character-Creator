@@ -21,7 +21,7 @@ import {
 } from "./gcs.js";
 import { applyChoices, applyEquipmentChoices } from "./modifiers.js";
 import { traitPoints } from "./cost.js";
-import { totals, cashSpent, disadvantageTally, DEFAULT_SETTINGS } from "./state.js";
+import { totals, cashSpent, disadvantageTally, egoTraitIndex, DEFAULT_SETTINGS } from "./state.js";
 
 /** A payload the caller may mutate freely. */
 const clone = (value) => structuredClone(value);
@@ -69,6 +69,12 @@ function morphTraits(build, cat, log) {
   if (build.options.normalizeMorphPrice) {
     const change = normalizeMorphPrice(morph, entry.points);
     if (change) log.priceAdjustments.push({ morph: entry.name, target: entry.points, ...change });
+    else if (!entry.priced) {
+      log.notes.push(
+        `The ${entry.name} carries no Morph Price Adjustment, so it cannot be re-priced: ` +
+        `GCS will charge its full package value of ${entry.points} points.`,
+      );
+    }
   }
   if (slots.length && !(build.morph.aptitudes || []).some((a) => a >= 0)) {
     log.notes.push(
@@ -171,6 +177,16 @@ function psiTraits(build, cat) {
     rows.push(row);
   }
   return rows;
+}
+
+/** Setting traits and derangements taken from the libraries. */
+function egoTraitRows(build, cat) {
+  if (!cat.egoTraits) return [];
+  const index = egoTraitIndex(cat);
+  return build.egoTraits
+    .map((chosen) => index.get(chosen.key))
+    .filter(Boolean)
+    .map((entry) => applyChoices(clone(entry.payload), choicesFor(build, `ego:${entry.key}`)));
 }
 
 /** Advantages, disadvantages and quirks the player entered by hand. */
@@ -307,6 +323,7 @@ export function assemble(build, cat) {
     ...augTraitRows(build, cat),
     ...museTraits(build),
     ...psiTraits(build, cat),
+    ...egoTraitRows(build, cat),
     ...customTraitRows(build),
   ];
   const { carried, other } = equipmentRows(build, cat);

@@ -23,6 +23,7 @@ const cat = {
   augs: null,
   gear: null,
   sleights: null,
+  egoTraits: null,
 };
 
 let build = restore() || defaultBuild();
@@ -35,6 +36,7 @@ const loaders = {
   augs: () => data.augs().then((d) => { cat.augs = d; }),
   gear: () => data.gear().then((d) => { cat.gear = d; }),
   sleights: () => data.sleights().then((d) => { cat.sleights = d; }),
+  egoTraits: () => data.egoTraits().then((d) => { cat.egoTraits = d; }),
 };
 
 async function need(...names) {

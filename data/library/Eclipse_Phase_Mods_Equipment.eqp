@@ -602,6 +602,227 @@
 						"weight": "0 lb",
 						"extended_weight": "0 lb"
 					}
+				},
+				{
+					"id": "enn17vxV5aH_3L06a",
+					"description": "Digging Claws",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Mole and aardvark genetics. Digs through regolith and soil, and cuts in a fight. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ePmlNDKS_hX1ifidx",
+					"description": "Gliding Membrane",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Skin membranes between limbs. Gliding descent, no powered flight. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eFMaakmUUTpGDEBUz",
+					"description": "High-g Adaptation",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Reinforced heart, vessels, and skeleton for sustained high gravity. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eVXV_f71Z0MJ_qdWD",
+					"description": "Hydrostatic Pressure Adaptation",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Operates at extreme depth. Europan and Enceladan work. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eSdSpzSqN_wzOU4W6",
+					"description": "Lateral Line",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Transgenic fish organ. Feels movement and vibration through water. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eel4HoPWrwL2skhvi",
+					"description": "Low Pressure Tolerance",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Comfortable at Martian highland pressures with no suit. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e8CkjRy1Z8eVgUpAB",
+					"description": "Polarization Vision",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Sees light polarization. +2 to see through glare, haze, and water surface. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e3_iAHxws-2uCGZED",
+					"description": "Radiation Tolerance",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Redundantly encoded DNA and actively repaired tissue. Requires medichines. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "es3vMhKhBZiLk7pJA",
+					"description": "Scent Affinity",
+					"base_value": "300",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Smart animals only. Bonded by scent to one person, and reliably docile with them. [Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eijnavz0FgKYqWtNQ",
+					"description": "Swim Bladder",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Gas sacs giving controlled buoyancy at any depth. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e1zhYS-OKlQ7WDi9c",
+					"description": "Ultraviolet Vision",
+					"base_value": "300",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Vision extended into the ultraviolet. [Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e_xh1uTfwnkQdnwqc",
+					"description": "Wings",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Grown wings. Powered flight in habitat gravity or thick atmosphere. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ePJeklf68ERDOeHYN",
+					"description": "Winterist",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "The androgynous morphology and non-sexual erogenous zones typical of Winter habitat. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
 				}
 			],
 			"calc": {
@@ -1250,11 +1471,226 @@
 								"weight": "0 lb",
 								"extended_weight": "0 lb"
 							}
+						},
+						{
+							"id": "eHYmfn0_tyEJfVcOl",
+							"description": "Armor Plating (Light)",
+							"local_notes": "Provides 10 DR. Bolt-on plate for any synthmorph chassis. Rigid: no Flexible or Tough Skin limitation, so it stops blunt trauma too. Stacks with the chassis DR and with worn armor.",
+							"legality_class": "4",
+							"base_value": "1500",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1500,
+								"extended_value": 1500,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eLlxWp09-84313LWn",
+							"description": "Armor Plating (Medium)",
+							"local_notes": "Provides 20 DR. Heavier plate for any synthmorph chassis. Rigid armor, stacks with chassis DR and worn armor. Visibly a combat frame, which habitats notice.",
+							"legality_class": "3",
+							"base_value": "6250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 6250,
+								"extended_value": 6250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "ewIB5JsV4PF5YlsbR",
+							"description": "Armor Plating (Heavy)",
+							"local_notes": "Provides 30 DR. Military-grade plate for any synthmorph chassis. Rigid armor, stacks with chassis DR and worn armor. Restricted almost everywhere in the inner system.",
+							"legality_class": "2",
+							"base_value": "31250",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 31250,
+								"extended_value": 31250,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
 						}
 					],
 					"calc": {
 						"value": 0,
 						"extended_value": 204800,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ewBQuFIeImwzoHpMl",
+					"description": "Cybercortex",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Artificial neocortex for smart animals. Language, tool use, and instruction following. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ehYXWY-KOx4RD1Pzb",
+					"description": "Failsafe",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Destroys the cyberbrain or cortical stack on a set trigger. Denies capture, permanently. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eLwh1WnmKFlG3XXUc",
+					"description": "Gas Jet System",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Vectored nozzles in chest, back, and limbs. +3 to Free Fall for controlled microgravity movement. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eU001RdC_Pg3Y3Wfz",
+					"description": "Implant Masking",
+					"base_value": "0",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Electroactive polymers and cultured tissue, so implants read as organs on a scan. [None]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eBm9umjg_Va1hKBL3",
+					"description": "Life Recorder",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Continuous lifelog of everything the morph senses. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e_VyUHm_aNjXdyEsR",
+					"description": "Memory Lock",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Blocks long-term memory formation and XP recording while active. Deniability by design. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eUdfQpUWLVTLEl-2M",
+					"description": "Parallel Processor",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Neo-synergist derivative letting linked minds work one problem as a unit. Complementary rolls between everyone linked. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "edZBda3kumIIIl5i9",
+					"description": "Plasma Sail Implant",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Superconducting magsail in the body. Slow interplanetary transit under your own power. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eNj9hOy81XeAfBytZ",
+					"description": "Sense Filter",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Filters a hyperspectral sense down to the useful band. +2 against sensory overload. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eSfaYWo5dhq8jWG02",
+					"description": "Truth Fitlters",
+					"base_value": "300",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Scrambles the brain signals a deception scanner reads. Defeats it outright, and being caught with one is its own accusation. [Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
 						"weight": "0 lb",
 						"extended_weight": "0 lb"
 					}
@@ -1391,6 +1827,125 @@
 						"weight": "0 lb",
 						"extended_weight": "0 lb"
 					}
+				},
+				{
+					"id": "e-n1V9dCuNjtI0qS5",
+					"description": "Gait Masking",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Alters bone density, muscle tone, and foot shape enough to defeat gait recognition. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eYqvXGWkPCLsgNtFo",
+					"description": "Long-Term Life Support",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Closed-system biology. Survives months without food, water, or resupply. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e_SlmGWRA1k9UMDrl",
+					"description": "Nanotat ID Flux",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Reprogrammable nanotat ID. Wear any identity you can forge. Highly illegal everywhere with courts. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e-LEIbG4z_bs1Izhe",
+					"description": "Neural Enhancers",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Cognitive subprocessors bonded to the neural structure. +1 IQ. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "epMhWYlEfPVyppDiX",
+					"description": "Personal Power Plant",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Internal nanotech reactor feeding the morph. No food needed, which is why gatecrashers buy it. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e3LtfeQjo5BDE4g6n",
+					"description": "Skeletal Disguise",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Falsifies skeletal structure against imaging and forensic identification. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e4BqOh9Rc37Nny0V1",
+					"description": "Skillware",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Artificial neurons formatted with downloaded skillsofts. Run a skill you never learned, at the softs rating. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
 				}
 			],
 			"calc": {
@@ -1516,6 +2071,1805 @@
 			"calc": {
 				"extended_value": "1475"
 			}
+		},
+		{
+			"id": "EH0D-cpEPrRA_O7h5",
+			"description": "EP Chemicals",
+			"children": [
+				{
+					"id": "eB_LEGZpBVIfxhryp",
+					"description": "Atropine (dose)",
+					"base_value": "50",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Nerve agent antidote. Averts BTX2 or Nervex taken shortly before or after exposure. Poisonous in quantity. Any maker can print it. [addiction Mental 0] [EP p. 323, Trivial]",
+					"calc": {
+						"value": 50,
+						"extended_value": 50,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ev8G9bNyIbRx3Wkz0",
+					"description": "DMSO (dose)",
+					"base_value": "50",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Carrier solvent. Lets any chemical agent be delivered through the skin. [EP p. 323, Trivial]",
+					"calc": {
+						"value": 50,
+						"extended_value": 50,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eUfy-rkHUWZPrCBIW",
+					"description": "Liquid Thermite (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Gel thermite, ignited electrically, burning past 2,500C. Works underwater and in vacuum. Cuts structural members. [EP p. 323, Moderate]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eUIBvW6WTVkRxpBpe",
+					"description": "Not Water (dose)",
+					"base_value": "50",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Liquid fire retardant that leaves nothing wet. Beads off any surface. [EP p. 323, Trivial]",
+					"calc": {
+						"value": 50,
+						"extended_value": 50,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "enyCdnYne-tRY_1g_",
+					"description": "Scraper's Gel (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Gel that becomes a potent acid on an electric charge. 1d+2 corrosion per turn for 3 turns to whatever it is smeared on. Armour protects only while it lasts. [addiction Mental 0] [EP p. 323, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eOpzh0ummBLo1iHQG",
+					"description": "Tracker Dye (dose)",
+					"base_value": "50",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Near-frictionless liquid, usually delivered by splash grenade. DX roll to stay upright, ST roll to hold onto anything coated. [EP p. 323, Trivial]",
+					"calc": {
+						"value": 50,
+						"extended_value": 50,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			]
+		},
+		{
+			"id": "EGVc4hNXFrxssRzfE",
+			"description": "EP Drugs",
+			"children": [
+				{
+					"id": "ePkWRQ3TMfR5USL8E",
+					"description": "Alpha (dose)",
+					"base_value": "500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Snorted confidence stimulant. For 2 hours: +2 Intimidation, +2 to social rolls where dominance helps, and no sleep needed for 4 days. Costs -1 IQ on memory and reasoning. Addictive (mental). [onset 1 mins; duration 2 hours; inhalation; addiction Mental -10] [EP p. 320, High]",
+					"calc": {
+						"value": 500,
+						"extended_value": 500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eoGlBWehCdIJlouEy",
+					"description": "BananasFuriosas (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Anti-radiation course, usually eaten as fruit. Reduces the severity of a radiation dose taken within the day. [onset 20 mins; duration 1 days; oral] [EP p. 319, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eqr7js_iToqMezQhN",
+					"description": "BringIt (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Aggression pheromone burst. For 15 minutes: anyone within 3 yards not already engaged must make a Will roll or attack you. Physically addictive. [onset 1 mins; duration 15 mins; addiction Physical 10] [EP p. 318, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eeK3DWxi7rbq2U_e0",
+					"description": "Buzz (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Gene-modified BZ. Odourless, invisible, and extremely powerful. Vivid hallucinations for 36 hours, sometimes shared between dosed characters, and -3 to recall anything that happened. [onset 1 hours; duration 36 hours; addiction Mental 0] [EP p. 320, Moderate]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ephcjsJE25MpCzfjw",
+					"description": "DDR (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Narcoalgorithm aimed at robot AIs and cyberbrains. The target dances, jerkily and pleasurably, for 3 hours: -2 to other actions, overridable with a Will roll. [duration 3 hours; oral; addiction Mental 0] [EP p. 323, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "epTQE8SAQtlCPPtvR",
+					"description": "Flying Wallaby (Primary Effect) (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "For 2 hours: +2 Climbing, +2 Jumping, and +2 to ST rolls for leaping. Physically addictive. [onset 1 mins; duration 2 hours; addiction Physical -10] [Moderate, page not recorded]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eTW4DxyNljeXHi5uC",
+					"description": "Flying Wallaby (Secondary Effect) (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "The six hours after Flying Wallaby: aching joints and -1 DX. [onset 2 hours; duration 6 hours; addiction Physical -10] [Low, page not recorded]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "elWhR_Eo1AOVBV1Pd",
+					"description": "Frequency (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Nanodrug that seats EM-sensing nanobots in the skin and pipes the input to your senses. 8 hours of seeing radio, radar, and power flow. Disorienting: -1 to rolls needing ordinary attention. [duration 8 hours; addiction Mental 0] [EP p. 321, Moderate]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eD33flP0PQ1zr25aL",
+					"description": "Gravy (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "High-gravity acclimation sauce. Reduces high-g acclimation penalties by 2 if started in advance. [EP p. 321, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e4QB0ZHeTpeQRbpPQ",
+					"description": "Grey Ranks (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Titanian memory suppressant. Long-term memories do not form for 12 hours. Mental faculties otherwise intact. Used for zero-retention briefings. [onset 1 hours; duration 12 hours; addiction Mental 10] [Firewall p. 175, Moderate]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eIY-yYI4Ez58qQLT9",
+					"description": "Hither (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Absorbed pheromone gel. For 6 hours: +2 reaction rolls and +2 to seduction-adjacent social skills. Physically addictive. [onset 1 mins; duration 6 hours; dermal; addiction Physical -10] [EP p. 320, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eYb21iwSO0vh1CwrO",
+					"description": "Hydra (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Neo-octopus only. Euphoric detachment while the arms act on their own initiative. Arms not directed by the ego act independently for 3 hours. [onset 20 mins; duration 3 hours; addiction Physical -10] [Panopticon p. 151, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e46EdzD5RNUUpBVJF",
+					"description": "Khan (dose)",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Resleeving aid. +2 to Integration, Alienation, and Continuity rolls for 8 hours after waking in a new morph. Expensive and worth it. [onset 1 hours; duration 8 hours] [Expensive, page not recorded]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eUCfArmJGAFC2Gx_M",
+					"description": "Kong (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Primate aggression cocktail. For 1 hour: +2 ST, +1 to melee attacks, ignore the shock penalty from one wound. Uplifts and smart animals must make a Will roll or attack anyone acting threatening. [onset 3 turns; duration 1 hours; addiction Physical -10] [Panopticon p. 151, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eFH676AOf_I50IRTQ",
+					"description": "Kong Aftereffect (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "The hour after Kong wears off: -2 ST, -1 to attacks, and lethargy. [onset 1 hours; duration 1 hours; addiction Physical -10] [Panopticon p. 151, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eiGh-ZGfja_scCP_V",
+					"description": "Laughing Policeman (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Titanian interrogation euphoriant. Induces trust and wellbeing; interrogators get +2 to Fast-Talk and Diplomacy to extract information. [onset 20 mins; duration 4 hours; addiction Physical 10] [Firewall p. 175, Moderate]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "euT-b8Q-RvBDCUWMo",
+					"description": "Linkstake (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Peer-to-peer narcoalgorithm that splices fragments of strangers XP feeds into your own. 3 hours of borrowed context and other people feelings. [duration 3 hours; oral; addiction Mental 0] [EP p. 323, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eSbPYXppU5kiAdUJB",
+					"description": "MRDR (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Brutal combat drug. For 1 hour: +2 ST, +1 Basic Speed, +4 temporary HP taken first, ignore one wound penalty. Users are obvious: bloodshot and twitching. Physically addictive. [onset 20 mins; duration 1 hours; oral; addiction Physical -10] [EP p. 319, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "evzmxcYdXf-mgs-lN",
+					"description": "Mono No Aware (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Meditative depressant, usually a tea. +1 to Artist and Per-based rolls for 8 hours. Habitual use leaves a distinctive pallor. [onset 20 mins; duration 8 hours; oral; addiction Mental -10] [EP p. 320, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eqlRUZea12MkYK94H",
+					"description": "Norepinephrine Boost (dose)",
+					"base_value": "0",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Bioware-triggered adrenal burst. Ignore one wound penalty and +1 Basic Speed briefly. Comes with the augmentation rather than as a purchase. [injection] [EP p. 302, None]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "euU6LK_Cpg_cD2uXL",
+					"description": "Orbital Hash (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Hab-grown cannabis. Ignore one wound penalty, -1 to DX and IQ rolls, 3 hours. [onset 3 mins; duration 3 hours; inhalation; addiction Mental 0] [EP p. 320, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eoN80p2nDs7hWrXAV",
+					"description": "Petals (dose)",
+					"base_value": "0",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Narrative hallucinogen. A day inside a game-like immersive story. Post-Fall society heroin, and the drug of choice for the desperate. Mentally addictive. [duration 1 days; oral; addiction Mental 0] [EP p. 322, None]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eLUoPWzX04nYyRU6k",
+					"description": "Phlo (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Alertness and coordination boost. For 1 hour: +1 DX and +1 Per. Users overrate their odds: -2 to resist a dare or goad. Physically addictive. [onset 20 mins; duration 1 hours; oral; addiction Physical -10] [EP p. 319, Moderate]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e3e7hVeZ_0PuQpZTc",
+					"description": "RBB (Human Effect) (dose)",
+					"base_value": "500",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Rage drug as it hits a human or transhuman. 30 minutes of Berserk with a Will roll to resist. Strongly addictive. [onset 3 turns; duration 30 mins; addiction Mental +10] [High, page not recorded]",
+					"calc": {
+						"value": 500,
+						"extended_value": 500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eZ4OKj89m1tBsKtpe",
+					"description": "RBB (Neo-Hominid Effect) (dose)",
+					"base_value": "500",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Rage drug as it hits a neo-hominid, whose physiology takes it harder. 30 minutes of Berserk at -2 to resist. Severely addictive. [onset 3 turns; duration 30 mins; addiction Mental +20] [High, page not recorded]",
+					"calc": {
+						"value": 500,
+						"extended_value": 500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e7OCv47hosBl7IZmh",
+					"description": "Raptor (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Neo-avian only. +2 ST and +2 to flight rolls for extra movement, 1 hour. [onset 20 mins; duration 1 hours; addiction Physical -10] [Panopticon p. 152, Moderate]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eP4wIz4wqS66dxIW6",
+					"description": "Schizo (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Nanodrug mirroring paranoid schizophrenia for a day, taken recreationally by hyperelites. Delusions and Paranoia while active. Sold as a disposable razor blade. [duration 1 days; injection; addiction Mental 0] [EP p. 321, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eoYqWEw-reuarCHyk",
+					"description": "Staste (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Octomorph only. Sucker chemoreception sharpened to bloodhound level: +3 to Per rolls by taste or touch, 3 hours. [onset 20 mins; duration 3 hours; addiction Physical 10] [Panopticon p. 152, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eKJITkfC04pAmQpz9",
+					"description": "Sweet Bo (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Primate libido cocktail. Dosed primates must make a Will roll or compulsively pursue the nearest compatible partner. A consent-destroying drug, and treated as an assault wherever the Consortium has courts. [onset 1 mins; duration 3 hours; addiction Physical -10] [Moderate, page not recorded]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ehxOn2d4w0QEvAU6T",
+					"description": "Sweet Bo Aftereffect (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "The comedown from Sweet Bo: 3 hours of lethargy and embarrassment, -1 to social rolls. [onset 1 mins; duration 3 hours; addiction Physical -10] [Moderate, page not recorded]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			]
+		},
+		{
+			"id": "ElSYQzY54UaFSjvSM",
+			"description": "EP Psi Drugs",
+			"children": [
+				{
+					"id": "eFZwLlwu6YcLz5Eas",
+					"description": "Disruption (dose)",
+					"base_value": "500",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Async suppressant cocktail. Will roll or lose all sleights for 6 hours; on a success, -2 to sleight rolls anyway. [onset 3 turns; duration 6 hours] [EP p. 325, High]",
+					"calc": {
+						"value": 500,
+						"extended_value": 500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eXCWPwVtm94FDM0tC",
+					"description": "Psi-Opener (dose)",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Temporary Watts-MacLeod variant. Grants one specific sleight for an hour without the permanent infection. Each batch is cut for one sleight. [onset 20 mins; duration 1 hours] [EP p. 325, Expensive]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ePcfjQ32Er1JYrvYe",
+					"description": "Psike-Out (dose)",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Async booster. +2 to sleight rolls for an hour, and +2 FP cost on every use. Mentally addictive. [onset 1 mins; duration 1 hours] [EP p. 325, Expensive]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			]
+		},
+		{
+			"id": "EhRAhEQowTpPPAE4y",
+			"description": "EP Toxins & Nanotoxins",
+			"children": [
+				{
+					"id": "ei-MNsqKBOtWem4Y7",
+					"description": "BTX2 (dose)",
+					"base_value": "500",
+					"base_weight": "0 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Frog Bite. Enhanced batrachotoxin causing paralysis and cardiac arrest. 3d toxic per turn for 3 turns; medichines halve it. HT roll to survive. [onset 1 turns; duration 3 turns] [EP p. 323, High]",
+					"calc": {
+						"value": 500,
+						"extended_value": 500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eEIg_9hvAQY1zIajZ",
+					"description": "CR Gas (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Incapacitating agent. 1d-3 damage, -3 to sight-based Per, -2 to everything else for 20 minutes, 5 with medichines. [onset 1 turns; duration 20 mins] [EP p. 324, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "emmyhczN7d2dIgAlg",
+					"description": "Degen (dose)",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Engineered degenerative neurological disease. HT roll to avoid infection. A week later, rapid dementia: memory loss, personality change, hallucinations. Medichines defeat it. [duration 8 hours] [EP p. 324, Expensive]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ej7RELajRIKFje2b8",
+					"description": "Disruption (Nanotoxin) (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Nanobots stripping myelin. Every hour, -1 to DX, Basic Speed, and IQ, cumulative. At the bottom the morph is paralysed and catatonic. [duration 8 hours] [EP p. 324, Moderate]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ekQZix0EqKFcfOLRx",
+					"description": "Flight (Toxin) (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Fear pheromone. Will roll or a panic attack and stress; -3 to resist intimidation and fear either way, 1 hour. [onset 3 turns; duration 1 hours; inhalation] [EP p. 324, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "edMLdqNBj-0XmLoTH",
+					"description": "Necrosis (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Cell-wall nanobots. 1d-3 damage per turn for one minute, then they flush out. Biomorphs only. [onset 3 turns; duration 1 mins] [EP p. 324, Moderate]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "egIfvj7ITR2JmDGW2",
+					"description": "Nervex (dose)",
+					"base_value": "500",
+					"base_weight": "0 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Colourless nerve gas that goes inert 10 minutes after deployment. A minute after exposure, HT roll or death by respiratory failure. [onset 1 mins] [EP p. 324, High]",
+					"calc": {
+						"value": 500,
+						"extended_value": 500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eCbaODXTI4wG_182O",
+					"description": "Neuropath (dose)",
+					"base_value": "250",
+					"base_weight": "0 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Pain-receptor nanobots, with a variant for cyberbrains. 8 hours of agony: heavy penalties to everything, and a Will roll to act at all. [onset 3 turns; duration 8 hours] [EP p. 324, Moderate]",
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ei3fSGYus_Spaha4Z",
+					"description": "Nutcracker (dose)",
+					"base_value": "500",
+					"base_weight": "0 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Nanobots that decompose a cortical stack in about six hours, attacking its case and its brain connections. This is how you murder someone permanently. [duration 8 hours] [EP p. 324, High]",
+					"calc": {
+						"value": 500,
+						"extended_value": 500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eDBsPiZQU6TeWfWhm",
+					"description": "Oxytocin A (dose)",
+					"base_value": "100",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Enhanced trust hormone. -3 to Will and Body Language rolls where trust is the question, 2 hours. Medichines block it. [onset 2 mins; duration 2 hours] [EP p. 324, Low]",
+					"calc": {
+						"value": 100,
+						"extended_value": 100,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eeaftAGh3oy41ai0Y",
+					"description": "Trigger (dose)",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Designer virus inducing systemic anaphylaxis. Usually fatal within minutes without medichines or an injector. [duration 8 hours] [EP p. 324, Expensive]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ev3jzpmwYHLfkQdhX",
+					"description": "Twitch (dose)",
+					"base_value": "500",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Non-lethal convulsive gas. HT roll or be incapacitated by tremors; -2 to all actions even on a success. 10 minutes, 5 with medichines. [onset 1 turns; duration 10 mins] [EP p. 324, High]",
+					"calc": {
+						"value": 500,
+						"extended_value": 500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			]
+		},
+		{
+			"id": "EnEZnQahFcdp8iLHh",
+			"description": "EP Cosmetic Modifications",
+			"children": [
+				{
+					"id": "ez-aOJau4pyn_7JqA",
+					"description": "Body Sculpting",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Custom morphology: elongated ears, fins, whatever the fashion is this decade. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eb3yhjgrczggV4aZ6",
+					"description": "Nanotats",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Nanobot tattoos that move, shift colour, and animate. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eYVvCJLwGZ_bwXm4V",
+					"description": "Piercings",
+					"base_value": "300",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Hoops, barbells, plugs, anywhere. [Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ennd-sZsFX0Vqk8Ug",
+					"description": "Scarification",
+					"base_value": "300",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Deliberate scarring. With modern medicine it can only be a choice. [Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ewkfbotXUpUsYTscw",
+					"description": "Scent Alteration",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Biochemistry tuned to change your natural smell or perfume you permanently. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eih6ulk5vemjPT5Ds",
+					"description": "Skindyes",
+					"base_value": "300",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Any colour, any pattern. [Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eI-jUZBx9GEHQVhMz",
+					"description": "Subdermal Implants",
+					"base_value": "300",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Bumps, ridges, and anchors set under the skin. [Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			]
+		},
+		{
+			"id": "EIpaQqZwrrWffKOUH",
+			"description": "EP Infomorph Software",
+			"children": [
+				{
+					"id": "ePBf7Hr_zVCHakFxy",
+					"description": "Active Countermeasures",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Infomorph only. Fights back against intrusion attempts rather than just resisting them. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eQ6yKxqT95lfR0dms",
+					"description": "Impersonate",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Infomorph only. Mimics another infomorph signature and behaviour convincingly. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eu1HPc583mtSmBmv5",
+					"description": "Mental Repair",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Infomorph only. Monitors and corrects mental processes, healing stress over time. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e4JIpmdwaX_DVUQi4",
+					"description": "Mental Stability",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Infomorph only. Raises the threshold at which shocks become lasting damage. +2 to resist stress. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eIS1k-rVaDKk_De6J",
+					"description": "Panopticon",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Infomorph only. Runs many simultaneous sensor feeds without losing track of any of them. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			]
+		},
+		{
+			"id": "EsugQF7re2ErNCbQK",
+			"description": "EP Robotic Enhancements",
+			"children": [
+				{
+					"id": "eFr7gJBelWOn0eLTz",
+					"description": "360º Vision",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Sensors ringing the shell. No flank or rear attack bonuses against it. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eNXpfOwF_4Yjkh6oB",
+					"description": "Chemical Sniffer",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Air sampler with onboard analysis. Detects and identifies airborne compounds; complements Chemistry. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e5JfQYJAmMUlw8I6O",
+					"description": "Cryonic Protection",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Rated for outer-system cryogenic temperatures without stiffening or cracking. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e-5ewfslqo4hrtagp",
+					"description": "Ego Sharing",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "More than one ego can occupy and drive the shell at once. Control is negotiated, or fought over. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "efnT157wyOaCRGJ5n",
+					"description": "Extra Limbs",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "One or more additional limbs. Off-hand penalties apply until trained off. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eUhx5Sih9imwLSJ7E",
+					"description": "Extreme Heat Shielding",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Heat sinks, refractory materials, and bulk. Survives temperatures that melt an ordinary chassis. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eDgCi0nTe8_aBQfoI",
+					"description": "Extreme Pressure Adaptation",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Structurally reinforced to 100 atmospheres. Deep ocean and gas giant work. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eCskPjcTwekB8Otcw",
+					"description": "Fractal Digits",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Bush-robot digits splitting into ever finer manipulators. Microsurgery and hardware work by hand. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eXyUBzftJLk3fhGUd",
+					"description": "Heavy Combat Armor",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Military armour package. On this project scale, +30 DR, matching Armor Plating (Heavy). [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ebNQX5IAWs55siPDY",
+					"description": "Hopper",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Frog-legged locomotion. Jumps several times a walker distance. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e-FRQLHP23wKug85-",
+					"description": "Hovercraft",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Impeller riding a cushion of air. Crosses water, dust, and rubble at speed, and cannot climb. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "elHMKB5tPSlHLVfwk",
+					"description": "Industrial Armor",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Protection against collisions, weather, and industrial accident. +20 DR. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e1vt87NdlIdMil_U8",
+					"description": "Invisibility",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Metamaterial skin bending visible light around the shell. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eMYTVruvIWKLRLror",
+					"description": "Lidar",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Laser ranging and imaging. Range, speed, and shape in darkness or smoke. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eaeHz9BrIYUEqN421",
+					"description": "Light Combat Armor",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Police and security armour package. On this project scale, +20 DR, matching Armor Plating (Medium). [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "er0pe43XA0l0ogkTx",
+					"description": "Magnetic System",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Clings to ferrous surfaces. Walk a hull in zero g. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e4HL0jHbp544UlzUN",
+					"description": "Microlight",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Ultralight or lighter-than-air rig for low gravity. Slow, quiet flight. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eZ5y5KzkdrDiBqbTe",
+					"description": "Modular Design",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Locks together with similar shells into a larger gestalt form. Flexbot architecture. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ejJp9B3JuGpN3nj87",
+					"description": "Nanoscopic Vision",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Superlens optics past the diffraction limit. Reads nanoscale structure directly. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "exeY07dM0FckjFz4V",
+					"description": "Radar Absorbent",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Radar-absorbing construction. Harder to acquire and track. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eSo3mgUE0CQCRFAh3",
+					"description": "Radar Invisibility",
+					"base_value": "125000",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Negative-index metamaterial coating. Effectively invisible to radar. [Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e5CpLEdI4fl8wcnZL",
+					"description": "Radiation Shielding",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Hardened against ionizing and electromagnetic radiation. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e9NjlDj2qn2cj_Rci",
+					"description": "Reduced Signature",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Faceted structure cutting the radar cross-section. Visibly a stealth frame, which is its own problem. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ebqqtZLadK4Knf1BJ",
+					"description": "Retracting/Telescoping Limbs",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Limbs retract into the frame or extend a metre or two. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e-YMkLnTknmTypfJ4",
+					"description": "Roller",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Spherical shells only. Rolls on an interior axle. Fast on flat ground. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "epT2c7RenUT9mA-XN",
+					"description": "Rotorcraft",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Tilt-rotors giving lift and hover. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ex8pI4hEx8uu26Q5h",
+					"description": "Shape Adjusting",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Smart-material frame that alters height, width, and outline. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ef2WDM6Tp71j0ONld",
+					"description": "Smart Wings",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Smart-material coating that extends into wings on a quick action. Gliding, not powered flight. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eUtxiKDma-yiSh5WN",
+					"description": "Structural Enhancement",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Reinforced frame. +3 HP on this project Durability scale. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ePMZPJufqmZusZu6C",
+					"description": "Swarm Composition",
+					"base_value": "31250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "The shell is hundreds of insect-sized drones rather than one body. Attacks that need a solid target barely register. [High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ewktD2eodi5bsbDIw",
+					"description": "Synthetic Mask",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Faux-skin casing sculpted to pass as a biomorph at conversational distance. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ey62CIvyjuZPWbZL_",
+					"description": "Thrust Vector",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Turbofans and wings with vectored nozzles. Fast atmospheric flight. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eygeO51kJZSYZ4jcn",
+					"description": "Tracked",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Smart treads. Crosses ground that bogs wheels, and can prop the shell upright. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eAKDF_w38sTA5D1N3",
+					"description": "Weapon Mount",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Built-on weapon mount. Fires the mounted weapon without occupying a hand. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e5kRUAgOteHmcrQRV",
+					"description": "Weapon Mount (Articulated)",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Mount on an articulated arm, so the weapon tracks independently of the shell facing. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "e2Iw1xRYuSIs3Snq8",
+					"description": "Weapon Mount (Concealed)",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Internal mount. Small weapons only, and -6 to spot before it opens. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "eOni1mwcToHDlZ_v9",
+					"description": "Wheeled",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Smart-spoked wheels that reshape to obstacles and climb stairs. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "efdnDBHDpeJ_CN4Nb",
+					"description": "Winged",
+					"base_value": "1500",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Four independently controlled wings. Hover and rapid movement in any direction. [Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			]
+		},
+		{
+			"id": "EtNA7J4cLZQ6k0HSg",
+			"description": "EP Standard Augmentations",
+			"children": [
+				{
+					"id": "e-Aa26AbCqYjOO4KZ",
+					"description": "Basic Mesh Inserts",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Cranial radio, AR display, ghostrider slot, and mesh access. Universal, and the reason everyone is always online. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "ev93sMDismoTZT0iW",
+					"description": "Cyberbrain",
+					"base_value": "6250",
+					"base_weight": "0 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Where the ego lives in a synthmorph or pod. Also what makes it hackable. [Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			]
 		}
 	]
 }

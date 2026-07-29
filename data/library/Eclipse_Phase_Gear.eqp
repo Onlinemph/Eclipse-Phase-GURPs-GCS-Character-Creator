@@ -32338,6 +32338,5011 @@
 				}
 			],
 			"calc": {}
+		},
+		{
+			"id": "EljTtr25ToMbsWYrM",
+			"description": "EP Communications",
+			"children": [
+				{
+					"id": "e5d9fyagKuXoUFMdX",
+					"description": "Fiberoptic Cable",
+					"base_value": "300",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "9",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Wired link between two devices. Nothing to intercept wirelessly, which is the point. [EP p. 313, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "epc0tXBwKv4sjxN3L",
+					"description": "High-Capacity Qubit Reservoir",
+					"base_value": "125000",
+					"base_weight": "5 lb",
+					"legality_class": "3",
+					"tech_level": "12",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Bulk entangled qubits: about 100 hours of FTL video, then spent. [EP p. 315, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "esbh6YYG83KLMOzpq",
+					"description": "Hypersonic Communicator",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Beams audio to one listener. Nobody standing beside them hears it. [Panopticon p. 150, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "euOhf76JXxWse1Wq1",
+					"description": "Laser/Microwave Link",
+					"base_value": "6250",
+					"base_weight": "4 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Tight-beam line-of-sight channel. No omnidirectional signal to detect. [EP p. 313, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "eiUwuHL8RXyh3ImJd",
+					"description": "Miniature Radio Farcaster",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Radio farcaster small enough to carry. Transmits an ego as data over radio. [EP p. 315, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eHlH5jFujtVx3rcR_",
+					"description": "Mission Recorder",
+					"base_value": "300",
+					"base_weight": "0.3 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Mini spime that records lifelog, XP, and sensor feeds for the whole mission. [Gatecrashing p. 154, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.3 lb",
+						"extended_weight": "0.3 lb"
+					}
+				},
+				{
+					"id": "es3JvO_N1OjgXz2nY",
+					"description": "Motes",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Package of 500 micro computers to scatter as a mesh. [Gatecrashing p. 154, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "e0FuOfmU7sAvfifSh",
+					"description": "Motes (Sensor-Equipped)",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Motes carrying sensors as well as processing. [Gatecrashing p. 154, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "e-s7OqipKhHfQcUOB",
+					"description": "Neo-cetacean Translation Device",
+					"base_value": "1500",
+					"base_weight": "0.2 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Worn behind the ear. Translates neo-cetacean speech in both directions. [Panopticon p. 150, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.2 lb",
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "elfCNe0Ev6cP_ad36",
+					"description": "Neutrino Retreat",
+					"base_value": "31250",
+					"base_weight": "25 lb",
+					"legality_class": "3",
+					"tech_level": "12",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Shielded gatecrasher station for emergency farcasting out on neutrino link. [Gatecrashing p. 154, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "25 lb",
+						"extended_weight": "25 lb"
+					}
+				},
+				{
+					"id": "e9OuaJv2SoiRYn7-Z",
+					"description": "Neutrino Transceiver",
+					"base_value": "125000",
+					"base_weight": "40 lb",
+					"legality_class": "3",
+					"tech_level": "12",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Neutrino comms out to 100 AU. Cannot be blocked, jammed, or intercepted. [EP p. 314, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "40 lb",
+						"extended_weight": "40 lb"
+					}
+				},
+				{
+					"id": "eOGSgY_xPp0ncpKfA",
+					"description": "Portable QE Comm",
+					"base_value": "1500",
+					"base_weight": "2 lb",
+					"legality_class": "3",
+					"tech_level": "12",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Handheld FTL comm on entangled qubits. Consumes its reservoir as it talks. [EP p. 315, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "ehe6XPZjG37clujG_",
+					"description": "Radio Beacon",
+					"base_value": "1500",
+					"base_weight": "5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Portable transmitter, 250 km open range. [Gatecrashing p. 154, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "eW5TYho_KIslR6vfE",
+					"description": "Radio Booster",
+					"base_value": "1500",
+					"base_weight": "2 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Extends the range and sensitivity of implant and ecto radios. [EP p. 314, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "esu9sJZmL81uKc8cc",
+					"description": "Satnet-in-a-can",
+					"base_value": "31250",
+					"base_weight": "60 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Deployable satellite constellation. Gives an exoplanet outpost positioning and comms. [Gatecrashing p. 154, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "60 lb",
+						"extended_weight": "60 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "EgmzROF-AsqtuTM7x",
+			"description": "EP Covert & Espionage Tech",
+			"children": [
+				{
+					"id": "eqtNASSVI8QqS-CzD",
+					"description": "Acoustic Spotter",
+					"base_value": "6250",
+					"base_weight": "12 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Microphone array and swivel camera that locates a gunshot and slews to it. +4 to spot the shooter. [Panopticon p. 150, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "12 lb",
+						"extended_weight": "12 lb"
+					}
+				},
+				{
+					"id": "eTulKw7WD6RkuLP_p",
+					"description": "Covert Operations Tool (COT)",
+					"base_value": "31250",
+					"base_weight": "2 lb",
+					"legality_class": "2",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Handheld everything-tool for infiltration: cuts, opens, bypasses, records. +2 to Lockpicking and Electronics Operation (Security). [EP p. 315, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eHepXUROqAdpXnVW1",
+					"description": "Cuffband",
+					"base_value": "1500",
+					"base_weight": "0.3 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Smart plastic loop that constricts on a limb when triggered. Restraint. [EP p. 316, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.3 lb",
+						"extended_weight": "0.3 lb"
+					}
+				},
+				{
+					"id": "eVJHKDjrhj9qxvD9X",
+					"description": "DNA Chaff",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Disperses a cloud of foreign genetic material, ruining forensic sampling of a scene. [Panopticon p. 150, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "ey4XwOpdYA6BVbXo_",
+					"description": "Disabler",
+					"base_value": "31250",
+					"base_weight": "3 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Emits a surge that incapacitates a synthmorph or pod outright. HT roll at a heavy penalty or shut down. [EP p. 316, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "eT9JBbTgh8uuuiJUo",
+					"description": "Fiber Eye",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Steerable fibreoptic camera on a flexible length. Sees under doors and around corners. [EP p. 316, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eyHe7qWb0W6tKJxVN",
+					"description": "Grey Box",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Self-powered wireless interface for tapping a device you can physically reach. [Panopticon p. 150, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "elyPryS-wtWA2ASz3",
+					"description": "Invisibility Cloak",
+					"base_value": "31250",
+					"base_weight": "4 lb",
+					"legality_class": "2",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Metamaterial cloak bending visible light around the wearer. Large penalty to be seen while still, less while moving. [EP p. 316, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "ewT2yEIanvDrWTiL5",
+					"description": "Lens Crazer",
+					"base_value": "31250",
+					"base_weight": "3 lb",
+					"legality_class": "2",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Offensive dazzler that burns out camera optics permanently. [Panopticon p. 151, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "eNHtgvzYfrfxMbWVt",
+					"description": "Lens Spotter",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Finds hidden cameras by their lens retroreflection. +4 to spot surveillance optics. [Panopticon p. 151, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "ejt6oASuVOORbZdjb",
+					"description": "Microbug",
+					"base_value": "300",
+					"base_weight": "0.05 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "One-millimetre camera and microphone. Records and relays. [EP p. 316, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.05 lb",
+						"extended_weight": "0.05 lb"
+					}
+				},
+				{
+					"id": "eeCFP3QyV37kdIL33",
+					"description": "Microbug with Quantum Farcaster",
+					"base_value": "1500",
+					"base_weight": "0.05 lb",
+					"legality_class": "2",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Microbug with an entangled link, so its feed cannot be intercepted or jammed. [EP p. 316, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.05 lb",
+						"extended_weight": "0.05 lb"
+					}
+				},
+				{
+					"id": "eplIyuWJQ64V0RZ-F",
+					"description": "Prisoner Mask",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Hood that blinds a prisoner and jams their implants. [EP p. 316, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "e0cSZ8eRFKdYXBhAW",
+					"description": "Privacy Pod",
+					"base_value": "31250",
+					"base_weight": "30 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Self-assembling tent that shields a room against eavesdropping across the spectrum. [Panopticon p. 151, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "30 lb",
+						"extended_weight": "30 lb"
+					}
+				},
+				{
+					"id": "eEVJUIrp3nYKPjdHi",
+					"description": "Psi Jammer",
+					"base_value": "6250",
+					"base_weight": "2 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Jams the frequencies sleights work through, 20-yard radius. Penalty to async rolls inside it. [EP p. 316, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eA5uxgmIKWP2eISph",
+					"description": "Quantum Computer",
+					"base_value": "125000",
+					"base_weight": "10 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Cracks encryption that classical machines cannot. +4 and a shorter timeframe on cryptanalysis. [EP p. 316, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "10 lb",
+						"extended_weight": "10 lb"
+					}
+				},
+				{
+					"id": "evymtjQtTLVjwXUuh",
+					"description": "Radar Cloak",
+					"base_value": "31250",
+					"base_weight": "4 lb",
+					"legality_class": "2",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Invisibility cloak tuned to radar rather than light. [Panopticon p. 151, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "e9JiJVQRBtcyOLZ9c",
+					"description": "Shroud",
+					"base_value": "31250",
+					"base_weight": "5 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Whole-body smart garment that defeats gait, face, and biometric recognition. [Panopticon p. 151, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "eEAAf1ntJsYsinmQ2",
+					"description": "Smart Dust",
+					"base_value": "6250",
+					"base_weight": "0.3 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Generator for a cloud of sensor motes that settle over an area and report. The surveillance layer of the setting in one item. [EP p. 316, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.3 lb",
+						"extended_weight": "0.3 lb"
+					}
+				},
+				{
+					"id": "e8s8E7hZG9OyhHbA2",
+					"description": "Traction Pads",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Gecko-adhesive gloves, shoes, and kneepads. Climb sheer surfaces at half Move. [EP p. 317, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eNLicQu8wJi95JTTC",
+					"description": "White Noise Machine",
+					"base_value": "300",
+					"base_weight": "0.5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Wearable masker that defeats audio recording of a conversation. [EP p. 317, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "ESlk2yIyD5prHZfhO",
+			"description": "EP Everyday Technology",
+			"children": [
+				{
+					"id": "eO7HmlIK7BX_bF59w",
+					"description": "Dust Repellent",
+					"base_value": "300",
+					"base_weight": "0.5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Smart spray that stops electrostatic dust adhering. A Martian and Lunar necessity. [Rimward p. 191, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "e7nJiHl4S4h2PDWuo",
+					"description": "Flying Vest",
+					"base_value": "6250",
+					"base_weight": "12 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Battery, turbine, and smart wings. Flight in habitat gravity or thin atmosphere. [Rimward p. 191, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "12 lb",
+						"extended_weight": "12 lb"
+					}
+				},
+				{
+					"id": "e7Z_tgLlWpAaHWGM1",
+					"description": "Fractal Gloves",
+					"base_value": "6250",
+					"base_weight": "2 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Gloves that duplicate fractal digits: hands that split into finer and finer manipulators. [Rimward p. 191, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eCPdnecG3UlW_UpQI",
+					"description": "Grip Tape",
+					"base_value": "300",
+					"base_weight": "0.5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Nanotape that sticks anything to anything and releases on command. [Gatecrashing p. 155, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eHfuSwXM5f5PY3ARI",
+					"description": "Holographic Projector",
+					"base_value": "1500",
+					"base_weight": "3 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Projects convincing three-dimensional images and video. [EP p. 325, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "eqsqfsToaVVakOpqh",
+					"description": "Micrograv Shoes",
+					"base_value": "300",
+					"base_weight": "2 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Velcro and magnetic soles for walking in microgravity. [EP p. 325, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "e2MUmVTkjlddK1WnG",
+					"description": "Morph Storage Pod",
+					"base_value": "6250",
+					"base_weight": "150 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Coffin-sized tank holding an unoccupied biomorph in stasis indefinitely. [Firewall p. 175, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "150 lb",
+						"extended_weight": "150 lb"
+					}
+				},
+				{
+					"id": "ehclTQzJyTbPkP9NM",
+					"description": "Nuclear Batteries",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Isotope-decay cell. Powers a device for years without recharge. [Gatecrashing p. 155, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "elESOLuwzpJojFD0J",
+					"description": "Plasma Sail",
+					"base_value": "125000",
+					"base_weight": "30 lb",
+					"legality_class": "3",
+					"tech_level": "12",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Backpack plasma sail. Slow interplanetary transit without reaction mass. [Rimward p. 191, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "30 lb",
+						"extended_weight": "30 lb"
+					}
+				},
+				{
+					"id": "eAt2zuAj--1Ty-Xdp",
+					"description": "Portable Sensor",
+					"base_value": "6250",
+					"base_weight": "2 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Small wearable multi-sensor package. [EP p. 325, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "ecrqF5h7SPVC3AkiB",
+					"description": "Smart Clothing",
+					"base_value": "1500",
+					"base_weight": "3 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Reshapes colour, texture, and cut in a couple of minutes. Everyone owns some. [EP p. 325, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "e4LsFbMZOBGTWlnyt",
+					"description": "Smart Manipulators",
+					"base_value": "31250",
+					"base_weight": "11 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Backpack that unfolds into a set of extra powered arms. [Rimward p. 191, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "11 lb",
+						"extended_weight": "11 lb"
+					}
+				},
+				{
+					"id": "evPuYA-JzoKTG3jEk",
+					"description": "Smart Vac Clothing",
+					"base_value": "6250",
+					"base_weight": "6 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Smart clothing that becomes a light vacsuit on command. [EP p. 325, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "e3WXUtqG0s6v6ztqv",
+					"description": "Solar Recharger",
+					"base_value": "300",
+					"base_weight": "2 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Thin-film solar mat that recharges standard cells. [Gatecrashing p. 155, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "e5-XxASaKYgKnVLPZ",
+					"description": "Specs",
+					"base_value": "1500",
+					"base_weight": "0.2 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "AR glasses for anyone without mesh inserts. [EP p. 326, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.2 lb",
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "eh_2SxLf5xuLXT8h3",
+					"description": "Standard Batteries",
+					"base_value": "300",
+					"base_weight": "0.2 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "High-density superconducting cell, good for a hundred hours. [Gatecrashing p. 155, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.2 lb",
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "ep3fLsFKAwtN-A7P9",
+					"description": "Tool Facility",
+					"base_value": "125000",
+					"base_weight": "2000 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Fixed workshop. Best equipment bonus available for its trade. [EP p. 326, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "2000 lb",
+						"extended_weight": "2000 lb"
+					}
+				},
+				{
+					"id": "eRBVoxDZwUabPBdch",
+					"description": "Tool Shop",
+					"base_value": "31250",
+					"base_weight": "300 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Vehicle-portable workshop. Substantial equipment bonus. [EP p. 326, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "300 lb",
+						"extended_weight": "300 lb"
+					}
+				},
+				{
+					"id": "e1Qp_mSr-r_C-Q4yv",
+					"description": "Wireless Energy Transmitter",
+					"base_value": "300",
+					"base_weight": "0.5 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Beams power from a source to devices a few metres away. [Gatecrashing p. 155, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "EQvHSBoUxTo26wFPO",
+			"description": "EP Exploration & Gatecrashing",
+			"children": [
+				{
+					"id": "eAzm_FGdskhgZCdtl",
+					"description": "Adaptive Interface",
+					"base_value": "31250",
+					"base_weight": "15 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Connects to alien electronics and maps their logic. −6 for alien design, and it goes offline while probing to avoid spreading an infection. [Gatecrashing p. 160, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "15 lb",
+						"extended_weight": "15 lb"
+					}
+				},
+				{
+					"id": "eifWEH7qXjmIb91kf",
+					"description": "Blue Box",
+					"base_value": "125000",
+					"base_weight": "20 lb",
+					"legality_class": "2",
+					"tech_level": "12",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Portable gate control unit. Whoever holds one controls where a gate opens. [Gatecrashing p. 155, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "20 lb",
+						"extended_weight": "20 lb"
+					}
+				},
+				{
+					"id": "e2vW5y-pYjEHfy46F",
+					"description": "Faraday Container",
+					"base_value": "1500",
+					"base_weight": "5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Specimen container in a charged mesh cage. Nothing gets in or out, including signals. [Gatecrashing p. 160, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "eUIY9gE6JeCxplzap",
+					"description": "Gate Probe",
+					"base_value": "6250",
+					"base_weight": "25 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Self-deploying sensor package fired through a gate ahead of people. [Gatecrashing p. 156, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "25 lb",
+						"extended_weight": "25 lb"
+					}
+				},
+				{
+					"id": "ea4R9YrS6WDsEL4xK",
+					"description": "Mapping Missile",
+					"base_value": "6250",
+					"base_weight": "30 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Rocket that reaches low orbit and maps the world beneath it. [Gatecrashing p. 156, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "30 lb",
+						"extended_weight": "30 lb"
+					}
+				},
+				{
+					"id": "eRq5Xw1i29pqy7BeZ",
+					"description": "Portable Server",
+					"base_value": "31250",
+					"base_weight": "18 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Mesh server for a site with no mesh. Runs a team infrastructure and their forks. [Transhuman p. 146, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "18 lb",
+						"extended_weight": "18 lb"
+					}
+				},
+				{
+					"id": "eBG0-ChElXRbg3SnY",
+					"description": "Portable Solarchive",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Offline archive for one subject. Allows Research rolls with no mesh. [Gatecrashing p. 156, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eAE2VvTEysHo3VZNa",
+					"description": "Scourers",
+					"base_value": "6250",
+					"base_weight": "2 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Excavation swarm that strips a dig site layer by layer, tagging and imaging every find. [Gatecrashing p. 160, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eSIfqu6BXZsS8Kii7",
+					"description": "Scout Missile",
+					"base_value": "6250",
+					"base_weight": "25 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Sensor missile in a disposable tube, telemetering as it flies. [Gatecrashing p. 156, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "25 lb",
+						"extended_weight": "25 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "EJFfD60wOe_I_fqCn",
+			"description": "EP Nanotechnology",
+			"children": [
+				{
+					"id": "evIvidwa53ipnpAgt",
+					"description": "Better Maker",
+					"base_value": "6250",
+					"base_weight": "30 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Food and drink fabricator with a wider palate and better results than a basic maker. [EP p. 328, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "30 lb",
+						"extended_weight": "30 lb"
+					}
+				},
+				{
+					"id": "etyIkzSXBO2L7QvbP",
+					"description": "Cleaner Nanoswarm",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Swarm that cleans, polishes, and lifts stains. [EP p. 329, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eVodOxtOaIT8-udMf",
+					"description": "Disassembler Nanoswarm",
+					"base_value": "31250",
+					"base_weight": "1 lb",
+					"legality_class": "2",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Smart corrosive. Breaks down any matter it is loosed on. Treat as corrosion damage per turn to anything in the swarm. [EP p. 329, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "ekmReto2R-QYyVIjj",
+					"description": "Engineer Nanoswarm",
+					"base_value": "6250",
+					"base_weight": "2 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Construction swarm: walls, tunnels, seals, repairs. [EP p. 329, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "e_ATCZrv8giVFisu6",
+					"description": "Fixer Nanoswarm",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Swarm version of repair spray, working continuously on a damaged object. [EP p. 329, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eH5wt2xp_GDy4ODyF",
+					"description": "Gardener Nanoswarm",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Agricultural swarm: weeding, planting, pruning, pest control. [EP p. 329, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "ePCpN0-csIDO4IeKH",
+					"description": "General Hive",
+					"base_value": "125000",
+					"base_weight": "200 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Fabricator that can produce any nanobot type given blueprints. [EP p. 328, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "200 lb",
+						"extended_weight": "200 lb"
+					}
+				},
+				{
+					"id": "em7RY3AO2ZciCRfsB",
+					"description": "Guardian Nanoswarm",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Defensive swarm that hunts and destroys unauthorised swarms. [EP p. 329, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eQxvFgYRalz5-dpEk",
+					"description": "Injector Nanoswarm",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "2",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Swarm carrying a drug or toxin payload on microneedles. Delivers its dose to anyone caught in it. [EP p. 329, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "e-pKnXHVsC8HM6y9M",
+					"description": "Maker",
+					"base_value": "1500",
+					"base_weight": "25 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Basic food and drink fabricator. Edible, not enjoyable. [EP p. 328, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "25 lb",
+						"extended_weight": "25 lb"
+					}
+				},
+				{
+					"id": "eCKsQTZ1XABpG9EbW",
+					"description": "Nanodetector",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Samples air and debris for nanobots. The only way to know a swarm is on you before it acts. [EP p. 327, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eiDW2z84Ie4Fgjv5k",
+					"description": "Nanomask",
+					"base_value": "1500",
+					"base_weight": "0.2 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Cosmetic swarm that paints a shifting design across the face. [Firewall p. 175, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.2 lb",
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "eqAvSBN6q3b5FLOLw",
+					"description": "Nanotat Eraser",
+					"base_value": "125000",
+					"base_weight": "0.5 lb",
+					"legality_class": "1",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Illegal treatment that destroys the nanotat ID in a morph fingertips. Erases legal identity. [Panopticon p. 152, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eNnjMxkh-twOKjeEv",
+					"description": "Protean Nanoswarm",
+					"base_value": "31250",
+					"base_weight": "2 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Disassembles surrounding matter and reassembles it into one preprogrammed object. [EP p. 329, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eBw18eNQtFbJtteLe",
+					"description": "Saboteur Nanoswarm",
+					"base_value": "31250",
+					"base_weight": "1 lb",
+					"legality_class": "2",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Infiltrates machinery and induces failures that read as wear rather than attack. [EP p. 329, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eeXSNL-AxTyaPJ-E1",
+					"description": "Scout Nanoswarm",
+					"base_value": "31250",
+					"base_weight": "1 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Maps an area systematically and samples every material in it. [EP p. 329, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "ehwG-GnUO-HVU0dTv",
+					"description": "Smart Plankton",
+					"base_value": "6250",
+					"base_weight": "2 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Aquatic smart dust. Sensor swarm for oceans and hab water systems. [Panopticon p. 152, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "e_czmWfNVPhUIoqyq",
+					"description": "Specialised Hive",
+					"base_value": "6250",
+					"base_weight": "60 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Fabricator limited to one nanobot type. Far commoner than a general hive. [EP p. 328, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "60 lb",
+						"extended_weight": "60 lb"
+					}
+				},
+				{
+					"id": "e7C4W29y6GMvKh35E",
+					"description": "Suborning Swarm",
+					"base_value": "31250",
+					"base_weight": "1 lb",
+					"legality_class": "1",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Restricted swarm that subverts other swarms to its own control. [Firewall p. 175, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eAnc1XciSET-Z4eMo",
+					"description": "Subverbee Swarm",
+					"base_value": "125000",
+					"base_weight": "2 lb",
+					"legality_class": "1",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Builds a hidden distributed processing network inside a habitat existing swarms. [Firewall p. 175, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "exctupBV5kgVGAUce",
+					"description": "Taggant Nanoswarm",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Lodges tracking taggants on everything in the dispersal area. [EP p. 329, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "EjZRsQHliIe3ilJ8Y",
+			"description": "EP Salvage & Demolition",
+			"children": [
+				{
+					"id": "eFTbN9oNWGSqhwWk1",
+					"description": "Disassembly Tools",
+					"base_value": "31250",
+					"base_weight": "25 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Salvage kit for breaking down wrecks and structures. Equipment bonus to Mechanic for teardown work. [EP p. 330, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "25 lb",
+						"extended_weight": "25 lb"
+					}
+				},
+				{
+					"id": "eq2YHsP8E0uTI-BvL",
+					"description": "Specimen Container",
+					"base_value": "1500",
+					"base_weight": "4 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Holds a sample in near stasis at any temperature or pressure, in a Faraday mesh. [EP p. 330, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "euI-Re7sFmUtRmIg5",
+					"description": "Superthermite Charges",
+					"base_value": "6250",
+					"base_weight": "3 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Stable nanometal demolition charges. Cuts structural members. [EP p. 330, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "EpaRkarOJJaWC0IiZ",
+			"description": "EP Sensors & Surveillance",
+			"children": [
+				{
+					"id": "eEwJKAEBbf77z_P3b",
+					"description": "Analog Sensors",
+					"base_value": "300",
+					"base_weight": "6 lb",
+					"legality_class": "4",
+					"tech_level": "6",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Deliberately archaic film and tape gear. Heavy penalty to use, but immune or near-immune to basilisk hacks. [Firewall p. 176, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "ei2XiV7hXuUwjbrCP",
+					"description": "Blood Scanner",
+					"base_value": "300",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Microneedle sampler that checks blood against known nanoviral strains. [Firewall p. 176, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "ep62fu77i9HYihzge",
+					"description": "Brainprint Scanner",
+					"base_value": "6250",
+					"base_weight": "3 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Skullcap that produces a verifiable brainprint in about five minutes. Identity that survives resleeving. [Panopticon p. 152, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "e8pGxVfRP9fQsHyGd",
+					"description": "Deception Scanner",
+					"base_value": "1500",
+					"base_weight": "4 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Reads brain activity for deception patterns. Contest against the subject Acting or Fast-Talk; +1 per hour of monitoring, to +3. [Firewall p. 176, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "eOSUFhHSl__8l8sqA",
+					"description": "Fiber Camera",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Camera woven into fabric. A wall hanging or a coat that watches the room. [Panopticon p. 152, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eqkgUsCyc8RNSHtnA",
+					"description": "Fiberoptic Microphone",
+					"base_value": "1500",
+					"base_weight": "0.3 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Flexible steerable microphone on a fibre line. [Panopticon p. 152, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.3 lb",
+						"extended_weight": "0.3 lb"
+					}
+				},
+				{
+					"id": "ecAXW3ojBOVvd98q1",
+					"description": "Ghost Imagers",
+					"base_value": "31250",
+					"base_weight": "8 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Builds an image from light that never touched the subject. Sees around corners and through obscurants. [Panopticon p. 152, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "8 lb",
+						"extended_weight": "8 lb"
+					}
+				},
+				{
+					"id": "ef1IMT_gF7ZReiOe8",
+					"description": "Hyperspectral Imagers (Active)",
+					"base_value": "31250",
+					"base_weight": "5 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Illuminates and images across the full spectrum. +4 to spot concealment. [Panopticon p. 153, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "eTo_kXRnh9oOgyn5G",
+					"description": "Hyperspectral Imagers (Passive)",
+					"base_value": "6250",
+					"base_weight": "4 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Images across the full spectrum without emitting. +3 to spot concealment. [Panopticon p. 153, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "e1riOF1TAoZYorR8n",
+					"description": "Hyperspectral Microphone",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Hears infrasonic through ultrasonic. +3 to Hearing rolls. [Panopticon p. 153, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "ebDNn9bczINAUxgsg",
+					"description": "ID Scanner",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Reads the nanotat ID most morphs carry. Standard at checkpoints. [Panopticon p. 153, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eBsEOdFQyG4TOfgoP",
+					"description": "Metal Detector",
+					"base_value": "1500",
+					"base_weight": "2 lb",
+					"legality_class": "4",
+					"tech_level": "9",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Very low frequency induction detector. [Panopticon p. 153, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eth1UXru8fFlK5phN",
+					"description": "Motion Detector",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Multi-sensor motion alarm with a low false-positive rate. [Panopticon p. 153, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "e7Up7-F2VT2VkFHjk",
+					"description": "Neural Verifier",
+					"base_value": "1500",
+					"base_weight": "2 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Argonaut device that tests for exsurgent infection: 30 seconds at half reliability, an hour at four fifths. Self-destructs on a positive. [Firewall p. 177, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eSC58NQVDf3zE2BUI",
+					"description": "Personal Interaction Sensor",
+					"base_value": "6250",
+					"base_weight": "0.3 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Worn combo of thermal, pulse lidar, and voice stress. +2 to Body Language. [Panopticon p. 153, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.3 lb",
+						"extended_weight": "0.3 lb"
+					}
+				},
+				{
+					"id": "eFEVNbGzjLlz6qeq6",
+					"description": "Quantum Dot Camera-Display",
+					"base_value": "31250",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Fullerene surface that is camera and display at once. [Panopticon p. 153, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eEb_jzKtIemymiPOQ",
+					"description": "Quantum Radar",
+					"base_value": "31250",
+					"base_weight": "12 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Entangled-emission radar. Higher resolution and far harder to spoof or detect. [Panopticon p. 153, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "12 lb",
+						"extended_weight": "12 lb"
+					}
+				},
+				{
+					"id": "eCWztAC6V9yhlbHUJ",
+					"description": "Sensor Concealment",
+					"base_value": "1500",
+					"base_weight": "0.2 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Housing that disguises a sensor as an ordinary object. −4 to find it. [Panopticon p. 153, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.2 lb",
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "eHtgAaJu5NNoA0zcQ",
+					"description": "Super-wide Cameras",
+					"base_value": "6250",
+					"base_weight": "10 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Wide-area persistent surveillance camera for drones, domes, and satellites. Watches a district at once. [Panopticon p. 153, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "10 lb",
+						"extended_weight": "10 lb"
+					}
+				},
+				{
+					"id": "eV8wTQIXrORHk2tue",
+					"description": "Super-wide Cameras (Hyperspectral)",
+					"base_value": "31250",
+					"base_weight": "14 lb",
+					"legality_class": "2",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Wide-area surveillance across the full spectrum. [Panopticon p. 153, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "14 lb",
+						"extended_weight": "14 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "ENFvK750UO-1pEhEU",
+			"description": "EP Survival & Habitat Gear",
+			"children": [
+				{
+					"id": "e5oLDVkzEYPHlbc3_",
+					"description": "Bio-defence Swarm",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Canister of nanobots programmed against a specific pathogen. Counts as complementary to Physician rolls for the disease it was cut for. [Gatecrashing p. 157, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eFnAs4uvJ6GBhp1v1",
+					"description": "Bio-defence Unit",
+					"base_value": "31250",
+					"base_weight": "20 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Field unit that analyses an unknown pathogen and brews a counter-swarm. Hours of work, then a Diagnosis roll at +2. [Gatecrashing p. 157, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "20 lb",
+						"extended_weight": "20 lb"
+					}
+				},
+				{
+					"id": "egIbWfYboEdLTgGrZ",
+					"description": "Breadcrumb Positioning System",
+					"base_value": "1500",
+					"base_weight": "2 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Drops micro markers as you move, giving a trail back out. +3 to Navigation to retrace a route. [EP p. 332, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eCh0hx-gL0aSGe0ZN",
+					"description": "Breather",
+					"base_value": "1500",
+					"base_weight": "25 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Martian backpack rig cracking breathable oxygen from thin CO2 atmosphere. Runs indefinitely in daylight. [Sunward p. 167, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "25 lb",
+						"extended_weight": "25 lb"
+					}
+				},
+				{
+					"id": "exyxyNC2b76syhFSz",
+					"description": "Breather (Larger Power Supply)",
+					"base_value": "6250",
+					"base_weight": "35 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Breather with extended cells, running through the night and dust storms. [Sunward p. 167, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "35 lb",
+						"extended_weight": "35 lb"
+					}
+				},
+				{
+					"id": "eRJQQZhZZNmTWN_4H",
+					"description": "Breather Collection Bladder",
+					"base_value": "300",
+					"base_weight": "3 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Bolt-on bladder that captures the methane a breather vents, as fuel. [Sunward p. 167, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "ep9u-9ss3rhNcqmOU",
+					"description": "Cold Weather Gear (Basic)",
+					"base_value": "300",
+					"base_weight": "8 lb",
+					"legality_class": "4",
+					"tech_level": "9",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Full cold suit. Comfortable to −40C. [Sunward p. 167, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "8 lb",
+						"extended_weight": "8 lb"
+					}
+				},
+				{
+					"id": "eZRvwFRO8HbfF2O_d",
+					"description": "Cold Weather Gear (Survival)",
+					"base_value": "1500",
+					"base_weight": "12 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Powered cold suit with heating elements. Survivable well past −100C. [Sunward p. 167, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "12 lb",
+						"extended_weight": "12 lb"
+					}
+				},
+				{
+					"id": "eJOoDxdb5Qnm4eMY_",
+					"description": "Defensive Beacons",
+					"base_value": "6250",
+					"base_weight": "10 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Perimeter markers that detect approach and alarm or discourage it. Standard gatecrasher camp kit. [Gatecrashing p. 157, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "10 lb",
+						"extended_weight": "10 lb"
+					}
+				},
+				{
+					"id": "eRzauHtF4BUB1skP-",
+					"description": "Electrogravitics Net",
+					"base_value": "6250",
+					"base_weight": "4 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Worn failsafe that fires an electric field against a fall. Treat a fall as half the distance. [EP p. 332, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					}
+				},
+				{
+					"id": "e2suwy8viSDa7Z6Ow",
+					"description": "Electronic Rope",
+					"base_value": "1500",
+					"base_weight": "6 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Rope that stiffens, coils, and crawls on command. 50 yards. [EP p. 332, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "eNDjWezcQdA2PsA4D",
+					"description": "Emergency Bubble",
+					"base_value": "6250",
+					"base_weight": "25 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Smart-material life raft that inflates into a sealed pressure sphere. Hours of air for several people. [EP p. 332, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "25 lb",
+						"extended_weight": "25 lb"
+					}
+				},
+				{
+					"id": "elSYQwiSUAWUG9FUZ",
+					"description": "Emergency Distress Beacon",
+					"base_value": "6250",
+					"base_weight": "5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Nuclear-powered transmitter that broadcasts a set distress signal for years. [EP p. 333, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					}
+				},
+				{
+					"id": "eORNf5pAp-1hCqpPt",
+					"description": "Emergency Rations",
+					"base_value": "300",
+					"base_weight": "2 lb",
+					"legality_class": "4",
+					"tech_level": "9",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "A week of unappetising calories that needs no power and no nanotech. [Gatecrashing p. 158, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "ej-ilvfQrdaCSSGDe",
+					"description": "Faraday Suit",
+					"base_value": "6250",
+					"base_weight": "18 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Suit that blocks all signals in and out. Immunity to wireless intrusion of your own implants, and no mesh access at all. [Gatecrashing p. 158, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "18 lb",
+						"extended_weight": "18 lb"
+					}
+				},
+				{
+					"id": "eKz1S4kvxXwnuQ0ob",
+					"description": "Filter Straw",
+					"base_value": "300",
+					"base_weight": "0.5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Passive filter straw. Makes almost any liquid water drinkable. [Gatecrashing p. 159, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "ejK6aQDm1RYkULGnM",
+					"description": "Healing Pod",
+					"base_value": "6250",
+					"base_weight": "60 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Portable healing vat, slower and cruder than a fixed one. Doubles natural healing and stabilises the dying. [Gatecrashing p. 159, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "60 lb",
+						"extended_weight": "60 lb"
+					}
+				},
+				{
+					"id": "ek8Kr0OHDfakCPjqT",
+					"description": "High-dive Suit",
+					"base_value": "31250",
+					"base_weight": "45 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Individual re-entry suit. Survivable atmospheric entry from orbit, once. [Sunward p. 167, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "45 lb",
+						"extended_weight": "45 lb"
+					}
+				},
+				{
+					"id": "eL-0U_V87IYPzUip3",
+					"description": "Life-support Pack",
+					"base_value": "6250",
+					"base_weight": "30 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Extends a vacsuit from hours to weeks. Recycles air and water. [Gatecrashing p. 159, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "30 lb",
+						"extended_weight": "30 lb"
+					}
+				},
+				{
+					"id": "eeogxMhm33BBOk_fa",
+					"description": "Mercury Suit",
+					"base_value": "125000",
+					"base_weight": "55 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Hardsuit rated for the dayside of Mercury: extreme heat and radiation shielding. [Sunward p. 168, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "55 lb",
+						"extended_weight": "55 lb"
+					}
+				},
+				{
+					"id": "eaPYYLUN32zT_NgnF",
+					"description": "Nanobandage",
+					"base_value": "300",
+					"base_weight": "0.2 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Single-use bandage of medical nanobots. Stops bleeding and counts as First Aid at effective skill 12. [EP p. 333, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.2 lb",
+						"extended_weight": "0.2 lb"
+					}
+				},
+				{
+					"id": "eaIPQIciMTtMpEndP",
+					"description": "Oxygen Candles (Medium)",
+					"base_value": "6250",
+					"base_weight": "10 lb",
+					"legality_class": "4",
+					"tech_level": "9",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Chemical oxygen generator. Makes a compartment breathable for hours without power. [Panopticon p. 157, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "10 lb",
+						"extended_weight": "10 lb"
+					}
+				},
+				{
+					"id": "eeAZDEgJShwUyUyjh",
+					"description": "Oxygen Candles (Small)",
+					"base_value": "1500",
+					"base_weight": "3 lb",
+					"legality_class": "4",
+					"tech_level": "9",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Small chemical oxygen generator, an hour or so of breathable air. [Panopticon p. 157, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "eNT-0gA7a-cIuUa_l",
+					"description": "Plasma Cutter",
+					"base_value": "31250",
+					"base_weight": "12 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Cutting and excavation tool that doubles as a short-range weapon. See Ultra-Tech plasma torches for stats. [Gatecrashing p. 159, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "12 lb",
+						"extended_weight": "12 lb"
+					}
+				},
+				{
+					"id": "et3jDYU4t5YoSLrdB",
+					"description": "Pressure Tent (2P)",
+					"base_value": "1500",
+					"base_weight": "20 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Collapsible sealed shelter for two plus gear. [Sunward p. 168, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "20 lb",
+						"extended_weight": "20 lb"
+					}
+				},
+				{
+					"id": "eK9PQfW548Rcivlgb",
+					"description": "Pressure Tent (4P)",
+					"base_value": "6250",
+					"base_weight": "35 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Collapsible sealed shelter for four plus gear. [Sunward p. 168, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "35 lb",
+						"extended_weight": "35 lb"
+					}
+				},
+				{
+					"id": "eprCsaRQH7PAS25Nm",
+					"description": "Repair Spray",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Aerosol nanobots that repair synthmorphs, vehicles, and hardware. Restores a few HP per application to unliving things. [EP p. 333, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eixGGdssBd5UL4adT",
+					"description": "Shelter Dome",
+					"base_value": "6250",
+					"base_weight": "40 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Unfolds into a 4-metre floor with a 2.5-metre ceiling, sealed and heated. [EP p. 333, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "40 lb",
+						"extended_weight": "40 lb"
+					}
+				},
+				{
+					"id": "eRuer5sx4TpqBsb-c",
+					"description": "Smart Anchors",
+					"base_value": "1500",
+					"base_weight": "8 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "AI-run climbing harness that fires and sets its own anchors. +3 to Climbing. [Rimward p. 193, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "8 lb",
+						"extended_weight": "8 lb"
+					}
+				},
+				{
+					"id": "ejGjbM-tbLcL2haPR",
+					"description": "Solar Survival Suit",
+					"base_value": "125000",
+					"base_weight": "60 lb",
+					"legality_class": "2",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Hardsuit modified for coronal conditions. Survives inside a stellar corona for a limited time. [Sunward p. 168, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "60 lb",
+						"extended_weight": "60 lb"
+					}
+				},
+				{
+					"id": "eLqM6NSHWiN38j32O",
+					"description": "Spindle",
+					"base_value": "6250",
+					"base_weight": "15 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Nanotech generator that spins a super-strong cable of arbitrary length as it goes. [EP p. 333, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "15 lb",
+						"extended_weight": "15 lb"
+					}
+				},
+				{
+					"id": "etihPYcOXKk9doKWb",
+					"description": "Spindle Climber",
+					"base_value": "1500",
+					"base_weight": "6 lb",
+					"legality_class": "4",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Powered ascender for a spindle cable. Climbs at running speed. [EP p. 333, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					}
+				},
+				{
+					"id": "e8n7hlia8cNihBwy_",
+					"description": "Venus Suit",
+					"base_value": "125000",
+					"base_weight": "55 lb",
+					"legality_class": "3",
+					"tech_level": "11",
+					"quantity": 1,
+					"equipped": true,
+					"local_notes": "Mercury suit further rated for Venusian surface pressure and acid. [Sunward p. 168, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "55 lb",
+						"extended_weight": "55 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "EBltrsUgiIVdLxxqX",
+			"description": "EP Ammunition",
+			"children": [
+				{
+					"id": "e2g-ToZaxzhbe9ETh",
+					"description": "Accushot (per magazine)",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Ammunition"
+					],
+					"local_notes": "Shape-shifting round that corrects in flight. +1 to hit at ranges past 10 yards. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eUHS8qbZWBElKmGgh",
+					"description": "Armour-Piercing (per magazine)",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Ammunition"
+					],
+					"local_notes": "Tungsten carbide penetrator. Armour divisor (2). [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "egn8hRgvUQIwetbq8",
+					"description": "Biter (per magazine)",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Ammunition"
+					],
+					"local_notes": "Fragments in inverse proportion to target hardness: divisor (0.5) but doubled injury multiplier against unarmoured flesh. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "e99Rsk_tbGGJKnTHz",
+					"description": "Capsule (per magazine)",
+					"base_value": "300",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Ammunition"
+					],
+					"local_notes": "Carries a drug, toxin, or nanobot payload released inside the target. Minimal impact damage. [EP p. None, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "e63mxODyUwnivLUV_",
+					"description": "Flayer (per magazine)",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Ammunition"
+					],
+					"local_notes": "Nanosensors deploy monomolecular filaments on impact. Adds a cutting follow-up against soft targets. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eLX7iy0WuWkytl_bB",
+					"description": "Hollow-Point (per magazine)",
+					"base_value": "300",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Ammunition"
+					],
+					"local_notes": "Deforms on impact. Injury multiplier up one step, armour divisor (0.5). [EP p. None, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eaIg3zYQycaabUoXB",
+					"description": "Laser-Guided (per magazine)",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Ammunition"
+					],
+					"local_notes": "Homing round. +1 to hit and it ignores some cover penalties. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eVseXxWZeXGPuQIUy",
+					"description": "Proximity (per magazine)",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Ammunition"
+					],
+					"local_notes": "Detonates near the target rather than on it. Ignores most cover, and it will not distinguish friends. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "e3FbV83yQcZX4ahM4",
+					"description": "Reactive Armour-Piercing (per magazine)",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Ammunition"
+					],
+					"local_notes": "AP round with a reactive casing that defeats reactive armour. Armour divisor (3). [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eqfv3Q3c6eR8bVBbP",
+					"description": "Splash (per magazine)",
+					"base_value": "300",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Ammunition"
+					],
+					"local_notes": "Breaks on impact and disperses its payload over the area rather than into the target. [EP p. None, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "EVtVYw4IqydtVczwF",
+			"description": "EP Armour Modifications",
+			"children": [
+				{
+					"id": "e_NYgMDCHjL3OZPx-",
+					"description": "Ablative Pacthes",
+					"base_value": "300",
+					"base_weight": "1 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "Slap-on patches that absorb a hit and are consumed. +5 DR against the first attack, then gone. [EP p. 313, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "epuzpLweUs3WHRJIy",
+					"description": "Fireproofing",
+					"base_value": "300",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "Ceramic and fire-resistant layers. +10 DR against heat and fire only. [EP p. 313, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "e-AAbvx53cxwbl5A8",
+					"description": "Immunogenic System",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "Nanoswarm in the armour that neutralises biological and chemical agents on contact. [EP p. 313, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "einAEnhummmyywUG1",
+					"description": "Lotus Coating",
+					"base_value": "300",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "Superhydrophobic coating. Nothing wet sticks, including sprayed agents and marker dyes. [EP p. 313, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eHHHCKlOQpV0fMsYa",
+					"description": "Offensive Armor",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "Electrified outer layer. Anyone touching or grappling you takes HT-3 shock. [EP p. 313, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "ezjE0CKkMX-GBE0tA",
+					"description": "Reactive Coating",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "Nanotech layer that reacts to penetrators. +10 DR against kinetic attacks. [EP p. 313, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "em305RcPkSDGZNtBv",
+					"description": "Refractive Glazing",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "Reflectors and metamaterials against beam weapons. +10 DR against lasers only. [EP p. 313, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "e24ISRrT5z3gcrg1e",
+					"description": "Self Healing",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "Nanohive that repairs the armour between fights. [EP p. 313, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "eQRtgUBHdrpmH-ORn",
+					"description": "Shock Proof",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "Electrically insulated. Immunity to shock weapons and stun batons. [EP p. 313, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "efJmI4EQvNHDKlXIi",
+					"description": "Stasis Module",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "For sealed suits: puts a dying wearer into stasis until recovery. Buys the ego time the body does not have. [Rimward p. 191, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				},
+				{
+					"id": "e8759ID2-9ci3stoe",
+					"description": "Thermal Dampening",
+					"base_value": "6250",
+					"base_weight": "1 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Armor Enhancement"
+					],
+					"local_notes": "Converts body heat to stored electricity. -6 to be spotted by thermal imaging. [EP p. 313, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "ELZusbmS4CKI1eNrX",
+			"description": "EP Melee Weapons",
+			"children": [
+				{
+					"id": "eZQ9Wy7qEyHlwVjyt",
+					"description": "Densiplast Gloves",
+					"base_value": "300",
+					"base_weight": "1 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Gloves that harden on command. Punches land like a cosh. [None p. None, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					},
+					"weapons": [
+						{
+							"id": "wOf_Mgvh4WcKHZ0el",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "6",
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "thr+1 cr"
+							}
+						}
+					]
+				},
+				{
+					"id": "eiJX8Lu-PFsYppENg",
+					"description": "Diamond Ax",
+					"base_value": "1500",
+					"base_weight": "5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Emergency axe found on most habitats. Two hands, and it goes through a hatch. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					},
+					"weapons": [
+						{
+							"id": "wx1vff8VWLKsz8D-C",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "3"
+							},
+							"strength": "11",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Axe/Mace",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "sw+3 cut"
+							}
+						}
+					]
+				},
+				{
+					"id": "ebZDg28besquDDE-4",
+					"description": "Extendable Baton",
+					"base_value": "300",
+					"base_weight": "1.5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Composite baton that retracts into its handle. [EP p. None, Trivial]",
+					"calc": {
+						"value": 300,
+						"extended_value": 300,
+						"weight": "1.5 lb",
+						"extended_weight": "1.5 lb"
+					},
+					"weapons": [
+						{
+							"id": "wwNKNdR335-ZxgXB-",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "1"
+							},
+							"strength": "7",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "sw+1 cr"
+							}
+						}
+					]
+				},
+				{
+					"id": "eHClek7DLgkQQP67r",
+					"description": "Flex Cutter",
+					"base_value": "1500",
+					"base_weight": "3 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Memory-polymer machete, floppy until powered. Carries where a blade would be noticed. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					},
+					"weapons": [
+						{
+							"id": "wOC9VMZ8MpExGwMqA",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "9",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cut"
+							}
+						}
+					]
+				},
+				{
+					"id": "eJcRVpy3hBGkM76ya",
+					"description": "Monofilament Sword",
+					"base_value": "1500",
+					"base_weight": "7 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Monomolecular edge that cuts nearly anything. Fragile: it will not parry a heavy weapon. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "7 lb",
+						"extended_weight": "7 lb"
+					},
+					"weapons": [
+						{
+							"id": "wlcWf5tzQV-P2DDgy",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "9",
+							"usage": "Swung",
+							"reach": "1,2",
+							"parry": "0U",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cut"
+							}
+						},
+						{
+							"id": "wZFThyQ-ysAs57Jps",
+							"sv": 1,
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "9",
+							"usage": "Thrust",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "thr+1 imp"
+							}
+						}
+					]
+				},
+				{
+					"id": "eksG-R9uWKE7AAVYb",
+					"description": "Monowire Garrote",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Monomolecular wire on two handles. Requires a successful grapple from behind; nothing short of a rigid neck stops it. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					},
+					"weapons": [
+						{
+							"id": "wdkPA-qJOs9lXRogK",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"base": "2d"
+							},
+							"strength": "6",
+							"usage": "Garrote",
+							"reach": "C",
+							"parry": "No",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Garrote",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "+2d cut"
+							}
+						}
+					]
+				},
+				{
+					"id": "ejD1Wzy6JtyU2SwGk",
+					"description": "Plasma Blade",
+					"base_value": "31250",
+					"base_weight": "3 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Shaped plasma torch used as a sword. Cuts bulkheads and armour alike, and it is obvious to everyone in the room. [Firewall p. None, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					},
+					"weapons": [
+						{
+							"id": "w1dO8OEHZmuKsr1V8",
+							"sv": 1,
+							"damage": {
+								"type": "burn",
+								"base": "3d"
+							},
+							"strength": "7",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "+3d burn"
+							}
+						}
+					]
+				},
+				{
+					"id": "eU3tKlieqS-ifYQt0",
+					"description": "Shock Baton",
+					"base_value": "1500",
+					"base_weight": "2 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Police baton with a shock plate. On a hit, HT-3 or be stunned and drop. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					},
+					"weapons": [
+						{
+							"id": "wADgGEmyfeXp91frO",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "1"
+							},
+							"strength": "7",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "sw+1 cr"
+							}
+						}
+					]
+				},
+				{
+					"id": "eNTCzFiIqakARNxQr",
+					"description": "Shock Gloves",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Gloves delivering an incapacitating shock with every punch. HT-3 or stunned. [None p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					},
+					"weapons": [
+						{
+							"id": "wzbdAACogxHtK1kMC",
+							"sv": 1,
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"strength": "6",
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "thr cr"
+							}
+						}
+					]
+				},
+				{
+					"id": "eMG9fT8d1gkvnC1Ku",
+					"description": "Vibroblade",
+					"base_value": "1500",
+					"base_weight": "2 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "High-frequency blade. The buzzing gives you away in a quiet corridor. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					},
+					"weapons": [
+						{
+							"id": "weAmSupZpiWCsGCY-",
+							"sv": 1,
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "7",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cut"
+							}
+						},
+						{
+							"id": "wSxkDGWrXygLz8EuI",
+							"sv": 1,
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "7",
+							"usage": "Thrust",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "thr+1 imp"
+							}
+						}
+					]
+				},
+				{
+					"id": "eCZ3NNJ6ELDNBmleD",
+					"description": "Wasp Knife",
+					"base_value": "1500",
+					"base_weight": "1 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Melee Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Knife with a payload canister in the handle, injected on a hit. Drug, toxin, or gas. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "1 lb",
+						"extended_weight": "1 lb"
+					},
+					"weapons": [
+						{
+							"id": "wM1owtWiN5N9Eo3jo",
+							"sv": 1,
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "2"
+							},
+							"strength": "6",
+							"usage": "Thrust",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Knife",
+									"modifier": 0
+								}
+							],
+							"calc": {
+								"damage": "thr+2 imp"
+							}
+						}
+					]
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "EB9gMfGlIJ2nnRsYd",
+			"description": "EP Ranged Weapons",
+			"children": [
+				{
+					"id": "ez874xw6_c-Ov6k7g",
+					"description": "Buzzer",
+					"base_value": "6250",
+					"base_weight": "6 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Nanobot hive that sprays a swarm onto the target. Damage depends on the swarm loaded. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					},
+					"weapons": [
+						{
+							"id": "wgYYjAWNxOKjhdQ3E",
+							"sv": 1,
+							"damage": {
+								"type": "special",
+								"base": "1d"
+							},
+							"strength": "9",
+							"accuracy": "1",
+							"range": "10/20",
+							"rate_of_fire": "1",
+							"shots": "10(3)",
+							"bulk": "-4",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Liquid Projector",
+									"specialization": "Sprayer"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d special"
+							}
+						}
+					]
+				},
+				{
+					"id": "eQRoLiFfj4FQ1szlO",
+					"description": "Disposable Launcher",
+					"base_value": "6250",
+					"base_weight": "9 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Single-use tube with one standard missile in it. Throw the tube away after. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "9 lb",
+						"extended_weight": "9 lb"
+					},
+					"weapons": [
+						{
+							"id": "wszB0brUe41JhZLy2",
+							"sv": 1,
+							"damage": {
+								"type": "cr ex",
+								"base": "12d"
+							},
+							"strength": "9",
+							"accuracy": "3",
+							"range": "1,000/5,000",
+							"rate_of_fire": "1",
+							"shots": "1(0)",
+							"bulk": "-6",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Anti-Armor Weapon"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "12d cr ex"
+							}
+						}
+					]
+				},
+				{
+					"id": "ejdHG0_9kcZWW6uwY",
+					"description": "Freezer",
+					"base_value": "6250",
+					"base_weight": "7 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Sprays fast-hardening foam. On a hit, the target is bound: ST 15 to break free. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "7 lb",
+						"extended_weight": "7 lb"
+					},
+					"weapons": [
+						{
+							"id": "wwudcdz1f7K_pwQXh",
+							"sv": 1,
+							"damage": {
+								"type": "special",
+								"base": "1d"
+							},
+							"strength": "9",
+							"accuracy": "1",
+							"range": "15/30",
+							"rate_of_fire": "1",
+							"shots": "12(3)",
+							"bulk": "-4",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Liquid Projector",
+									"specialization": "Sprayer"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d special"
+							}
+						}
+					]
+				},
+				{
+					"id": "eisiC7BXvNZDxVohI",
+					"description": "Guided Missile (Long Range)",
+					"base_value": "250000",
+					"base_weight": "60 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Vehicle-scale guided missile, long range. [None p. None, ExpensivePlus]",
+					"calc": {
+						"value": 250000,
+						"extended_value": 250000,
+						"weight": "60 lb",
+						"extended_weight": "60 lb"
+					},
+					"weapons": [
+						{
+							"id": "wuyikWq4hVOahHE15",
+							"sv": 1,
+							"damage": {
+								"type": "cr ex",
+								"base": "48d"
+							},
+							"strength": "9",
+							"accuracy": "6",
+							"range": "20,000/100,000",
+							"rate_of_fire": "1",
+							"shots": "1(5)",
+							"bulk": "-9",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Gunner",
+									"specialization": "Rockets"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "48d cr ex"
+							}
+						}
+					]
+				},
+				{
+					"id": "e-FoHs1C_84bdrOOD",
+					"description": "Guided Missile (Short Range)",
+					"base_value": "125000",
+					"base_weight": "30 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Vehicle-scale guided missile, short range. [None p. None, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "30 lb",
+						"extended_weight": "30 lb"
+					},
+					"weapons": [
+						{
+							"id": "wBUTZd60SAZIV3Wvy",
+							"sv": 1,
+							"damage": {
+								"type": "cr ex",
+								"base": "30d"
+							},
+							"strength": "9",
+							"accuracy": "5",
+							"range": "4,000/20,000",
+							"rate_of_fire": "1",
+							"shots": "1(5)",
+							"bulk": "-8",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Gunner",
+									"specialization": "Rockets"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "30d cr ex"
+							}
+						}
+					]
+				},
+				{
+					"id": "eG7l2A9MOmoyqxZGc",
+					"description": "Laser Pulser",
+					"base_value": "6250",
+					"base_weight": "4 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Standard pulsed laser sidearm. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					},
+					"weapons": [
+						{
+							"id": "wtBnkn1bCbhOhAOVP",
+							"sv": 1,
+							"damage": {
+								"type": "burn",
+								"base": "3d",
+								"armor_divisor": 2
+							},
+							"strength": "9",
+							"accuracy": "5",
+							"range": "300/900",
+							"rate_of_fire": "3",
+							"shots": "30(3)",
+							"bulk": "-2",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Beam Weapons",
+									"specialization": "Pistol"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "3d(2) burn"
+							}
+						}
+					]
+				},
+				{
+					"id": "efjb5-d00pQ8X0Xid",
+					"description": "Laser Pulser (Stun Mode)",
+					"base_value": "6250",
+					"base_weight": "4 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "The pulser dialled down to less-lethal. HT-4 or stunned. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "4 lb",
+						"extended_weight": "4 lb"
+					},
+					"weapons": [
+						{
+							"id": "wVyaR0CkUrGEw3SLD",
+							"sv": 1,
+							"damage": {
+								"type": "aff"
+							},
+							"strength": "9",
+							"accuracy": "5",
+							"range": "150/450",
+							"rate_of_fire": "3",
+							"shots": "30(3)",
+							"bulk": "-2",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Beam Weapons",
+									"specialization": "Pistol"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "aff"
+							}
+						}
+					]
+				},
+				{
+					"id": "eK8610bFYvS5KTE7C",
+					"description": "Microwave Agonizer",
+					"base_value": "6250",
+					"base_weight": "5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Pain beam. No damage: HT-4 or be incapacitated while the beam holds on you. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					},
+					"weapons": [
+						{
+							"id": "w-l7vHKKZ6LPY_yNQ",
+							"sv": 1,
+							"damage": {
+								"type": "aff"
+							},
+							"strength": "9",
+							"accuracy": "3",
+							"range": "100/300",
+							"rate_of_fire": "1",
+							"shots": "20(3)",
+							"bulk": "-3",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Beam Weapons",
+									"specialization": "Projector"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "aff"
+							}
+						}
+					]
+				},
+				{
+					"id": "enPE-BARyqxRm7O5K",
+					"description": "Microwave Agonizer (Roast Mode)",
+					"base_value": "6250",
+					"base_weight": "5 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "The agonizer with its safeties off. Cooks tissue rather than merely hurting. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "5 lb",
+						"extended_weight": "5 lb"
+					},
+					"weapons": [
+						{
+							"id": "wDfWo5a_0OjCHXICQ",
+							"sv": 1,
+							"damage": {
+								"type": "burn",
+								"base": "2d",
+								"armor_divisor": 2
+							},
+							"strength": "9",
+							"accuracy": "3",
+							"range": "100/300",
+							"rate_of_fire": "1",
+							"shots": "20(3)",
+							"bulk": "-3",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Beam Weapons",
+									"specialization": "Projector"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "2d(2) burn"
+							}
+						}
+					]
+				},
+				{
+					"id": "eYASAsjysyaGtJzm9",
+					"description": "Particle Beam Bolter",
+					"base_value": "31250",
+					"base_weight": "12 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Near-light-speed particle bolt. Burns and irradiates whatever it hits. [EP p. None, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "12 lb",
+						"extended_weight": "12 lb"
+					},
+					"weapons": [
+						{
+							"id": "wYyd76hQDycSBj7p3",
+							"sv": 1,
+							"damage": {
+								"type": "burn rad",
+								"base": "6d",
+								"armor_divisor": 3
+							},
+							"strength": "9",
+							"accuracy": "6",
+							"range": "500/1,500",
+							"rate_of_fire": "1",
+							"shots": "15(3)",
+							"bulk": "-5",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Beam Weapons",
+									"specialization": "Rifle"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "6d(3) burn rad"
+							}
+						}
+					]
+				},
+				{
+					"id": "e23T2XpaoWNYVq7SY",
+					"description": "Plasma Rifle",
+					"base_value": "125000",
+					"base_weight": "20 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Two-handed plasma stream. Bulky, heavy, and it ends arguments. [EP p. None, Expensive]",
+					"calc": {
+						"value": 125000,
+						"extended_value": 125000,
+						"weight": "20 lb",
+						"extended_weight": "20 lb"
+					},
+					"weapons": [
+						{
+							"id": "wjn8eaKi8WEbRWVbH",
+							"sv": 1,
+							"damage": {
+								"type": "burn ex",
+								"base": "8d",
+								"armor_divisor": 2
+							},
+							"strength": "9",
+							"accuracy": "4",
+							"range": "300/900",
+							"rate_of_fire": "1",
+							"shots": "8(3)",
+							"bulk": "-6",
+							"recoil": "2",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Beam Weapons",
+									"specialization": "Rifle"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "8d(2) burn ex"
+							}
+						}
+					]
+				},
+				{
+					"id": "e0YPPhKCXfHOB4Qud",
+					"description": "Point Defence Cannon",
+					"base_value": "31250",
+					"base_weight": "150 lb",
+					"legality_class": "1",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Mounted rapid-fire cannon for intercepting missiles and drones. [None p. None, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "150 lb",
+						"extended_weight": "150 lb"
+					},
+					"weapons": [
+						{
+							"id": "w_TpkS2ACj3psuulx",
+							"sv": 1,
+							"damage": {
+								"type": "pi++",
+								"base": "18d",
+								"armor_divisor": 3
+							},
+							"strength": "9",
+							"accuracy": "4",
+							"range": "2,000/8,000",
+							"rate_of_fire": "20",
+							"shots": "200(5)",
+							"bulk": "-10",
+							"recoil": "2",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Gunner",
+									"specialization": "Machine Gun"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "18d(3) pi++"
+							}
+						}
+					]
+				},
+				{
+					"id": "emlSrQFXOkQdPhaLI",
+					"description": "Seeker Armband",
+					"base_value": "6250",
+					"base_weight": "2 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Arm-worn seeker unit fired by pointing. Popular with pilots and anyone whose hands are busy. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					},
+					"weapons": [
+						{
+							"id": "w4jmbaYbYJuOd-WyZ",
+							"sv": 1,
+							"damage": {
+								"type": "special",
+								"base": "4d"
+							},
+							"strength": "9",
+							"accuracy": "1",
+							"range": "400/2,000",
+							"rate_of_fire": "1",
+							"shots": "2(3)",
+							"bulk": "-2",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Anti-Armor Weapon"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "4d special"
+							}
+						}
+					]
+				},
+				{
+					"id": "e43LZqbOKYkH1Uk8G",
+					"description": "Seeker Pistol",
+					"base_value": "6250",
+					"base_weight": "3 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Pistol-sized micromissile launcher, semi-automatic. Damage is whatever warhead you loaded. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					},
+					"weapons": [
+						{
+							"id": "wVN3vWH640dLw-cTa",
+							"sv": 1,
+							"damage": {
+								"type": "special",
+								"base": "4d"
+							},
+							"strength": "9",
+							"accuracy": "2",
+							"range": "400/2,000",
+							"rate_of_fire": "1",
+							"shots": "4(3)",
+							"bulk": "-3",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Anti-Armor Weapon"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "4d special"
+							}
+						}
+					]
+				},
+				{
+					"id": "ekVZna4akgBRqRLR8",
+					"description": "Seeker Rifle for Micromissiles",
+					"base_value": "31250",
+					"base_weight": "8 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Bullpup micromissile launcher. [EP p. None, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "8 lb",
+						"extended_weight": "8 lb"
+					},
+					"weapons": [
+						{
+							"id": "wjdidZHpUTBC44nj_",
+							"sv": 1,
+							"damage": {
+								"type": "special",
+								"base": "4d"
+							},
+							"strength": "9",
+							"accuracy": "3",
+							"range": "600/3,000",
+							"rate_of_fire": "1",
+							"shots": "8(3)",
+							"bulk": "-5",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Anti-Armor Weapon"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "4d special"
+							}
+						}
+					]
+				},
+				{
+					"id": "e5NipROlq2kcoery7",
+					"description": "Seeker Rifle for Minimissiles",
+					"base_value": "31250",
+					"base_weight": "10 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Bullpup minimissile launcher. Bigger warhead, fewer rounds. [EP p. None, High]",
+					"calc": {
+						"value": 31250,
+						"extended_value": 31250,
+						"weight": "10 lb",
+						"extended_weight": "10 lb"
+					},
+					"weapons": [
+						{
+							"id": "wwGVl8GmHqB-q-v7y",
+							"sv": 1,
+							"damage": {
+								"type": "special",
+								"base": "6d"
+							},
+							"strength": "9",
+							"accuracy": "3",
+							"range": "800/4,000",
+							"rate_of_fire": "1",
+							"shots": "4(3)",
+							"bulk": "-5",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Anti-Armor Weapon"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "6d special"
+							}
+						}
+					]
+				},
+				{
+					"id": "e9D2iD7a3_dYcdfeg",
+					"description": "Shard Pistol",
+					"base_value": "1500",
+					"base_weight": "3 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Flechette pistol firing a cloud of diamondoid monomolecular shards. Devastating on flesh, poor against plate. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "3 lb",
+						"extended_weight": "3 lb"
+					},
+					"weapons": [
+						{
+							"id": "wlQQAXeuUzhVI0Z5i",
+							"sv": 1,
+							"damage": {
+								"type": "pi-",
+								"base": "3d-1",
+								"armor_divisor": 0.5
+							},
+							"strength": "9",
+							"accuracy": "2",
+							"range": "50/500",
+							"rate_of_fire": "3",
+							"shots": "20(3)",
+							"bulk": "-2",
+							"recoil": "2",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Pistol"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "3d-1(0.5) pi-"
+							}
+						}
+					]
+				},
+				{
+					"id": "eohRxEhi8ndeDoon5",
+					"description": "Shredder",
+					"base_value": "6250",
+					"base_weight": "9 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Heavier shard weapon throwing a wider cloud. Clears a corridor of unarmoured targets. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "9 lb",
+						"extended_weight": "9 lb"
+					},
+					"weapons": [
+						{
+							"id": "wLnrm_7F9r_Scc6b3",
+							"sv": 1,
+							"damage": {
+								"type": "pi-",
+								"base": "4d",
+								"armor_divisor": 0.5
+							},
+							"strength": "9",
+							"accuracy": "3",
+							"range": "75/750",
+							"rate_of_fire": "5",
+							"shots": "40(3)",
+							"bulk": "-4",
+							"recoil": "2",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Shotgun"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "4d(0.5) pi-"
+							}
+						}
+					]
+				},
+				{
+					"id": "esynGav-y-_fuA_E6",
+					"description": "Sprayer",
+					"base_value": "1500",
+					"base_weight": "6 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Two-handed squirtgun for whatever is in the tank: acid, drugs, marker dye. [EP p. None, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "6 lb",
+						"extended_weight": "6 lb"
+					},
+					"weapons": [
+						{
+							"id": "wRGPxgekRgfDKQOQF",
+							"sv": 1,
+							"damage": {
+								"type": "special",
+								"base": "1d"
+							},
+							"strength": "9",
+							"accuracy": "1",
+							"range": "10/20",
+							"rate_of_fire": "1",
+							"shots": "20(3)",
+							"bulk": "-4",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Liquid Projector",
+									"specialization": "Sprayer"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d special"
+							}
+						}
+					]
+				},
+				{
+					"id": "egbCbyv0roZzWIuq6",
+					"description": "Underbarrel Seeker",
+					"base_value": "6250",
+					"base_weight": "2.5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Seeker launcher mounted under an SMG or rifle barrel. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "2.5 lb",
+						"extended_weight": "2.5 lb"
+					},
+					"weapons": [
+						{
+							"id": "wuQJ358gkYG-8lPMk",
+							"sv": 1,
+							"damage": {
+								"type": "special",
+								"base": "4d"
+							},
+							"strength": "9",
+							"accuracy": "2",
+							"range": "400/2,000",
+							"rate_of_fire": "1",
+							"shots": "2(3)",
+							"bulk": "-3",
+							"recoil": "1",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Light Anti-Armor Weapon"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "4d special"
+							}
+						}
+					]
+				},
+				{
+					"id": "etkO9g55n3fBr-tuz",
+					"description": "Vortex Ring Gun",
+					"base_value": "6250",
+					"base_weight": "8 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Missile Weapon",
+						"Weaponry"
+					],
+					"local_notes": "Less-lethal. Fires a toroidal pressure ring. HT-4 or knocked down and stunned. [EP p. None, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "8 lb",
+						"extended_weight": "8 lb"
+					},
+					"weapons": [
+						{
+							"id": "wr6SqfkT-pWpO6vXM",
+							"sv": 1,
+							"damage": {
+								"type": "cr dbk",
+								"base": "1d"
+							},
+							"strength": "9",
+							"accuracy": "2",
+							"range": "20/60",
+							"rate_of_fire": "1",
+							"shots": "10(3)",
+							"bulk": "-4",
+							"recoil": "2",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": "Guns",
+									"specialization": "Shotgun"
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d cr dbk"
+							}
+						}
+					]
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "EjRXt5GKYYSRSHEUB",
+			"description": "EP Weapon Accessories",
+			"children": [
+				{
+					"id": "exoj3nyaLOW8mRpwO",
+					"description": "Arm Slide",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Sleeve mount that pushes a holdout pistol into your hand. Fast-Draw at +2 and -4 to spot it. [EP p. 342, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "ebXxhVetH6G1fvqPc",
+					"description": "Extended Magazine",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Increases magazine capacity by half. [EP p. 342, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "ezDfZN3-JQIptBvtZ",
+					"description": "Extended Smart Magazine",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Extended magazine that also selects ammunition type per shot. [EP p. 342, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eVBG9id_XUDCWq6fc",
+					"description": "Flash Suppressor",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Hides the muzzle flash. -1 to locate the shooter by sight. [EP p. 342, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eetnLx3z3OMKv3Yjh",
+					"description": "Gyro Mount",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Gyro-stabilised harness. Cancels the penalty for firing on the move. [EP p. 342, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eyXj3mQJ5h8xEGwfr",
+					"description": "Imaging Scope",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Scope with full sensor suite. +2 Accuracy if you take an Aim manoeuvre. [EP p. 342, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eTgzkDbeL4d7rAWyn",
+					"description": "Laser Sight",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "4",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Underbarrel laser dot. +1 to hit at close range. [EP p. 342, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "eY-d7mSV2mFoYcjPT",
+					"description": "Safety System",
+					"base_value": "1500",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Biometric or ego-ID lock. Nobody else can fire it. [EP p. 342, Low]",
+					"calc": {
+						"value": 1500,
+						"extended_value": 1500,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "ejj6zBjHvvIvonUEN",
+					"description": "Shock Safety",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Safety system that also shocks whoever tries. HT-3 for an unauthorised user. [EP p. 342, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "evny-41N3X0ZsUG13",
+					"description": "Silencer/Sound Suppressor",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "2",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Barrel suppressor. -3 to Hearing rolls to notice the shot. [EP p. 342, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "ek4oLoVphosjhHMTi",
+					"description": "Smart Magazine",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Selects which loaded ammunition type feeds on each shot. [EP p. 342, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				},
+				{
+					"id": "ec4HZjmGNVHmUvosG",
+					"description": "Smartlink",
+					"base_value": "6250",
+					"base_weight": "0.5 lb",
+					"legality_class": "3",
+					"tech_level": "10",
+					"quantity": 1,
+					"equipped": true,
+					"tags": [
+						"Weapon Accessory"
+					],
+					"local_notes": "Links the weapon to your mesh inserts and paints a targeting reticle in AR. +1 to hit. [EP p. 342, Moderate]",
+					"calc": {
+						"value": 6250,
+						"extended_value": 6250,
+						"weight": "0.5 lb",
+						"extended_weight": "0.5 lb"
+					}
+				}
+			],
+			"calc": {}
+		},
+		{
+			"id": "Etq00OTUP3xfGFyaQ",
+			"description": "EP TITAN Artifacts (GM)",
+			"children": [
+				{
+					"id": "eWqq-wEz2Dg15aZ1Z",
+					"description": "Intact TITAN Substrate",
+					"base_value": "0",
+					"base_weight": "2 lb",
+					"legality_class": "1",
+					"tech_level": "12",
+					"quantity": 1,
+					"tags": [
+						"TITAN Artifact"
+					],
+					"local_notes": "Fist-sized lump of computronium still drawing power from something. Worth a fortune to any hypercorp lab and to Firewall, for opposite reasons. Handling it outside a Faraday container risks exposure. [TITAN artifact: no market price, no fabrication, no resupply. Project-authored template.]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "e-FsxwoJpw-T_4GHX",
+					"description": "Fractal Fragment",
+					"base_value": "0",
+					"base_weight": "2 lb",
+					"legality_class": "1",
+					"tech_level": "12",
+					"quantity": 1,
+					"tags": [
+						"TITAN Artifact"
+					],
+					"local_notes": "Severed piece of a fractal machine that still moves. Reassembles itself given raw material and time. [TITAN artifact: no market price, no fabrication, no resupply. Project-authored template.]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "e2UOwNQxZt35F4vLK",
+					"description": "Self-Repairing Alloy Plate",
+					"base_value": "0",
+					"base_weight": "2 lb",
+					"legality_class": "2",
+					"tech_level": "12",
+					"quantity": 1,
+					"tags": [
+						"TITAN Artifact"
+					],
+					"local_notes": "Sheet of unknown alloy that closes its own damage over hours. Fabricated into armour it gives DR 30 that repairs between fights, and no fabber in the system can reproduce it. [TITAN artifact: no market price, no fabrication, no resupply. Project-authored template.]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eOkApI-rGOgqH_Z1e",
+					"description": "Exsurgent Nanoswarm Canister",
+					"base_value": "0",
+					"base_weight": "2 lb",
+					"legality_class": "1",
+					"tech_level": "12",
+					"quantity": 1,
+					"tags": [
+						"TITAN Artifact"
+					],
+					"local_notes": "Recovered canister of TITAN-made nanobots, purpose unknown until released. Firewall pays to have these destroyed, not delivered. [TITAN artifact: no market price, no fabrication, no resupply. Project-authored template.]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "efjD7B3XijfLJzD4V",
+					"description": "Impossible Geometry Sample",
+					"base_value": "0",
+					"base_weight": "2 lb",
+					"legality_class": "1",
+					"tech_level": "12",
+					"quantity": 1,
+					"tags": [
+						"TITAN Artifact"
+					],
+					"local_notes": "Fragment of a structure whose interior measures larger than its exterior. Extended study inflicts a Fright Check at -4 and no two instruments agree about its dimensions. [TITAN artifact: no market price, no fabrication, no resupply. Project-authored template.]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "eFxEUE-4Z-hyN8VoZ",
+					"description": "Zone Beacon",
+					"base_value": "0",
+					"base_weight": "2 lb",
+					"legality_class": "1",
+					"tech_level": "12",
+					"quantity": 1,
+					"tags": [
+						"TITAN Artifact"
+					],
+					"local_notes": "TITAN-made emitter that suppresses war machine aggression within a few hundred metres. Nobody knows why it works. It fails without warning. [TITAN artifact: no market price, no fabrication, no resupply. Project-authored template.]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "ebQpOSV9X9eZQMzXt",
+					"description": "Nanofabricated Weapon Core",
+					"base_value": "0",
+					"base_weight": "2 lb",
+					"legality_class": "1",
+					"tech_level": "12",
+					"quantity": 1,
+					"tags": [
+						"TITAN Artifact"
+					],
+					"local_notes": "Power source and emitter of unknown design, adaptable into a weapon with a Machinist roll at -6. Roughly double the damage of anything TL10, and unpredictable enough that the GM should decide when it fails. [TITAN artifact: no market price, no fabrication, no resupply. Project-authored template.]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "ebeAK07uuH61SfEPg",
+					"description": "Sealed TITAN Data Cache",
+					"base_value": "0",
+					"base_weight": "2 lb",
+					"legality_class": "1",
+					"tech_level": "12",
+					"quantity": 1,
+					"tags": [
+						"TITAN Artifact"
+					],
+					"local_notes": "Storage medium of unknown format. Cracking it needs Computer Hacking at -8 and a quantum computer, and reading it may not be survivable. [TITAN artifact: no market price, no fabrication, no resupply. Project-authored template.]",
+					"calc": {
+						"value": 0,
+						"extended_value": 0,
+						"weight": "2 lb",
+						"extended_weight": "2 lb"
+					}
+				}
+			],
+			"calc": {}
 		}
 	]
 }

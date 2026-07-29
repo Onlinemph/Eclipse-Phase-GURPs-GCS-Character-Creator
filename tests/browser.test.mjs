@@ -112,8 +112,14 @@ try {
   const skillRows = await page.locator(".skill-table tbody tr").count();
   if (skillRows !== 2) fail(`${skillRows} skills on the sheet, expected 2`);
 
-  // Step 4b — a hand-entered trait.
+  // Step 4b — a setting trait from the library, and a hand-entered one.
   await gotoStep("Traits");
+  await page.waitForTimeout(700);
+  await page.locator(".chip", { hasText: "Identity Crysis" }).first().click();
+  await page.waitForTimeout(250);
+  if (!await page.locator(".card", { hasText: "Setting traits on the sheet" }).count()) {
+    fail("adding a library ego trait did not list it on the sheet");
+  }
   await page.locator(".chip", { hasText: "Combat Reflexes" }).first().click();
   await page.waitForTimeout(250);
   // The name renders as an editable field, so read its value rather than text.
@@ -142,7 +148,8 @@ try {
     return text.replace(/\s+/g, " ");
   };
   if (await readStat("ST") !== "ST 20") fail(`sheet panel ST reads "${await readStat("ST")}", expected 20 for a Fury`);
-  if (await readStat("HP") !== "HP 30") fail(`sheet panel HP reads "${await readStat("HP")}", expected 30 for a Fury`);
+  // HP is canon Durability divided by three in this revision of the conversion.
+  if (await readStat("HP") !== "HP 17") fail(`sheet panel HP reads "${await readStat("HP")}", expected 17 for a Fury`);
 
   // A modifier the library ships disabled can be switched on.
   const modSection = page.locator(".card", { hasText: "Fine-tune the morph" });
@@ -200,6 +207,9 @@ try {
   if (!entity.equipment?.length) fail("no equipment reached the sheet");
   if (!entity.traits?.some((t) => t.name === "Combat Reflexes")) {
     fail("the hand-entered trait is not on the sheet");
+  }
+  if (!entity.traits?.some((t) => t.name === "Identity Crysis")) {
+    fail("the library ego trait is not on the sheet");
   }
   if (entity.settings.damage_progression !== "knowing_your_own_strength") {
     fail(`damage_progression is "${entity.settings.damage_progression}", expected the one selected`);

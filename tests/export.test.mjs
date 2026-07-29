@@ -28,6 +28,7 @@ const cat = {
   augs: read("augs.json"),
   gear: read("gear.json"),
   sleights: read("sleights.json"),
+  egoTraits: read("ego-traits.json"),
 };
 for (const file of readdirSync(join(GEN, "morphs"))) {
   cat.morphs.set(file.replace(/\.json$/, ""), read(join("morphs", file)));
@@ -148,6 +149,13 @@ function customized() {
   );
   b.modifierChoices[`morph:${steel.key}`] = { [target.address]: { 0: true } };
   b.__modifierProbe = { address: target.address, name: target.node.modifiers[0].name };
+
+  // One trait from each of the two setting libraries.
+  const egoItems = cat.egoTraits.groups.flatMap((g) => g.items);
+  b.egoTraits = [
+    { key: find(egoItems, "Identity Crysis").key },
+    { key: find(egoItems, "Post Traumatic Stress Disorder (PTSD)").key },
+  ];
 
   // Carried, stowed and unequipped gear, to exercise all three states.
   b.gear = [
@@ -341,6 +349,20 @@ for (const [label, make] of FIXTURES) {
     }
     if (trait.cr && row.cr !== trait.cr) {
       fail(label, `${trait.name} lost its self-control roll`);
+    }
+  }
+
+  // Library ego traits and derangements reach the sheet at their own cost.
+  {
+    const { traitPoints: cost } = await import("../js/cost.js");
+    const index = new Map(cat.egoTraits.groups.flatMap((g) => g.items.map((i) => [i.key, i])));
+    for (const chosen of build.egoTraits) {
+      const entry = index.get(chosen.key);
+      const row = entity.traits?.find((r) => r.name === entry.name);
+      if (!row) { fail(label, `ego trait "${entry.name}" is missing from the sheet`); continue; }
+      if (cost(row) !== cost(entry.payload)) {
+        fail(label, `${entry.name} costs ${cost(row)} on the sheet, ${cost(entry.payload)} in the library`);
+      }
     }
   }
 

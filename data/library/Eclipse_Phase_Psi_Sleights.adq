@@ -130,6 +130,28 @@
 					"local_notes": "Skill: none (passive; GM rolls your Per secretly to sense ambushes and imminent danger; never surprised while it functions). Statistics: Danger Sense (Async, -10%) [14]."
 				},
 				{
+					"id": "teBs7mGJCb1JNscVC",
+					"name": "Charisma",
+					"tags": [
+						"Advantage",
+						"Async",
+						"Psi"
+					],
+					"local_notes": "Passive. Your presence reads as warm and trustworthy. +2 reactions and +1 to Influence rolls. GURPS equivalent: Charisma 2 bought as a psi power.",
+					"modifiers": [
+						{
+							"id": "mQIFvM5qUO55ncy5s",
+							"name": "Async Power Modifier",
+							"cost_adj": "-25%",
+							"notes": "Psi source: suppressed by psi inhibitors, blocked by a non-biological brain, costs FP."
+						}
+					],
+					"base_points": 15,
+					"calc": {
+						"points": 11
+					}
+				},
+				{
 					"id": "tlPyEJxc3xojArUfu",
 					"name": "Charisma (Sleight)",
 					"local_notes": "Skill: Charisma (Will/Hard) to engage under scrutiny. +1 reactions and Influence rolls per level (max 4) against minds in conversation range; digital minds at -8; nothing through the mesh. 1 FP per scene. Statistics: Charisma (Digital -8; Async) [5/level].",
@@ -1143,6 +1165,28 @@
 			"id": "TcxOefWfvnQ8AkFwG",
 			"name": "Psi-Gamma Sleights",
 			"children": [
+				{
+					"id": "tvF8w-KTjkxw2JSWq",
+					"name": "Alienation",
+					"tags": [
+						"Advantage",
+						"Async",
+						"Psi"
+					],
+					"local_notes": "Active. Quick Contest against Will. The target feels abruptly estranged from the people around them: -2 to their reaction rolls and to any teamwork roll for the next hour. Skill: Alienation (Will/Hard).",
+					"modifiers": [
+						{
+							"id": "mlC1Hx0FXIdKP_9SP",
+							"name": "Async Power Modifier",
+							"cost_adj": "-25%",
+							"notes": "Psi source: suppressed by psi inhibitors, blocked by a non-biological brain, costs FP."
+						}
+					],
+					"base_points": 20,
+					"calc": {
+						"points": 15
+					}
+				},
 				{
 					"id": "tb1AqOakTw8YQAJsy",
 					"name": "Alter Effect",
@@ -2498,6 +2542,170 @@
 			],
 			"calc": {
 				"points": 452
+			}
+		},
+		{
+			"id": "T2asMs6cOr7lUc8Ne",
+			"name": "Psi-Epsilon Sleights (GM only)",
+			"local_notes": "Exsurgent abilities, not available to player asyncs at any Talent level. Psi-epsilon users pay no FP: they draw what they need from the environment, which is why the lights die and the plants wither around them. The point values are for building the creature, not for buying the ability. Treat these as cinematic tools and adjust the numbers to whatever the scene needs.",
+			"children": [
+				{
+					"id": "tuqmkpM_p7qLbW7cI",
+					"name": "Anti-Electronics Field",
+					"base_points": 60,
+					"calc": {
+						"points": 60
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "Kills electronics in a 10-yard radius: mesh inserts, ectos, cyberbrains, weapon smartlinks. Synthmorphs and pods in the field roll HT each turn or shut down. GURPS build: Neutralize (Electronics), Area Effect. [GM material: psi-epsilon]"
+				},
+				{
+					"id": "t2mhQ2RTljFd1YVEb",
+					"name": "Basilisk Aura",
+					"base_points": 80,
+					"calc": {
+						"points": 80
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "Merely perceiving the exsurgent forces a Fright Check at -6. Failure inflicts a derangement; a critical failure inflicts a lasting disorder. The oldest and worst weapon the virus has. [GM material: psi-epsilon]"
+				},
+				{
+					"id": "tTBMH2Ssf1rbawhml",
+					"name": "Casimir Force Repulsion",
+					"base_points": 40,
+					"calc": {
+						"points": 40
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "Shoves everything away from the exsurgent in a 5-yard radius. Treat as ST 30 knockback, no attack roll, every turn it is held. [GM material: psi-epsilon]"
+				},
+				{
+					"id": "tAhZ7r2tXMBSNoiM7",
+					"name": "Cryokinesis",
+					"base_points": 40,
+					"calc": {
+						"points": 40
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "Draws heat out of an area. 3d burn (cold) at range, or drops an enclosed space below freezing over a minute. GURPS build: Innate Attack (Burning, cold), Temperature Control. [GM material: psi-epsilon]"
+				},
+				{
+					"id": "tNXc0s4xp-nse5VG8",
+					"name": "Decerebration",
+					"base_points": 60,
+					"calc": {
+						"points": 60
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "Shorts out the target brain stem. Quick Contest against Will: failure is -3 to everything and no fine motor control; critical failure means total sensory shutdown for minutes. [GM material: psi-epsilon]"
+				},
+				{
+					"id": "ttZJOw0L7uNAdmSe8",
+					"name": "Diffusion",
+					"base_points": 50,
+					"calc": {
+						"points": 50
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "The exsurgent body loses cohesion. Treat as Diffuse: attacks that need a solid target do almost nothing, and it flows through gaps a body should not fit through. [GM material: psi-epsilon]"
+				},
+				{
+					"id": "t3O84vTEjxkGJgyMN",
+					"name": "Kinetic Friction",
+					"base_points": 40,
+					"calc": {
+						"points": 40
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "Multiplies friction in a 5-yard radius. Move drops to a crawl, DX rolls at -4, and anything moving fast through it heats and seizes. [GM material: psi-epsilon]"
+				},
+				{
+					"id": "t2D2AIk2thcHoQUbB",
+					"name": "Negative Refraction",
+					"base_points": 40,
+					"calc": {
+						"points": 40
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "Bends light around the exsurgent or away from a surface. Effectively Invisibility, or blinds a target by routing light away from their eyes. [GM material: psi-epsilon]"
+				},
+				{
+					"id": "tnB4UxsrxJMr-YL0d",
+					"name": "Puppeteer",
+					"base_points": 80,
+					"calc": {
+						"points": 80
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "Takes direct motor control of a transhuman body while the ego watches. Quick Contest against Will each minute. GURPS build: Mind Control, Puppet. [GM material: psi-epsilon]"
+				},
+				{
+					"id": "tBOl623EY9ryD-GFg",
+					"name": "Pyrokinesis",
+					"base_points": 50,
+					"calc": {
+						"points": 50
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "Ignites matter at range. 3d burn, or sets fire to anything flammable within sight. [GM material: psi-epsilon]"
+				},
+				{
+					"id": "t-xcoTMPXaecCgHE7",
+					"name": "Strip Memory",
+					"base_points": 60,
+					"calc": {
+						"points": 60
+					},
+					"tags": [
+						"Advantage",
+						"Exsurgent",
+						"Psi-Epsilon"
+					],
+					"local_notes": "Removes a specific memory, or a span of them, permanently. Quick Contest against Will. The victim knows something is gone and cannot say what. [GM material: psi-epsilon]"
+				}
+			],
+			"calc": {
+				"points": 600
 			}
 		}
 	]

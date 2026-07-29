@@ -1,0 +1,670 @@
+{
+	"version": 5,
+	"id": "lRBkLIzL2JdhDbj0X",
+	"rows": [
+		{
+			"id": "TVj2pEPwk4em9RCyW",
+			"name": "Derangements (temporary)",
+			"local_notes": "Temporary stress effects. The resleeving procedure and other shocks inflict these in 5-point increments, fading over 1d weeks or as the GM sets. They do not count against the campaign disadvantage limit. Roll or choose from the 24 below.",
+			"children": [
+				{
+					"id": "tUOa-tSL0wH4otZJa",
+					"name": "Anxiety",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Panic. Panic attack: shaking, sweating, racing heart. -2 to all rolls until you calm down, and Will to act at all in the first turn. [EP p. 210]"
+				},
+				{
+					"id": "ty6jsN5w6bijQcumP",
+					"name": "Avoidance",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Phobia (the source of the stress). You cannot make yourself deal with whatever caused this. Will roll at -4 to approach it, and -2 to anything done near it. [EP p. 210]"
+				},
+				{
+					"id": "th0MIBIH4WEdQWeLy",
+					"name": "Blackout",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Amnesia (Partial, temporary). You act on autopilot and remember none of it afterwards. The GM plays the interval, or narrates it after. [EP p. 211]"
+				},
+				{
+					"id": "tKUFvXkcsoHUC79vW",
+					"name": "Chills",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: -1 to DX and HT rolls. Shivering and a sensation of cold that has nothing to do with the temperature. [EP p. 211]"
+				},
+				{
+					"id": "ttVgmxDJljSB7r_sd",
+					"name": "Confusion",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Absent-Mindedness (temporary). Concentration scrambles. -2 to IQ-based rolls and you lose track of what you were doing. [EP p. 211]"
+				},
+				{
+					"id": "t0uLxUXJvqWHd9Gsq",
+					"name": "Dizziness",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: -1 to DX-based rolls, -2 to Free Fall. Light-headed and disoriented. [EP p. 210]"
+				},
+				{
+					"id": "t5ILlXj50R-eq7Ix4",
+					"name": "Echolalia",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Compulsive Behavior (echoing speech). You repeat what others say, involuntarily. -2 to social rolls while it lasts. [EP p. 210]"
+				},
+				{
+					"id": "tYI-IZFk97rv2A7Bm",
+					"name": "Echopraxia",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Compulsive Behavior (mimicking movement). You mirror the movements of people around you. -2 to Stealth and to any coordinated action. [EP p. 211]"
+				},
+				{
+					"id": "tZdK6fDqaBcnXlkU9",
+					"name": "Fixation",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Obsession (short-term). You fixate on what went wrong. Will roll to turn your attention to anything else. [EP p. 210]"
+				},
+				{
+					"id": "tslUzzuSFz5GLqSju",
+					"name": "Frenzy",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Berserk. You attack the source of the stress. Will to break off, at -4 while it is still in front of you. [EP p. 211]"
+				},
+				{
+					"id": "tIYd-MioeE1C4_M7l",
+					"name": "Hallucinations",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Delusions (severe, temporary). You sense things that are not there. The GM decides what you perceive and does not tell you it is false. [EP p. 211]"
+				},
+				{
+					"id": "tRJu8x-MIBFCkHIo5",
+					"name": "Hunger",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Compulsive Behavior (eating). An overwhelming and irrational need to eat something specific, now. [EP p. 210]"
+				},
+				{
+					"id": "tg1_1cFF9tMyZ3_ai",
+					"name": "Hysteria",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Panic. You lose control: screaming, weeping, or laughing. -3 to everything and you cannot act usefully in a fight. [EP p. 211]"
+				},
+				{
+					"id": "tDC6_eEu3STCtgy86",
+					"name": "Indecisiveness",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Indecisive. Every choice feels impossible. -2 to all rolls and you act last regardless of Basic Speed. [EP p. 210]"
+				},
+				{
+					"id": "tTMXz9Sj32SxBWjkV",
+					"name": "Irrationality",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Delusions (temporary). Logical judgment breaks down. -3 to IQ-based rolls and your conclusions do not follow from your evidence. [EP p. 211]"
+				},
+				{
+					"id": "tooPw0OHF744Mczuc",
+					"name": "Logorrhoea",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Motor Mouth. You talk and talk. -2 to Stealth and to any social roll that needs restraint. [EP p. 210]"
+				},
+				{
+					"id": "tJtW6N3NyRv_3B76t",
+					"name": "Mood Swings",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Bad Temper and Moody (temporary). You swing between elation and despair without warning. -2 to social rolls and a Will roll to hold any position. [EP p. 211]"
+				},
+				{
+					"id": "tG87AkMqhVweC42-a",
+					"name": "Mute",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Mute (temporary). You cannot speak. No verbal communication, no verbal sleights, no talking anyone down. [EP p. 211]"
+				},
+				{
+					"id": "tCkXnIXEdAnXmYy-Y",
+					"name": "Narcissism",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Selfish. Nothing exists but you. You will not help anyone, and Will at -4 to act against your own interest. [EP p. 211]"
+				},
+				{
+					"id": "tt-eJYWOrQmVaEkFl",
+					"name": "Nausea",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: -1 to all rolls, -3 to eat or drink. Queasiness you are constantly fighting down. [EP p. 211]"
+				},
+				{
+					"id": "txZijYxGQrlLfzzsN",
+					"name": "Panic",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Cowardice. You flee the source of the stress and keep fleeing. Will roll each turn to do anything else. [EP p. 211]"
+				},
+				{
+					"id": "tS1EDkcAemuQ09ji2",
+					"name": "Paralysis",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Paralysis (temporary). Frozen. You may take no action at all until a Will roll succeeds, once per turn. [EP p. 211]"
+				},
+				{
+					"id": "tNIMxTQptvK-DYQdY",
+					"name": "Psychosomatic Crippling",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Crippled limb or blindness (psychosomatic). Some part of you stops working, with no physical cause and no physical cure. Treat as the matching crippling injury. [EP p. 211]"
+				},
+				{
+					"id": "t-ylyOK2sb2gH2721",
+					"name": "Tremors",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: -2 to DX-based rolls. Violent shaking. You drop things and cannot hold steady. [EP p. 211]"
+				}
+			],
+			"calc": {
+				"points": -225
+			}
+		},
+		{
+			"id": "THV3Lnew3BrJnAsVO",
+			"name": "Disorders (lasting)",
+			"local_notes": "Lasting mental disorders, acquired through repeated trauma, psychosurgery, fork merges, or exsurgent exposure. These are real disadvantages and do count against the limit unless the GM grants them as story damage. Treatment is Psychology (Psychiatry) or psychosurgery.",
+			"children": [
+				{
+					"id": "twKKoNWjQlLOm01np",
+					"name": "Addiction",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Addiction. Compulsive use of a substance, XP feed, or behaviour. Severity and legality set the exact value. [EP p. 211]"
+				},
+				{
+					"id": "tLZyujb7-bkgOZDSb",
+					"name": "Alien Behavioural Disorder",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Compulsive Behavior (alien). Urges to act in ways no transhuman would: postures, routines, and territorial habits that belong to something else. [EP p. 154]"
+				},
+				{
+					"id": "tFm9H-IugPxEVkzfB",
+					"name": "Alien Sensory Disorder",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Delusions (phantom sense). Your mind reaches for a sense organ your morph does not have and fills the gap with noise. [EP p. 155]"
+				},
+				{
+					"id": "toF-llmMfv7LHB4gp",
+					"name": "Atavism",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Reverted instincts. Chiefly an uplift disorder: regression toward the base species behaviour under stress. Will roll to override instinct. [EP p. 212]"
+				},
+				{
+					"id": "teVAfle-AVYako_wQ",
+					"name": "Attention Deficit Hyperactivity Disorder (ADHD)",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Short Attention Span. Sustained focus is difficult. -2 to any roll requiring more than a few minutes of concentration. [EP p. 212]"
+				},
+				{
+					"id": "tsHAotltZPZZacvq4",
+					"name": "Autophagy",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Self-Destructive behaviour. Mainly an octomorph disorder: self-directed harm, in their case eating their own arms. Regrowth makes it survivable, which does not make it less serious. [EP p. 212]"
+				},
+				{
+					"id": "tTk2st88dhCjSjc85",
+					"name": "Bipolar Disorder",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Manic-Depressive. Cycles between mania and depression. Each phase has its own modifiers and neither is chosen. [EP p. 212]"
+				},
+				{
+					"id": "td7VfcqVNlU8EnAlX",
+					"name": "Body Dysmorphia",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Low Self-Image and Obsession. A conviction that your morph is hideous, unrelated to what it looks like. Drives compulsive resleeving in those who can afford it. [EP p. 212]"
+				},
+				{
+					"id": "tvPWkNAMtFqm8Hddc",
+					"name": "Borderline Personality Disorder",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Emotional instability. Unstable sense of self and unstable relationships. Reaction rolls swing wildly in both directions. [EP p. 212]"
+				},
+				{
+					"id": "tFsDxF1D9X2-BRiI4",
+					"name": "Cosmic Anxiety Disorder",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Phobia (cosmic insignificance). A gatecrasher disorder: having seen evidence of something vastly older and larger, you cannot stop thinking about it. [EP p. 155]"
+				},
+				{
+					"id": "tKRrD0Ji2zuyqdXYh",
+					"name": "Depression",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Chronic Depression. Persistent hopelessness. Will roll to undertake anything demanding. [EP p. 212]"
+				},
+				{
+					"id": "tXXMLSZ-DblJl6F_J",
+					"name": "Fugue",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Absent-Mindedness. Detached, inattentive states in which you function without engaging. -3 to Perception. [EP p. 213]"
+				},
+				{
+					"id": "tTauagAbtcusfNmt0",
+					"name": "General Anxiety Disorder (GAD)",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Chronic anxiety. Severe anxiety about nearly everything. -1 to all rolls under time pressure and a Will roll to commit to anything irreversible. [EP p. 213]"
+				},
+				{
+					"id": "tMfnmJNu8A8B4DJLT",
+					"name": "Hypochondria",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Hypochondria. Conviction of illness that no scan supports. In a setting with medichines, an expensive habit. [EP p. 213]"
+				},
+				{
+					"id": "tvk4TeQnVMn9AZlEZ",
+					"name": "Impulse Control Disorder",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Compulsive Behavior. A specific act you must perform, and cannot reason your way out of. [EP p. 213]"
+				},
+				{
+					"id": "tZnvnzFsHYW_HAhzv",
+					"name": "Insomnia",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Insomniac. You cannot sleep, or cannot stay asleep. Cumulative penalties until you do. [EP p. 213]"
+				},
+				{
+					"id": "txbOmEs6QA9gWcmzd",
+					"name": "Megalomania",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Megalomania. You are the most important person in any room and act accordingly. [EP p. 213]"
+				},
+				{
+					"id": "t0oNm8-3py4rKe6wR",
+					"name": "Multiple Personality Disorder",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Split Personality. A distinct second personality forms alongside the original. In this setting it is often a fork that did not fully merge. [EP p. 214]"
+				},
+				{
+					"id": "tsEKhioLv5g4bqvp9",
+					"name": "Obsessive Compulsive Disorder (OCD)",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Compulsive Behavior (rituals). Intrusive thoughts and the rituals that answer them. -2 to anything done while a ritual is interrupted. [EP p. 214]"
+				},
+				{
+					"id": "tjuK7Pig5Rjz0hCq0",
+					"name": "Post Traumatic Stress Disorder (PTSD)",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Flashbacks. Recurrent intrusion of a past event. Triggers cause a Will roll or a flashback; the Fall gave nearly everyone a candidate. [EP p. 214]"
+				},
+				{
+					"id": "t4bFp2R4IXX8khj_t",
+					"name": "Schizophrenia",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Delusions and Split Personality. Disordered thought, hallucination, and fractured identity. Treat the hallucinations as Delusions the character cannot test. [EP p. 214]"
+				},
+				{
+					"id": "tLE28nVo6VUxhVoNL",
+					"name": "Species Dysmorphia",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "GURPS equivalent: Self-image (wrong species). An async disorder: the conviction that you belong in a body of another species entirely. [EP p. 155]"
+				}
+			],
+			"calc": {
+				"points": -235
+			}
+		}
+	]
+}

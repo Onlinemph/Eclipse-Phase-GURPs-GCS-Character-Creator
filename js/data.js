@@ -29,4 +29,5 @@ export const morph = (key) => get(`morphs/${key}.json`);
 export const augs = () => get("augs.json");
 export const gear = () => get("gear.json");
 export const sleights = () => get("sleights.json");
+export const egoTraits = () => get("ego-traits.json");
 export const manifest = () => get("manifest.json");

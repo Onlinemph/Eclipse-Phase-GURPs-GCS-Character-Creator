@@ -5,11 +5,12 @@
   "backgrounds": 15,
   "factions": 19,
   "repnets": 8,
-  "ep_skills": 59,
+  "ep_skills": 60,
+  "ego_traits": 88,
   "morphs": 103,
-  "aug_equipment": 91,
-  "aug_traits": 126,
-  "gear": 1007,
-  "sleights": 68
+  "aug_equipment": 227,
+  "aug_traits": 213,
+  "gear": 1221,
+  "sleights": 81
  }
 }

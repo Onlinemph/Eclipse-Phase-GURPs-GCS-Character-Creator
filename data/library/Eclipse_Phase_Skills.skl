@@ -413,6 +413,17 @@
 			"name": "Async Skills",
 			"children": [
 				{
+					"id": "sdAiIWpxh5z3zwFD6",
+					"name": "Alienation",
+					"tags": [
+						"Async",
+						"Eclipse Phase"
+					],
+					"difficulty": "iq/h",
+					"points": 1,
+					"local_notes": "Psi-gamma sleight skill. Quick Contest against the target Will to leave them estranged from the people around them."
+				},
+				{
 					"id": "sorDCXcdp263pwkJg",
 					"name": "Alter Effect",
 					"tags": [

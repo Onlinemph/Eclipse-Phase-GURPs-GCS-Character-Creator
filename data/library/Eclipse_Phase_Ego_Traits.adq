@@ -1,0 +1,630 @@
+{
+	"version": 5,
+	"id": "lxMzSsboovLp-K6CP",
+	"rows": [
+		{
+			"id": "TIyKe5KBp-_yc528l",
+			"name": "EP Ego Traits: Resleeving",
+			"children": [
+				{
+					"id": "tsKhZBEkcKShCgUig",
+					"name": "Adaptability Level 1",
+					"base_points": 3,
+					"calc": {
+						"points": 3
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+1 to Integration and Alienation rolls. Waking up somewhere new does not trouble this ego. [EP p. 145]"
+				},
+				{
+					"id": "tEBZz4E3tsWlxpEW5",
+					"name": "Adaptability Level 2",
+					"base_points": 6,
+					"calc": {
+						"points": 6
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+2 to Integration and Alienation rolls. [EP p. 145]"
+				},
+				{
+					"id": "t6Qa_eViOaUW1sY7c",
+					"name": "Identity Crysis",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "-2 to Alienation specifically. The body works; the face in the mirror is the problem. [EP p. 149]"
+				},
+				{
+					"id": "tgco4bVTL9i2iVWyj",
+					"name": "Immortality Blues",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Past a century of life, everything is repetition. -1 to resist stress from boredom or futility, and a Will roll to care about a new venture. [EP p. 149]"
+				},
+				{
+					"id": "tVfohkgqqXl_euaNP",
+					"name": "Morphing Disorder Level1",
+					"base_points": -3,
+					"calc": {
+						"points": -3
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "-1 to Integration and Alienation rolls. [EP p. 150]"
+				},
+				{
+					"id": "tQv08CSq6I559EoCw",
+					"name": "Morphing Disorder Level2",
+					"base_points": -6,
+					"calc": {
+						"points": -6
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "-2 to Integration and Alienation rolls. [EP p. 150]"
+				},
+				{
+					"id": "tzm8AJGkSTYHIBzZW",
+					"name": "Morphing Disorder Level3",
+					"base_points": -9,
+					"calc": {
+						"points": -9
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "-3 to Integration and Alienation rolls, and the recovery period runs long. [EP p. 150]"
+				},
+				{
+					"id": "tFvW7d-6_sEQG-xHC",
+					"name": "Phoenix Level1",
+					"base_points": 3,
+					"calc": {
+						"points": 3
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "You die often enough to be practised at it. +1 to Continuity rolls. [EP p. 85]"
+				},
+				{
+					"id": "tMy2DDlwRhmWHAH0T",
+					"name": "Phoenix Level2",
+					"base_points": 6,
+					"calc": {
+						"points": 6
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+2 to Continuity rolls. Death has stopped being interesting. [EP p. 85]"
+				},
+				{
+					"id": "t56R15wtUHEW4W2Ea",
+					"name": "Right at Home",
+					"base_points": 3,
+					"calc": {
+						"points": 3
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Choose one morph type. +2 to Integration and Alienation whenever you sleeve into it. [EP p. 147]"
+				},
+				{
+					"id": "tWD_22n9ZklLDHzGx",
+					"name": "Second Skin",
+					"base_points": 3,
+					"calc": {
+						"points": 3
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Choose one specific morph model. +3 to Integration and Alienation in that model, and it feels like coming home. [EP p. 147]"
+				}
+			],
+			"calc": {
+				"points": -4
+			}
+		},
+		{
+			"id": "TSJcQeLh5pnU-ox6h",
+			"name": "EP Ego Traits: Forks & Psychosurgery",
+			"children": [
+				{
+					"id": "tM9SpmlXdU-3Dm5di",
+					"name": "Beta",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "You are a beta fork: a compressed copy running at reduced fidelity. Reduced skills, a legal status somewhere between property and person, and the original may still be out there. [EP p. 87]"
+				},
+				{
+					"id": "teMkrE0k2CU_EzeiD",
+					"name": "Botched Merge",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "A previous reintegration went wrong and left damage. One permanent mental disadvantage from the disorder list, GM choice. [EP p. 87]"
+				},
+				{
+					"id": "taC5eVXRoxRnchgKN",
+					"name": "Divergent Personality",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Your forks drift fast. -2 to merge rolls, and the GM plays them further from you than the elapsed time suggests. [EP p. 88]"
+				},
+				{
+					"id": "tNV7cdH3OAl_s2oW7",
+					"name": "Edited Memories",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Something was cut out of you. You do not know what, only that there is a shape where it was. [EP p. 149]"
+				},
+				{
+					"id": "tU8OEX6vc6ROfMo3v",
+					"name": "Ego Plasticity Level1",
+					"base_points": 3,
+					"calc": {
+						"points": 3
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+1 to merge rolls and to resist the stress of reintegration. [EP p. 83]"
+				},
+				{
+					"id": "tsjsuluWeLx989wuT",
+					"name": "Ego Plasticity Level2",
+					"base_points": 6,
+					"calc": {
+						"points": 6
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+2 to merge rolls and to resist reintegration stress. [EP p. 83]"
+				},
+				{
+					"id": "th9LfG4CweWSWZsna",
+					"name": "Ego Plasticity Level3",
+					"base_points": 9,
+					"calc": {
+						"points": 9
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+3 to merge rolls. Your forks come back and fit. [EP p. 83]"
+				},
+				{
+					"id": "twry8Bz5F9d2NgSTA",
+					"name": "Errant Fork",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "A fork of you is loose and acting on its own account. It has your memories, your contacts, and no obligation to you. [EP p. 89]"
+				},
+				{
+					"id": "te_MwcZIV4vP7h7E0",
+					"name": "Established Fork",
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "You begin with a fully instanced fork of yourself, cooperative and current. Effectively an Ally who is you. [EP p. 84]"
+				},
+				{
+					"id": "t4OpNYEvOQI62eXJP",
+					"name": "Lost Fork",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "A fork of you went missing. You do not know where, who has it, or what has been done to it. [EP p. 91]"
+				},
+				{
+					"id": "t_Kg6kThAEvuDmNSK",
+					"name": "Malleable Mind Level1",
+					"base_points": -3,
+					"calc": {
+						"points": -3
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "-1 to resist psychosurgery, interrogation, and mental manipulation. [EP p. 85]"
+				},
+				{
+					"id": "tNwQyibd3MX2xAwGT",
+					"name": "Malleable Mind Level2",
+					"base_points": -6,
+					"calc": {
+						"points": -6
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "-2 to resist psychosurgery and mental manipulation. [EP p. 85]"
+				},
+				{
+					"id": "tBJ0sdG0jFoxhDOjN",
+					"name": "Malleable Mind Level3",
+					"base_points": -9,
+					"calc": {
+						"points": -9
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "-3 to resist. A psychosurgeon can rewrite you in an afternoon. [EP p. 85]"
+				},
+				{
+					"id": "t7cmeIATqMv4SNccy",
+					"name": "Modified Behaviour Level1",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Psychosurgical conditioning. One mild compulsion or restriction you cannot reason past. [EP p. 150]"
+				},
+				{
+					"id": "t4mpZDogjepIV9RZS",
+					"name": "Modified Behaviour Level2",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Deeper conditioning. A Will roll at -2 to act against it, and failure is distressing. [EP p. 150]"
+				},
+				{
+					"id": "tADaYX0F84kZ0V1fa",
+					"name": "Modified Behaviour Level3",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Heavy conditioning. You simply cannot act against it, and you will rationalise why not. [EP p. 150]"
+				},
+				{
+					"id": "t9faNuVjeoCTDjozk",
+					"name": "Subverted Mind",
+					"base_points": -15,
+					"calc": {
+						"points": -15
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Conditioning installed by someone else, for their purposes, without your knowledge. You may not know it is there. [EP p. 93]"
+				}
+			],
+			"calc": {
+				"points": -85
+			}
+		},
+		{
+			"id": "TZMN3nHxtt45V0kqp",
+			"name": "EP Ego Traits: Stress & Trauma",
+			"children": [
+				{
+					"id": "thGH0GaIlb59TYvbn",
+					"name": "Frail Sanity Level1",
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "-1 to all stress and Fright Check rolls. [EP p. 90]"
+				},
+				{
+					"id": "ts9wgIxZqrBw5it_Q",
+					"name": "Frail Sanity Level2",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "-2 to all stress and Fright Check rolls. Derangements land harder and last longer. [EP p. 90]"
+				},
+				{
+					"id": "tt4J8UWb0FtYe5wYt",
+					"name": "Hardening",
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Choose one category of horror: exsurgent, TITAN, violent death, the alien. +3 against that specifically, and nothing against anything else. [EP p. 84]"
+				},
+				{
+					"id": "tt6_zQRUtYp46A8Bu",
+					"name": "Trauma Tolerance Level1",
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+1 to stress and Fright Check rolls. [EP p. 86]"
+				},
+				{
+					"id": "tpLRz820AYWKkJeLz",
+					"name": "Trauma Tolerance Level2",
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+2 to stress and Fright Check rolls. [EP p. 86]"
+				}
+			],
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "T0RDU_THdHO_vos6e",
+			"name": "EP Ego Traits: Async",
+			"children": [
+				{
+					"id": "twEvdsrTw2NFgBrFZ",
+					"name": "Async Familiarity",
+					"base_points": 3,
+					"calc": {
+						"points": 3
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+2 to notice that someone else is an async, or that a sleight has just been used nearby. [EP p. 83]"
+				},
+				{
+					"id": "tOpJMywV6rpXy3ld5",
+					"name": "Dominant Strain (Async Only)",
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Your Watts-MacLeod strain crowds out others. +3 to resist further exsurgent infection, and other strains do not take hold in you. [EP p. 83]"
+				},
+				{
+					"id": "tIRa8LASlFGKvrUpK",
+					"name": "Morph Fever Resistence(Async Only)",
+					"base_points": 3,
+					"calc": {
+						"points": 3
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "The fever that follows an async into a new morph does not touch you. [EP p. 85]"
+				},
+				{
+					"id": "tESCvQRyw08FRJvCl",
+					"name": "Potent Mind (Async Only)",
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+1 to all sleight skills. Stacks with Async Talent. [EP p. 85]"
+				},
+				{
+					"id": "tT1zscnvhj2rEOdtj",
+					"name": "Psi Chameleon",
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "Your mental state does not register. -4 to any attempt to sense or identify you by psi. [EP p. 147]"
+				},
+				{
+					"id": "t8MbeWNHGcUwN7Gne",
+					"name": "Psi Defense (Level 1)",
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+2 to resist sleights used against you. [EP p. 147]"
+				},
+				{
+					"id": "tAnsf7Wl7qUgC_eDW",
+					"name": "Psi Defense (Level 2)",
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "+4 to resist sleights used against you. [EP p. 147]"
+				},
+				{
+					"id": "tT7c3OKOZ7r_cMFxj",
+					"name": "Psi Vulnerability",
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					},
+					"tags": [
+						"Disadvantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "-3 to resist sleights. Something about your mind is an open door. [EP p. 151]"
+				},
+				{
+					"id": "t8WxHg4fdtLvbyJfq",
+					"name": "Zoosemiotics",
+					"base_points": 3,
+					"calc": {
+						"points": 3
+					},
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Eclipse Phase"
+					],
+					"local_notes": "No penalty when using sleights on uplifts and smart animals, whose minds usually read as noise. [EP p. 148]"
+				}
+			],
+			"calc": {
+				"points": 34
+			}
+		}
+	]
+}

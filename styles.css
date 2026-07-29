@@ -434,3 +434,6 @@ code { font-family: var(--mono); font-size: .85em; }
   font-size: .72rem;
   color: var(--text-muted);
 }
+
+.pick-card.gm-only { opacity: .75; border-style: dashed; }
+.warn-text { color: var(--warn); }

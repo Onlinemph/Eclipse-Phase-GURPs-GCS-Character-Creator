@@ -9,7 +9,9 @@
 import {
   el, field, textInput, numberInput, select, checkbox, button, details, notice, clear,
 } from "../ui.js";
-import { customTraitCost, DISADVANTAGE_LIMIT, disadvantageTally } from "../state.js";
+import { customTraitCost, egoTraitIndex, DISADVANTAGE_LIMIT, disadvantageTally } from "../state.js";
+import { traitPoints } from "../cost.js";
+import { filterBox, matches } from "../ui.js";
 
 // Self-control rolls multiply a disadvantage's cost (B121). GCS keys them by
 // the number you roll against.
@@ -88,7 +90,12 @@ export default {
   subtitle: "Anything the background and faction packages do not already cover.",
 
   render(ctx) {
-    const { build, cat, update } = ctx;
+    const { build, cat, update, need } = ctx;
+    if (!cat.egoTraits) {
+      need("egoTraits").then(() => update());
+      return el("p.muted", "Loading the setting's trait catalogue…");
+    }
+
     const dis = disadvantageTally(build, cat);
 
     const add = (trait) => update((b) => {
@@ -99,9 +106,9 @@ export default {
       el("section.card",
         el("p",
           "Backgrounds and factions bring their own traits. This step is for everything else: " +
-          "the advantage a concept needs, the disadvantage a player wants, the quirks that make " +
-          "a character specific. Each one is priced through the same engine as the rest of the " +
-          "sheet, self-control rolls included.",
+          "what resleeving, forking and psychosurgery leave behind, the derangements the setting " +
+          "hands out for stress, and any Basic Set trait a concept needs. Each one is priced " +
+          "through the same engine as the rest of the sheet, self-control rolls included.",
         ),
         notice(dis.total < DISADVANTAGE_LIMIT ? "error" : "info",
           `Mental and social disadvantages currently total ${dis.total}. The limit is ` +
@@ -109,12 +116,95 @@ export default {
         ),
       ),
 
+      chosenLibraryTraits(build, cat, update),
       chosen(build, update),
+      libraryBrowser(build, cat, update, "ego", "Setting traits",
+        "From Eclipse_Phase_Ego_Traits.adq: what a life of resleeving, forking and psychosurgery " +
+        "does to an Ego, and the traits that only mean something to an async."),
+      libraryBrowser(build, cat, update, "derangement", "Derangements & disorders",
+        "From Eclipse_Phase_Derangements.adq. Derangements are temporary and are what a failed " +
+        "Alienation or Continuity roll inflicts; disorders are lasting. Watts-MacLeod requires at " +
+        "least 15 points of these, chosen with the GM."),
       suggestions(build, add),
       customForm(add),
     );
   },
 };
+
+/** The library traits already on the sheet. */
+function chosenLibraryTraits(build, cat, update) {
+  const index = egoTraitIndex(cat);
+  const rows = build.egoTraits.map((c) => index.get(c.key)).filter(Boolean);
+  if (!rows.length) return null;
+  const total = rows.reduce((sum, e) => sum + traitPoints(e.payload), 0);
+
+  return el("section.card",
+    el("h3", `Setting traits on the sheet (${rows.length}, ${total} points)`),
+    el("table.table",
+      el("tbody",
+        rows.map((entry) =>
+          el("tr",
+            el("td",
+              el("strong", entry.name),
+              entry.notes ? el("p.muted.small", entry.notes) : null,
+            ),
+            el("td.muted.small", entry.kind === "derangement" ? "derangement" : "ego trait"),
+            el("td.num" + (traitPoints(entry.payload) < 0 ? ".negative" : ""),
+              String(traitPoints(entry.payload))),
+            el("td", button("Remove", () => update((b) => {
+              b.egoTraits = b.egoTraits.filter((c) => c.key !== entry.key);
+            }), "ghost")),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+/** Browse one kind of library trait. */
+function libraryBrowser(build, cat, update, kind, heading, blurb) {
+  const groups = cat.egoTraits.groups.filter((g) => g.kind === kind);
+  const taken = new Set(build.egoTraits.map((c) => c.key));
+  const body = el("div.pick-list");
+
+  const draw = (query = "") => {
+    clear(body);
+    for (const group of groups) {
+      const items = group.items.filter((i) => matches(query, i.name, i.notes));
+      if (!items.length) continue;
+      body.append(
+        el("h4.pick-group", `${group.name} (${items.length})`),
+        el("div.chip-row",
+          items.map((item) =>
+            el(`button.chip${taken.has(item.key) ? ".on" : ""}`, {
+              type: "button",
+              title: item.notes || "",
+              onclick: () => update((b) => {
+                if (b.egoTraits.some((c) => c.key === item.key)) {
+                  b.egoTraits = b.egoTraits.filter((c) => c.key !== item.key);
+                } else {
+                  b.egoTraits.push({ key: item.key });
+                }
+              }),
+            },
+              el("span.chip-name", item.name),
+              el("span.chip-diff", String(item.points)),
+            ),
+          ),
+        ),
+      );
+    }
+    if (!body.childElementCount) body.append(el("p.muted", "Nothing matches that."));
+  };
+
+  draw();
+  return el("section.card",
+    el("h3", heading),
+    el("p.muted.small", blurb),
+    filterBox(`Filter ${heading.toLowerCase()}…`, draw),
+    body,
+  );
+}
 
 function chosen(build, update) {
   if (!build.customTraits.length) {
@@ -217,10 +307,11 @@ function costCell(index, trait, cells) {
 function suggestions(build, add) {
   const taken = new Set(build.customTraits.map((t) => t.name));
   return el("section.card",
-    el("h3", "Common choices"),
+    el("h3", "Basic Set traits"),
     el("p.muted.small",
-      "A starting point, not a catalogue. Costs are the Basic Set's; adjust any of them after " +
-      "adding, and use the form below for anything not listed.",
+      "Generic GURPS traits, including a few the setting libraries approach differently. A " +
+      "starting point rather than a catalogue: costs are the Basic Set's, adjust any of them " +
+      "after adding, and use the form below for anything not listed.",
     ),
     SUGGESTED.map((group) =>
       el("div",

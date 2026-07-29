@@ -58,7 +58,49 @@ Points to notice:
 
 **ST covers striking and lifting only, at 8 points per level.** It sets damage, Basic Lift, and everything else ST does *except* Hit Points. (In the GCS files: Increased Strength at 8/level with a hidden −1 HP per level feature canceling the sheet's automatic derivation.)
 
-**HP is bought separately at 2 points per level.** Every morph lists its HP purchase explicitly. The ±30% HP-to-ST cap does not apply to morphs. Morph HP runs at 0.6 × the morph's canon Durability, which is where every figure in Part III comes from: Durability 30 is HP 18, Durability 60 is HP 36. **DR runs at 0.75 × canon Armor**, rounding half to even: Armor 8 is DR 6, Armor 6 is DR 4, Armor 10 is DR 8. On synthmorphs the meta-trait supplies the standard DR 4 chassis and anything above that goes in an Armor Plating mod; a morph canon armors *below* 4 lowers the meta-trait's own DR line instead.
+**HP is bought separately at 2 points per level.** Every morph lists its HP purchase explicitly. The ±30% HP-to-ST cap does not apply to morphs. Morph HP runs at one third of the morph's canon Durability, rounded to nearest, which is where every figure in Part III comes from: Durability 30 is HP 10, Durability 60 is HP 20, Durability 100 is HP 33. The Flat sets the baseline at HP 10, and every other morph is scaled from it. One floor applies on top: **HP never falls below 70% of the morph's ST**, the lower bound of the ±30% band GURPS normally enforces, because a body strong enough to throw a ton has the structure to absorb punishment. Twenty morphs sit on that floor, mostly the aquatic uplifts and the labour pods, whose canon Durability is modest next to their SOM. The ceiling is deliberately left open: a large hull can be tough without being strong, which is why the Nautiloid runs HP 67 against ST 50 and the Salamander HP 20 against ST 10. **DR is mapped onto Ultra-Tech's armor scale, not scaled down from Eclipse Phase's.** EP's armor values are compressed, topping out near AV 20, while the gear in this project is native *Ultra-Tech*, where a monocrys vest is DR 8/16 and a combat hardsuit is DR 45. Converting armor downward while importing weapons at full value made morph armor irrelevant: a Reaper at DR 12 was less protected than a civilian in a rented suit. Morph DR therefore runs at 2.5 × the figure a 0.75 conversion would give, which puts armored chassis on the same axis as worn armor. The synthmorph meta-trait supplies a DR 10 standard chassis and anything above that goes in an Armor Plating mod. Organic armor (bioweave, carapace, and anything on a biomorph, pod, or uplift) takes **Flexible** and **Tough Skin**, so blunt trauma passes through and it costs 2 points per level. Rigid plate on synthmorphs takes neither and costs the full 5.
+
+The result is that armor now matters and so does weapon choice, which is the point. A Fury at DR 20 shrugs off an assault carbine (6d pi, average 21, one point through), and a Reaper at DR 30 ignores it entirely. Both are still vulnerable to the right tool: the blaster pistol's armor divisor of 5 cuts a Reaper's effective DR to 6, a laser rifle's divisor of 2 leaves it at 15, and a Gauss HMG at 16d with divisor 3 does not care what anyone is wearing.
+
+**Armor stacks.** Chassis DR, an armor package, and worn armor all add, exactly as Eclipse Phase intended when it sold armor upgrades separately from morphs. A Reaper in a combat hardsuit is DR 30 plus 45. This is deliberate: armor divisors, hit locations, and the fact that almost nothing in the setting fights fair keep it from being decisive, and a walking tank should be hard to shoot.
+
+Three packages are available to any synthmorph, as traits in `Eclipse_Phase_Mods_Traits.adq` and priced in `Eclipse_Phase_Mods_Equipment.eqp`:
+
+| Package | DR | Price | LC |
+|---|---|---|---|
+| Armor Plating (Light) | +10 | $1,500 | 4 |
+| Armor Plating (Medium) | +20 | $6,250 | 3 |
+| Armor Plating (Heavy) | +30 | $31,250 | 2 |
+
+Three morphs also carry the specific upgrade canon gives them, attached and disabled. Enable it to apply:
+
+| Morph | Package | DR |
+|---|---|---|
+| Daitya | Industrial Armor | 20 → 40 |
+| Nautiloid | Industrial Armor | 20 → 40 |
+| Fenrir | Heavy Combat Armor | 30 → 60 |
+
+Bioware armor works the same way for biomorphs, through Bioweave Armor (Light or Heavy) and Carapace Armor, all of which take Flexible and Tough Skin.
+
+
+**Size and strength.** Eclipse Phase encodes a chassis's bulk in Durability, not in SOM, so converting aptitudes one-for-one leaves large morphs at human strength: a canon Nautiloid is SOM +5, which is ST 14, and a submarine-sized hull that lifts 39 pounds is not a usable body. Two corrections apply to any morph whose canon entry carries the Large or Very Large Size trait. Each takes a **Size Modifier** feature, which costs nothing and cuts both ways: easier to hit, longer reach, and it does not fit through a standard hatch. Each also has its ST raised to a floor set by that modifier, priced at 8 points per level with the Size limitation from B15 at −10% per point of Size Modifier. The increase covers striking as well as lifting, which is how GURPS handles creatures at this scale: a body with the mass to lift two tons hits like it. HP is unaffected and stays on the Durability rule.
+
+| Morph | SM | ST |
+|---|---|---|
+| Neo-Whale | +5 | 60 |
+| Nautiloid | +4 | 50 |
+| Surya | +4 | 50 |
+| Neo-Orca | +3 | 40 |
+| Daitya | +2 | 32 |
+| Fenrir | +2 | 32 |
+| Neo-Beluga | +2 | 32 |
+| Sundiver | +2 | 32 |
+| Arachnoid | +1 | 25 |
+| Bruiser | +1 | 25 |
+| Q-Morph | +1 | 25 |
+| Synthtaur | +1 | 25 |
+
+The floors by Size Modifier are +1 for ST 25, +2 for 32, +3 for 40, +4 for 50, and +5 for 60. A morph already above its floor keeps what it has, which is why the Bruiser gains a single level and the Daitya, already at ST 24, gains eight. The small morphs already carried negative Size Modifiers, and those are unchanged.
 
 **Striking ST (5/level) and Lifting ST (3/level)** remain available for augmentations that push one half only, like the Daitya's Pneumatic Limbs.
 
@@ -265,93 +307,93 @@ Effective attribute lines below assume an unmodified Ego (DX 11, IQ 11, Will 10,
 
 ### Biomorphs
 
-**Flat — 216 points.** ST 10, HT 10, HP 18 and *nothing else*: canon says "Implants: None," so no biomods, no mesh inserts, no cortical stack. A Flat ages, sickens, sleeps eight hours, and dies for real. The only truly mortal body on this list.
+**Flat — 200 points.** ST 10, HT 10, HP 10 and *nothing else*: canon says "Implants: None," so no biomods, no mesh inserts, no cortical stack. A Flat ages, sickens, sleeps eight hours, and dies for real. The only truly mortal body on this list.
 
-**Generic — 340 points.** ST 10, HT 10, HP 18: the Flat chassis with basic biomods and mesh inserts installed — what most people mean when they say "an ordinary body." One slot.
+**Generic — 324 points.** ST 10, HT 10, HP 10: the Flat chassis with basic biomods and mesh inserts installed — what most people mean when they say "an ordinary body." One slot.
 
-**Splicer — 376 points.** ST 12, HT 12, HP 18, one customization slot. The genefixed standard model of transhumanity; most people you meet are wearing one.
+**Splicer — 360 points.** ST 12, HT 12, HP 10, one customization slot. The genefixed standard model of transhumanity; most people you meet are wearing one.
 
-**Exalt — 422 points.** ST 12, HT 12, HP 21, IQ +2, *three* customization slots. The enhanced-human generalist. Its 60 points of slot flexibility make it the most personally tailored production morph on the market.
+**Exalt — 404 points.** ST 12, HT 12, HP 12, IQ +2, *three* customization slots. The enhanced-human generalist. Its 60 points of slot flexibility make it the most personally tailored production morph on the market.
 
-**Menton — 554 points.** ST 12, HT 12, HP 21, IQ +4, Per +3, Will +3, plus Math Boost (Lightning Calculator with Intuitive Mathematician, Mathematical Ability 1), Photographic Memory, and Language Talent. One slot. The thinker's morph.
+**Menton — 536 points.** ST 12, HT 12, HP 12, IQ +4, Per +3, Will +3, plus Math Boost (Lightning Calculator with Intuitive Mathematician, Mathematical Ability 1), Photographic Memory, and Language Talent. One slot. The thinker's morph.
 
-**Faust — 670 points.** The Menton platform pushed toward mental warfare: IQ +4, Per +3, Will +6, Mind Shield 3, Endocrine Control (Doesn't Sleep, +1 more Will), Circadian Regulation, and the full Menton cognitive suite. HP 21. One slot. Popular with asyncs and anyone expecting to be psychosurgically attacked.
+**Faust — 652 points.** The Menton platform pushed toward mental warfare: IQ +4, Per +3, Will +6, Mind Shield 3, Endocrine Control (Doesn't Sleep, +1 more Will), Circadian Regulation, and the full Menton cognitive suite. HP 12. One slot. Popular with asyncs and anyone expecting to be psychosurgically attacked.
 
-**Hyperbright — 725 points.** IQ +6, Per +6, Will +4, HP 21, Enhanced Time Sense, prehensile feet, grip pads, Doesn't Sleep, the full cognitive suite — and the bill: Unattractive, ×2 food consumption, and a lifelong Comfurt dependency (Addiction, mitigated daily). The smartest thing you can legally sleeve, and it feels like it.
+**Hyperbright — 707 points.** IQ +6, Per +6, Will +4, HP 12, Enhanced Time Sense, prehensile feet, grip pads, Doesn't Sleep, the full cognitive suite — and the bill: Unattractive, ×2 food consumption, and a lifelong Comfurt dependency (Addiction, mitigated daily). The smartest thing you can legally sleeve, and it feels like it.
 
-**Bruiser — 553 points.** ST 24 (20 base + 4 from Hardened Skeleton), HT 12, HP 36, Basic Speed +2.00 (Adrenal Boost), Sharp Claws. One slot. Thrust 2d+1, swing 4d+2 before skill or weapons enter into it. A body built to end fights in melee.
+**Bruiser — 528 points.** ST 25 (20 base, +4 from Hardened Skeleton, +1 to the size floor), SM +1, HT 12, HP 20, Basic Speed +2.00 (Adrenal Boost), Sharp Claws. One slot. Thrust 2d+2, swing 4d before skill or weapons enter into it. A body built to end fights in melee.
 
-**Fury — 755 points.** ST 20, DX +2, HT 12, HP 30, Will +3, Basic Speed +2.00, DR 8 (Flexible, Tough Skin), Altered Time Rate 1 (Neurachem), Enhanced Vision (Hyperspectral, Telescopic 2), Immunity to Poison, one slot. The premier combat biomorph. ATR alone means it acts twice each second; treat any hostile Fury as a tactical problem, not an encounter.
+**Fury — 753 points.** ST 20, DX +2, HT 12, HP 17, Will +3, Basic Speed +2.00, DR 20 (Flexible, Tough Skin), Altered Time Rate 1 (Neurachem), Enhanced Vision (Hyperspectral, Telescopic 2), Immunity to Poison, one slot. The premier combat biomorph. ATR alone means it acts twice each second; treat any hostile Fury as a tactical problem, not an encounter.
 
-**Ruster — 417 points.** ST 14, HT 12, HP 21, Enhanced Respiration, Temperature Tolerance. One slot. Breathes Mars's thin air and shrugs off its cold — a morph only a hypercorp accountant could love, and the default body of the Martian working class.
+**Ruster — 399 points.** ST 14, HT 12, HP 12, Enhanced Respiration, Temperature Tolerance. One slot. Breathes Mars's thin air and shrugs off its cold — a morph only a hypercorp accountant could love, and the default body of the Martian working class.
 
-**Hibernoid — 427 points.** ST 12, HT 12, Per +3, HP 21, Circadian Regulation, Hibernation. One slot. Sleeps an hour or two a day and can drop into true hibernation on command, metabolism and oxygen use near zero. Long-haul spacers, habtechs, and executives who resent unconsciousness.
+**Hibernoid — 409 points.** ST 12, HT 12, Per +3, HP 12, Circadian Regulation, Hibernation. One slot. Sleeps an hour or two a day and can drop into true hibernation on command, metabolism and oxygen use near zero. Long-haul spacers, habtechs, and executives who resent unconsciousness.
 
-**Neotenic — 434 points.** ST 8, DX +2, Per +3, Basic Speed +2.00, HT 12, HP 18, SM −2. One slot. A child-sized frame that's harder to hit, eats half the life support, and fits where full-sized morphs don't. Carries its own Social Stigma. Beloved on cramped habs, banned in some bioconservative ones.
+**Neotenic — 418 points.** ST 8, DX +2, Per +3, Basic Speed +2.00, HT 12, HP 10, SM −2. One slot. A child-sized frame that's harder to hit, eats half the life support, and fits where full-sized morphs don't. Carries its own Social Stigma. Beloved on cramped habs, banned in some bioconservative ones.
 
-**Bouncer — 483 points.** ST 14, DX +2, HT 12, HP 21, Flexibility, grasping prehensile feet, grip pads, and an oxygen reserve. One slot. The standard body of the outer system; on a beehive hab or a scum barge, this is what "normal" looks like.
+**Bouncer — 465 points.** ST 14, DX +2, HT 12, HP 12, Flexibility, grasping prehensile feet, grip pads, and an oxygen reserve. One slot. The standard body of the outer system; on a beehive hab or a scum barge, this is what "normal" looks like.
 
-**Sylph — 505 points.** ST 12, DX +2, HT 12, HP 21, Beautiful, Smooth Operator 4, sanitized metabolism, tailored pheromones (+1 reactions, +2 Influence in person). One slot. Built for media icons and socialites; the pheromone package means people like being near it before it says a word.
+**Sylph — 487 points.** ST 12, DX +2, HT 12, HP 12, Beautiful, Smooth Operator 4, sanitized metabolism, tailored pheromones (+1 reactions, +2 Influence in person). One slot. Built for media icons and socialites; the pheromone package means people like being near it before it says a word.
 
-**Olympian — 532 points.** ST 20, DX +2, HT 12, HP 24, Basic Speed +2.00. One slot. All the Fury's muscle, none of its military hardware. Discrete strength that photographs well.
+**Olympian — 512 points.** ST 20, DX +2, HT 12, HP 14, Basic Speed +2.00. One slot. All the Fury's muscle, none of its military hardware. Discrete strength that photographs well.
 
-**Futura — 564 points.** ST 12, IQ +2, Will +6, Smooth Operator 2, HP 21, eidetic memory, emotional dampers. One slot. Built for the Lost Generation and discontinued in disgrace; sleeving one gets you looks ranging from pity to fear.
+**Futura — 546 points.** ST 12, IQ +2, Will +6, Smooth Operator 2, HP 12, eidetic memory, emotional dampers. One slot. Built for the Lost Generation and discontinued in disgrace; sleeving one gets you looks ranging from pity to fear.
 
-**Remade — 614 points.** ST 20, IQ +4, Smooth Operator 2, HT 12, HP 24, environmental hardening (enhanced respiration, temperature tolerance, toxin filters), eidetic memory — and *two* customization slots, plus Uncanny Valley (−2 reactions from baseline humans in person). One slot short of an Exalt's flexibility on a chassis twice as capable. Humanity 2.0, whether you asked or not.
+**Remade — 594 points.** ST 20, IQ +4, Smooth Operator 2, HT 12, HP 14, environmental hardening (enhanced respiration, temperature tolerance, toxin filters), eidetic memory — and *two* customization slots, plus Uncanny Valley (−2 reactions from baseline humans in person). One slot short of an Exalt's flexibility on a chassis twice as capable. Humanity 2.0, whether you asked or not.
 
-**Ghost — 660 points.** ST 14, DX +4, HT 12, HP 27, Will +3, Basic Speed +2.00 (Adrenal Boost), Chameleon Skin, Enhanced Vision (Hyperspectral, Telescopic 2), Grip Pads. One slot. The infiltrator: where the Fury wins fights, the Ghost decides whether one happens.
+**Ghost — 636 points.** ST 14, DX +4, HT 12, HP 15, Will +3, Basic Speed +2.00 (Adrenal Boost), Chameleon Skin, Enhanced Vision (Hyperspectral, Telescopic 2), Grip Pads. One slot. The infiltrator: where the Fury wins fights, the Ghost decides whether one happens.
 
 ### Pod Morphs
 
 Pods are vat-grown biological bodies with undeveloped brains completed by a cyberbrain — biomorph outside, synthmorph resleeving speed inside, and a social stigma everywhere that matters. All pods include Mnemonic Augmentation, a Puppet Sock, and Social Stigma (Pod) [−5] — canon puts the stigma on the body itself.
 
-**Basic Pod — 406 points.** ST 12, HT 12, HP 18, one slot. A splicer with visible seams; the cheapest way to wear flesh.
+**Basic Pod — 390 points.** ST 12, HT 12, HP 10, one slot. A splicer with visible seams; the cheapest way to wear flesh.
 
-**Pleasure Pod — 465 points.** ST 12, Per +3, Smooth Operator 2, HP 18, clean metabolism, tailored pheromones, and a sex switch. One slot. Not just for sex work, whatever the mesh graffiti says.
+**Pleasure Pod — 449 points.** ST 12, Per +3, Smooth Operator 2, HP 10, clean metabolism, tailored pheromones, and a sex switch. One slot. Not just for sex work, whatever the mesh graffiti says.
 
-**Worker Pod — 476 points.** ST 20, HT 12, HP 21, one slot. Olympian-grade muscle at a fifth of the CP; the catch is being a pod.
+**Worker Pod — 462 points.** ST 20, HT 12, HP 14, one slot. Olympian-grade muscle at a fifth of the CP; the catch is being a pod.
 
-**Vacuum Pod — 557 points.** A bouncer chassis with a cyberbrain: ST 14, DX +2, Flexibility, grip pads, prehensile feet, oxygen reserve, light bioweave, vacuum sealing. One slot. For vacwork where a synth would be unwelcome company.
+**Vacuum Pod — 563 points.** A bouncer chassis with a cyberbrain: ST 14, DX +2, Flexibility, grip pads, prehensile feet, oxygen reserve, light bioweave, vacuum sealing. One slot. For vacwork where a synth would be unwelcome company.
 
-**Security Pod — 639 points.** ST 20, Basic Speed +2.00 (Adrenal Boost), light bioweave, claws, eelware, Enhanced Vision, T-Ray, grip pads, HP 21. One slot. The pre-Fall toy soldier, back in fashion with mercenaries.
+**Security Pod — 649 points.** ST 20, Basic Speed +2.00 (Adrenal Boost), light bioweave, claws, eelware, Enhanced Vision, T-Ray, grip pads, HP 14. One slot. The pre-Fall toy soldier, back in fashion with mercenaries.
 
 ### Uplift Biomorphs
 
 Canon puts Social Stigma (Uplift) on the character's *background*, not the morph — a human Ego sleeving an octomorph faces gawking, but the systematic prejudice belongs to actual uplifts. So uplift morphs here carry no stigma trait; uplift *characters* take the Uplift background from Part I, which carries it.
 
-**Neo-Pig — 398 points.** ST 14, HT 12, HP 21, one slot. Bipedal, stocky, and tired of your bacon jokes.
+**Neo-Pig — 380 points.** ST 14, HT 12, HP 12, one slot. Bipedal, stocky, and tired of your bacon jokes.
 
-**Neo-Hominid — 458 points.** ST 14, DX +2, Per +3, HP 18, Brachiator, prehensile feet. One slot. Covers uplifted chimps, bonobos, and orangutans; a gorilla variant would run ST 20 and thicker HP.
+**Neo-Hominid — 442 points.** ST 14, DX +2, Per +3, HP 10, Brachiator, prehensile feet. One slot. Covers uplifted chimps, bonobos, and orangutans; a gorilla variant would run ST 20 and thicker HP.
 
-**Neo-Avian — 463 points.** ST 8, Per +3, Basic Speed +4.00, HP 12, SM −2, winged flight, beak and claws. One slot. A raven the size of a child that files flight plans. Fragile and fast; canon's +10 REF makes it the quickest reflexes on the biomorph list.
+**Neo-Avian — 453 points.** ST 8, Per +3, Basic Speed +4.00, HP 7, SM −2, winged flight, beak and claws. One slot. A raven the size of a child that files flight plans. Fragile and fast; canon's +10 REF makes it the quickest reflexes on the biomorph list.
 
-**Neanderthal — 507 points.** ST 20, IQ +2, Per +3, HT 12, HP 24, one slot. Resurrected from fossil DNA and enhanced to transhuman equivalence; the heavy-boned cousin nobody should underestimate.
+**Neanderthal — 487 points.** ST 20, IQ +2, Per +3, HT 12, HP 14, one slot. Resurrected from fossil DNA and enhanced to transhuman equivalence; the heavy-boned cousin nobody should underestimate.
 
-**Octomorph — 596 points.** ST 12, DX +2, Per +3, HP 18, eight extra-flexible arms, Double-Jointed, 360° vision, chameleon skin, beak, ink cloud. One slot. The most alien body plan a human Ego can wear, and the Alienation table (−6) knows it.
+**Octomorph — 580 points.** ST 12, DX +2, Per +3, HP 10, eight extra-flexible arms, Double-Jointed, 360° vision, chameleon skin, beak, ink cloud. One slot. The most alien body plan a human Ego can wear, and the Alienation table (−6) knows it.
 
 ### Synthmorphs
 
-**Case — 236 points.** ST 10, HT 10, HP 12, the Synthmorph meta-trait, the Clanking Masses stigma, canon's −5 to one aptitude of the owner's choosing, and the Lemon disadvantage: on any critical failure with a DX-based roll, something in it breaks until repaired. The infugee special — the cheapest way to have hands, and the most common morph in the Solar System by volume.
+**Case — 251 points.** ST 10, HT 10, HP 7, the Synthmorph meta-trait, the Clanking Masses stigma, canon's −5 to one aptitude of the owner's choosing, and the Lemon disadvantage: on any critical failure with a DX-based roll, something in it breaks until repaired. The infugee special — the cheapest way to have hands, and the most common morph in the Solar System by volume.
 
-**Synth — 353 points.** ST 16, HT 12, HP 24, one slot, plus the Synthmorph meta-trait. The mass-produced robotic shell. Cheaper than it looks on paper, since the market treats synthmorphs as commodity hardware.
+**Synth — 361 points.** ST 16, HT 12, HP 13, one slot, plus the Synthmorph meta-trait. The mass-produced robotic shell. Cheaper than it looks on paper, since the market treats synthmorphs as commodity hardware.
 
-**Steel Morph — 417 points.** ST 18, HT 12, HP 23, DR 6 (canon-proportional plating), IQ +2, one slot. The premium synthetic shell for people who live in one by choice.
+**Steel Morph — 442 points.** ST 18, HT 12, HP 13, DR 15 (canon-proportional plating), IQ +2, one slot. The premium synthetic shell for people who live in one by choice.
 
-**Sam's Steel Morph — 622 points.** The Steel platform with Injury Tolerance (Diffuse: Infiltration), Skinflex (Elastic Skin), and integrated Wrist-Mounted Tools (Artificer 4, Sharp Claws). A custom job — one owner's answer to "what if my body were also a disguise kit and a workshop."
+**Sam's Steel Morph — 647 points.** The Steel platform with Injury Tolerance (Diffuse: Infiltration), Skinflex (Elastic Skin), and integrated Wrist-Mounted Tools (Artificer 4, Sharp Claws). A custom job — one owner's answer to "what if my body were also a disguise kit and a workshop."
 
-**Daitya — 687 points.** ST 24 with Pneumatic Limbs (+10 Striking, +10 Lifting: strikes and lifts at 34), HT 12, HP 60, DR 8 industrial plating, four weapon-mount arms, Puppet Sock, grip pads, Wrist-Mounted Tools (Artificer 4), Hardened Skeleton. One slot. An industrial mech that happens to accept an Ego. Swing damage at effective ST 34 is 6d — before it picks up a tool.
+**Daitya — 744 points.** ST 32 with Pneumatic Limbs (+10 Striking, +10 Lifting: strikes and lifts at 42), SM +2, HT 12, HP 33, DR 20 industrial plating, four weapon-mount arms, Puppet Sock, grip pads, Wrist-Mounted Tools (Artificer 4), Hardened Skeleton. One slot. An industrial mech that happens to accept an Ego. Swing damage at effective ST 42 is 6d+2 before it picks up a tool.
 
-**Dragonfly — 331 points.** ST 8, Basic Speed +2.00, HP 15, SM −2, near-silent winged flight. No slot. A meter-long flying toolbox, superb in microgravity.
+**Dragonfly — 332 points.** ST 8, Basic Speed +2.00, HP 8, SM −2, near-silent winged flight. No slot. A meter-long flying toolbox, superb in microgravity.
 
-**Flexbot — 408 points.** ST 10, IQ +2, Per +3, HP 15, SM −1, Modular Design (Independent Body Parts: modules detach, swap, recombine into snake, quadruped, or improvised shapes), Shape Adjusting, hover flight. No slot. A body that is also a toolkit; multiple flexbots merge into larger assemblies.
+**Flexbot — 419 points.** ST 10, IQ +2, Per +3, HP 8, SM −1, Modular Design (Independent Body Parts: modules detach, swap, recombine into snake, quadruped, or improvised shapes), Shape Adjusting, hover flight. No slot. A body that is also a toolkit; multiple flexbots merge into larger assemblies.
 
-**Slitheroid — 428 points.** ST 14, DX +2, HT 12, HP 27, DR 6, Enhanced Vision, serpentine body (slithers, burrows, coils, rolls as a hoop at double Move) with two retractable arms. One slot. For when you feel like not fitting in.
+**Slitheroid — 449 points.** ST 14, DX +2, HT 12, HP 15, DR 15, Enhanced Vision, serpentine body (slithers, burrows, coils, rolls as a hoop at double Move) with two retractable arms. One slot. For when you feel like not fitting in.
 
-**Swarmanoid — 263 points.** Hundreds of insect-sized microdrones: HP 18 as swarm attrition, full Injury Tolerance (Diffuse) [100] making gunfire nearly useless against it, and No Manipulators [−50] as a unit — individual bugs interface with electronics. Nearly unkillable, nearly harmless, genuinely unsettling.
+**Swarmanoid — 277 points.** Hundreds of insect-sized microdrones: HP 10 as swarm attrition, full Injury Tolerance (Diffuse) [100] making gunfire nearly useless against it, and No Manipulators [−50] as a unit — individual bugs interface with electronics. Nearly unkillable, nearly harmless, genuinely unsettling.
 
-**Arachnoid — 639 points.** ST 20, HT 12, HP 36, DR 9, ten limbs (eight retractable arm/legs at −30% for foot manipulators, plus a fine pair near the head), Enhanced Vision, LADAR, radar, Super Jump, and vectored-thrust flight in microgravity. No customization slot — canon gives it none. The working spider of the Solar System: construction, salvage, security, and anything else that benefits from being a leaping sensor platform with ten hands.
+**Arachnoid — 708 points.** ST 25, SM +1, HT 12, HP 20, DR 22, ten limbs (eight retractable arm/legs at −30% for foot manipulators, plus a fine pair near the head), Enhanced Vision, LADAR, radar, Super Jump, and vectored-thrust flight in microgravity. No customization slot — canon gives it none. The working spider of the Solar System: construction, salvage, security, and anything else that benefits from being a leaping sensor platform with ten hands.
 
-**Reaper — 924 points.** Not available at character creation, and the point total explains why. ST 20 striking and lifting at 30 through Pneumatic Limbs, DX +2, Basic Speed +4.00 *plus* Altered Time Rate 1 from Reflex Boosters, HP 30, DR 12, four articulated weapon mounts on top of four telescoping limbs, 360° vision, T-Ray, radar, magnetic clinging, ionic flight, and a shape-adjusting frame. The Reaper acts twice per second, sees everything around it, and mounts four guns it can fire independently. It is not an encounter; it is a war crime with a mesh ID, and most habitats treat arriving in one as a declaration of intent.
+**Reaper — 988 points.** Not available at character creation, and the point total explains why. ST 20 striking and lifting at 30 through Pneumatic Limbs, DX +2, Basic Speed +4.00 *plus* Altered Time Rate 1 from Reflex Boosters, HP 17, DR 30, four articulated weapon mounts on top of four telescoping limbs, 360° vision, T-Ray, radar, magnetic clinging, ionic flight, and a shape-adjusting frame. The Reaper acts twice per second, sees everything around it, and mounts four guns it can fire independently. It is not an encounter; it is a war crime with a mesh ID, and most habitats treat arriving in one as a declaration of intent.
 
 ### Infomorphs
 
@@ -798,6 +840,185 @@ The stat blocks derive from X-Risks' numbers rather than replacing them, so a GM
 **Damage converts at 0.6 of the EP average**, which preserves lethality relative to HP rather than raw numbers. A stalker's arm blade is 2d10+4 in EP — about 15 average against a transhuman's DUR 30 — and 3d here, about 10 against HP 18. The proportion holds: roughly half your durability per hit, which is the number that matters at the table. **Armor penetration becomes armor divisors**: AP −4 to −8 gives (2), −9 to −15 gives (3), beyond that (5).
 
 **Stress tests become Fright Checks** at −1 to −6 depending on the entry. If you're not using *GURPS Horror*, a failed check inflicts temporary mental disadvantages at −5 points each, per Part IV.
+
+### The Zone and TITAN Artifacts
+
+The gear a Zone stalker carries is already in these libraries: covert ops tool, disassembly tools, a desktop fabber, superthermite charges, Scraper's Gel, a portable railgun, backup insurance. Nothing about the Quarantine Zone needs a new equipment list.
+
+What the Zone has instead is artifacts, and those resist being a catalogue on purpose. They have no market price, cannot be fabricated, and cannot be resupplied. `Eclipse_Phase_Gear.eqp` carries eight templates under **EP TITAN Artifacts (GM)** as starting points rather than a canon list: intact substrate, a fractal fragment that reassembles itself, self-repairing alloy, an exsurgent nanoswarm canister, an impossible-geometry sample, a Zone beacon, a weapon core, and a sealed data cache. These are written for this project, not converted from a book.
+
+Three conventions make them work at the table. Price them in rep and obligation rather than credits, because the people who want them do not pay in money. Give every one a cost of carrying it: exposure risk, attention from Firewall or the Consortium, or an effect that does not behave the same way twice. And let anything recovered from the Zone fail when failure is interesting, since a reliable artifact is just equipment with a better name.
+
+### Psi-Epsilon
+
+`Eclipse_Phase_Psi_Sleights.adq` now carries a fourth container, **Psi-Epsilon Sleights (GM only)**: eleven exsurgent abilities that no player async can reach at any Talent level. Anti-Electronics Field, Basilisk Aura, Casimir Force Repulsion, Cryokinesis, Decerebration, Diffusion, Kinetic Friction, Negative Refraction, Puppeteer, Pyrokinesis, and Strip Memory.
+
+Two things separate them from everything in Part IX. Psi-epsilon users pay no FP, drawing what they need from their surroundings, which is why the lights die and the plants wither around them. And the point values on those entries are for building the creature, not for buying the ability.
+
+The mechanics attached to each are conversions written for this project rather than direct translations, since psi-epsilon in the original is deliberately loose and left to the GM. Treat them the same way: adjust to whatever the scene needs. Basilisk Aura at a Fright Check of -6 is a starting point, not a ceiling.
+
+### Ego Traits
+
+Eclipse Phase's 162 ego traits split two ways. Forty-two of them touch systems this conversion invented and are built in `Eclipse_Phase_Ego_Traits.adq`, grouped by what they modify: Resleeving (11), Forks and Psychosurgery (17), Stress and Trauma (5), and Async (9). Those are the ones worth having as traits, because they plug directly into the Integration, Alienation, Continuity, merge, and sleight rolls this system already makes.
+
+The other 120 are things GURPS already has. Use the standard trait and don't build anything:
+
+| Eclipse Phase trait | GURPS equivalent |
+|---|---|
+| Addiction Major | Addiction [-15 or worse] |
+| Addiction Minor | Addiction [-5] |
+| Addiction Moderate | Addiction [-10] |
+| Aggresive GRM | Bad Temper [-10] |
+| Agi Affinity | +2 reactions from AGIs |
+| Agi Socialization | Removes the AGI social penalty |
+| Allies | Ally Group or Patron [varies] |
+| Ambidextrous | Ambidexterity [5] |
+| Animal Empathy | Animal Empathy [5] |
+| Anomalous Mind | Unusual Background or Weirdness Magnet |
+| Bad Luck | Unluckiness [-10] |
+| Black Mark Level1 | Reputation -1 in one network |
+| Black Mark Level2 | Reputation -2 in one network |
+| Black Mark Level3 | Reputation -3 in one network |
+| Blacklisted Other Faction | Social Stigma within one other faction [-5] |
+| Blacklisted Own Faction | Social Stigma within your own faction [-10] |
+| Botched Uplift | Reduced attribute or Social Stigma [varies] |
+| Brave | Fearlessness [2/level] |
+| Civilian Analyst (Level 1) | Rank 2 [10] plus Security Clearance |
+| Civilian Analyst (Level 2) | Rank 4 [20] plus Security Clearance |
+| Combat Paralysis | Combat Paralysis [-15] |
+| Common Sense | Common Sense [10] |
+| Curbed Intelligence | Restricted attribute maximum, no point value |
+| Danger Sense | Danger Sense [15] |
+| Data Footprint | Social Stigma (traceable) [-5] |
+| Debt (Level 1) | Debt -1 to Wealth or Duty |
+| Debt (Level 2) | Debt, two Wealth levels down |
+| Debt (Level 3) | Debt, Poor or worse |
+| Deferred Indenture (Level 1) | Duty (deferred) [-5] |
+| Deferred Indenture (Level 2) | Duty (deferred) [-10] |
+| Deferred Indenture (Level 3) | Duty (deferred) [-15] |
+| Dependent | Dependent [varies] |
+| Digital Ghost | Talent or +2 to cover your tracks |
+| Direction Sense (Trait) | Absolute Direction [5] |
+| Domineering | Overconfidence [-5] or Selfish [-5] |
+| Drug Exception | +3 HT to resist addiction |
+| Drug Fiend | -3 HT to resist addiction |
+| Eidetic Memory (Trait) | Eidetic Memory [5] or Photographic Memory [10] |
+| Emotive Blindness | Low Empathy [-20] |
+| Enemy | Enemy [varies] |
+| Entrepreneur Level1 | Wealth (Comfortable) with Duty |
+| Entrepreneur Level2 | Wealth (Wealthy) with Duty |
+| Entrepreneur Level3 | Wealth (Very Wealthy) with Duty |
+| Exceptional Aptitude (Ego) | Raise the attribute itself, or a Talent |
+| Expert | Talent 2-3 in the relevant group |
+| Fast Learner | Talent in the relevant group, or GM-granted study bonus |
+| Faulty Education | Low TL or lost skill points |
+| Feeble | Reduced attribute [varies] |
+| First Impression | Charisma 1 [5] |
+| Five Minutes of Fame | Reputation +1, recognized on a roll of 6 or less |
+| Five Minutes of Infamy | Reputation -1, recognized on a roll of 6 or less |
+| Gold Star | Reputation +2 [varies] |
+| Heightened Instinct (Uplift Only) | Danger Sense [15] or Per +1 |
+| Hoarder | Compulsive Behavior (hoarding) [-5] |
+| Home Turf | Area Knowledge (specific habitat) at high level |
+| Hyper Linguist (Trait) | Language Talent [10] |
+| Identifiable Quirk | Distinctive Features [-1] |
+| Illiterate | Illiteracy [-3] |
+| Impaired Balance (Level 1) | Bad Balance, -1 DX for balance only |
+| Impaired Balance (Level 2) | -2 DX for balance only |
+| Impaired Balance (Level 3) | Bad Balance [-15] |
+| Impaired Linguistics (Level 1) | Disturbing Voice [-10] |
+| Impaired Linguistics (Level 2) | Mute or near-Mute [-25] |
+| Incompetent | Incompetence (one skill) [-1] |
+| Indenture Holder | Ally (indentured) [varies] |
+| Information Control | +2 to conceal your own data trail |
+| Intense Relationship | Dependent or Duty [varies] |
+| Intuitive Cracker Level1 | +1 to Computer Hacking on brute-force attempts |
+| Intuitive Cracker Level2 | +2 to Computer Hacking on brute-force attempts |
+| Killer Instinct (Uplift Only) | Bloodlust [-10] |
+| Low Pain Tolerance | Low Pain Threshold [-10] |
+| Machine Intuition (AGI Only) | Talent (Artificer) or +2 to machine-related rolls |
+| Math Wiz | Lightning Calculator [2] with Mathematical Ability |
+| Mental Disorder | See Eclipse_Phase_Derangements.adq |
+| Military Intelligence | Security Clearance [5] |
+| Military Rank (Level 1) | Military Rank 3 [15] |
+| Military Rank (Level 2) | Military Rank 5 [25] |
+| Military Rank (Level 3) | Military Rank 7 [35] |
+| Minion/Partner | Ally [varies] |
+| Murder Simulator Addict | Bloodlust [-10] |
+| Neural Damage | Reduced attribute or Brain Damage-style penalty [varies] |
+| Not A Team Player | Loner [-5] |
+| Oblivious | Oblivious [-5] |
+| On The Run | Enemy (authorities) [varies] |
+| Overwhelmed By Emotions (AGIs Only) | Low Empathy [-20] handled in reverse: emotions overwhelm rather than escape you |
+| Pain Tolerance (Level 1) | High Pain Threshold [10] |
+| Pain Tolerance (Level 2) | High Pain Threshold [10] plus Damage Reduction to shock |
+| Patron | Patron [varies] |
+| Personal Connection | Contact [varies] |
+| Phobia Disorder | Phobia [varies] |
+| Police Officer (Level 1) | Rank (Police) 3 [15] with Legal Enforcement Powers |
+| Police Officer (Level 2) | Rank (Police) 5 [25] with Legal Enforcement Powers |
+| Poorly Socialized | Social Stigma (Excommunicated) or Odious Personal Habit |
+| Predator (Uplifts Only) | Bloodlust or Bad Temper [varies] |
+| Professional Courtesy | Claim to Hospitality [varies] |
+| Psi (Level 1) | Watts-MacLeod Infection [-10] with Async Talent 1, per Part IX |
+| Psi (Level 2) | Watts-MacLeod Infection [-10] with Async Talent 2+, per Part IX |
+| Real World Naivete | Clueless [-10] |
+| Shut-In | Shyness [-5 to -20] |
+| Situational Awareness | Alertness, or Per +1 |
+| Slow Learner | Slow Learner is handled as a study penalty, not a trait |
+| Social Animal (Hominid/Cetacean Uplifts Only) | Chummy or Gregarious [-5 to -10] |
+| Social Butterfly | Compulsive Behavior (social media) [-5] |
+| Social Stigma | Social Stigma [varies] |
+| Socially Graceless | Odious Personal Habit [-5 to -10] |
+| Solitary | Loner [-5] |
+| Spacecraft | Signature Gear or Wealth [varies] |
+| Special Agent (Level 1) | Rank 4 [20] with Legal Enforcement Powers [10] |
+| Special Agent (Level 2) | Rank 6 [30] with Legal Enforcement Powers [15] |
+| Stalker | Enemy (Watcher) [-5] |
+| Stolen Identity | Enemy or Social Stigma, GM choice |
+| Submissive | Chronic Shyness or Low Self-Image |
+| Tacnet Sniper | +1 to hit through a shared tacnet feed |
+| Tenure | Tenure [5] |
+| Timid | Cowardice [-10] |
+| Trusting Heart | Gullibility [-10] |
+| Uncontrolable Urge | Compulsive Behavior [varies] |
+| Unique Contact | Contact [varies] |
+| Untarnished Reputation | Reputation [varies] |
+| VR Vertigo | Susceptible or Motion Sickness in VR [-5] |
+
+Two notes on the mapped list. Where Eclipse Phase gives a trait three levels and GURPS gives one, buy the GURPS trait once and let the level set the severity or the point value. And where a trait is a reputation effect (Black Mark, Gold Star, the two Blacklisted traits, both Five Minutes entries), apply it to a specific rep network from Part VIII rather than as a general Reputation.
+
+### Derangements and Disorders
+
+`Eclipse_Phase_Derangements.adq` converts Eclipse Phase's own two lists so you don't have to improvise, or borrow from a horror setting that isn't this one. Each entry names its GURPS equivalent and the effect in play.
+
+**Derangements** are temporary. Roll or pick one when a failed Alienation, Continuity, or Fright Check calls for 5 points of stress damage. They fade over 1d weeks and don't count against the disadvantage limit.
+
+|  |  |  |
+|---|---|---|
+| 1. Anxiety | 9. Fixation | 17. Mood Swings |
+| 2. Avoidance | 10. Frenzy | 18. Mute |
+| 3. Blackout | 11. Hallucinations | 19. Narcissism |
+| 4. Chills | 12. Hunger | 20. Nausea |
+| 5. Confusion | 13. Hysteria | 21. Panic |
+| 6. Dizziness | 14. Indecisiveness | 22. Paralysis |
+| 7. Echolalia | 15. Irrationality | 23. Psychosomatic Crippling |
+| 8. Echopraxia | 16. Logorrhoea | 24. Tremors |
+
+**Disorders** are lasting, and are what repeated trauma, a bad merge, psychosurgery, or exsurgent exposure leave behind. They count against the limit unless the GM grants them as story damage, and they're treated with Psychology (Psychiatry) or psychosurgery.
+
+|  |  |  |
+|---|---|---|
+| 1. Addiction | 9. Borderline Personality Disorder | 17. Megalomania |
+| 2. Alien Behavioural Disorder | 10. Cosmic Anxiety Disorder | 18. Multiple Personality Disorder |
+| 3. Alien Sensory Disorder | 11. Depression | 19. Obsessive Compulsive Disorder (OCD) |
+| 4. Atavism | 12. Fugue | 20. Post Traumatic Stress Disorder (PTSD) |
+| 5. Attention Deficit Hyperactivity Disorder (ADHD) | 13. General Anxiety Disorder (GAD) | 21. Schizophrenia |
+| 6. Autophagy | 14. Hypochondria | 22. Species Dysmorphia |
+| 7. Bipolar Disorder | 15. Impulse Control Disorder |  |
+| 8. Body Dysmorphia | 16. Insomnia |  |
+
+The distinction matters at the table. A sentinel who fails a Continuity roll after a violent death picks up a derangement and is themselves again in a fortnight. A sentinel who does that six times in a campaign accumulates disorders, and those are what eventually make them unfit for the work.
 
 ## Using the Threat Levels
 

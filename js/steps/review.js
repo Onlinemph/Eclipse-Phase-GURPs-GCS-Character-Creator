@@ -27,7 +27,7 @@ export default {
 
     // The exporter needs every catalogue, whether or not the player visited
     // those steps.
-    const missing = ["augs", "gear", "sleights"].filter((n) => !cat[n]);
+    const missing = ["augs", "gear", "sleights", "egoTraits"].filter((n) => !cat[n]);
     if (missing.length) {
       need(...missing).then(() => update());
       return el("p.muted", "Loading the remaining catalogues before export…");

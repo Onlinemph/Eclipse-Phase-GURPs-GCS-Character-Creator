@@ -99,8 +99,10 @@ function talentCard(build, cat, update) {
           oninput: (e) => update((b) => { b.psi.disorders = e.target.value; }),
         }),
         el("span.field-hint",
-          "At least 15 points' worth, chosen with the GM. They fall outside the −50 limit and go " +
-          "on the sheet as a note for you to price together.",
+          "At least 15 points' worth, chosen with the GM. They fall outside the −50 limit. " +
+          "The Derangements & disorders catalogue on the Traits step has the setting's own list, " +
+          "already priced — anything picked there goes on the sheet as a real trait; this box is " +
+          "for anything it does not cover.",
         ),
       ),
     ),

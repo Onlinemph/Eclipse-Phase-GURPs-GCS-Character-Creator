@@ -89,13 +89,16 @@ export function defaultBuild() {
     gear: [],
     muse: "none",
     psi: { enabled: false, talent: 0, sleights: [], disorders: "" },
+    // Traits taken from Eclipse_Phase_Ego_Traits.adq and the derangement
+    // catalogue, by key. Hand-entered ones live in customTraits.
+    egoTraits: [],
     customTraits: [],
     // Toggled trait and equipment modifiers, keyed by "<scope>:<key>" and then
     // by the row's address inside its library payload. See js/modifiers.js.
     modifierChoices: {},
     settings: { ...DEFAULT_SETTINGS },
     notes: "",
-    options: { normalizeMorphPrice: true, includeBuildNote: true },
+    options: { normalizeMorphPrice: true, includeBuildNote: true, showAllMorphs: false },
   };
 }
 
@@ -140,7 +143,7 @@ export function migrate(build) {
   if (!merged.modifierChoices || typeof merged.modifierChoices !== "object") {
     merged.modifierChoices = {};
   }
-  for (const list of ["skills", "augTraits", "augEquipment", "gear", "customTraits"]) {
+  for (const list of ["skills", "augTraits", "augEquipment", "gear", "customTraits", "egoTraits"]) {
     if (!Array.isArray(merged[list])) merged[list] = [];
   }
   if (!merged.repnets || typeof merged.repnets !== "object") merged.repnets = {};
@@ -247,6 +250,23 @@ export function customTraitCost(trait) {
   return traitPoints(row);
 }
 
+/** Ego traits and derangements taken from the libraries. */
+export function egoTraitPoints(build, cat) {
+  if (!cat.egoTraits) return 0;
+  const index = egoTraitIndex(cat);
+  return build.egoTraits.reduce((sum, chosen) => {
+    const entry = index.get(chosen.key);
+    return sum + (entry ? traitPoints(entry.payload) : 0);
+  }, 0);
+}
+
+/** Every ego trait and derangement, by key. */
+export function egoTraitIndex(cat) {
+  return new Map(
+    (cat.egoTraits?.groups || []).flatMap((g) => g.items.map((i) => [i.key, i])),
+  );
+}
+
 export function customTraitPoints(build) {
   return build.customTraits.reduce((sum, t) => sum + customTraitCost(t), 0);
 }
@@ -267,6 +287,7 @@ export function totals(build, cat) {
     augmentations: augTraitPoints(build, cat),
     muse: musePoints(build),
     psi: psiPoints(build, cat),
+    egoTraits: egoTraitPoints(build, cat),
     other: customTraitPoints(build),
   };
   const bg = cat.packages?.backgrounds.find((b) => b.key === build.background);
@@ -311,6 +332,20 @@ export function disadvantageTally(build, cat) {
   if (bg) consider(bg.payload, "Background");
   const fac = cat.packages?.factions.find((f) => f.key === build.faction);
   if (fac) consider(fac.payload, "Faction");
+  if (cat.egoTraits) {
+    const index = egoTraitIndex(cat);
+    for (const chosen of build.egoTraits) {
+      const entry = index.get(chosen.key);
+      if (!entry) continue;
+      const points = traitPoints(entry.payload);
+      // Ego traits and derangements are all mental and Ego-side by definition:
+      // they are what survives resleeving.
+      if (points < 0) {
+        total += points;
+        counted.push({ name: entry.name, points, origin: "Ego traits" });
+      }
+    }
+  }
   for (const t of build.customTraits) {
     const points = customTraitCost(t);
     if (points < 0 && t.kind !== "physical") {
@@ -403,8 +438,11 @@ export function validate(build, cat) {
   } else {
     const entry = cat.morphIndex?.find((m) => m.key === build.morph.key);
     if (entry) {
-      if (entry.name === "Reaper") {
-        out.push(warn("The Reaper is not available at character creation."));
+      if (!entry.chargen) {
+        out.push(err(
+          `The ${entry.name} is not available at character creation` +
+          (entry.priced ? "." : `, and with no price adjustment it costs its full package value of ${entry.points} points.`),
+        ));
       }
       const chosen = build.morph.aptitudes || [];
       for (let i = 0; i < entry.slots; i += 1) {

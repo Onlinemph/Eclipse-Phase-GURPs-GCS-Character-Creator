@@ -1152,7 +1152,7 @@
 											"id": "m1CWc4-0QCm0OGRnt",
 											"name": "Extended Arc",
 											"reference": "B82",
-											"local_notes": "240\u00b0",
+											"local_notes": "240°",
 											"cost_adj": "75%",
 											"disabled": true
 										},
@@ -1160,7 +1160,7 @@
 											"id": "moHflk1fizwKWhvoU",
 											"name": "Extended Arc",
 											"reference": "B82",
-											"local_notes": "360\u00b0",
+											"local_notes": "360°",
 											"cost_adj": "125%",
 											"disabled": true
 										},
@@ -1429,10 +1429,78 @@
 							"calc": {
 								"points": 35
 							}
+						},
+						{
+							"id": "T2b5XyFHFq4eUga9w",
+							"name": "Polarization Vision",
+							"local_notes": "Sees light polarization. +2 to see through glare, haze, and water surface. [Biomorph, Pod, Panopticon p. 148, Low]",
+							"children": [
+								{
+									"id": "tN_vyUfVZF8P3YqSx",
+									"name": "Polarization Vision",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "TMb4DEwOJQ0X9Bs58",
+							"name": "Ultraviolet Vision",
+							"local_notes": "Vision extended into the ultraviolet. [Biomorph, Pod, Panopticon p. 148, Trivial]",
+							"children": [
+								{
+									"id": "txOnA17ootTKsjxoB",
+									"name": "Ultravision",
+									"base_points": 10,
+									"calc": {
+										"points": 10
+									},
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									]
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "Tynvre6Jg5Tjw_cQw",
+							"name": "Lateral Line",
+							"local_notes": "Transgenic fish organ. Feels movement and vibration through water. [Biomorph, Pod, Synthmorph, Sunward p. 166, Low]",
+							"children": [
+								{
+									"id": "tvFQlJa_RIEXV6BiX",
+									"name": "Vibration Sense (Water)",
+									"base_points": 10,
+									"calc": {
+										"points": 10
+									},
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									]
+								}
+							],
+							"calc": {
+								"points": 10
+							}
 						}
 					],
 					"calc": {
-						"points": 95
+						"points": 115
 					}
 				},
 				{
@@ -3416,7 +3484,7 @@
 								}
 							],
 							"calc": {
-								"points": 27
+								"points": 37
 							}
 						},
 						{
@@ -4353,15 +4421,255 @@
 							"calc": {
 								"points": 13
 							}
+						},
+						{
+							"id": "TMM9hzwdTGuKA74Yp",
+							"name": "Digging Claws",
+							"local_notes": "Mole and aardvark genetics. Digs through regolith and soil, and cuts in a fight. [Biomorph, Pod, Gatecrashing p. 152, Low]",
+							"children": [
+								{
+									"id": "tJuHKQ7697dRUjxG1",
+									"name": "Sharp Claws",
+									"base_points": 5,
+									"calc": {
+										"points": 5
+									},
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									]
+								},
+								{
+									"id": "tJ7-7dRmM9EfcTLYL",
+									"name": "Tunneling (Slow)",
+									"base_points": 20,
+									"calc": {
+										"points": 20
+									},
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									]
+								}
+							],
+							"calc": {
+								"points": 25
+							}
+						},
+						{
+							"id": "TJ2050lD9xJXmgj3K",
+							"name": "High-g Adaptation",
+							"local_notes": "Reinforced heart, vessels, and skeleton for sustained high gravity. [Biomorph, Pod, Gatecrashing p. 152, Moderate]",
+							"children": [
+								{
+									"id": "t2w8tgYptCCHVzr0-",
+									"name": "Improved G-Tolerance 1",
+									"base_points": 5,
+									"calc": {
+										"points": 5
+									},
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									]
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "TiLRzXKjtsQuJyH34",
+							"name": "Swim Bladder",
+							"local_notes": "Gas sacs giving controlled buoyancy at any depth. [Biomorph, Pod, Gatecrashing p. 152, Low]",
+							"children": [
+								{
+									"id": "tQSXxVumm7hGZ4NVI",
+									"name": "Swim Bladder",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "TepIneMsInlbRRjnO",
+							"name": "Scent Affinity",
+							"local_notes": "Smart animals only. Bonded by scent to one person, and reliably docile with them. [Biomorph, Pod, Panopticon p. 148, Trivial]",
+							"children": [
+								{
+									"id": "tB3Uv6ROku90nHHCq",
+									"name": "Scent Affinity",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "TVB8bhdRXG18lY8sI",
+							"name": "Hydrostatic Pressure Adaptation",
+							"local_notes": "Operates at extreme depth. Europan and Enceladan work. [Biomorph, Pod, Rimward p. 188, Expensive]",
+							"children": [
+								{
+									"id": "tPCjli69YS4Jxg0AA",
+									"name": "Pressure Support 1",
+									"base_points": 5,
+									"calc": {
+										"points": 5
+									},
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									]
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "TyP1f3Nz2oaUyEe2Y",
+							"name": "Radiation Tolerance",
+							"local_notes": "Redundantly encoded DNA and actively repaired tissue. Requires medichines. [Biomorph, Pod, Rimward p. 189, Expensive]",
+							"children": [
+								{
+									"id": "te_qJZZ6MT8MwfQMv",
+									"name": "Radiation Tolerance (PF 10)",
+									"base_points": 10,
+									"calc": {
+										"points": 10
+									},
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									]
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "TjOBB8ZWDxuW2KPie",
+							"name": "Winterist",
+							"local_notes": "The androgynous morphology and non-sexual erogenous zones typical of Winter habitat. [Biomorph, Pod, Rimward p. 189, Low]",
+							"children": [
+								{
+									"id": "tNYTFTyaxcjWQER2K",
+									"name": "Winterist",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "T5xS0NkS8TDf7iAZT",
+							"name": "Gliding Membrane",
+							"local_notes": "Skin membranes between limbs. Gliding descent, no powered flight. [Biomorph, Pod, Synthmorph, Sunward p. 166, Low]",
+							"children": [
+								{
+									"id": "tMQutFgPeq-wrcelB",
+									"name": "Flight (Gliding, Small Wings)",
+									"base_points": 10,
+									"calc": {
+										"points": 10
+									},
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									]
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "TL2SrQUPN8VWkRG4W",
+							"name": "Low Pressure Tolerance",
+							"local_notes": "Comfortable at Martian highland pressures with no suit. [Biomorph, Pod, Sunward p. 166, Low]",
+							"children": [
+								{
+									"id": "tHpyydL8hmA8YH3yJ",
+									"name": "Pressure Support 1 (Low pressure only)",
+									"base_points": 3,
+									"calc": {
+										"points": 3
+									},
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									]
+								}
+							],
+							"calc": {
+								"points": 3
+							}
+						},
+						{
+							"id": "Tfe6qOnhuFLbyIYtY",
+							"name": "Wings",
+							"local_notes": "Grown wings. Powered flight in habitat gravity or thick atmosphere. [Biomorph, Pod, Synthmorph, Sunward p. 166, Moderate]",
+							"children": [
+								{
+									"id": "tMqS7zW6MAo9I6wSF",
+									"name": "Flight (Winged)",
+									"base_points": 30,
+									"calc": {
+										"points": 30
+									},
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									]
+								}
+							],
+							"calc": {
+								"points": 30
+							}
 						}
 					],
 					"calc": {
-						"points": 636
+						"points": 734
 					}
 				}
 			],
 			"calc": {
-				"points": 816
+				"points": 934
 			}
 		},
 		{
@@ -4571,7 +4879,7 @@
 													"id": "m3sp2OVNK57LtmFMy",
 													"name": "Extended Arc",
 													"reference": "B82",
-													"local_notes": "240\u00b0",
+													"local_notes": "240°",
 													"cost_adj": "75%",
 													"disabled": true
 												},
@@ -4579,7 +4887,7 @@
 													"id": "mSRu9fYoTg4zglUIX",
 													"name": "Extended Arc",
 													"reference": "B82",
-													"local_notes": "360\u00b0",
+													"local_notes": "360°",
 													"cost_adj": "125%",
 													"disabled": true
 												},
@@ -6143,7 +6451,7 @@
 											"id": "m-HB_oxHXGNCujx2X",
 											"name": "Extended Arc",
 											"reference": "B82",
-											"local_notes": "240\u00b0",
+											"local_notes": "240°",
 											"cost_adj": "75%",
 											"disabled": true
 										},
@@ -6151,7 +6459,7 @@
 											"id": "mBe-bpVBD-wtXv6H4",
 											"name": "Extended Arc",
 											"reference": "B82",
-											"local_notes": "360\u00b0",
+											"local_notes": "360°",
 											"cost_adj": "125%",
 											"disabled": true
 										},
@@ -6309,7 +6617,7 @@
 											"id": "m66TNIsJmVZZTaEQg",
 											"name": "Extended Arc",
 											"reference": "B82",
-											"local_notes": "240\u00b0",
+											"local_notes": "240°",
 											"cost_adj": "75%",
 											"disabled": true
 										},
@@ -6317,7 +6625,7 @@
 											"id": "mfDbtsf7KlmoftKR8",
 											"name": "Extended Arc",
 											"reference": "B82",
-											"local_notes": "360\u00b0",
+											"local_notes": "360°",
 											"cost_adj": "125%",
 											"disabled": true
 										},
@@ -6478,7 +6786,7 @@
 											"id": "mqfBtVG3bCjLsQSTO",
 											"name": "Extended Arc",
 											"reference": "B82",
-											"local_notes": "240\u00b0",
+											"local_notes": "240°",
 											"cost_adj": "75%",
 											"disabled": true
 										},
@@ -6486,7 +6794,7 @@
 											"id": "mfOTIpDFfNOiIITYl",
 											"name": "Extended Arc",
 											"reference": "B82",
-											"local_notes": "360\u00b0",
+											"local_notes": "360°",
 											"cost_adj": "125%",
 											"disabled": true
 										},
@@ -6641,7 +6949,7 @@
 											"id": "mTsjG8Kps7u2Yl4Ze",
 											"name": "Extended Arc",
 											"reference": "B82",
-											"local_notes": "240\u00b0",
+											"local_notes": "240°",
 											"cost_adj": "75%",
 											"disabled": true
 										},
@@ -6649,7 +6957,7 @@
 											"id": "mpOQBpWENNWk6fjnD",
 											"name": "Extended Arc",
 											"reference": "B82",
-											"local_notes": "360\u00b0",
+											"local_notes": "360°",
 											"cost_adj": "125%",
 											"disabled": true
 										},
@@ -6745,6 +7053,28 @@
 							],
 							"calc": {
 								"points": 40
+							}
+						},
+						{
+							"id": "Tk0uqj4A0Y1Z8FUyX",
+							"name": "Sense Filter",
+							"local_notes": "Filters a hyperspectral sense down to the useful band. +2 against sensory overload. [Biomorph, Pod, Synthmorph, Panopticon p. 149, Low]",
+							"children": [
+								{
+									"id": "tW51yPUMOoyYi64tP",
+									"name": "Sense Filter",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
 							}
 						}
 					],
@@ -7068,6 +7398,138 @@
 							],
 							"calc": {
 								"points": 25
+							}
+						},
+						{
+							"id": "TThdCuTK12ZM0zHW7",
+							"name": "Failsafe",
+							"local_notes": "Destroys the cyberbrain or cortical stack on a set trigger. Denies capture, permanently. [Biomorph, Pod, Synthmorph, Firewall p. 174, Low]",
+							"children": [
+								{
+									"id": "t0h_0oCyn5CIuEJsQ",
+									"name": "Failsafe",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "TJsnbwqu_47iMTRRO",
+							"name": "Truth Fitlters",
+							"local_notes": "Scrambles the brain signals a deception scanner reads. Defeats it outright, and being caught with one is its own accusation. [Biomorph, Pod, Synthmorph, Firewall p. 174, Trivial]",
+							"children": [
+								{
+									"id": "tq8rsH-GiDTh4UYTk",
+									"name": "Truth Fitlters",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "TPjXP6AsNJy9n6rg3",
+							"name": "Cybercortex",
+							"local_notes": "Artificial neocortex for smart animals. Language, tool use, and instruction following. [Biomorph, Pod, Synthmorph, Panopticon p. 148, Low]",
+							"children": [
+								{
+									"id": "tWwhPKp3RowKUd79Q",
+									"name": "Cybercortex",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "TVi2WROlvXfOh-fvS",
+							"name": "Life Recorder",
+							"local_notes": "Continuous lifelog of everything the morph senses. [Biomorph, Pod, Synthmorph, Panopticon p. 148, Low]",
+							"children": [
+								{
+									"id": "tJpqK1V4GqO41rYzK",
+									"name": "Life Recorder",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "TZcq-imTgRmBdqdDA",
+							"name": "Memory Lock",
+							"local_notes": "Blocks long-term memory formation and XP recording while active. Deniability by design. [Biomorph, Pod, Synthmorph, Infomorph, Panopticon p. 149, Low]",
+							"children": [
+								{
+									"id": "t9n9QvQLcvvk47lAF",
+									"name": "Memory Lock",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "Thj8_kcnSRGE34Bqm",
+							"name": "Parallel Processor",
+							"local_notes": "Neo-synergist derivative letting linked minds work one problem as a unit. Complementary rolls between everyone linked. [Biomorph, Pod, Synthmorph, Infomorph, Rimward p. 189, High]",
+							"children": [
+								{
+									"id": "tw9fJ0GP8HSHgPcUI",
+									"name": "Parallel Processor",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
 							}
 						}
 					],
@@ -8549,15 +9011,186 @@
 							"calc": {
 								"points": 45
 							}
+						},
+						{
+							"id": "TCPVxmi5Wfm8UMp9g",
+							"name": "Armor Plating (Light)",
+							"local_notes": "Bolt-on plate for any synthmorph chassis. Rigid: no Flexible or Tough Skin limitation, so it stops blunt trauma too. Stacks with the chassis DR and with worn armor.",
+							"children": [
+								{
+									"id": "tY0odtRJURclwBHfO",
+									"name": "Damage Resistance",
+									"reference": "B47",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"points_per_level": 5,
+									"can_level": true,
+									"levels": 10,
+									"features": [
+										{
+											"type": "dr_bonus",
+											"location": "torso",
+											"amount": 10
+										}
+									],
+									"calc": {
+										"points": 50,
+										"current_level": 10
+									},
+									"local_notes": "Rigid plate: 10 DR, no flexibility limitation."
+								}
+							],
+							"calc": {
+								"points": 50
+							}
+						},
+						{
+							"id": "TzLnytPoDvjgoE-CN",
+							"name": "Armor Plating (Medium)",
+							"local_notes": "Heavier plate for any synthmorph chassis. Rigid armor, stacks with chassis DR and worn armor. Visibly a combat frame, which habitats notice.",
+							"children": [
+								{
+									"id": "tkuWU1sr-Dnvj--o_",
+									"name": "Damage Resistance",
+									"reference": "B47",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"points_per_level": 5,
+									"can_level": true,
+									"levels": 20,
+									"features": [
+										{
+											"type": "dr_bonus",
+											"location": "torso",
+											"amount": 20
+										}
+									],
+									"calc": {
+										"points": 100,
+										"current_level": 20
+									},
+									"local_notes": "Rigid plate: 20 DR, no flexibility limitation."
+								}
+							],
+							"calc": {
+								"points": 100
+							}
+						},
+						{
+							"id": "TlnNtKCB5gQS-G6Ck",
+							"name": "Armor Plating (Heavy)",
+							"local_notes": "Military-grade plate for any synthmorph chassis. Rigid armor, stacks with chassis DR and worn armor. Restricted almost everywhere in the inner system.",
+							"children": [
+								{
+									"id": "t-UTVaIBhkaouMEHH",
+									"name": "Damage Resistance",
+									"reference": "B47",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"points_per_level": 5,
+									"can_level": true,
+									"levels": 30,
+									"features": [
+										{
+											"type": "dr_bonus",
+											"location": "torso",
+											"amount": 30
+										}
+									],
+									"calc": {
+										"points": 150,
+										"current_level": 30
+									},
+									"local_notes": "Rigid plate: 30 DR, no flexibility limitation."
+								}
+							],
+							"calc": {
+								"points": 150
+							}
+						},
+						{
+							"id": "TT45GzwuIXEcHHvMa",
+							"name": "Implant Masking",
+							"local_notes": "Electroactive polymers and cultured tissue, so implants read as organs on a scan. [Biomorph, Pod, Synthmorph, Panopticon p. 148, None]",
+							"children": [
+								{
+									"id": "tvBhO1hIbYNX6RuwS",
+									"name": "Implant Masking",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "TR73lQu5ucbFvz83X",
+							"name": "Plasma Sail Implant",
+							"local_notes": "Superconducting magsail in the body. Slow interplanetary transit under your own power. [Biomorph, Pod, Synthmorph, Rimward p. 189, Expensive]",
+							"children": [
+								{
+									"id": "tLz8xoPBHruVOrvv3",
+									"name": "Plasma Sail Implant",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "T1hipcI_TxjIcX1KY",
+							"name": "Gas Jet System",
+							"local_notes": "Vectored nozzles in chest, back, and limbs. +3 to Free Fall for controlled microgravity movement. [Biomorph, Pod, Synthmorph, Sunward p. 166, Moderate]",
+							"children": [
+								{
+									"id": "tUlJTIsJl3qCddkC9",
+									"name": "Gas Jet System",
+									"base_points": 0,
+									"calc": {
+										"points": 0
+									},
+									"tags": [
+										"Feature"
+									],
+									"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+								}
+							],
+							"calc": {
+								"points": 0
+							}
 						}
 					],
 					"calc": {
-						"points": 402
+						"points": 702
 					}
 				}
 			],
 			"calc": {
-				"points": 1191
+				"points": 1491
 			}
 		},
 		{
@@ -9408,10 +10041,1392 @@
 					"calc": {
 						"points": 20
 					}
+				},
+				{
+					"id": "ToA-RyIlz1ZYJy7Eo",
+					"name": "Skillware",
+					"local_notes": "Artificial neurons formatted with downloaded skillsofts. Run a skill you never learned, at the softs rating. [Biomorph, Pod, Synthmorph, Infomorph, EP p. 309, High]",
+					"children": [
+						{
+							"id": "tFd8E2Cly5HshpePX",
+							"name": "Skillware",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TK81jmv7hrBULVquC",
+					"name": "Personal Power Plant",
+					"local_notes": "Internal nanotech reactor feeding the morph. No food needed, which is why gatecrashers buy it. [Biomorph, Pod, Synthmorph, Gatecrashing p. 153, Moderate]",
+					"children": [
+						{
+							"id": "tUrj7i_alaZgNgxcx",
+							"name": "Doesn’t Eat or Drink",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "TXyVFBikW1X3wTgBG",
+					"name": "Gait Masking",
+					"local_notes": "Alters bone density, muscle tone, and foot shape enough to defeat gait recognition. [Biomorph, Pod, Synthmorph, Panopticon p. 149, Expensive]",
+					"children": [
+						{
+							"id": "teN-jUvCvka7yX0A5",
+							"name": "Gait Masking",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "Tl6r9UMuJ1O5t6phR",
+					"name": "Nanotat ID Flux",
+					"local_notes": "Reprogrammable nanotat ID. Wear any identity you can forge. Highly illegal everywhere with courts. [Biomorph, Pod, Synthmorph, Panopticon p. 149, Expensive]",
+					"children": [
+						{
+							"id": "t5k8K_qxl4nLo_zzX",
+							"name": "Nanotat ID Flux",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "Tzp1tljFly3oHgrsA",
+					"name": "Skeletal Disguise",
+					"local_notes": "Falsifies skeletal structure against imaging and forensic identification. [Biomorph, Pod, Synthmorph, Panopticon p. 149, Expensive]",
+					"children": [
+						{
+							"id": "tNJudiBqSXAu2Ihjh",
+							"name": "Skeletal Disguise",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TfH3WAHtU-JAxYXAf",
+					"name": "Long-Term Life Support",
+					"local_notes": "Closed-system biology. Survives months without food, water, or resupply. [Biomorph, Pod, Synthmorph, Rimward p. 189, Expensive]",
+					"children": [
+						{
+							"id": "t5BKjIIbxjMzu4Sj7",
+							"name": "Doesn’t Eat or Drink",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "ToO9UvyAOvBuQxapv",
+					"name": "Neural Enhancers",
+					"local_notes": "Cognitive subprocessors bonded to the neural structure. +1 IQ. [Biomorph, Pod, Synthmorph, Rimward p. 189, Expensive]",
+					"children": [
+						{
+							"id": "teYvrxL4am0-KC0zk",
+							"name": "Increased Intelligence 1",
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 20
+					}
 				}
 			],
 			"calc": {
-				"points": 181
+				"points": 221
+			}
+		},
+		{
+			"id": "T7b0_v9700Fkeetdf",
+			"name": "Robotic Enhancements",
+			"children": [
+				{
+					"id": "TYCGFdoshJ8nyXHIM",
+					"name": "Heavy Combat Armor",
+					"local_notes": "Military armour package. On this project scale, +30 DR, matching Armor Plating (Heavy). [Synthmorph, EP p. 310, High]",
+					"children": [
+						{
+							"id": "tfPOll_b45pv9plHo",
+							"name": "Damage Resistance 30",
+							"base_points": 150,
+							"calc": {
+								"points": 150
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 150
+					}
+				},
+				{
+					"id": "Tjo59qt5PwtQqNZUn",
+					"name": "Industrial Armor",
+					"local_notes": "Protection against collisions, weather, and industrial accident. +20 DR. [Synthmorph, EP p. 310, Moderate]",
+					"children": [
+						{
+							"id": "tM00zHZk9Z8WVe55e",
+							"name": "Damage Resistance 20",
+							"base_points": 100,
+							"calc": {
+								"points": 100
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 100
+					}
+				},
+				{
+					"id": "TIaKLRcQeDnWF_Qng",
+					"name": "Light Combat Armor",
+					"local_notes": "Police and security armour package. On this project scale, +20 DR, matching Armor Plating (Medium). [Synthmorph, EP p. 310, Moderate]",
+					"children": [
+						{
+							"id": "tSmshIz2EvDjfaTPT",
+							"name": "Damage Resistance 20",
+							"base_points": 100,
+							"calc": {
+								"points": 100
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 100
+					}
+				},
+				{
+					"id": "TeSRS3prunlnvvH4j",
+					"name": "Hopper",
+					"local_notes": "Frog-legged locomotion. Jumps several times a walker distance. [Synthmorph, EP p. 310, Moderate]",
+					"children": [
+						{
+							"id": "t7qJAV2AtrzeEkMaI",
+							"name": "Super Jump 1",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "TItY9jonYtCEvTsBD",
+					"name": "Hovercraft",
+					"local_notes": "Impeller riding a cushion of air. Crosses water, dust, and rubble at speed, and cannot climb. [Synthmorph, EP p. 310, Low]",
+					"children": [
+						{
+							"id": "tsesIyzMeuTcloxFC",
+							"name": "Enhanced Move 1 (Ground)",
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "TTbUbWB8GmNMdUygj",
+					"name": "Microlight",
+					"local_notes": "Ultralight or lighter-than-air rig for low gravity. Slow, quiet flight. [Synthmorph, EP p. 310, Low]",
+					"children": [
+						{
+							"id": "t44RqQsyNjuAGuxgF",
+							"name": "Flight (Small Wings)",
+							"base_points": 30,
+							"calc": {
+								"points": 30
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "TW6gCOg3HelNW10mb",
+					"name": "Roller",
+					"local_notes": "Spherical shells only. Rolls on an interior axle. Fast on flat ground. [Synthmorph, EP p. 310, Moderate]",
+					"children": [
+						{
+							"id": "tvwZ-9GkrIgBToSXr",
+							"name": "Enhanced Move 1 (Ground)",
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "TeFqqDtDiVJaJSnbH",
+					"name": "Rotorcraft",
+					"local_notes": "Tilt-rotors giving lift and hover. [Synthmorph, EP p. 310, Low]",
+					"children": [
+						{
+							"id": "tR_fHPNGeejXFW8dR",
+							"name": "Flight",
+							"base_points": 40,
+							"calc": {
+								"points": 40
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 40
+					}
+				},
+				{
+					"id": "TEEOTWOQqMInwlU9B",
+					"name": "Tracked",
+					"local_notes": "Smart treads. Crosses ground that bogs wheels, and can prop the shell upright. [Synthmorph, EP p. 310, Low]",
+					"children": [
+						{
+							"id": "tYT74PBSLBs5KHXWf",
+							"name": "Terrain Adaptation (Loose ground)",
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TJMgrFPlAT_Lk0aCe",
+					"name": "Thrust Vector",
+					"local_notes": "Turbofans and wings with vectored nozzles. Fast atmospheric flight. [Synthmorph, EP p. 310, Moderate]",
+					"children": [
+						{
+							"id": "thFLyQgXc_PjEiUPJ",
+							"name": "Flight (Winged)",
+							"base_points": 30,
+							"calc": {
+								"points": 30
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "TZ_zWdws9o4KvQNiH",
+					"name": "Wheeled",
+					"local_notes": "Smart-spoked wheels that reshape to obstacles and climb stairs. [Synthmorph, EP p. 310, Low]",
+					"children": [
+						{
+							"id": "ti20xoGVWX44kKNIe",
+							"name": "Enhanced Move 1 (Ground)",
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "TVgOYIy027etroFBP",
+					"name": "Winged",
+					"local_notes": "Four independently controlled wings. Hover and rapid movement in any direction. [Synthmorph, EP p. 310, Low]",
+					"children": [
+						{
+							"id": "t-Q398gkykDo27ccU",
+							"name": "Flight (Winged)",
+							"base_points": 30,
+							"calc": {
+								"points": 30
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "TQj6-fyo6Nb5qnas0",
+					"name": "Extra Limbs",
+					"local_notes": "One or more additional limbs. Off-hand penalties apply until trained off. [Synthmorph, EP p. 310, Low]",
+					"children": [
+						{
+							"id": "tjsYbAt-fU6IoE22R",
+							"name": "Extra Arms 2",
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "Tts2NyvqPgnxUa4CW",
+					"name": "Fractal Digits",
+					"local_notes": "Bush-robot digits splitting into ever finer manipulators. Microsurgery and hardware work by hand. [Synthmorph, EP p. 311, Moderate]",
+					"children": [
+						{
+							"id": "tHPF97Iw1Lilp6sL3",
+							"name": "High Manual Dexterity 2",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "Tx91blyGAKbe0Rcno",
+					"name": "Magnetic System",
+					"local_notes": "Clings to ferrous surfaces. Walk a hull in zero g. [Synthmorph, EP p. 311, Low]",
+					"children": [
+						{
+							"id": "tQ5P_OFZlGlsADSD5",
+							"name": "Clinging (Ferrous only)",
+							"base_points": 12,
+							"calc": {
+								"points": 12
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 12
+					}
+				},
+				{
+					"id": "TmAV_sTdmcLz3vZVP",
+					"name": "Modular Design",
+					"local_notes": "Locks together with similar shells into a larger gestalt form. Flexbot architecture. [Synthmorph, EP p. 311, High]",
+					"children": [
+						{
+							"id": "tf7Ix9t4nxzvoI3E1",
+							"name": "Modular Design",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TaD7M84fgU0u8zf1B",
+					"name": "Retracting/Telescoping Limbs",
+					"local_notes": "Limbs retract into the frame or extend a metre or two. [Synthmorph, EP p. 311, Low]",
+					"children": [
+						{
+							"id": "tRmiYnPVw4X3WdMmq",
+							"name": "Extra Reach 1",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "Tl1-g3R52agDXmxnC",
+					"name": "Shape Adjusting",
+					"local_notes": "Smart-material frame that alters height, width, and outline. [Synthmorph, EP p. 311, High]",
+					"children": [
+						{
+							"id": "tqLjBXvCGoGZMNdwu",
+							"name": "Elastic Skin",
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "TRz4IqWnecz_c7UMC",
+					"name": "Structural Enhancement",
+					"local_notes": "Reinforced frame. +3 HP on this project Durability scale. [Synthmorph, EP p. 311, Moderate]",
+					"children": [
+						{
+							"id": "tjW7ErRkUCV9aGCkZ",
+							"name": "Extra Hit Points 3",
+							"base_points": 6,
+							"calc": {
+								"points": 6
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 6
+					}
+				},
+				{
+					"id": "T3WWaEDcwmdnhbxYx",
+					"name": "Swarm Composition",
+					"local_notes": "The shell is hundreds of insect-sized drones rather than one body. Attacks that need a solid target barely register. [Synthmorph, EP p. 311, High]",
+					"children": [
+						{
+							"id": "ti9oyjkR7ll2i8lvL",
+							"name": "Diffuse",
+							"base_points": 100,
+							"calc": {
+								"points": 100
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 100
+					}
+				},
+				{
+					"id": "TLLDC3uTFvysdDedh",
+					"name": "Synthetic Mask",
+					"local_notes": "Faux-skin casing sculpted to pass as a biomorph at conversational distance. [Synthmorph, EP p. 311, Moderate]",
+					"children": [
+						{
+							"id": "tOtfnBdgtsAA3RxJh",
+							"name": "Synthetic Mask",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TRPWbpkfN11OvjAPj",
+					"name": "Weapon Mount",
+					"local_notes": "Built-on weapon mount. Fires the mounted weapon without occupying a hand. [Synthmorph, EP p. 311, Low]",
+					"children": [
+						{
+							"id": "ttOcGRH9ubd98NAsu",
+							"name": "Weapon Mount",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TKNldjFKfOQYKQj_Z",
+					"name": "Weapon Mount (Concealed)",
+					"local_notes": "Internal mount. Small weapons only, and -6 to spot before it opens. [Synthmorph, EP p. 311, Moderate]",
+					"children": [
+						{
+							"id": "trIgPunCmx9GZbs4i",
+							"name": "Weapon Mount (Concealed)",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "T2p9K8RGZQTXymI50",
+					"name": "Weapon Mount (Articulated)",
+					"local_notes": "Mount on an articulated arm, so the weapon tracks independently of the shell facing. [Synthmorph, EP p. 311, Moderate]",
+					"children": [
+						{
+							"id": "tJeftF0yj9DQttFlL",
+							"name": "Weapon Mount (Articulated)",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TWTd3Vp871ErqaMWw",
+					"name": "360º Vision",
+					"local_notes": "Sensors ringing the shell. No flank or rear attack bonuses against it. [Synthmorph, EP p. 311, Low]",
+					"children": [
+						{
+							"id": "tjxxYfFa9OQgk1FdQ",
+							"name": "360° Vision",
+							"base_points": 25,
+							"calc": {
+								"points": 25
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 25
+					}
+				},
+				{
+					"id": "TYJ_4EmNcmZQdRoJo",
+					"name": "Chemical Sniffer",
+					"local_notes": "Air sampler with onboard analysis. Detects and identifies airborne compounds; complements Chemistry. [Synthmorph, EP p. 311, Moderate]",
+					"children": [
+						{
+							"id": "tZ3ahz1Do90yZA62H",
+							"name": "Detect (Chemicals)",
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "TgTInjp_JlOTEpkng",
+					"name": "Lidar",
+					"local_notes": "Laser ranging and imaging. Range, speed, and shape in darkness or smoke. [Synthmorph, EP p. 311, Low]",
+					"children": [
+						{
+							"id": "tuM48QuVqp6GEVL2_",
+							"name": "Scanning Sense (Lidar)",
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "T0DtS6CXjpLMk1a-y",
+					"name": "Nanoscopic Vision",
+					"local_notes": "Superlens optics past the diffraction limit. Reads nanoscale structure directly. [Synthmorph, EP p. 311, Moderate]",
+					"children": [
+						{
+							"id": "tvtJ0faFT-gu8h116",
+							"name": "Microscopic Vision 4",
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "TOUgL6EvgXPDLdXAH",
+					"name": "Invisibility",
+					"local_notes": "Metamaterial skin bending visible light around the shell. [Synthmorph, Panopticon p. 149, Expensive]",
+					"children": [
+						{
+							"id": "tHlzN2lLpWcv9fD1F",
+							"name": "Invisibility (Visual)",
+							"base_points": 40,
+							"calc": {
+								"points": 40
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 40
+					}
+				},
+				{
+					"id": "TW7qqyXlU7Lg1rnm6",
+					"name": "Radar Absorbent",
+					"local_notes": "Radar-absorbing construction. Harder to acquire and track. [Synthmorph, Panopticon p. 149, Moderate]",
+					"children": [
+						{
+							"id": "tX5yXAhkvnr9QK3lR",
+							"name": "Obscure 5 (Radar)",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "TtSf0wli50iZVh_y5",
+					"name": "Reduced Signature",
+					"local_notes": "Faceted structure cutting the radar cross-section. Visibly a stealth frame, which is its own problem. [Synthmorph, Panopticon p. 149, High]",
+					"children": [
+						{
+							"id": "tNPO6h6gq7i2GrtP4",
+							"name": "Obscure 4 (Radar)",
+							"base_points": 8,
+							"calc": {
+								"points": 8
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 8
+					}
+				},
+				{
+					"id": "TxbEWT-wNi2tER8my",
+					"name": "Radar Invisibility",
+					"local_notes": "Negative-index metamaterial coating. Effectively invisible to radar. [Synthmorph, Panopticon p. 150, Expensive]",
+					"children": [
+						{
+							"id": "tK8EJ960So1bv4pds",
+							"name": "Invisibility (Radar)",
+							"base_points": 40,
+							"calc": {
+								"points": 40
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 40
+					}
+				},
+				{
+					"id": "TXzhk6R4_lqdTf9Sn",
+					"name": "Cryonic Protection",
+					"local_notes": "Rated for outer-system cryogenic temperatures without stiffening or cracking. [Synthmorph, Rimward p. 190, Low]",
+					"children": [
+						{
+							"id": "tRUVsfAWnK94fGsSe",
+							"name": "Temperature Tolerance 5",
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TbWfRemf_Ktc6RjCA",
+					"name": "Ego Sharing",
+					"local_notes": "More than one ego can occupy and drive the shell at once. Control is negotiated, or fought over. [Synthmorph, Rimward p. 190, Expensive]",
+					"children": [
+						{
+							"id": "tqZ26Lw0rUS8VuaMx",
+							"name": "Ego Sharing",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TeHtmMo9D_dM7IE3i",
+					"name": "Smart Wings",
+					"local_notes": "Smart-material coating that extends into wings on a quick action. Gliding, not powered flight. [Synthmorph, Rimward p. 190, Low]",
+					"children": [
+						{
+							"id": "t30Ozl8a2L-Hr4Hgv",
+							"name": "Flight (Gliding, Small Wings)",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "T_kygVFfq1eJmMtJh",
+					"name": "Extreme Heat Shielding",
+					"local_notes": "Heat sinks, refractory materials, and bulk. Survives temperatures that melt an ordinary chassis. [Synthmorph, Sunward p. 166, Expensive]",
+					"children": [
+						{
+							"id": "tJ2LtEpUVhd0QDqAx",
+							"name": "Temperature Tolerance 10",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						},
+						{
+							"id": "tecBndRmpmonObN01",
+							"name": "Damage Resistance 10 (Heat/Fire only)",
+							"base_points": 30,
+							"calc": {
+								"points": 30
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 40
+					}
+				},
+				{
+					"id": "TgHzTAiwQH3w1aRJQ",
+					"name": "Extreme Pressure Adaptation",
+					"local_notes": "Structurally reinforced to 100 atmospheres. Deep ocean and gas giant work. [Synthmorph, Sunward p. 167, Expensive]",
+					"children": [
+						{
+							"id": "tZsGvMg7VtKkAtW1s",
+							"name": "Pressure Support 2",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "T3Q0MHyNI-W2TP-lz",
+					"name": "Radiation Shielding",
+					"local_notes": "Hardened against ionizing and electromagnetic radiation. [Synthmorph, Sunward p. 167, High]",
+					"children": [
+						{
+							"id": "t2hGsecinw0jEfbpS",
+							"name": "Radiation Tolerance (PF 100)",
+							"base_points": 30,
+							"calc": {
+								"points": 30
+							},
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							]
+						}
+					],
+					"calc": {
+						"points": 30
+					}
+				}
+			],
+			"calc": {
+				"points": 1011
+			}
+		},
+		{
+			"id": "TnUSy4fZw0_NDD0fN",
+			"name": "Infomorph Software Upgrades",
+			"children": [
+				{
+					"id": "TKrXD7yw-rqViTodK",
+					"name": "Active Countermeasures",
+					"local_notes": "Infomorph only. Fights back against intrusion attempts rather than just resisting them. [Infomorph, Transhuman p. 140, High]",
+					"children": [
+						{
+							"id": "t5X3l3sSTZjRwkJOQ",
+							"name": "Active Countermeasures",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TtQUchSh2-Rw1VLm0",
+					"name": "Impersonate",
+					"local_notes": "Infomorph only. Mimics another infomorph signature and behaviour convincingly. [Infomorph, Transhuman p. 140, High]",
+					"children": [
+						{
+							"id": "tNLSlL3yunU1DBT3V",
+							"name": "Impersonate",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TxvwN75cA8MgAUMhy",
+					"name": "Mental Repair",
+					"local_notes": "Infomorph only. Monitors and corrects mental processes, healing stress over time. [Infomorph, Transhuman p. 141, High]",
+					"children": [
+						{
+							"id": "taFCAq-ls9XdEQVau",
+							"name": "Mental Repair",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TCf23hn1fEfxg-Pel",
+					"name": "Mental Stability",
+					"local_notes": "Infomorph only. Raises the threshold at which shocks become lasting damage. +2 to resist stress. [Infomorph, Transhuman p. 141, Expensive]",
+					"children": [
+						{
+							"id": "tTJSuxJewnlwRqtIx",
+							"name": "Mental Stability",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TnJ811N1q5_KOGbnP",
+					"name": "Panopticon",
+					"local_notes": "Infomorph only. Runs many simultaneous sensor feeds without losing track of any of them. [Infomorph, Transhuman p. 141, High]",
+					"children": [
+						{
+							"id": "tUcm_wauAjRBeSptS",
+							"name": "Panopticon",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TlGGZl1IdWUyE0asp",
+			"name": "Standard Augmentations",
+			"children": [
+				{
+					"id": "TOSecCaw-3tIWukmu",
+					"name": "Basic Mesh Inserts",
+					"local_notes": "Cranial radio, AR display, ghostrider slot, and mesh access. Universal, and the reason everyone is always online. [Biomorph, Pod, Synthmorph, EP p. 300, Moderate]",
+					"children": [
+						{
+							"id": "tY0y8RfXTcLsSluU_",
+							"name": "Basic Mesh Inserts",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "T11U1ttA46Wc0JM5M",
+					"name": "Cyberbrain",
+					"local_notes": "Where the ego lives in a synthmorph or pod. Also what makes it hackable. [Pod, Synthmorph, EP p. 300, Moderate]",
+					"children": [
+						{
+							"id": "t2TrRCsamLMRYOO-R",
+							"name": "Cyberbrain",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "TCToLdd1aK6rUq5r6",
+			"name": "Cosmetic Modifications",
+			"children": [
+				{
+					"id": "TkK2DR8iBhfqeEJAc",
+					"name": "Body Sculpting",
+					"local_notes": "Custom morphology: elongated ears, fins, whatever the fashion is this decade. [Biomorph, Pod, EP p. 309, Low]",
+					"children": [
+						{
+							"id": "tY059AojjbpWUmpr1",
+							"name": "Body Sculpting",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TTCQ21s1I2UVF07B1",
+					"name": "Nanotats",
+					"local_notes": "Nanobot tattoos that move, shift colour, and animate. [Biomorph, Pod, EP p. 310, Low]",
+					"children": [
+						{
+							"id": "tIxoP1_GgyGvcq6pU",
+							"name": "Nanotats",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "T0xFMHANM9ITS3CkD",
+					"name": "Piercings",
+					"local_notes": "Hoops, barbells, plugs, anywhere. [Biomorph, Pod, EP p. 310, Trivial]",
+					"children": [
+						{
+							"id": "tJfcdJA5WLEgd85Dn",
+							"name": "Piercings",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TX2NCaPC4SJFbLpb9",
+					"name": "Scarification",
+					"local_notes": "Deliberate scarring. With modern medicine it can only be a choice. [Biomorph, Pod, EP p. 310, Trivial]",
+					"children": [
+						{
+							"id": "tEw8A0b3ZM96pFNdI",
+							"name": "Scarification",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "T54-medbq32_K8pA7",
+					"name": "Scent Alteration",
+					"local_notes": "Biochemistry tuned to change your natural smell or perfume you permanently. [Biomorph, Pod, EP p. 310, Low]",
+					"children": [
+						{
+							"id": "tcjz4NorVajgxdNlc",
+							"name": "Scent Alteration",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TA9nbXBjepthzwBDC",
+					"name": "Skindyes",
+					"local_notes": "Any colour, any pattern. [Biomorph, Pod, EP p. 310, Trivial]",
+					"children": [
+						{
+							"id": "tCQYyA9ky5_5TSiSd",
+							"name": "Skindyes",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "THC6SZlVjrGRILRl1",
+					"name": "Subdermal Implants",
+					"local_notes": "Bumps, ridges, and anchors set under the skin. [Biomorph, Pod, EP p. 310, Trivial]",
+					"children": [
+						{
+							"id": "tY8DllZYmSF4SNntT",
+							"name": "Subdermal Implants",
+							"base_points": 0,
+							"calc": {
+								"points": 0
+							},
+							"tags": [
+								"Feature"
+							],
+							"local_notes": "No point cost: this augmentation is capability and consequence rather than a rated trait."
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				}
+			],
+			"calc": {
+				"points": 0
 			}
 		}
 	]

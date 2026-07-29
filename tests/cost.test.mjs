@@ -22,6 +22,8 @@ const FILES = [
   "Eclipse_Phase_Ego_Packages.adq",
   "Eclipse_Phase_Mods_Traits.adq",
   "Eclipse_Phase_Psi_Sleights.adq",
+  "Eclipse_Phase_Ego_Traits.adq",
+  "Eclipse_Phase_Derangements.adq",
 ];
 
 let checked = 0;

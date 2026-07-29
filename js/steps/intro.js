@@ -7,6 +7,8 @@ const LIBRARY_FILES = [
   ["EP_ATT.attr", "Attribute definitions. Load first; the others compute incorrectly without it."],
   ["Eclipse_Phase_Skills.skl", "Setting skills and four techniques."],
   ["Eclipse_Phase_Ego_Packages.adq", "15 backgrounds, 19 factions, 8 reputation networks."],
+  ["Eclipse_Phase_Ego_Traits.adq", "42 setting traits for resleeving, forks, stress and psi."],
+  ["Eclipse_Phase_Derangements.adq", "24 derangements and 22 disorders as mental disadvantages."],
   ["Eclipse_Phase_Morphs.adq", "103 morphs, priced to chargen cost."],
   ["Eclipse_Phase_Mods_Traits.adq", "Augmentations as traits."],
   ["Eclipse_Phase_Mods_Equipment.eqp", "Augmentations and drugs with cash prices."],

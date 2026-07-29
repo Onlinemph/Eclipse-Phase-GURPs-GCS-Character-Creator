@@ -229,7 +229,7 @@ Four techniques are supplied in the skills file.
 
 `Eclipse_Phase_Morphs.adq` contains 103 morphs in five categories: Biomorphs (40), Pod Morphs (16), Uplift Biomorphs (11), Synthmorphs (35), and the Infomorph.
 
-Each morph's cost at character creation is its Eclipse Phase Customization Point cost divided by four, rounded up. A 100 CP morph is one tenth of a 1,000 CP Eclipse Phase character and therefore costs 25 points, one tenth of 250. The library applies this automatically through a Morph Price Adjustment trait, so adding a Fury to a sheet costs 19 points rather than its 755-point package value.
+Each morph's cost at character creation is its Eclipse Phase Customization Point cost divided by four, rounded up. A 100 CP morph is one tenth of a 1,000 CP Eclipse Phase character and therefore costs 25 points, one tenth of 250. The library applies this automatically through a Morph Price Adjustment trait, so adding a Fury to a sheet costs 19 points rather than its 729-point package value.
 
 Package totals quoted in the conversion guide describe what a morph is capable of. They are not charged to the character.
 
@@ -244,6 +244,8 @@ Package totals quoted in the conversion guide describe what a morph is capable o
 The Reaper is not available at character creation.
 
 Points spent on a morph are points not spent on skills, which are permanent while the morph is not. A Splicer at 3 points leaves 16 more points for skills than a Fury at 19.
+
+Twelve morphs carry a positive Size Modifier, from the Bruiser and Arachnoid at +1 to the Neo-Whale at +5. Size costs nothing and cuts both ways: longer reach and machine-scale strength, against being easier to hit and not fitting where a human-sized morph does. These morphs also have their ST raised to a floor set by their size, since Eclipse Phase records bulk in Durability rather than SOM, so the Nautiloid strikes and lifts at ST 50 rather than the ST 14 its aptitudes alone would give it. Four small morphs carry negative modifiers, which reverse both effects.
 
 Each morph's notes list its converted stat line, slot count, canon disadvantages, and a page reference to the *Morph Recognition Guide*. Several morphs carry costs beyond their price: pods and the Neotenic have their own Social Stigma, synthmorphs take the Clanking Masses stigma and cannot heal naturally, the Case adds −5 to one aptitude and has the Lemon disadvantage, and the Hyperbright includes a permanent drug dependency.
 

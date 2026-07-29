@@ -11,6 +11,9 @@ import {
   encumbranceFor, ENCUMBRANCE, poundsOf,
 } from "./features.js";
 import { traitPoints, skillRelativeLevel, parseDifficulty } from "./cost.js";
+import { collectWeapons, levelledSkills, skillDifficulties } from "./weapons.js";
+import { GURPS_SKILLS } from "./gurps-skills.js";
+import { checkAll } from "./prereqs.js";
 import { totals, weightCarried, cashSpent } from "./state.js";
 
 /** Hit locations in the order GCS's humanoid body lists them. */
@@ -32,6 +35,7 @@ export function computeSheet(build, cat) {
   const resolved = resolve(traits, cat.attrDefs, build.attributes);
 
   const values = resolved.values;
+  const levelled = levelledSkills(skills, values);
   const lift = basicLift(resolved.strength.lifting);
   const weight = weightCarried(build, cat);
   const level = encumbranceFor(weight, lift);
@@ -73,6 +77,15 @@ export function computeSheet(build, cat) {
     cash: cashSpent(build, cat),
     dr: drByLocation(resolved.dr),
     skills: skills.map((row) => describeSkill(row, values, resolved.skills)),
+    weapons: collectWeapons({
+      traits,
+      carried,
+      skills: levelled,
+      values,
+      strength: resolved.strength,
+      difficulties: skillDifficulties(cat.epSkills, GURPS_SKILLS),
+    }),
+    prereqs: checkAll({ traits, skills: levelled, skillRows: skills, carried }),
     traitCount: countRows(traits),
     carriedCount: carried.length,
     otherCount: other.length,

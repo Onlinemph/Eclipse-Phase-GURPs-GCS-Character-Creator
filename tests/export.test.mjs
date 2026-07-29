@@ -61,6 +61,10 @@ function sentinel() {
   b.skills = [
     { source: "ep", key: find(cat.epSkills.groups[0].items, "Computer Hacking").key,
       kind: "skill", name: "Computer Hacking", difficulty: "iq/vh", points: 8 },
+    // Computer Hacking's own prerequisite. The checker caught this fixture
+    // building an illegal character without it.
+    { source: "ep", key: find(cat.epSkills.groups[0].items, "Computer Programming").key,
+      kind: "skill", name: "Computer Programming", difficulty: "iq/h", points: 2 },
     { source: "ep", key: find(cat.epSkills.groups[0].items, "Professional Skill (Resleeving)").key,
       kind: "skill", name: "Professional Skill (Resleeving)", difficulty: "ht/a", points: 4 },
     { source: "ep", key: find(cat.epSkills.groups[0].items, "Free Fall").key,
@@ -379,6 +383,27 @@ for (const [label, make] of FIXTURES) {
     })(entity.traits);
     if (!found) fail(label, `modifier "${name}" (at ${address}) never reached the sheet`);
     else if (found.disabled) fail(label, `modifier "${name}" was switched on but exported disabled`);
+  }
+
+  // Attack lines: damage and skill level resolve, and unequipped weapons drop out.
+  {
+    const { computeSheet } = await import("../js/sheet.js");
+    const sheet = computeSheet(build, cat);
+    const armed = [...sheet.weapons.melee, ...sheet.weapons.ranged];
+    for (const w of armed) {
+      if (!w.damage || w.damage === "—") fail(label, `${w.name} has no resolved damage`);
+      if (w.level === null) fail(label, `${w.name} resolved no skill level, not even a default`);
+    }
+    for (const item of build.gear.filter((g) => g.equipped === false)) {
+      const entry = cat.gear.categories.flatMap((c) => c.items).find((i) => i.key === item.key);
+      if (entry?.armed && armed.some((w) => w.name === entry.name)) {
+        fail(label, `${entry.name} is unequipped but still on the attack lines`);
+      }
+    }
+    // Prerequisites are evaluated, and nothing the fixture builds is unmet.
+    for (const item of sheet.prereqs.unmet) {
+      fail(label, `unmet prerequisite: ${item.name} — ${item.reason}`);
+    }
   }
 
   const findings = validate(build, cat);

@@ -437,3 +437,14 @@ code { font-family: var(--mono); font-size: .85em; }
 
 .pick-card.gm-only { opacity: .75; border-style: dashed; }
 .warn-text { color: var(--warn); }
+
+.scroll-x { overflow-x: auto; }
+.scroll-x .table { min-width: max-content; }
+
+.table-label {
+  margin: .8rem 0 .2rem;
+  font: 600 .78rem/1 var(--mono);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}

@@ -7,6 +7,7 @@ import { buildSheet } from "../build.js";
 import { serialize, filenameFor } from "../gcs.js";
 import { totals, cashSpent, disadvantageTally, validate, DISADVANTAGE_LIMIT } from "../state.js";
 import { fullSheet } from "./sheet-panel.js";
+import { computeSheet } from "../sheet.js";
 
 const CHECKLIST = [
   "ST, HT, HP and FP are supplied by the morph and were not purchased.",
@@ -35,7 +36,7 @@ export default {
 
     const t = totals(build, cat);
     const dis = disadvantageTally(build, cat);
-    const findings = validate(build, cat);
+    const findings = validate(build, cat, computeSheet(build, cat).prereqs);
     const blocking = findings.filter((f) => f.level === "error");
 
     return el("div.stack",

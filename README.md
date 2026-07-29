@@ -56,6 +56,22 @@ bonus, thrust and swing, the lifting table, encumbrance with Move and Dodge at e
 by hit location, resolved skill levels including trait bonuses, and every reaction and
 conditional modifier with what granted it.
 
+**Attack lines.** 231 rows in the libraries carry weapon stats and a handful of traits carry
+natural attacks. The numbers a player reads in play are computed, not stored, so nothing showed
+them until the weapon engine went in. Melee and ranged tables now print what GURPS prints —
+damage, level, reach, parry, Acc, Range, RoF, Shots, Bulk, Rcl, ST — with damage folding in the
+morph's strength where the weapon is muscle-powered, capped at three times the weapon's minimum
+ST as GCS caps it. Skill levels resolve against the character's own skills, fall back to a named
+skill's unskilled default when they have no points in it, and take the −1 per point penalty for
+being under a weapon's minimum ST. Unequipping an item drops it off the attack lines without
+removing it from the equipment list.
+
+**Prerequisites.** 86 rows carry them, 62 in the morphs alone. The four kinds the libraries use
+— the AND/OR list, trait, skill and contained weight — are evaluated and reported in the checks.
+The kinds GCS defines but the libraries do not yet use are named as unevaluated rather than
+quietly passed, so a future library that starts using them says so. This caught a test fixture
+of ours building Computer Hacking without Computer Programming.
+
 `tests/sheet.test.mjs` holds this to the library: it parses the stat line out of all 103
 morphs' notes and checks that the features resolve to those numbers — 334 values, one known
 exception.
@@ -137,6 +153,7 @@ npm run test:all   # the above plus two real Chromium runs through the wizard
 | `tests/library.test.mjs` | All 17,423 library rows across nine files validate against the GCS 5 schema. Since GCS loads these files, a failure here means the validator is wrong — this is what keeps the export test honest. |
 | `tests/cost.test.mjs` | The cost engine reproduces GCS's `AdjustedPoints` across 4,374 trait rows, with the 65 known library divergences pinned to a fixture. |
 | `tests/sheet.test.mjs` | The GURPS damage, lift, Move, Dodge and encumbrance tables, plus 334 stat-line values across all 103 morphs resolved from their features. |
+| `tests/weapons.test.mjs` | Dice parsing, strength-folded damage with the minimum-ST cap, weapon skill resolution including the B270 penalty, every one of the 191 catalogue weapons resolving damage and a usable level, the prerequisite operators, and all 103 morphs satisfying their own prerequisites. |
 | `tests/export.test.mjs` | Five fixture characters build end to end and validate: TID format and uniqueness, container consistency, no unknown fields, correct attribute round-trips, one aptitude enabled per slot, morphs at their documented price, Alternative Abilities marked correctly, sheet settings and profile fields round-tripped, carried/stowed/unequipped states, hand-entered traits priced identically on both sides, and a toggled modifier arriving enabled on the right row. |
 | `tests/browser.test.mjs` | Chromium clicks through all thirteen steps, toggles a modifier, reads the sheet panel, downloads the `.gcs`, validates it, and checks that progress survives a reload. |
 | `tests/typing.test.mjs` | A touch-emulated phone types into text, number and textarea fields and drags a slider, checking focus, the caret and the cells that update beside them. |
@@ -152,6 +169,8 @@ index.html            the page
 styles.css
 js/
   app.js              wizard shell: catalogues, state, navigation
+  weapons.js          attack lines: damage, skill levels, minimum ST
+  prereqs.js          prerequisite evaluation
   state.js            the build, the point maths, the rules checks
   cost.js             GURPS point costs, matching GCS's AdjustedPoints
   features.js         resolves attribute, DR and skill bonuses; the GURPS tables

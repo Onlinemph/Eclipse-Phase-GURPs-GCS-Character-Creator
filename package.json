@@ -7,10 +7,11 @@
   "scripts": {
     "serve": "python3 -m http.server 8000",
     "data": "python3 tools/build_data.py",
-    "test": "npm run test:library && npm run test:cost && npm run test:sheet && npm run test:export",
+    "test": "npm run test:library && npm run test:cost && npm run test:sheet && npm run test:weapons && npm run test:export",
     "test:library": "node tests/library.test.mjs",
     "test:cost": "node tests/cost.test.mjs",
     "test:sheet": "node tests/sheet.test.mjs",
+    "test:weapons": "node tests/weapons.test.mjs",
     "test:export": "node tests/export.test.mjs",
     "test:browser": "node tests/browser.test.mjs",
     "test:typing": "node tests/typing.test.mjs",

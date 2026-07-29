@@ -118,6 +118,29 @@ export function fullSheet(build, cat) {
       ),
     ),
 
+    sheet.weapons.melee.length || sheet.weapons.ranged.length
+      ? el("div",
+          el("h4", "Attacks"),
+          el("p.muted.small",
+            "Skill levels resolve against the character's own skills; damage folds in the " +
+            "morph's strength where the weapon is muscle-powered. Unequipping an item takes it " +
+            "off these lines without removing it from the equipment list.",
+          ),
+          sheet.weapons.melee.length
+            ? el("div",
+                el("p.table-label", `Melee (${sheet.weapons.melee.length})`),
+                weaponTable(sheet.weapons.melee, MELEE_COLUMNS),
+              )
+            : null,
+          sheet.weapons.ranged.length
+            ? el("div",
+                el("p.table-label", `Ranged (${sheet.weapons.ranged.length})`),
+                weaponTable(sheet.weapons.ranged, RANGED_COLUMNS),
+              )
+            : null,
+        )
+      : null,
+
     sheet.dr.length
       ? el("div",
           el("h4", "Damage resistance"),
@@ -185,6 +208,64 @@ export function fullSheet(build, cat) {
       `${sheet.traitCount} trait rows, ${sheet.skills.length} skills, ` +
       `${sheet.carriedCount} carried and ${sheet.otherCount} stowed items, ` +
       `${money(sheet.cash)} spent.`,
+    ),
+  );
+}
+
+// The columns a GURPS sheet prints for each kind of attack.
+const MELEE_COLUMNS = [
+  ["Weapon", (w) => weaponName(w)],
+  ["Level", (w) => levelCell(w)],
+  ["Damage", (w) => w.damage],
+  ["Reach", (w) => w.reach],
+  ["Parry", (w) => w.parry],
+  ["ST", (w) => w.strength],
+];
+
+const RANGED_COLUMNS = [
+  ["Weapon", (w) => weaponName(w)],
+  ["Level", (w) => levelCell(w)],
+  ["Damage", (w) => w.damage],
+  ["Acc", (w) => w.accuracy],
+  ["Range", (w) => w.range],
+  ["RoF", (w) => w.rof],
+  ["Shots", (w) => w.shots],
+  ["Bulk", (w) => w.bulk],
+  ["Rcl", (w) => w.recoil],
+  ["ST", (w) => w.strength],
+];
+
+function weaponName(w) {
+  return el("span",
+    w.name,
+    // A sword swung and a sword thrust are two lines with the same name.
+    w.usage ? el("span.muted", ` — ${w.usage}`) : null,
+    w.origin === "trait" ? el("span.tag", "natural") : null,
+  );
+}
+
+function levelCell(w) {
+  if (w.level === null) return el("span.muted", "—");
+  return el("span",
+    String(w.level),
+    el("span.muted.small", ` ${w.levelFrom}`),
+    w.shortfall
+      ? el("span.warn-text", ` −${w.shortfall} ST`)
+      : null,
+  );
+}
+
+function weaponTable(rows, columns) {
+  return el("div.scroll-x",
+    el("table.table.compact",
+      el("thead", el("tr", columns.map(([label]) => el("th", label)))),
+      el("tbody",
+        rows.map((w) =>
+          el("tr", columns.map(([, get], i) =>
+            el(i === 0 ? "td" : "td.num", get(w) ?? ""),
+          )),
+        ),
+      ),
     ),
   );
 }

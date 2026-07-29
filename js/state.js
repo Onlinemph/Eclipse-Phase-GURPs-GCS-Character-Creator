@@ -409,7 +409,7 @@ const warn = (text) => ({ level: "warn", text });
 const ok = (text) => ({ level: "ok", text });
 
 /** Everything Step 11 checks, plus the constraints the libraries imply. */
-export function validate(build, cat) {
+export function validate(build, cat, prereqReport = null) {
   const out = [];
   const t = totals(build, cat);
 
@@ -528,6 +528,20 @@ export function validate(build, cat) {
   for (const s of build.skills) {
     if (skillRelativeLevel(s.points, s.difficulty.split("/")[1]) === null) {
       out.push(err(`${s.name} has no points assigned.`));
+    }
+  }
+
+  // Prerequisites, which GCS marks in red on the sheet if they go unmet.
+  if (prereqReport) {
+    for (const item of prereqReport.unmet) {
+      out.push(warn(`${item.name}: ${item.reason}.`));
+    }
+    if (!prereqReport.unmet.length) out.push(ok("Every prerequisite is satisfied."));
+    if (prereqReport.unevaluated.length) {
+      out.push(warn(
+        `Not checked: ${prereqReport.unevaluated.join(", ")}. The libraries have started using ` +
+        "prerequisite kinds this builder does not evaluate — verify those in GCS.",
+      ));
     }
   }
 
